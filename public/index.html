@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Read and listen to the Bhagavad Gita one verse at a time: Sanskrit, meaning, commentary and 30-word Shorts in English and Hindi.">
+<meta name="description" content="Read and listen to the Bhagavad Gita one verse at a time: Sanskrit, meaning and 30-word Shorts in English and Hindi.">
 <title>Gita Scroll</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gotu&family=Mukta:wght@400;600;700&family=Tiro+Devanagari+Sanskrit&display=swap">
@@ -78,13 +78,11 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 .tabs button[aria-selected="true"]{background:var(--accent);color:var(--night);font-weight:700}
 .en-tr{font-family:var(--f-display);font-size:17px;line-height:1.55;border-top:1px solid var(--line);padding-top:12px}
 .shorts-panel .shorts-text{font-family:var(--f-display);font-size:clamp(22px,6vw,28px);line-height:1.45}
-.alt-tr{font-family:var(--f-display);font-size:clamp(16px,4.4vw,19px);line-height:1.55;margin:0}
-.alt-tr+.alt-tr{padding-top:10px;border-top:1px solid var(--line)}
 .vtag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
 .shloka{font-family:var(--f-shloka);font-size:clamp(20px,5.6vw,28px);line-height:1.7;white-space:pre-line;text-wrap:balance}
 .translit{font-style:italic;color:var(--muted);line-height:1.6;white-space:pre-line}
 .meaning{font-family:var(--f-display);font-size:clamp(19px,5.2vw,24px);line-height:1.55}
-.body-text{line-height:1.65;display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
+.body-text{font-size:17px;line-height:1.65;display:-webkit-box;-webkit-line-clamp:12;-webkit-box-orient:vertical;overflow:hidden}
 .label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
 .genz-panel .label{color:var(--pink)}
 .genz-text{font-family:var(--f-display);font-size:clamp(20px,5.6vw,26px);line-height:1.5}
@@ -171,8 +169,8 @@ const $=s=>document.querySelector(s);
 const HUES=['#4b3bb0','#c4532d','#2fb3a6','#b8892d','#3a6fd8','#8f3fa8','#2f8f5a','#c2410c','#4f46e5','#b45309','#0e7490','#be185d','#65a30d','#7c3aed','#0891b2','#dc2626','#ca8a04','#f3a93b'];
 const AD_EVERY=8;
 const T={
-  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',comm:'Commentary',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read full commentary',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',ad:'Ad space',adNote:'A sponsored card will show here every few verses.',others:'Other translations',sideways:'Swipe sideways for meaning',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR'},
-  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',comm:'टीका',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'पूरी टीका पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',ad:'विज्ञापन',adNote:'हर कुछ श्लोकों के बाद यहाँ एक विज्ञापन कार्ड दिखेगा।',others:'अर्थ',sideways:'अर्थ के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR'}
+  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read more',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',ad:'Ad space',adNote:'A sponsored card will show here every few verses.',sideways:'Swipe sideways for meaning',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR'},
+  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'और पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',ad:'विज्ञापन',adNote:'हर कुछ श्लोकों के बाद यहाँ एक विज्ञापन कार्ड दिखेगा।',sideways:'अर्थ के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR'}
 };
 const S={lang:'en',panel:0,ch:2,chapters:null,cache:{},saved:new Set()};
 try{const p=JSON.parse(localStorage.getItem('gita-prefs')||'{}');if(p.lang)S.lang=p.lang;if(p.panel)S.panel=+p.panel||0;(p.saved||[]).forEach(x=>S.saved.add(x))}catch(e){}
@@ -202,14 +200,12 @@ function chapterCard(c){
   </div></article>`;
 }
 const PANELS=['verse','meaning','shorts'];
-const meanings=v=>S.lang==='hi'?[v.hi,...v.ahi]:(v.aen.length?v.aen:[v.en]);
 function verseCard(c,v){
   const key=c.n+'.'+v.v, hi=S.lang==='hi', g=window.GENZ[key];
   const comm=hi?v.chi:v.cen;
   const html={
     verse:`<div class="shloka">${esc(v.sa)}</div><div class="translit">${esc(v.tl)}</div><div class="en-tr">${esc(v.en)}</div>`,
-    meaning:`<div class="label">${t('others')}</div>${meanings(v).map(m=>`<p class="alt-tr">${esc(m)}</p>`).join('')}
-      <div class="label">${t('comm')}</div><div class="body-text">${esc(comm)}</div><button class="link" data-act="comm">${t('fullc')}</button>
+    meaning:`<div class="label">${t('meaning')}</div><div class="body-text">${esc(comm)}</div>${comm.length>600?`<button class="link" data-act="comm">${t('fullc')}</button>`:''}
       <button class="link" data-act="wbw">${t('wbw')}</button>`,
     shorts:`<span class="sticker">${t('shorts')}</span><div class="shorts-text">${g?esc(g[S.lang]):`<span style="color:var(--muted)">${t('genzSoon')}</span>`}</div>`
   };
@@ -282,7 +278,7 @@ function speak(btn,card){
   let parts;
   if(panel==='verse')parts=[[v.sa.replace(/॥/g,'।'),'hi-IN'],[v.en,'en-IN']];
   else if(panel==='shorts')parts=[[g?g[S.lang]:t('genzSoon'),'en-IN']];
-  else parts=[...meanings(v).map(m=>[m,L]),[hi?v.chi:v.cen,L]];
+  else parts=[[hi?v.chi:v.cen,L]];
   speakingBtn=btn;btn.classList.add('on');btn.querySelector('.ic').innerHTML=ICON.stop;btn.lastElementChild.textContent=t('stop');
   parts.forEach(([txt,lang],i)=>{
     const u=new SpeechSynthesisUtterance(txt);u.lang=lang;const vo=pickVoice(lang);if(vo)u.voice=vo;u.rate=i===0&&panel==='verse'?.8:.95;
@@ -306,7 +302,7 @@ document.addEventListener('click',e=>{
   const c=S.chapters[S.ch-1];
   if(act==='summary')openSheet(`${t('chapter')} ${c.n} · ${S.lang==='hi'?c.sa:c.en}`,`<p>${esc(S.lang==='hi'?c.sum_hi:c.sum_en)}</p>`);
   else if(act==='wbw'){const v=verseData(card);openSheet(`${t('wbw')} · ${card.dataset.key}`,`<p>${esc(v.wm.replace(/;\s*/g,'\n'))}</p>`)}
-  else if(act==='comm'){const v=verseData(card);openSheet(`${t('comm')} · ${card.dataset.key}`,`<p>${esc(S.lang==='hi'?v.chi:v.cen)}</p>`)}
+  else if(act==='comm'){const v=verseData(card);openSheet(`${t('meaning')} · ${card.dataset.key}`,`<p>${esc(S.lang==='hi'?v.chi:v.cen)}</p>`)}
   else if(act==='listen')speak(b,card);
   else if(act==='share')share(card);
   else if(act==='save'){const k=card.dataset.key;S.saved.has(k)?S.saved.delete(k):S.saved.add(k);b.classList.toggle('on');b.setAttribute('aria-pressed',S.saved.has(k));persist()}

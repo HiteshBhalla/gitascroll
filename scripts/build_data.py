@@ -36,8 +36,6 @@ def fix_qmarks(s):
     return re.sub(r"\?(?=\s*\S)", ",", s)
 
 
-# Other English translations shown in the Meaning section, in order of preference.
-ALT_EN_AUTHORS = ["Swami Sivananda", "Shri Purohit Swami", "Swami Gambirananda", "Dr. S. Sankaranarayan"]
 JUNK = re.compile(r"not translated|no translation|not a sentence|nothing to fix", re.I)
 
 
@@ -60,11 +58,6 @@ def main():
     t_en = {r["verse_id"]: r["description"].strip() for r in translations if r["authorName"] == "Swami Adidevananda"}
     t_hi = {r["verse_id"]: re.sub(r"\s*\(टिप्पणी[^)]*\)", "", strip_num(r["description"]))
             for r in translations if r["authorName"] == "Swami Ramsukhdas"}
-    alt_en = {}
-    for author in ALT_EN_AUTHORS:
-        for r in translations:
-            if r["authorName"] == author and usable(r["description"]):
-                alt_en.setdefault(r["verse_id"], []).append(r["description"].strip())
     alt_hi = {r["verse_id"]: fix_qmarks(strip_num(r["description"])).rstrip("।").strip() + "।"
               for r in translations if r["authorName"] == "Swami Tejomayananda" and usable(r["description"])}
     c_en, c_hi = {}, {}
@@ -84,7 +77,6 @@ def main():
         main_hi = t_hi.get(vid, "")
         if not usable(main_hi):  # 13.1 has no Ramsukhdas translation
             main_hi = alt_hi.pop(vid, "")
-        alts = [a for a in alt_en.get(vid, []) if a != main_en][:2]
         by_chapter.setdefault(c, []).append({
             "v": v["verse_number"],
             "sa": re.sub(r"\n\s*\n", "\n", re.sub(r"।।[\d\.\-]+।।", "॥", v["text"])).strip(),
@@ -92,13 +84,11 @@ def main():
             "wm": v["word_meanings"].strip(),
             "en": main_en,
             "hi": main_hi,
-            "aen": alts,
-            "ahi": [alt_hi[vid]] if vid in alt_hi and alt_hi[vid] != main_hi else [],
             "cen": c_en.get(vid, ""),
             "chi": c_hi.get(vid, ""),
         })
 
-    # Never leave the Meaning section without commentary: use a written explanation where the
+    # Never leave the Meaning section empty: use a written explanation where the
     # source has none, otherwise (Hindi only) the neighbouring verse's group commentary.
     explanations = json.loads(EXPLANATIONS.read_text(encoding="utf-8"))
     for c, vs in by_chapter.items():
