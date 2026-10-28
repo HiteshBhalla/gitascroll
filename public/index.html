@@ -167,6 +167,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 
 <script src="genz.js"></script>
 <script>
+window.addEventListener('error',e=>{const f=document.getElementById('feed');if(f&&!f.querySelector('.card'))f.innerHTML='<div class="loading">Something went wrong loading the page: '+String(e.message).replace(/</g,'&lt;')+'</div>'});
 const $=s=>document.querySelector(s);
 const HUES=['#4b3bb0','#c4532d','#2fb3a6','#b8892d','#3a6fd8','#8f3fa8','#2f8f5a','#c2410c','#4f46e5','#b45309','#0e7490','#be185d','#65a30d','#7c3aed','#0891b2','#dc2626','#ca8a04','#f3a93b'];
 const AD_EVERY=8;
@@ -260,7 +261,7 @@ function syncPagers(except){
 }
 function currentVerse(){const f=$('#feed');const i=Math.round(f.scrollTop/f.clientHeight);const card=f.children[i];return card&&card.classList.contains('verse')?card:null}
 function verseData(card){return S.cache[S.ch].find(x=>x.v==card.dataset.v)}
-function setHash(){const v=currentVerse();const h='#c'+S.ch+(v?'-v'+v.dataset.v:'');if(location.hash!==h)history.replaceState(null,'',h)}
+function setHash(){const v=currentVerse();const h='#c'+S.ch+(v?'-v'+v.dataset.v:'');if(location.hash!==h)try{history.replaceState(null,'',h)}catch(e){}}
 
 function openSheet(title,html){$('#sheetTitle').textContent=title;$('#sheetBody').innerHTML=html;$('#sheet').hidden=false;$('#scrim').hidden=false;$('#sheet').scrollTop=0;$('#sheetClose').focus()}
 function closeSheet(){$('#sheet').hidden=true;$('#scrim').hidden=true}
