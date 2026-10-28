@@ -1,0 +1,175 @@
+"""Build the site's data files from the raw Gita dataset and the Shorts.
+
+Inputs:  source/*.json (raw dataset), content/shorts/*.json (Shorts + chapter TL;DRs),
+         content/faq/ (chapter FAQs and per-chapter verse FAQs)
+Outputs: public/data/chapters.json, public/data/chN.json, public/genz.js,
+         data/gita-context.json (compact text used by the Ask Gita API)
+
+Run: python3 scripts/build_data.py
+"""
+import json
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+SRC = ROOT / "source"
+SHORTS = ROOT / "content" / "shorts"
+EXPLANATIONS = ROOT / "content" / "explanations.json"
+FAQ = ROOT / "content" / "faq"
+PUBLIC = ROOT / "public"
+
+# Swami Adidevananda's 13.1 is placeholder text in the source; use Sivananda's.
+EN_OVERRIDES = {
+    "13.1": 'Arjuna said, "I wish to learn about Nature and the Spirit, the field and the knower of the field, '
+            'knowledge and that which ought to be known, O Kesava."',
+}
+
+
+def load(name):
+    return json.loads((SRC / name).read_text(encoding="utf-8-sig"))
+
+
+def strip_num(s):
+    return re.sub(r"^\s*।।\s*[\d\.\-]+\s*।।\s*", "", s).strip()
+
+
+def fix_qmarks(s):
+    # The dataset uses "?" where the original had commas.
+    return re.sub(r"\?(?=\s*\S)", ",", s)
+
+
+JUNK = re.compile(r"not translated|no translation|not a sentence|nothing to fix", re.I)
+
+
+def is_empty_commentary(s):
+    s = s.strip()
+    return len(s) < 60 or s.lower().startswith("no commentary")
+
+
+def usable(s):
+    s = s.strip()
+    return len(s) >= 20 and not JUNK.search(s)
+
+
+def main():
+    chapters = load("chapters.json")
+    verses = load("verse.json")
+    translations = load("translation.json")
+    commentary = load("commentary.json")
+
+    t_en = {r["verse_id"]: r["description"].strip() for r in translations if r["authorName"] == "Swami Adidevananda"}
+    t_hi = {r["verse_id"]: re.sub(r"\s*\(टिप्पणी[^)]*\)", "", strip_num(r["description"]))
+            for r in translations if r["authorName"] == "Swami Ramsukhdas"}
+    alt_hi = {r["verse_id"]: fix_qmarks(strip_num(r["description"])).rstrip("।").strip() + "।"
+              for r in translations if r["authorName"] == "Swami Tejomayananda" and usable(r["description"])}
+    c_en, c_hi = {}, {}
+    for r in commentary:
+        d = r["description"]
+        if r["lang"] == "English":
+            parts = d.split("Commentary", 1)
+            c_en[r["verse_id"]] = fix_qmarks(parts[1].strip().lstrip("-").strip()) if len(parts) > 1 else ""
+        else:
+            c_hi[r["verse_id"]] = fix_qmarks(strip_num(d))
+
+    by_chapter = {}
+    for v in verses:
+        vid, c = v["id"], v["chapter_number"]
+        key = f"{c}.{v['verse_number']}"
+        main_en = EN_OVERRIDES.get(key, t_en.get(vid, ""))
+        main_hi = t_hi.get(vid, "")
+        if not usable(main_hi):  # 13.1 has no Ramsukhdas translation
+            main_hi = alt_hi.pop(vid, "")
+        by_chapter.setdefault(c, []).append({
+            "v": v["verse_number"],
+            "sa": re.sub(r"\n\s*\n", "\n", re.sub(r"।।[\d\.\-]+।।", "॥", v["text"])).strip(),
+            "tl": v["transliteration"].strip(),
+            "wm": v["word_meanings"].strip(),
+            "en": main_en,
+            "hi": main_hi,
+            "cen": c_en.get(vid, ""),
+            "chi": c_hi.get(vid, ""),
+        })
+
+    # Never leave the Meaning section empty: use a written explanation where the
+    # source has none, otherwise (Hindi only) the neighbouring verse's group commentary.
+    explanations = json.loads(EXPLANATIONS.read_text(encoding="utf-8"))
+    for c, vs in by_chapter.items():
+        for field, lang in (("cen", "en"), ("chi", "hi")):
+            filled = []
+            for i, v in enumerate(vs):
+                text = v[field]
+                if is_empty_commentary(text):
+                    text = explanations[lang].get(f"{c}.{v['v']}", "")
+                # Hindi commentary often covers a group from its first verse, so look back first there.
+                for j in ((i - 1, i + 1) if lang == "hi" else ()):
+                    if is_empty_commentary(text) and 0 <= j < len(vs) and not is_empty_commentary(vs[j][field]):
+                        text = vs[j][field]
+                if is_empty_commentary(text):
+                    raise SystemExit(f"No {lang} commentary or explanation for {c}.{v['v']}")
+                filled.append(text)
+            for v, text in zip(vs, filled):
+                v[field] = text
+
+    index = [{
+        "n": c["chapter_number"], "sa": c["name"], "tl": c["name_transliterated"], "en": c["name_translation"],
+        "mean": c["name_meaning"], "count": c["verses_count"],
+        "sum_en": c["chapter_summary"].strip(), "sum_hi": c["chapter_summary_hindi"].strip(),
+    } for c in sorted(chapters, key=lambda x: x["chapter_number"])]
+
+    # FAQs: {"en": [{"q", "a"}], "hi": [...]} per chapter and, where written, per verse.
+    ch_faq = json.loads((FAQ / "chapters.json").read_text(encoding="utf-8"))
+    for c in index:
+        c["faq"] = ch_faq.get(str(c["n"]))
+    for path in sorted((FAQ / "verses").glob("ch*.json")):
+        for key, faq in json.loads(path.read_text(encoding="utf-8")).items():
+            c, v = map(int, key.split("."))
+            by_chapter[c][v - 1]["faq"] = faq
+    for c in index:
+        for item in (c["faq"] or {}).get("en", []) + (c["faq"] or {}).get("hi", []):
+            if not item["q"].strip() or not item["a"].strip():
+                raise SystemExit(f"Empty FAQ entry in chapter {c['n']}")
+
+    shorts = {}
+    for c in range(1, 19):
+        shorts.update(json.loads((SHORTS / f"ch{c}.json").read_text(encoding="utf-8")))
+    ch_tldr = json.loads((SHORTS / "chapters.json").read_text(encoding="utf-8"))
+
+    over = [(k, lang) for k, v in shorts.items() for lang, s in v.items() if len(s.split()) > 30]
+    if over:
+        raise SystemExit(f"Shorts over 30 words: {over}")
+    missing = [f"{c}.{v['v']}" for c, vs in by_chapter.items() for v in vs if f"{c}.{v['v']}" not in shorts]
+    if missing:
+        raise SystemExit(f"Verses without Shorts: {missing}")
+    no_faq = [f"{c}.{v['v']}" for c, vs in by_chapter.items() for v in vs if "faq" not in v]
+    if no_faq:
+        raise SystemExit(f"Verses without FAQs: {no_faq}")
+
+    data_dir = PUBLIC / "data"
+    data_dir.mkdir(parents=True, exist_ok=True)
+    (data_dir / "chapters.json").write_text(json.dumps(index, ensure_ascii=False), encoding="utf-8")
+    for c, vs in by_chapter.items():
+        (data_dir / f"ch{c}.json").write_text(json.dumps(vs, ensure_ascii=False), encoding="utf-8")
+    (PUBLIC / "genz.js").write_text(
+        "// Generated by scripts/build_data.py from content/shorts. Do not edit by hand.\n"
+        f"window.GENZ_CH={json.dumps(ch_tldr, ensure_ascii=False)};\n"
+        f"window.GENZ={json.dumps(shorts, ensure_ascii=False)};\n",
+        encoding="utf-8",
+    )
+
+    # Compact context for Ask Gita: every verse's English translation (goes in the cached
+    # system prompt) plus the per-verse text the API searches to pick commentary excerpts.
+    context = {
+        "chapters": [{"n": c["n"], "name": c["en"], "meaning": c["mean"], "summary": c["sum_en"]} for c in index],
+        "verses": [{
+            "key": f"{c}.{v['v']}", "en": v["en"], "hi": v["hi"], "short": shorts[f"{c}.{v['v']}"]["en"],
+            "commentary": v["cen"],
+        } for c in sorted(by_chapter) for v in by_chapter[c]],
+    }
+    out = ROOT / "data"
+    out.mkdir(exist_ok=True)
+    (out / "gita-context.json").write_text(json.dumps(context, ensure_ascii=False), encoding="utf-8")
+    print(f"Built {sum(len(v) for v in by_chapter.values())} verses, {len(shorts)} Shorts")
+
+
+if __name__ == "__main__":
+    main()

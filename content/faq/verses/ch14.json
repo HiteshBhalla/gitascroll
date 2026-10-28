@@ -1,0 +1,164 @@
+{
+"14.1": {"en": [
+  {"q": "What will Krishna teach now?", "a": "The highest knowledge, by which sages have reached perfection."},
+  {"q": "What is this chapter about?", "a": "The three gunas, the forces of nature that shape us."}],
+ "hi": [
+  {"q": "कृष्ण अब क्या सिखाएँगे?", "a": "सबसे उत्तम ज्ञान, जिससे मुनियों ने परम सिद्धि पाई।"},
+  {"q": "यह अध्याय किस बारे में है?", "a": "तीन गुणों के बारे में, प्रकृति की वे शक्तियाँ जो हमें आकार देती हैं।"}]},
+"14.2": {"en": [
+  {"q": "What happens to those who take refuge in this knowledge?", "a": "They share the Divine's nature and aren't reborn or troubled at dissolution."},
+  {"q": "Why is this significant?", "a": "It means complete freedom."}],
+ "hi": [
+  {"q": "इस ज्ञान का आश्रय लेने वालों का क्या होता है?", "a": "वे भगवान के स्वरूप को प्राप्त होते हैं और न सृष्टि में जन्म लेते हैं, न प्रलय में व्यथित होते हैं।"},
+  {"q": "यह महत्वपूर्ण क्यों है?", "a": "इसका अर्थ है पूर्ण मुक्ति।"}]},
+"14.3": {"en": [
+  {"q": "How does creation begin?", "a": "Krishna places the seed in great nature, and all beings are born from it."},
+  {"q": "What is 'great Brahman' here?", "a": "Prakriti, the womb of all creation."}],
+ "hi": [
+  {"q": "सृष्टि कैसे शुरू होती है?", "a": "कृष्ण महत् प्रकृति में बीज रखते हैं, और उससे सब प्राणी जन्म लेते हैं।"},
+  {"q": "यहाँ 'महद् ब्रह्म' क्या है?", "a": "प्रकृति, सारी सृष्टि की योनि।"}]},
+"14.4": {"en": [
+  {"q": "Who are the mother and father of all beings?", "a": "Nature is the mother; Krishna is the seed-giving father."},
+  {"q": "What does this mean for us?", "a": "All beings share the same divine parents."}],
+ "hi": [
+  {"q": "सब प्राणियों के माता-पिता कौन हैं?", "a": "प्रकृति माता है; कृष्ण बीज देने वाले पिता हैं।"},
+  {"q": "हमारे लिए इसका क्या अर्थ है?", "a": "सब प्राणियों के एक ही दिव्य माता-पिता हैं।"}]},
+"14.5": {"en": [
+  {"q": "What are the three gunas?", "a": "Sattva (goodness), rajas (passion) and tamas (inertia)."},
+  {"q": "What do they do?", "a": "They bind the eternal soul to the body."}],
+ "hi": [
+  {"q": "तीन गुण कौन से हैं?", "a": "सत्त्व, रजस और तमस।"},
+  {"q": "वे क्या करते हैं?", "a": "वे अविनाशी आत्मा को शरीर से बाँधते हैं।"}]},
+"14.6": {"en": [
+  {"q": "How does sattva bind?", "a": "Through attachment to happiness and knowledge."},
+  {"q": "Isn't sattva good?", "a": "Yes, it's pure and bright, but even good things can become attachments."}],
+ "hi": [
+  {"q": "सत्त्व कैसे बाँधता है?", "a": "सुख और ज्ञान की आसक्ति से।"},
+  {"q": "क्या सत्त्व अच्छा नहीं?", "a": "हाँ, वह निर्मल और प्रकाशमय है, पर अच्छी चीज़ें भी आसक्ति बन सकती हैं।"}]},
+"14.7": {"en": [
+  {"q": "What is rajas?", "a": "Passion born of craving and attachment."},
+  {"q": "How does it bind?", "a": "Through attachment to action and its results."}],
+ "hi": [
+  {"q": "रजस क्या है?", "a": "तृष्णा और आसक्ति से उत्पन्न राग।"},
+  {"q": "यह कैसे बाँधता है?", "a": "कर्म और उसके फल की आसक्ति से।"}]},
+"14.8": {"en": [
+  {"q": "What is tamas?", "a": "Inertia born of ignorance that confuses all beings."},
+  {"q": "How does it bind?", "a": "Through carelessness, laziness and too much sleep."}],
+ "hi": [
+  {"q": "तमस क्या है?", "a": "अज्ञान से उत्पन्न जड़ता जो सबको मोहित करती है।"},
+  {"q": "यह कैसे बाँधता है?", "a": "प्रमाद, आलस्य और निद्रा से।"}]},
+"14.9": {"en": [
+  {"q": "What does each guna attach us to?", "a": "Sattva to happiness, rajas to action, tamas to carelessness."},
+  {"q": "How does tamas work?", "a": "It covers wisdom."}],
+ "hi": [
+  {"q": "हर गुण हमें किससे जोड़ता है?", "a": "सत्त्व सुख से, रजस कर्म से, तमस प्रमाद से।"},
+  {"q": "तमस कैसे काम करता है?", "a": "वह ज्ञान को ढक देता है।"}]},
+"14.10": {"en": [
+  {"q": "Are the gunas always balanced?", "a": "No. One rises by overpowering the other two."},
+  {"q": "What does this mean for us?", "a": "Our moods and tendencies keep shifting."}],
+ "hi": [
+  {"q": "क्या गुण हमेशा संतुलित रहते हैं?", "a": "नहीं। एक गुण बाकी दो को दबाकर बढ़ता है।"},
+  {"q": "हमारे लिए इसका क्या अर्थ है?", "a": "हमारे भाव और प्रवृत्तियाँ बदलती रहती हैं।"}]},
+"14.11": {"en": [
+  {"q": "How do I know sattva is strong?", "a": "When the light of knowledge shines through all the senses."},
+  {"q": "What does that feel like?", "a": "Clarity, calm and understanding."}],
+ "hi": [
+  {"q": "कैसे जानें कि सत्त्व प्रबल है?", "a": "जब सब इंद्रियों में ज्ञान का प्रकाश चमके।"},
+  {"q": "वह कैसा लगता है?", "a": "स्पष्टता, शांति और समझ।"}]},
+"14.12": {"en": [
+  {"q": "What are the signs of rajas?", "a": "Greed, constant activity, restlessness and craving."},
+  {"q": "Is activity bad?", "a": "Not in itself; restless, driven activity is the sign."}],
+ "hi": [
+  {"q": "रजस के लक्षण क्या हैं?", "a": "लोभ, निरंतर प्रवृत्ति, अशांति और लालसा।"},
+  {"q": "क्या गतिविधि बुरी है?", "a": "अपने आप में नहीं; बेचैन, लालसा से भरी गतिविधि लक्षण है।"}]},
+"14.13": {"en": [
+  {"q": "What are the signs of tamas?", "a": "Darkness, inactivity, carelessness and confusion."},
+  {"q": "How can we recognise it?", "a": "When the mind feels foggy and lazy."}],
+ "hi": [
+  {"q": "तमस के लक्षण क्या हैं?", "a": "अप्रकाश, अप्रवृत्ति, प्रमाद और मोह।"},
+  {"q": "इसे कैसे पहचानें?", "a": "जब मन धुंधला और आलसी लगे।"}]},
+"14.14": {"en": [
+  {"q": "What if one dies when sattva dominates?", "a": "They go to the pure worlds of the wise."},
+  {"q": "What is the lesson?", "a": "The quality we live in shapes where we go."}],
+ "hi": [
+  {"q": "सत्त्व प्रबल होने पर मृत्यु हो तो?", "a": "वह ज्ञानियों के निर्मल लोकों को जाता है।"},
+  {"q": "सीख क्या है?", "a": "जिस गुण में हम जीते हैं, वही तय करता है कि हम कहाँ जाते हैं।"}]},
+"14.15": {"en": [
+  {"q": "What if one dies in rajas?", "a": "They are born among people attached to action."},
+  {"q": "And in tamas?", "a": "They are born among the dull and ignorant."}],
+ "hi": [
+  {"q": "रजस में मृत्यु हो तो?", "a": "वह कर्म में आसक्त लोगों में जन्म लेता है।"},
+  {"q": "और तमस में?", "a": "वह मूढ़ योनियों में जन्म लेता है।"}]},
+"14.16": {"en": [
+  {"q": "What are the fruits of each guna?", "a": "Good action brings purity; rajas brings pain; tamas brings ignorance."},
+  {"q": "What can we learn?", "a": "Our results reflect the quality behind our actions."}],
+ "hi": [
+  {"q": "हर गुण का फल क्या है?", "a": "सात्त्विक कर्म का फल निर्मलता, रजस का दुख, और तमस का अज्ञान।"},
+  {"q": "हम क्या सीखें?", "a": "हमारे परिणाम कर्म के पीछे के गुण को दिखाते हैं।"}]},
+"14.17": {"en": [
+  {"q": "What comes from each guna?", "a": "Knowledge from sattva, greed from rajas, and carelessness and confusion from tamas."},
+  {"q": "How can we use this?", "a": "Notice what you're feeling to see which guna is active."}],
+ "hi": [
+  {"q": "हर गुण से क्या उत्पन्न होता है?", "a": "सत्त्व से ज्ञान, रजस से लोभ, और तमस से प्रमाद और मोह।"},
+  {"q": "इसका उपयोग कैसे करें?", "a": "आप क्या महसूस कर रहे हैं, उससे देखो कि कौन सा गुण सक्रिय है।"}]},
+"14.18": {"en": [
+  {"q": "Where do people of each guna go?", "a": "Sattvic people rise, rajasic stay in the middle, tamasic sink."},
+  {"q": "Is this fixed forever?", "a": "No. We can shift our tendencies through effort."}],
+ "hi": [
+  {"q": "हर गुण के लोग कहाँ जाते हैं?", "a": "सात्त्विक ऊपर उठते हैं, राजसिक बीच में रहते हैं, तामसिक नीचे जाते हैं।"},
+  {"q": "क्या यह हमेशा के लिए तय है?", "a": "नहीं। प्रयास से हम अपनी प्रवृत्तियाँ बदल सकते हैं।"}]},
+"14.19": {"en": [
+  {"q": "When does one reach Krishna's state?", "a": "When they see that only the gunas act, and know what lies beyond them."},
+  {"q": "What does this insight remove?", "a": "The false sense of being the doer."}],
+ "hi": [
+  {"q": "कृष्ण का भाव कब मिलता है?", "a": "जब वह देखे कि केवल गुण कर्म करते हैं, और उनसे परे को जाने।"},
+  {"q": "यह समझ क्या मिटाती है?", "a": "कर्ता होने का झूठा भाव।"}]},
+"14.20": {"en": [
+  {"q": "What happens when one goes beyond the gunas?", "a": "Freedom from birth, death, old age and sorrow."},
+  {"q": "What is attained?", "a": "Immortality."}],
+ "hi": [
+  {"q": "गुणों से परे जाने पर क्या होता है?", "a": "जन्म, मृत्यु, जरा और दुख से मुक्ति।"},
+  {"q": "क्या मिलता है?", "a": "अमृतत्व।"}]},
+"14.21": {"en": [
+  {"q": "What does Arjuna ask?", "a": "How to recognise someone beyond the gunas, how they behave and how they got there."},
+  {"q": "Why is this useful?", "a": "A clear picture helps us aim for it."}],
+ "hi": [
+  {"q": "अर्जुन क्या पूछता है?", "a": "गुणातीत को कैसे पहचानें, उसका आचरण कैसा है और वह वहाँ कैसे पहुँचा।"},
+  {"q": "यह उपयोगी क्यों है?", "a": "स्पष्ट चित्र उस ओर बढ़ने में मदद करता है।"}]},
+"14.22": {"en": [
+  {"q": "How does such a person relate to the gunas?", "a": "They don't resent clarity, activity or confusion when present, nor long for them when gone."},
+  {"q": "What is the key?", "a": "Non-reaction to inner states."}],
+ "hi": [
+  {"q": "ऐसा व्यक्ति गुणों से कैसे संबंध रखता है?", "a": "प्रकाश, प्रवृत्ति या मोह आने पर द्वेष नहीं करता, जाने पर चाहता नहीं।"},
+  {"q": "मुख्य बात क्या है?", "a": "भीतर की अवस्थाओं पर प्रतिक्रिया न करना।"}]},
+"14.23": {"en": [
+  {"q": "How do they stay?", "a": "Like a neutral observer, unshaken, knowing 'the gunas are just doing their work.'"},
+  {"q": "Can we practise this?", "a": "Yes. Watch moods come and go without being swept away."}],
+ "hi": [
+  {"q": "वे कैसे रहते हैं?", "a": "उदासीन साक्षी की तरह, अविचल, यह जानते हुए कि 'गुण ही बरत रहे हैं।'"},
+  {"q": "क्या हम इसका अभ्यास कर सकते हैं?", "a": "हाँ। भावों को आते-जाते देखो, उनमें बहे बिना।"}]},
+"14.24": {"en": [
+  {"q": "How do they view pleasure and pain?", "a": "Equally, resting in the Self, seeing gold and earth as the same."},
+  {"q": "And praise and blame?", "a": "Also equally; they stay steady."}],
+ "hi": [
+  {"q": "वे सुख-दुख को कैसे देखते हैं?", "a": "समान रूप से, आत्मा में स्थित, सोने और मिट्टी को एक समान देखते हुए।"},
+  {"q": "और निंदा-स्तुति?", "a": "वह भी समान; वे धीर रहते हैं।"}]},
+"14.25": {"en": [
+  {"q": "What else marks them?", "a": "Same in honour and insult, same to friend and foe, free of selfish projects."},
+  {"q": "Is this indifference?", "a": "No. It's freedom from being controlled by outer events."}],
+ "hi": [
+  {"q": "उनके और क्या लक्षण हैं?", "a": "मान-अपमान में समान, मित्र-शत्रु में समान, स्वार्थ के आरंभों से मुक्त।"},
+  {"q": "क्या यह उदासीनता है?", "a": "नहीं। यह बाहरी घटनाओं के वश में न होने की स्वतंत्रता है।"}]},
+"14.26": {"en": [
+  {"q": "How does one go beyond the gunas?", "a": "Through unwavering devotion to Krishna."},
+  {"q": "Why devotion?", "a": "Love for the Divine lifts you above nature's pull."}],
+ "hi": [
+  {"q": "गुणों से परे कैसे जाएँ?", "a": "कृष्ण की अव्यभिचारी भक्ति से।"},
+  {"q": "भक्ति ही क्यों?", "a": "भगवान का प्रेम प्रकृति के खिंचाव से ऊपर उठाता है।"}]},
+"14.27": {"en": [
+  {"q": "What does Krishna say he is the basis of?", "a": "Brahman, immortality, eternal dharma and perfect bliss."},
+  {"q": "What does this tell us?", "a": "Reaching him means reaching all of these."}],
+ "hi": [
+  {"q": "कृष्ण स्वयं को किसका आधार बताते हैं?", "a": "ब्रह्म, अमृत, शाश्वत धर्म और ऐकांतिक सुख का।"},
+  {"q": "इससे क्या पता चलता है?", "a": "उन्हें पाना इन सबको पाना है।"}]}
+}
