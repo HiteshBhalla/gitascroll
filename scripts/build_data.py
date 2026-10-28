@@ -1,6 +1,7 @@
 """Build the site's data files from the raw Gita dataset and the Shorts.
 
-Inputs:  source/*.json (raw dataset), content/shorts/*.json (Shorts + chapter TL;DRs)
+Inputs:  source/*.json (raw dataset), content/shorts/*.json (Shorts + chapter TL;DRs),
+         content/faq/ (chapter FAQs and per-chapter verse FAQs)
 Outputs: public/data/chapters.json, public/data/chN.json, public/genz.js,
          data/gita-context.json (compact text used by the Ask Gita API)
 
@@ -14,6 +15,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "source"
 SHORTS = ROOT / "content" / "shorts"
 EXPLANATIONS = ROOT / "content" / "explanations.json"
+FAQ = ROOT / "content" / "faq"
 PUBLIC = ROOT / "public"
 
 # Swami Adidevananda's 13.1 is placeholder text in the source; use Sivananda's.
@@ -113,6 +115,19 @@ def main():
         "mean": c["name_meaning"], "count": c["verses_count"],
         "sum_en": c["chapter_summary"].strip(), "sum_hi": c["chapter_summary_hindi"].strip(),
     } for c in sorted(chapters, key=lambda x: x["chapter_number"])]
+
+    # FAQs: {"en": [{"q", "a"}], "hi": [...]} per chapter and, where written, per verse.
+    ch_faq = json.loads((FAQ / "chapters.json").read_text(encoding="utf-8"))
+    for c in index:
+        c["faq"] = ch_faq.get(str(c["n"]))
+    for path in sorted((FAQ / "verses").glob("ch*.json")):
+        for key, faq in json.loads(path.read_text(encoding="utf-8")).items():
+            c, v = map(int, key.split("."))
+            by_chapter[c][v - 1]["faq"] = faq
+    for c in index:
+        for item in (c["faq"] or {}).get("en", []) + (c["faq"] or {}).get("hi", []):
+            if not item["q"].strip() or not item["a"].strip():
+                raise SystemExit(f"Empty FAQ entry in chapter {c['n']}")
 
     shorts = {}
     for c in range(1, 19):

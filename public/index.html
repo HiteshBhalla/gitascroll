@@ -110,6 +110,8 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 .sheet-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;position:sticky;top:-18px;background:var(--surface);padding-top:4px}
 .sheet h2{font-family:var(--f-display);font-size:20px;margin:0;font-weight:400}
 .sheet p{line-height:1.7;max-width:65ch;white-space:pre-line}
+.links{display:flex;gap:20px;flex-wrap:wrap}
+.faq{margin:0;max-width:65ch}.faq dt{font-family:var(--f-display);font-size:18px;line-height:1.4;margin-top:18px}.faq dt:first-child{margin-top:0}.faq dd{margin:6px 0 0;line-height:1.65;color:var(--ink)}
 .close{font-size:14px;color:var(--accent);font-weight:600}
 .ch-list{display:grid;gap:8px}
 .ch-list button{display:flex;gap:14px;align-items:center;text-align:left;padding:10px 12px;border-radius:12px;background:var(--surface-2)}
@@ -169,8 +171,8 @@ const $=s=>document.querySelector(s);
 const HUES=['#4b3bb0','#c4532d','#2fb3a6','#b8892d','#3a6fd8','#8f3fa8','#2f8f5a','#c2410c','#4f46e5','#b45309','#0e7490','#be185d','#65a30d','#7c3aed','#0891b2','#dc2626','#ca8a04','#f3a93b'];
 const AD_EVERY=8;
 const T={
-  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read more',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',ad:'Ad space',adNote:'A sponsored card will show here every few verses.',sideways:'Swipe sideways for meaning',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR'},
-  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'और पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',ad:'विज्ञापन',adNote:'हर कुछ श्लोकों के बाद यहाँ एक विज्ञापन कार्ड दिखेगा।',sideways:'अर्थ के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR'}
+  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read more',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',ad:'Ad space',adNote:'A sponsored card will show here every few verses.',sideways:'Swipe sideways for meaning',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR',faq:'FAQ'},
+  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'और पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',ad:'विज्ञापन',adNote:'हर कुछ श्लोकों के बाद यहाँ एक विज्ञापन कार्ड दिखेगा।',sideways:'अर्थ के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR',faq:'सवाल-जवाब'}
 };
 const S={lang:'en',panel:0,ch:2,chapters:null,cache:{},saved:new Set()};
 try{const p=JSON.parse(localStorage.getItem('gita-prefs')||'{}');if(p.lang)S.lang=p.lang;if(p.panel)S.panel=+p.panel||0;(p.saved||[]).forEach(x=>S.saved.add(x))}catch(e){}
@@ -195,7 +197,7 @@ function chapterCard(c){
     <div class="ch-sa">${esc(c.sa)}</div>
     <div class="ch-en">${esc(c.en)} · ${esc(c.mean)}</div>
     ${tl?`<div class="tldr"><b>${t('shorts')}</b>${esc(tl[S.lang])}</div>`:''}<div class="summary">${esc(hi?c.sum_hi:c.sum_en)}</div>
-    <button class="link" data-act="summary">${t('more')}</button>
+    <div class="links"><button class="link" data-act="summary">${t('more')}</button>${c.faq?`<button class="link" data-act="faq">${t('faq')}</button>`:''}</div>
     <div class="hint">${ICON.up}${t('swipe')}</div>
   </div></article>`;
 }
@@ -206,7 +208,7 @@ function verseCard(c,v){
   const html={
     verse:`<div class="shloka">${esc(v.sa)}</div><div class="translit">${esc(v.tl)}</div><div class="en-tr">${esc(v.en)}</div>`,
     meaning:`<div class="label">${t('meaning')}</div><div class="body-text">${esc(comm)}</div>${comm.length>600?`<button class="link" data-act="comm">${t('fullc')}</button>`:''}
-      <button class="link" data-act="wbw">${t('wbw')}</button>`,
+      <div class="links"><button class="link" data-act="wbw">${t('wbw')}</button>${v.faq?`<button class="link" data-act="faq">${t('faq')}</button>`:''}</div>`,
     shorts:`<span class="sticker">${t('shorts')}</span><div class="shorts-text">${g?esc(g[S.lang]):`<span style="color:var(--muted)">${t('genzSoon')}</span>`}</div>`
   };
   const saved=S.saved.has(key);
@@ -303,13 +305,18 @@ document.addEventListener('click',e=>{
   if(act==='summary')openSheet(`${t('chapter')} ${c.n} · ${S.lang==='hi'?c.sa:c.en}`,`<p>${esc(S.lang==='hi'?c.sum_hi:c.sum_en)}</p>`);
   else if(act==='wbw'){const v=verseData(card);openSheet(`${t('wbw')} · ${card.dataset.key}`,`<p>${esc(v.wm.replace(/;\s*/g,'\n'))}</p>`)}
   else if(act==='comm'){const v=verseData(card);openSheet(`${t('meaning')} · ${card.dataset.key}`,`<p>${esc(S.lang==='hi'?v.chi:v.cen)}</p>`)}
+  else if(act==='faq'){const f=card.dataset.key?verseData(card).faq:c.faq;openSheet(`${t('faq')} · ${card.dataset.key||`${t('chapter')} ${c.n}`}`,faqHTML(f[S.lang]))}
   else if(act==='listen')speak(b,card);
   else if(act==='share')share(card);
   else if(act==='save'){const k=card.dataset.key;S.saved.has(k)?S.saved.delete(k):S.saved.add(k);b.classList.toggle('on');b.setAttribute('aria-pressed',S.saved.has(k));persist()}
   else if(act==='next'){S.ch++;render().then(setHash)}
 });
 $('#chapBtn').onclick=()=>openSheet(S.lang==='hi'?'अध्याय चुनें':'Choose a chapter',`<div class="ch-list">${S.chapters.map(c=>`<button data-ch="${c.n}" aria-current="${c.n===S.ch}"><span class="n">${c.n}</span><span class="t"><span>${esc(S.lang==='hi'?c.sa:c.en)}</span><small>${esc(c.mean)} · ${c.count} ${t('verses')}</small></span></button>`).join('')}</div>`);
-$('#sheetBody').addEventListener('click',e=>{const b=e.target.closest('[data-ch]');if(!b)return;S.ch=+b.dataset.ch;closeSheet();render().then(setHash)});
+$('#sheetBody').addEventListener('click',e=>{
+  const g=e.target.closest('[data-goto]');
+  if(g){const [c,v]=g.dataset.goto.split('-').map(Number);if(c<1||c>18)return;closeSheet();S.ch=c;render(v).then(setHash);return}
+  const b=e.target.closest('[data-ch]');if(!b)return;S.ch=+b.dataset.ch;closeSheet();render().then(setHash)});
+const faqHTML=items=>`<dl class="faq">${items.map(x=>`<dt>${esc(x.q)}</dt><dd>${withCites(x.a)}</dd>`).join('')}</dl>`;
 $('#sheetClose').onclick=closeSheet;$('#scrim').onclick=()=>{closeSheet();closeAsk()};
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSheet();closeAsk()}});
 
