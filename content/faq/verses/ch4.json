@@ -1,0 +1,254 @@
+{
+"4.1": {"en": [
+  {"q": "Who first received this teaching?", "a": "Krishna taught it to Vivasvan, the sun god, who passed it to Manu, who passed it to King Ikshvaku."},
+  {"q": "Why mention this lineage?", "a": "To show the teaching is ancient and has been passed down carefully, not invented for the moment."}],
+ "hi": [
+  {"q": "यह उपदेश सबसे पहले किसे मिला?", "a": "कृष्ण ने इसे सूर्यदेव विवस्वान को सिखाया, उन्होंने मनु को, और मनु ने राजा इक्ष्वाकु को।"},
+  {"q": "इस परंपरा का उल्लेख क्यों?", "a": "यह दिखाने के लिए कि उपदेश प्राचीन है और ध्यान से आगे बढ़ाया गया है, अभी गढ़ा नहीं गया।"}]},
+"4.2": {"en": [
+  {"q": "How was this Yoga lost?", "a": "Over a long time, the chain of teachers broke and the knowledge faded."},
+  {"q": "What does this teach about wisdom?", "a": "Wisdom needs living teachers and practice, or it slowly disappears."}],
+ "hi": [
+  {"q": "यह योग कैसे लुप्त हुआ?", "a": "लंबे समय में गुरुओं की परंपरा टूट गई और ज्ञान धुंधला पड़ गया।"},
+  {"q": "यह ज्ञान के बारे में क्या सिखाता है?", "a": "ज्ञान को जीवित गुरु और अभ्यास चाहिए, वरना वह धीरे-धीरे खो जाता है।"}]},
+"4.3": {"en": [
+  {"q": "Why does Krishna teach Arjuna?", "a": "Because Arjuna is his devotee and friend. The teaching is shared out of love."},
+  {"q": "Why is it called a 'supreme mystery'?", "a": "It's deep and not easily grasped without trust and openness."}],
+ "hi": [
+  {"q": "कृष्ण अर्जुन को क्यों सिखाते हैं?", "a": "क्योंकि अर्जुन उनका भक्त और मित्र है। यह उपदेश प्रेम से दिया गया है।"},
+  {"q": "इसे 'उत्तम रहस्य' क्यों कहा गया?", "a": "यह गहरा है और श्रद्धा व खुलेपन के बिना आसानी से समझ नहीं आता।"}]},
+"4.4": {"en": [
+  {"q": "What puzzles Arjuna?", "a": "Krishna was born recently, but Vivasvan lived long ago. How could Krishna have taught him?"},
+  {"q": "What does this question set up?", "a": "Krishna's explanation of his divine nature and repeated births."}],
+ "hi": [
+  {"q": "अर्जुन किस बात से हैरान है?", "a": "कृष्ण का जन्म हाल में हुआ, विवस्वान बहुत पहले थे। फिर कृष्ण ने उन्हें कैसे सिखाया?"},
+  {"q": "यह प्रश्न किस बात की भूमिका बनाता है?", "a": "कृष्ण के दिव्य स्वरूप और बार-बार अवतार की व्याख्या की।"}]},
+"4.5": {"en": [
+  {"q": "What is the difference between Krishna and Arjuna here?", "a": "Both have had many births, but Krishna remembers them all and Arjuna doesn't."},
+  {"q": "What does this reveal about Krishna?", "a": "His awareness is unbroken across time."}],
+ "hi": [
+  {"q": "यहाँ कृष्ण और अर्जुन में क्या अंतर है?", "a": "दोनों के अनेक जन्म हुए, पर कृष्ण को सब याद हैं और अर्जुन को नहीं।"},
+  {"q": "इससे कृष्ण के बारे में क्या पता चलता है?", "a": "उनकी चेतना समय के पार अखंड है।"}]},
+"4.6": {"en": [
+  {"q": "How can the unborn be born?", "a": "Krishna takes birth by his own will, using his power, while remaining unchanged."},
+  {"q": "How is his birth different from ours?", "a": "We are born because of karma. He chooses to come."}],
+ "hi": [
+  {"q": "अजन्मा कैसे जन्म लेता है?", "a": "कृष्ण अपनी इच्छा और अपनी शक्ति से प्रकट होते हैं, फिर भी अविकारी रहते हैं।"},
+  {"q": "उनका जन्म हमारे जन्म से कैसे अलग है?", "a": "हम कर्म के कारण जन्म लेते हैं। वे स्वयं आना चुनते हैं।"}]},
+"4.7": {"en": [
+  {"q": "When does the Divine appear?", "a": "Whenever goodness declines and wrongdoing rises."},
+  {"q": "Why is this verse so loved?", "a": "It promises that the world is never abandoned. Help comes when it's most needed."}],
+ "hi": [
+  {"q": "भगवान कब प्रकट होते हैं?", "a": "जब-जब धर्म की हानि और अधर्म की वृद्धि होती है।"},
+  {"q": "यह श्लोक इतना प्रिय क्यों है?", "a": "यह वचन देता है कि संसार कभी अकेला नहीं छोड़ा जाता। ज़रूरत के समय सहायता आती है।"}]},
+"4.8": {"en": [
+  {"q": "What are the three purposes of the Divine's coming?", "a": "To protect the good, to end the harm done by the wicked, and to re-establish dharma."},
+  {"q": "What does 'age after age' mean?", "a": "This happens again and again, whenever the world needs it."}],
+ "hi": [
+  {"q": "भगवान के आने के तीन उद्देश्य क्या हैं?", "a": "साधुओं की रक्षा, दुष्टों के विनाश और धर्म की स्थापना।"},
+  {"q": "'युगे युगे' का क्या अर्थ है?", "a": "यह बार-बार होता है, जब भी संसार को ज़रूरत हो।"}]},
+"4.9": {"en": [
+  {"q": "What happens to one who truly understands Krishna's birth and deeds?", "a": "They are not reborn and come to him after leaving the body."},
+  {"q": "Why does understanding matter so much?", "a": "Truly knowing the Divine changes how you live, which frees you."}],
+ "hi": [
+  {"q": "कृष्ण के जन्म और कर्म को सच में जानने वाले का क्या होता है?", "a": "वह शरीर छोड़ने के बाद फिर जन्म नहीं लेता और उन्हें प्राप्त होता है।"},
+  {"q": "समझ इतनी महत्वपूर्ण क्यों है?", "a": "भगवान को सच में जानना जीने का तरीका बदल देता है, और वही मुक्त करता है।"}]},
+"4.10": {"en": [
+  {"q": "What did those who reached Krishna let go of?", "a": "Desire, fear and anger."},
+  {"q": "What purified them?", "a": "The discipline of knowledge, along with complete trust in the Divine."}],
+ "hi": [
+  {"q": "कृष्ण को पाने वालों ने क्या छोड़ा?", "a": "राग, भय और क्रोध।"},
+  {"q": "उन्हें किसने शुद्ध किया?", "a": "ज्ञान रूपी तप ने, साथ में भगवान पर पूरे भरोसे ने।"}]},
+"4.11": {"en": [
+  {"q": "How does Krishna respond to people?", "a": "In the same way they approach him. As you come to him, he meets you."},
+  {"q": "Does this mean all paths lead to him?", "a": "Krishna says people follow his path in many ways. Every sincere approach is answered."}],
+ "hi": [
+  {"q": "कृष्ण लोगों को कैसे उत्तर देते हैं?", "a": "जिस भाव से वे उन्हें भजते हैं, उसी भाव से। जैसे आप आते हैं, वैसे वे मिलते हैं।"},
+  {"q": "क्या इसका अर्थ है सब मार्ग उन तक जाते हैं?", "a": "कृष्ण कहते हैं कि लोग कई तरह से उनके मार्ग पर चलते हैं। हर सच्चे प्रयास का उत्तर मिलता है।"}]},
+"4.12": {"en": [
+  {"q": "Why do people worship lesser gods?", "a": "For quick results. Rewards from rituals come fast in this world."},
+  {"q": "Is that wrong?", "a": "Not wrong, but limited. The results are temporary."}],
+ "hi": [
+  {"q": "लोग अन्य देवताओं की पूजा क्यों करते हैं?", "a": "जल्दी फल के लिए। इस लोक में कर्मकांड का फल शीघ्र मिलता है।"},
+  {"q": "क्या यह गलत है?", "a": "गलत नहीं, पर सीमित है। उसका फल अस्थायी होता है।"}]},
+"4.13": {"en": [
+  {"q": "What does Krishna say about the four classes?", "a": "They were set up according to people's qualities and work, not by birth alone."},
+  {"q": "Why is Krishna called a non-doer here?", "a": "Though he created this order, he isn't bound by it or changed by it."}],
+ "hi": [
+  {"q": "चार वर्णों के बारे में कृष्ण क्या कहते हैं?", "a": "वे लोगों के गुण और कर्म के अनुसार बनाए गए, केवल जन्म से नहीं।"},
+  {"q": "यहाँ कृष्ण को अकर्ता क्यों कहा?", "a": "इस व्यवस्था को रचकर भी वे उससे न बँधते हैं, न बदलते हैं।"}]},
+"4.14": {"en": [
+  {"q": "Why don't actions touch Krishna?", "a": "He has no desire for their results."},
+  {"q": "What does this mean for us?", "a": "If we also act without craving results, we aren't bound either."}],
+ "hi": [
+  {"q": "कर्म कृष्ण को क्यों नहीं लिपते?", "a": "उन्हें कर्मफल की कोई इच्छा नहीं।"},
+  {"q": "हमारे लिए इसका क्या अर्थ है?", "a": "अगर हम भी फल की लालसा के बिना कर्म करें, तो हम भी नहीं बँधते।"}]},
+"4.15": {"en": [
+  {"q": "What did earlier seekers of liberation do?", "a": "They kept working, knowing this truth."},
+  {"q": "What does Krishna ask of Arjuna?", "a": "To do his work the same way the ancients did."}],
+ "hi": [
+  {"q": "पहले के मुमुक्षुओं ने क्या किया?", "a": "यह सत्य जानकर वे कर्म करते रहे।"},
+  {"q": "कृष्ण अर्जुन से क्या कहते हैं?", "a": "पूर्वजों की तरह अपना कर्म करो।"}]},
+"4.16": {"en": [
+  {"q": "Why are even the wise confused about action?", "a": "Because what counts as action and non-action is subtle and not obvious."},
+  {"q": "What does Krishna promise to explain?", "a": "The kind of action that, once understood, frees you from harm."}],
+ "hi": [
+  {"q": "ज्ञानी भी कर्म के बारे में भ्रमित क्यों हैं?", "a": "क्योंकि कर्म और अकर्म क्या है, यह सूक्ष्म है और स्पष्ट नहीं।"},
+  {"q": "कृष्ण क्या समझाने का वचन देते हैं?", "a": "वह कर्म जिसे समझकर मनुष्य अशुभ से मुक्त हो जाता है।"}]},
+"4.17": {"en": [
+  {"q": "What three things must be understood?", "a": "Right action, wrong action and inaction."},
+  {"q": "Why is the path of action 'mysterious'?", "a": "The same outer act can bind or free, depending on the intention behind it."}],
+ "hi": [
+  {"q": "किन तीन बातों को समझना ज़रूरी है?", "a": "कर्म, विकर्म और अकर्म।"},
+  {"q": "कर्म की गति 'गहन' क्यों है?", "a": "एक ही बाहरी कर्म, उसके पीछे के भाव के अनुसार, बाँध भी सकता है और मुक्त भी कर सकता है।"}]},
+"4.18": {"en": [
+  {"q": "What is 'action in inaction'?", "a": "Seeing that a busy person can be inwardly free, and an idle person can be bound by desire."},
+  {"q": "Who is truly wise?", "a": "The one who sees this difference and acts from inner freedom."}],
+ "hi": [
+  {"q": "'कर्म में अकर्म' क्या है?", "a": "यह देखना कि व्यस्त व्यक्ति भीतर से मुक्त हो सकता है, और खाली बैठा व्यक्ति इच्छा से बँधा हो सकता है।"},
+  {"q": "सच में बुद्धिमान कौन है?", "a": "जो यह अंतर देखता है और भीतर की स्वतंत्रता से कर्म करता है।"}]},
+"4.19": {"en": [
+  {"q": "Who do the wise call a sage?", "a": "Someone whose actions are free from selfish desire, burned clean by knowledge."},
+  {"q": "What does 'burned in the fire of knowledge' mean?", "a": "Wisdom removes the binding effect of actions."}],
+ "hi": [
+  {"q": "ज्ञानी किसे पंडित कहते हैं?", "a": "जिसके कर्म स्वार्थ की कामना से मुक्त हैं, ज्ञान की आग में शुद्ध हुए।"},
+  {"q": "'ज्ञानाग्नि में जले कर्म' का क्या अर्थ है?", "a": "ज्ञान कर्मों के बाँधने वाले असर को मिटा देता है।"}]},
+"4.20": {"en": [
+  {"q": "How can someone act and yet do nothing?", "a": "When they drop attachment to results and rest content in the Self, their action leaves no trace."},
+  {"q": "What does 'dependent on none' mean?", "a": "Their peace doesn't hang on anyone or anything outside."}],
+ "hi": [
+  {"q": "कोई कर्म करते हुए भी कुछ न करे, यह कैसे?", "a": "जब वह फल की आसक्ति छोड़कर आत्मा में संतुष्ट रहता है, तो उसका कर्म बंधन नहीं छोड़ता।"},
+  {"q": "'निराश्रय' का क्या अर्थ है?", "a": "उसकी शांति किसी बाहरी व्यक्ति या वस्तु पर टिकी नहीं।"}]},
+"4.21": {"en": [
+  {"q": "What kind of person is free from sin while working?", "a": "One without craving, with mind and body controlled, who has let go of possessiveness."},
+  {"q": "What is 'bodily work only'?", "a": "Doing what's needed to live, without selfish motive."}],
+ "hi": [
+  {"q": "काम करते हुए भी कौन पाप से मुक्त है?", "a": "जिसमें लालसा नहीं, मन और शरीर वश में हैं, और जिसने ममता छोड़ दी है।"},
+  {"q": "'केवल शारीरिक कर्म' क्या है?", "a": "जीने के लिए ज़रूरी काम करना, बिना स्वार्थ के।"}]},
+"4.22": {"en": [
+  {"q": "How does a free person handle what comes?", "a": "They are content with whatever comes naturally, beyond likes and dislikes and envy."},
+  {"q": "Why aren't they bound?", "a": "Because they stay even-minded in success and failure."}],
+ "hi": [
+  {"q": "मुक्त व्यक्ति जो मिलता है उसे कैसे लेता है?", "a": "जो अपने आप मिले उसमें संतुष्ट, द्वंद्व और ईर्ष्या से परे।"},
+  {"q": "वह क्यों नहीं बँधता?", "a": "क्योंकि वह सफलता और असफलता में सम रहता है।"}]},
+"4.23": {"en": [
+  {"q": "When does karma fully dissolve?", "a": "When a person is unattached, free, rooted in knowledge, and works only as an offering."},
+  {"q": "What does this teach?", "a": "The attitude behind work decides whether it binds."}],
+ "hi": [
+  {"q": "कर्म पूरी तरह कब विलीन होता है?", "a": "जब व्यक्ति अनासक्त, मुक्त, ज्ञान में स्थित हो और केवल यज्ञ के लिए कर्म करे।"},
+  {"q": "यह क्या सिखाता है?", "a": "काम के पीछे का भाव तय करता है कि वह बाँधेगा या नहीं।"}]},
+"4.24": {"en": [
+  {"q": "What does this verse say about offering?", "a": "The offering, the act and the one offering are all the Divine. Seeing this, work becomes worship."},
+  {"q": "Why is it recited before meals?", "a": "It turns eating into a sacred act by seeing the Divine in everything."}],
+ "hi": [
+  {"q": "यह श्लोक अर्पण के बारे में क्या कहता है?", "a": "अर्पण, हवि और अर्पण करने वाला, सब ब्रह्म है। यह देखकर कर्म पूजा बन जाता है।"},
+  {"q": "इसे भोजन से पहले क्यों बोलते हैं?", "a": "यह सबमें भगवान को देखकर भोजन को पवित्र कर्म बना देता है।"}]},
+"4.25": {"en": [
+  {"q": "What different sacrifices are mentioned?", "a": "Some worship the gods through rituals; others offer themselves into the fire of the Supreme."},
+  {"q": "What is the point of listing them?", "a": "To show there are many sincere ways to offer one's life."}],
+ "hi": [
+  {"q": "कौन से अलग यज्ञ बताए गए हैं?", "a": "कुछ योगी देवताओं का यज्ञ करते हैं, कुछ स्वयं को ब्रह्म की अग्नि में अर्पित करते हैं।"},
+  {"q": "इन्हें गिनाने का उद्देश्य क्या है?", "a": "यह दिखाना कि जीवन अर्पित करने के कई सच्चे तरीके हैं।"}]},
+"4.26": {"en": [
+  {"q": "What is offering the senses into restraint?", "a": "Holding back the senses from their objects through self-control."},
+  {"q": "What is offering sense objects into the senses?", "a": "Experiencing the world without attachment, as an offering."}],
+ "hi": [
+  {"q": "इंद्रियों को संयम में अर्पित करना क्या है?", "a": "आत्म-संयम से इंद्रियों को विषयों से रोकना।"},
+  {"q": "विषयों को इंद्रियों में अर्पित करना क्या है?", "a": "बिना आसक्ति के संसार का अनुभव करना, अर्पण के भाव से।"}]},
+"4.27": {"en": [
+  {"q": "What sacrifice is described here?", "a": "Offering all sense and breath activity into the fire of a controlled mind, lit by knowledge."},
+  {"q": "What does it mean practically?", "a": "Deep inner discipline in which the mind rests in the Self."}],
+ "hi": [
+  {"q": "यहाँ कौन सा यज्ञ बताया गया है?", "a": "इंद्रियों और प्राणों की सब क्रियाओं को ज्ञान से प्रज्वलित आत्मसंयम की अग्नि में अर्पित करना।"},
+  {"q": "व्यावहारिक रूप से इसका क्या अर्थ है?", "a": "गहरा आंतरिक अनुशासन, जिसमें मन आत्मा में टिक जाए।"}]},
+"4.28": {"en": [
+  {"q": "What other forms of sacrifice are there?", "a": "Giving wealth, practising austerity, doing yoga, and studying scripture to gain knowledge."},
+  {"q": "What do they share?", "a": "Self-control and firm resolve."}],
+ "hi": [
+  {"q": "यज्ञ के और कौन से रूप हैं?", "a": "द्रव्य दान, तप, योग, और ज्ञान के लिए स्वाध्याय।"},
+  {"q": "इनमें क्या समान है?", "a": "संयम और दृढ़ संकल्प।"}]},
+"4.29": {"en": [
+  {"q": "What is this breath sacrifice?", "a": "Breath control (pranayama), where incoming and outgoing breaths are regulated and held."},
+  {"q": "Why mention a restricted diet?", "a": "Moderate eating supports this practice and steadies the mind."}],
+ "hi": [
+  {"q": "यह प्राण यज्ञ क्या है?", "a": "प्राणायाम, जिसमें आने और जाने वाली श्वास को नियंत्रित और रोका जाता है।"},
+  {"q": "नियमित आहार का उल्लेख क्यों?", "a": "संयमित भोजन इस अभ्यास में सहायक है और मन को स्थिर करता है।"}]},
+"4.30": {"en": [
+  {"q": "What do all these practices achieve?", "a": "They clean away faults and lead to the eternal."},
+  {"q": "What is the 'nectar' of sacrifice?", "a": "What remains after offering: life lived with a pure heart."}],
+ "hi": [
+  {"q": "इन सब साधनाओं से क्या मिलता है?", "a": "वे दोषों को धो देती हैं और सनातन ब्रह्म तक ले जाती हैं।"},
+  {"q": "यज्ञ का 'अमृत' क्या है?", "a": "अर्पण के बाद जो बचे: शुद्ध हृदय से जिया गया जीवन।"}]},
+"4.31": {"en": [
+  {"q": "What happens to someone who never sacrifices?", "a": "They don't find happiness even in this world, let alone beyond."},
+  {"q": "Why is giving so central?", "a": "A life with no giving shrinks into selfishness."}],
+ "hi": [
+  {"q": "जो कभी यज्ञ नहीं करता उसका क्या होता है?", "a": "उसे इस लोक में भी सुख नहीं मिलता, परलोक की तो बात ही क्या।"},
+  {"q": "देना इतना केंद्रीय क्यों है?", "a": "बिना देने का जीवन स्वार्थ में सिमट जाता है।"}]},
+"4.32": {"en": [
+  {"q": "What do all sacrifices have in common?", "a": "They all come from action."},
+  {"q": "What freedom does knowing this bring?", "a": "You see that action, rightly done, is itself a path to liberation."}],
+ "hi": [
+  {"q": "सब यज्ञों में क्या समान है?", "a": "वे सब कर्म से उत्पन्न होते हैं।"},
+  {"q": "यह जानने से कौन सी मुक्ति मिलती है?", "a": "आप देखते हैं कि सही ढंग से किया कर्म खुद मुक्ति का मार्ग है।"}]},
+"4.33": {"en": [
+  {"q": "Why is the sacrifice of knowledge better?", "a": "All action finally finds its fulfilment in knowledge."},
+  {"q": "Does this mean rituals are useless?", "a": "No. They prepare the way, but knowledge completes it."}],
+ "hi": [
+  {"q": "ज्ञान यज्ञ श्रेष्ठ क्यों है?", "a": "सब कर्म अंततः ज्ञान में ही पूर्ण होते हैं।"},
+  {"q": "क्या इसका अर्थ है कर्मकांड व्यर्थ है?", "a": "नहीं। वे राह तैयार करते हैं, पर ज्ञान उसे पूरा करता है।"}]},
+"4.34": {"en": [
+  {"q": "How do we learn from a teacher?", "a": "With humility, sincere questions and service."},
+  {"q": "Who should we learn from?", "a": "Those who have seen the truth themselves, not just read about it."}],
+ "hi": [
+  {"q": "गुरु से कैसे सीखें?", "a": "नम्रता, सच्चे प्रश्न और सेवा के साथ।"},
+  {"q": "किससे सीखें?", "a": "जिन्होंने स्वयं सत्य को जाना है, केवल पढ़ा नहीं।"}]},
+"4.35": {"en": [
+  {"q": "What does this knowledge do?", "a": "It ends confusion for good. You see all beings in yourself and in the Divine."},
+  {"q": "How does that change how we treat others?", "a": "When you see yourself in everyone, kindness becomes natural."}],
+ "hi": [
+  {"q": "यह ज्ञान क्या करता है?", "a": "यह मोह हमेशा के लिए मिटाता है। आप सब प्राणियों को अपने में और भगवान में देखते हैं।"},
+  {"q": "इससे दूसरों से व्यवहार कैसे बदलता है?", "a": "जब हर किसी में खुद को देखते हो, तो दया स्वाभाविक हो जाती है।"}]},
+"4.36": {"en": [
+  {"q": "Can even the worst wrongdoer be saved?", "a": "Yes. The boat of knowledge can carry anyone across all wrongs."},
+  {"q": "What hope does this give?", "a": "Your past doesn't have to define your future."}],
+ "hi": [
+  {"q": "क्या सबसे बड़ा पापी भी तर सकता है?", "a": "हाँ। ज्ञान की नाव से कोई भी सब पापों को पार कर सकता है।"},
+  {"q": "इससे क्या आशा मिलती है?", "a": "आपका अतीत आपका भविष्य तय नहीं करता।"}]},
+"4.37": {"en": [
+  {"q": "How is knowledge like fire?", "a": "As fire reduces wood to ash, knowledge burns away the hold of all past actions."},
+  {"q": "Does this mean past mistakes don't matter?", "a": "They matter, but understanding frees you from being bound by them."}],
+ "hi": [
+  {"q": "ज्ञान अग्नि जैसा कैसे है?", "a": "जैसे आग लकड़ी को राख करती है, वैसे ही ज्ञान सब कर्मों का बंधन जला देता है।"},
+  {"q": "क्या पुरानी गलतियाँ मायने नहीं रखतीं?", "a": "रखती हैं, पर समझ आपको उनसे बँधे रहने से मुक्त करती है।"}]},
+"4.38": {"en": [
+  {"q": "Why is knowledge the greatest purifier?", "a": "Nothing cleans the mind like true understanding."},
+  {"q": "How does one find it?", "a": "Through selfless action, it arises naturally within, in time."}],
+ "hi": [
+  {"q": "ज्ञान सबसे बड़ा पवित्र करने वाला क्यों है?", "a": "सच्ची समझ जैसा मन को कुछ भी शुद्ध नहीं करता।"},
+  {"q": "यह कैसे मिलता है?", "a": "निष्काम कर्म से, समय के साथ भीतर स्वयं प्रकट होता है।"}]},
+"4.39": {"en": [
+  {"q": "Who gains knowledge?", "a": "One with faith, who is devoted to it and controls the senses."},
+  {"q": "What follows knowledge?", "a": "Supreme peace, and quickly."}],
+ "hi": [
+  {"q": "ज्ञान किसे मिलता है?", "a": "जिसमें श्रद्धा है, जो उसमें लगा है और जिसकी इंद्रियाँ वश में हैं।"},
+  {"q": "ज्ञान के बाद क्या मिलता है?", "a": "परम शांति, और वह भी शीघ्र।"}]},
+"4.40": {"en": [
+  {"q": "Why is doubt so harmful?", "a": "A person full of doubt can't commit to anything, so they find no happiness here or beyond."},
+  {"q": "Is all questioning bad?", "a": "No. Honest questions lead to clarity. Constant doubt leads nowhere."}],
+ "hi": [
+  {"q": "संशय इतना हानिकारक क्यों है?", "a": "संशय से भरा व्यक्ति किसी चीज़ पर टिक नहीं पाता, इसलिए उसे न यहाँ सुख मिलता है न परलोक में।"},
+  {"q": "क्या हर प्रश्न बुरा है?", "a": "नहीं। सच्चे प्रश्न स्पष्टता लाते हैं। लगातार संशय कहीं नहीं ले जाता।"}]},
+"4.41": {"en": [
+  {"q": "Who is not bound by action?", "a": "The one who has offered actions through yoga, cleared doubt through knowledge, and is self-possessed."},
+  {"q": "What brings these together?", "a": "Action and knowledge working together."}],
+ "hi": [
+  {"q": "कर्म किसे नहीं बाँधते?", "a": "जिसने योग से कर्म अर्पित किए, ज्ञान से संशय मिटाया और जो आत्मवान है।"},
+  {"q": "इन्हें क्या जोड़ता है?", "a": "कर्म और ज्ञान का साथ चलना।"}]},
+"4.42": {"en": [
+  {"q": "What does Krishna ask Arjuna to do?", "a": "Cut through the doubt in his heart with the sword of knowledge, and rise."},
+  {"q": "Why the image of a sword?", "a": "Doubt needs to be cut decisively, not just thought about forever."}],
+ "hi": [
+  {"q": "कृष्ण अर्जुन से क्या करने को कहते हैं?", "a": "हृदय के संशय को ज्ञान की तलवार से काटो, और उठो।"},
+  {"q": "तलवार का चित्र क्यों?", "a": "संशय को दृढ़ता से काटना होता है, केवल अंतहीन सोचते रहना नहीं।"}]}
+}

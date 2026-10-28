@@ -1,0 +1,176 @@
+{
+"5.1": {"en": [
+  {"q": "What is Arjuna asking?", "a": "Krishna has praised both renouncing action and selfless action. Arjuna wants to know which one is better."},
+  {"q": "Why does he keep asking this?", "a": "He wants one clear answer, a very human wish when facing a hard choice."}],
+ "hi": [
+  {"q": "अर्जुन क्या पूछ रहा है?", "a": "कृष्ण ने कर्म संन्यास और कर्मयोग दोनों की प्रशंसा की। अर्जुन जानना चाहता है कि कौन श्रेष्ठ है।"},
+  {"q": "वह यह बार-बार क्यों पूछता है?", "a": "वह एक स्पष्ट उत्तर चाहता है, जो कठिन निर्णय के समय बहुत स्वाभाविक इच्छा है।"}]},
+"5.2": {"en": [
+  {"q": "Which is better, renunciation or Karma Yoga?", "a": "Both lead to the highest good, but Karma Yoga is better."},
+  {"q": "Why is Karma Yoga better?", "a": "It is more practical and purifies the mind while you keep living and working."}],
+ "hi": [
+  {"q": "संन्यास और कर्मयोग में कौन श्रेष्ठ है?", "a": "दोनों परम कल्याण देते हैं, पर कर्मयोग श्रेष्ठ है।"},
+  {"q": "कर्मयोग श्रेष्ठ क्यों है?", "a": "यह अधिक व्यावहारिक है और जीते-काम करते हुए मन को शुद्ध करता है।"}]},
+"5.3": {"en": [
+  {"q": "Who is a true renunciate?", "a": "Someone who neither hates nor craves, even while living an active life."},
+  {"q": "Does renunciation mean leaving home?", "a": "No. It's an inner state, free from likes and dislikes."}],
+ "hi": [
+  {"q": "सच्चा संन्यासी कौन है?", "a": "जो न द्वेष करता है न आकांक्षा, सक्रिय जीवन जीते हुए भी।"},
+  {"q": "क्या संन्यास का अर्थ घर छोड़ना है?", "a": "नहीं। यह भीतर की अवस्था है, राग-द्वेष से मुक्त।"}]},
+"5.4": {"en": [
+  {"q": "Are knowledge and action two different paths?", "a": "Only the immature see them as separate. Following one well brings the fruit of both."},
+  {"q": "Why does this matter?", "a": "You don't have to choose between thinking deeply and acting well."}],
+ "hi": [
+  {"q": "क्या ज्ञान और कर्म दो अलग मार्ग हैं?", "a": "केवल अज्ञानी उन्हें अलग मानते हैं। एक को अच्छे से अपनाने पर दोनों का फल मिलता है।"},
+  {"q": "यह क्यों महत्वपूर्ण है?", "a": "आपको गहरी सोच और अच्छे कर्म के बीच चुनना नहीं पड़ता।"}]},
+"5.5": {"en": [
+  {"q": "Do both paths reach the same place?", "a": "Yes. The goal reached through knowledge is also reached through selfless action."},
+  {"q": "Who truly sees?", "a": "The one who sees that the two paths are one."}],
+ "hi": [
+  {"q": "क्या दोनों मार्ग एक ही जगह पहुँचते हैं?", "a": "हाँ। जो ज्ञान से मिलता है वही निष्काम कर्म से भी मिलता है।"},
+  {"q": "सच में कौन देखता है?", "a": "जो देखता है कि दोनों मार्ग एक हैं।"}]},
+"5.6": {"en": [
+  {"q": "Why is renunciation hard without yoga?", "a": "Without first purifying the mind through selfless action, true letting go is very difficult."},
+  {"q": "What happens to the one who practises yoga?", "a": "They reach the Supreme quickly."}],
+ "hi": [
+  {"q": "योग के बिना संन्यास कठिन क्यों है?", "a": "निष्काम कर्म से मन शुद्ध किए बिना सच्चा त्याग बहुत कठिन है।"},
+  {"q": "योग करने वाले का क्या होता है?", "a": "वह शीघ्र परमात्मा को प्राप्त होता है।"}]},
+"5.7": {"en": [
+  {"q": "How can someone act and not be tainted?", "a": "When their mind is pure, senses controlled, and they see their Self in all beings."},
+  {"q": "What does 'self of all beings' mean?", "a": "Feeling one with everyone, so selfishness has no ground."}],
+ "hi": [
+  {"q": "कोई कर्म करते हुए भी कैसे लिप्त न हो?", "a": "जब मन शुद्ध हो, इंद्रियाँ वश में हों और वह सब प्राणियों में अपनी आत्मा देखे।"},
+  {"q": "'सर्वभूतात्मभूतात्मा' का क्या अर्थ है?", "a": "सबके साथ एकता का भाव, जिससे स्वार्थ का आधार ही नहीं बचता।"}]},
+"5.8": {"en": [
+  {"q": "Why does the wise person think 'I do nothing'?", "a": "They know the senses are acting on their objects, while the Self only witnesses."},
+  {"q": "Is this an excuse to avoid responsibility?", "a": "No. It removes ego from action, not care from action."}],
+ "hi": [
+  {"q": "ज्ञानी 'मैं कुछ नहीं करता' क्यों सोचता है?", "a": "वह जानता है कि इंद्रियाँ अपने विषयों में बरत रही हैं, और आत्मा केवल साक्षी है।"},
+  {"q": "क्या यह ज़िम्मेदारी से बचने का बहाना है?", "a": "नहीं। यह कर्म से अहंकार हटाता है, परवाह नहीं।"}]},
+"5.9": {"en": [
+  {"q": "What examples does Krishna give?", "a": "Speaking, letting go, grasping, even opening and closing the eyes."},
+  {"q": "What is the idea?", "a": "Even simple actions are the senses at work. The Self stays untouched."}],
+ "hi": [
+  {"q": "कृष्ण कौन से उदाहरण देते हैं?", "a": "बोलना, त्यागना, ग्रहण करना, यहाँ तक कि आँखें खोलना और बंद करना।"},
+  {"q": "विचार क्या है?", "a": "सरल कर्म भी इंद्रियों का काम है। आत्मा अछूता रहता है।"}]},
+"5.10": {"en": [
+  {"q": "What does the lotus leaf example teach?", "a": "A lotus leaf sits in water but stays dry. Act in the world but don't let it stick to you."},
+  {"q": "How do we become like the lotus leaf?", "a": "By offering actions to the Divine and dropping attachment."}],
+ "hi": [
+  {"q": "कमल के पत्ते का उदाहरण क्या सिखाता है?", "a": "कमल का पत्ता पानी में रहकर भी सूखा रहता है। संसार में कर्म करो पर उससे लिप्त मत हो।"},
+  {"q": "कमल के पत्ते जैसे कैसे बनें?", "a": "कर्म भगवान को अर्पित करके और आसक्ति छोड़कर।"}]},
+"5.11": {"en": [
+  {"q": "Why do yogis keep working?", "a": "To purify themselves, not for personal gain."},
+  {"q": "What tools do they use?", "a": "Body, mind, intellect and senses, all without attachment."}],
+ "hi": [
+  {"q": "योगी कर्म क्यों करते रहते हैं?", "a": "आत्मशुद्धि के लिए, व्यक्तिगत लाभ के लिए नहीं।"},
+  {"q": "वे किन साधनों का उपयोग करते हैं?", "a": "शरीर, मन, बुद्धि और इंद्रियों का, सब आसक्ति के बिना।"}]},
+"5.12": {"en": [
+  {"q": "Who finds lasting peace?", "a": "The one who lets go of the fruits of action."},
+  {"q": "Who stays bound?", "a": "The one driven by desire and attached to results."}],
+ "hi": [
+  {"q": "स्थायी शांति किसे मिलती है?", "a": "जो कर्मफल का त्याग करता है।"},
+  {"q": "कौन बँधा रहता है?", "a": "जो कामना से प्रेरित है और फल में आसक्त है।"}]},
+"5.13": {"en": [
+  {"q": "What is the 'city of nine gates'?", "a": "The body, with its nine openings. The Self lives in it like a resident, not a worker."},
+  {"q": "How does the wise person live in it?", "a": "Happily and in control, without thinking they are the doer."}],
+ "hi": [
+  {"q": "'नवद्वार पुर' क्या है?", "a": "शरीर, जिसके नौ द्वार हैं। आत्मा उसमें निवासी की तरह रहता है, कर्ता की तरह नहीं।"},
+  {"q": "ज्ञानी उसमें कैसे रहता है?", "a": "सुख से और संयम से, खुद को कर्ता माने बिना।"}]},
+"5.14": {"en": [
+  {"q": "Does God make us act?", "a": "No. The sense of doing, actions and their results come from our own nature."},
+  {"q": "What does this mean for responsibility?", "a": "We can't blame God for our choices. They come from our tendencies."}],
+ "hi": [
+  {"q": "क्या भगवान हमसे कर्म कराते हैं?", "a": "नहीं। कर्तापन, कर्म और फल का संयोग हमारे स्वभाव से आता है।"},
+  {"q": "ज़िम्मेदारी के लिए इसका क्या अर्थ है?", "a": "हम अपने निर्णयों का दोष भगवान पर नहीं डाल सकते। वे हमारे संस्कारों से आते हैं।"}]},
+"5.15": {"en": [
+  {"q": "Does God take anyone's sins or merits?", "a": "No. The Divine takes neither."},
+  {"q": "Why are people confused then?", "a": "Ignorance covers knowledge, and that causes delusion."}],
+ "hi": [
+  {"q": "क्या भगवान किसी का पाप या पुण्य लेते हैं?", "a": "नहीं। परमात्मा न किसी का पाप लेते हैं न पुण्य।"},
+  {"q": "फिर लोग भ्रमित क्यों हैं?", "a": "अज्ञान ज्ञान को ढक लेता है, इसी से मोह होता है।"}]},
+"5.16": {"en": [
+  {"q": "What happens when ignorance is removed?", "a": "Knowledge shines like the sun and reveals the Supreme."},
+  {"q": "Why compare it to the sun?", "a": "Just as the sun lights everything, knowledge makes everything clear."}],
+ "hi": [
+  {"q": "अज्ञान मिटने पर क्या होता है?", "a": "ज्ञान सूर्य की तरह चमकता है और परमात्मा को प्रकट करता है।"},
+  {"q": "सूर्य से तुलना क्यों?", "a": "जैसे सूर्य सब कुछ प्रकाशित करता है, वैसे ही ज्ञान सब स्पष्ट कर देता है।"}]},
+"5.17": {"en": [
+  {"q": "Who reaches the point of no return?", "a": "Those whose mind, intellect and devotion are fully set on the Supreme."},
+  {"q": "What cleanses them?", "a": "Knowledge, which washes away all faults."}],
+ "hi": [
+  {"q": "कौन ऐसी अवस्था पाता है जहाँ से लौटना नहीं?", "a": "जिनकी बुद्धि, मन और निष्ठा पूरी तरह परमात्मा में लगी है।"},
+  {"q": "उन्हें क्या शुद्ध करता है?", "a": "ज्ञान, जो सब दोष धो देता है।"}]},
+"5.18": {"en": [
+  {"q": "How do the wise see others?", "a": "Equally: a scholar, a cow, an elephant, a dog and an outcast are seen as the same Self."},
+  {"q": "Does this mean treating everyone the same way?", "a": "It means equal respect and dignity, seeing the same Self in all."}],
+ "hi": [
+  {"q": "ज्ञानी दूसरों को कैसे देखते हैं?", "a": "समान रूप से: विद्वान, गाय, हाथी, कुत्ता और चांडाल, सबमें एक आत्मा।"},
+  {"q": "क्या इसका अर्थ सबसे एक जैसा व्यवहार है?", "a": "इसका अर्थ है समान आदर और गरिमा, सबमें एक आत्मा देखना।"}]},
+"5.19": {"en": [
+  {"q": "Can we be free in this life itself?", "a": "Yes. Those with an even mind overcome the cycle of birth here and now."},
+  {"q": "Why is equality linked to the Divine?", "a": "The Supreme is flawless and equal everywhere. An even mind reflects that."}],
+ "hi": [
+  {"q": "क्या इसी जीवन में मुक्ति संभव है?", "a": "हाँ। जिनका मन सम है, वे यहीं संसार को जीत लेते हैं।"},
+  {"q": "समता का भगवान से संबंध क्यों?", "a": "ब्रह्म निर्दोष और सब जगह सम है। सम मन उसी का प्रतिबिंब है।"}]},
+"5.20": {"en": [
+  {"q": "How does a knower of the Supreme react to good and bad?", "a": "They don't get overly happy at the pleasant or upset at the unpleasant."},
+  {"q": "What keeps them steady?", "a": "A clear mind, free of confusion, rooted in the Supreme."}],
+ "hi": [
+  {"q": "ब्रह्मज्ञानी प्रिय और अप्रिय पर कैसे प्रतिक्रिया करता है?", "a": "वह प्रिय पाकर हर्षित नहीं होता और अप्रिय पाकर उद्विग्न नहीं होता।"},
+  {"q": "उसे क्या स्थिर रखता है?", "a": "स्थिर बुद्धि, मोह से मुक्त, ब्रह्म में स्थित।"}]},
+"5.21": {"en": [
+  {"q": "Where does the wise person find happiness?", "a": "Within, not in external pleasures."},
+  {"q": "What kind of joy is it?", "a": "Undying joy, because it doesn't depend on anything outside."}],
+ "hi": [
+  {"q": "ज्ञानी सुख कहाँ पाता है?", "a": "भीतर, बाहरी सुखों में नहीं।"},
+  {"q": "वह कैसा आनंद है?", "a": "अक्षय आनंद, क्योंकि वह किसी बाहरी चीज़ पर निर्भर नहीं।"}]},
+"5.22": {"en": [
+  {"q": "Why are sense pleasures called 'wombs of pain'?", "a": "They begin and end, and their ending brings pain."},
+  {"q": "Should we avoid all pleasure?", "a": "No, but don't build your happiness on them. The wise don't rely on them."}],
+ "hi": [
+  {"q": "विषय सुखों को 'दुख की योनि' क्यों कहा?", "a": "उनका आदि और अंत है, और उनका अंत दुख लाता है।"},
+  {"q": "क्या सारे सुख छोड़ दें?", "a": "नहीं, पर अपना सुख उन पर मत टिकाओ। ज्ञानी उन पर निर्भर नहीं रहते।"}]},
+"5.23": {"en": [
+  {"q": "Who is truly happy?", "a": "The one who can handle the force of desire and anger before leaving the body."},
+  {"q": "Is this about suppressing emotions?", "a": "It's about not being carried away by them."}],
+ "hi": [
+  {"q": "सच में सुखी कौन है?", "a": "जो शरीर छूटने से पहले ही काम और क्रोध के वेग को सह सकता है।"},
+  {"q": "क्या यह भावनाएँ दबाने की बात है?", "a": "यह उनमें बह न जाने की बात है।"}]},
+"5.24": {"en": [
+  {"q": "Where does a yogi find joy and light?", "a": "Within. Their happiness, peace and light are all inside."},
+  {"q": "What do they attain?", "a": "Oneness with the Supreme and its peace."}],
+ "hi": [
+  {"q": "योगी आनंद और प्रकाश कहाँ पाता है?", "a": "भीतर। उसका सुख, शांति और प्रकाश सब भीतर है।"},
+  {"q": "वह क्या प्राप्त करता है?", "a": "ब्रह्म से एकता और उसकी शांति।"}]},
+"5.25": {"en": [
+  {"q": "Who attains liberation?", "a": "Sages free of doubt and faults, self-controlled, and devoted to the welfare of all beings."},
+  {"q": "Why is helping others part of it?", "a": "Caring for all beings flows naturally from seeing the one Self in all."}],
+ "hi": [
+  {"q": "मुक्ति किसे मिलती है?", "a": "उन ऋषियों को जो संशय और दोष से मुक्त, संयमी और सब प्राणियों के हित में लगे हैं।"},
+  {"q": "दूसरों की मदद इसका हिस्सा क्यों?", "a": "सबमें एक आत्मा देखने से सब प्राणियों की परवाह अपने आप आती है।"}]},
+"5.26": {"en": [
+  {"q": "How close is liberation for the disciplined?", "a": "Very close, all around them, for those free of desire and anger."},
+  {"q": "What does it require?", "a": "Steady effort and a controlled mind."}],
+ "hi": [
+  {"q": "संयमी के लिए मुक्ति कितनी पास है?", "a": "बहुत पास, चारों ओर, उनके लिए जो काम और क्रोध से मुक्त हैं।"},
+  {"q": "इसके लिए क्या चाहिए?", "a": "निरंतर प्रयास और वश में किया मन।"}]},
+"5.27": {"en": [
+  {"q": "What practice is described here?", "a": "Shutting out outer distractions, focusing between the eyebrows and balancing the breath."},
+  {"q": "Why balance the breath?", "a": "A calm breath leads to a calm mind."}],
+ "hi": [
+  {"q": "यहाँ कौन सा अभ्यास बताया गया है?", "a": "बाहरी विषयों को बाहर रखना, भौंहों के बीच ध्यान लगाना और श्वास को सम करना।"},
+  {"q": "श्वास सम क्यों करें?", "a": "शांत श्वास से मन शांत होता है।"}]},
+"5.28": {"en": [
+  {"q": "Who is forever free?", "a": "The sage who controls senses, mind and intellect, aims for liberation, and is free of desire, fear and anger."},
+  {"q": "What is the key?", "a": "Letting go of desire, fear and anger together."}],
+ "hi": [
+  {"q": "सदा मुक्त कौन है?", "a": "वह मुनि जिसने इंद्रियाँ, मन और बुद्धि वश में की हैं, मोक्ष को लक्ष्य बनाया है और इच्छा, भय और क्रोध से मुक्त है।"},
+  {"q": "मुख्य बात क्या है?", "a": "इच्छा, भय और क्रोध को एक साथ छोड़ना।"}]},
+"5.29": {"en": [
+  {"q": "How does one find peace?", "a": "By knowing the Divine as the enjoyer of all offerings, Lord of all worlds, and friend of all beings."},
+  {"q": "Why 'friend of all beings'?", "a": "It shows the Divine is near and caring, not distant."}],
+ "hi": [
+  {"q": "शांति कैसे मिलती है?", "a": "भगवान को सब यज्ञों का भोक्ता, सब लोकों का स्वामी और सब प्राणियों का सुहृद जानकर।"},
+  {"q": "'सब प्राणियों का सुहृद' क्यों?", "a": "यह दिखाता है कि भगवान दूर नहीं, पास हैं और परवाह करते हैं।"}]}
+}

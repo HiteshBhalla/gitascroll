@@ -1,0 +1,260 @@
+{
+"3.1": {"en": [
+  {"q": "What confuses Arjuna here?", "a": "Krishna praised wisdom, yet he urges Arjuna to fight. Arjuna asks why act at all if knowledge is higher."},
+  {"q": "Is this a fair question?", "a": "Yes. Many people wonder whether spiritual life means stepping back from the world. Chapter 3 answers this."}],
+ "hi": [
+  {"q": "यहाँ अर्जुन किस बात से उलझा है?", "a": "कृष्ण ने ज्ञान की प्रशंसा की, फिर भी युद्ध करने को कहते हैं। अर्जुन पूछता है कि ज्ञान श्रेष्ठ है तो कर्म क्यों?"},
+  {"q": "क्या यह उचित प्रश्न है?", "a": "हाँ। बहुत लोग सोचते हैं कि आध्यात्मिक जीवन का अर्थ संसार से हटना है। तीसरा अध्याय इसका उत्तर देता है।"}]},
+"3.2": {"en": [
+  {"q": "What does Arjuna ask for?", "a": "One clear path to the highest good, because Krishna's words seem to point both ways."},
+  {"q": "What can we learn from this?", "a": "When advice feels mixed, it's okay to ask for clarity directly."}],
+ "hi": [
+  {"q": "अर्जुन क्या माँगता है?", "a": "परम कल्याण का एक स्पष्ट मार्ग, क्योंकि कृष्ण की बातें दोनों ओर इशारा करती लगती हैं।"},
+  {"q": "इससे हम क्या सीखें?", "a": "जब सलाह उलझी लगे, तो सीधे स्पष्टता माँगना ठीक है।"}]},
+"3.3": {"en": [
+  {"q": "What are the two paths Krishna mentions?", "a": "The path of knowledge (Jnana Yoga) for the contemplative, and the path of action (Karma Yoga) for the active."},
+  {"q": "Is one path better?", "a": "Both are valid. Krishna shows they suit different natures."}],
+ "hi": [
+  {"q": "कृष्ण किन दो मार्गों की बात करते हैं?", "a": "चिंतनशील लोगों के लिए ज्ञानयोग, और कर्मशील लोगों के लिए कर्मयोग।"},
+  {"q": "क्या एक मार्ग श्रेष्ठ है?", "a": "दोनों मान्य हैं। कृष्ण बताते हैं कि वे अलग-अलग स्वभावों के अनुकूल हैं।"}]},
+"3.4": {"en": [
+  {"q": "Can we reach freedom by not working?", "a": "No. Simply stopping action doesn't bring freedom from action's effects."},
+  {"q": "Is giving up work enough?", "a": "No. Renunciation without inner purity doesn't lead to perfection."}],
+ "hi": [
+  {"q": "क्या कर्म न करके मुक्ति मिल सकती है?", "a": "नहीं। केवल कर्म रोकने से कर्म के बंधन से छुटकारा नहीं मिलता।"},
+  {"q": "क्या काम छोड़ देना काफी है?", "a": "नहीं। भीतर की शुद्धि के बिना संन्यास से सिद्धि नहीं मिलती।"}]},
+"3.5": {"en": [
+  {"q": "Can anyone stop acting completely?", "a": "No one can stay without action even for a moment. Nature keeps us acting."},
+  {"q": "What does this mean for daily life?", "a": "Since action is unavoidable, the real question is how to act well."}],
+ "hi": [
+  {"q": "क्या कोई पूरी तरह कर्म छोड़ सकता है?", "a": "कोई एक क्षण भी बिना कर्म के नहीं रह सकता। प्रकृति हमें कर्म कराती रहती है।"},
+  {"q": "रोज़ के जीवन के लिए इसका क्या अर्थ है?", "a": "कर्म टाला नहीं जा सकता, इसलिए असली प्रश्न है कि कर्म अच्छे से कैसे करें।"}]},
+"3.6": {"en": [
+  {"q": "Who is a hypocrite in this verse?", "a": "Someone who sits still on the outside but keeps dwelling on pleasures in their mind."},
+  {"q": "What is the lesson?", "a": "Outer show doesn't matter if the mind is still chasing desires."}],
+ "hi": [
+  {"q": "इस श्लोक में मिथ्याचारी कौन है?", "a": "जो बाहर से शांत बैठता है पर मन में विषयों का चिंतन करता रहता है।"},
+  {"q": "सीख क्या है?", "a": "अगर मन इच्छाओं के पीछे भाग रहा है, तो बाहरी दिखावे का कोई अर्थ नहीं।"}]},
+"3.7": {"en": [
+  {"q": "Who excels according to Krishna?", "a": "The one who controls the senses with the mind and works without attachment."},
+  {"q": "How is this different from the hypocrite?", "a": "The hypocrite fakes stillness. This person acts fully but with inner control."}],
+ "hi": [
+  {"q": "कृष्ण के अनुसार कौन श्रेष्ठ है?", "a": "जो मन से इंद्रियों को वश में करके अनासक्त भाव से कर्म करता है।"},
+  {"q": "यह मिथ्याचारी से कैसे अलग है?", "a": "मिथ्याचारी शांति का दिखावा करता है। यह व्यक्ति पूरा कर्म करता है पर भीतर संयम रखता है।"}]},
+"3.8": {"en": [
+  {"q": "Why is action better than inaction?", "a": "Without action you can't even keep your body alive. Doing your duty is better than doing nothing."},
+  {"q": "What is 'obligatory action'?", "a": "The work that is yours to do because of your role and responsibilities."}],
+ "hi": [
+  {"q": "कर्म, अकर्म से श्रेष्ठ क्यों है?", "a": "कर्म के बिना शरीर का निर्वाह भी नहीं हो सकता। कर्तव्य करना कुछ न करने से बेहतर है।"},
+  {"q": "'नियत कर्म' क्या है?", "a": "वह काम जो आपकी भूमिका और जिम्मेदारी के कारण आपको करना है।"}]},
+"3.9": {"en": [
+  {"q": "When does work bind us?", "a": "When it's done only for ourselves. Work done as an offering doesn't bind."},
+  {"q": "What does 'work as sacrifice' mean today?", "a": "Doing your job with care for others and a larger purpose, not just personal gain."}],
+ "hi": [
+  {"q": "कर्म कब बाँधता है?", "a": "जब वह केवल अपने लिए किया जाए। यज्ञ भाव से किया कर्म नहीं बाँधता।"},
+  {"q": "आज 'यज्ञ के लिए कर्म' का क्या अर्थ है?", "a": "अपना काम दूसरों की परवाह और बड़े उद्देश्य के साथ करना, केवल निजी लाभ के लिए नहीं।"}]},
+"3.10": {"en": [
+  {"q": "What did the Creator say at the beginning?", "a": "That humans would prosper through sacrifice, and that it would fulfil their needs like a wish-granting cow."},
+  {"q": "What is the idea behind this story?", "a": "Giving and contributing is built into the design of life."}],
+ "hi": [
+  {"q": "सृष्टि के आरंभ में प्रजापति ने क्या कहा?", "a": "कि मनुष्य यज्ञ से उन्नति करेंगे, और यज्ञ कामधेनु की तरह उनकी इच्छाएँ पूरी करेगा।"},
+  {"q": "इस कथा के पीछे क्या विचार है?", "a": "देना और योगदान करना जीवन की रचना में ही शामिल है।"}]},
+"3.11": {"en": [
+  {"q": "What does 'nourishing each other' mean?", "a": "Humans honour the forces of nature, and nature supports humans. Both thrive together."},
+  {"q": "How can we apply this?", "a": "Take care of the world that takes care of you."}],
+ "hi": [
+  {"q": "'परस्पर भावयन्तः' का क्या अर्थ है?", "a": "मनुष्य प्रकृति की शक्तियों का आदर करें और प्रकृति मनुष्य का पोषण करे। दोनों साथ बढ़ते हैं।"},
+  {"q": "इसे कैसे अपनाएँ?", "a": "उस संसार की देखभाल करो जो तुम्हारी देखभाल करता है।"}]},
+"3.12": {"en": [
+  {"q": "Why is someone who only takes called a thief?", "a": "Because they enjoy what life gives without giving anything back."},
+  {"q": "What is the message?", "a": "Gratitude should turn into giving, not just receiving."}],
+ "hi": [
+  {"q": "केवल लेने वाले को चोर क्यों कहा?", "a": "क्योंकि वह जीवन से मिला भोगता है पर बदले में कुछ नहीं देता।"},
+  {"q": "संदेश क्या है?", "a": "कृतज्ञता केवल लेने में नहीं, देने में बदलनी चाहिए।"}]},
+"3.13": {"en": [
+  {"q": "What does 'eating the remnants of sacrifice' mean?", "a": "Enjoying what remains after you've shared and offered first."},
+  {"q": "Why is cooking only for yourself a sin?", "a": "Pure selfishness, even in daily things, closes the heart."}],
+ "hi": [
+  {"q": "'यज्ञशिष्ट' खाने का क्या अर्थ है?", "a": "पहले बाँटकर और अर्पित करके, बचा हुआ भोगना।"},
+  {"q": "केवल अपने लिए पकाना पाप क्यों?", "a": "रोज़ की बातों में भी केवल स्वार्थ हृदय को संकुचित कर देता है।"}]},
+"3.14": {"en": [
+  {"q": "What is the cycle described here?", "a": "Beings come from food, food from rain, rain from sacrifice, and sacrifice from action."},
+  {"q": "What does it teach?", "a": "Everything is connected. Our actions keep the cycle of life going."}],
+ "hi": [
+  {"q": "यहाँ कौन सा चक्र बताया गया है?", "a": "प्राणी अन्न से, अन्न वर्षा से, वर्षा यज्ञ से और यज्ञ कर्म से उत्पन्न होता है।"},
+  {"q": "यह क्या सिखाता है?", "a": "सब जुड़ा हुआ है। हमारे कर्म जीवन के चक्र को चलाते हैं।"}]},
+"3.15": {"en": [
+  {"q": "Where does action come from?", "a": "Action arises from the body and nature, which ultimately rest on the Imperishable."},
+  {"q": "Why is Brahman 'established in sacrifice'?", "a": "The Divine is present wherever work is offered selflessly."}],
+ "hi": [
+  {"q": "कर्म कहाँ से आता है?", "a": "कर्म शरीर और प्रकृति से उत्पन्न होता है, जो अंततः अविनाशी पर आधारित हैं।"},
+  {"q": "ब्रह्म 'यज्ञ में प्रतिष्ठित' क्यों है?", "a": "जहाँ भी निःस्वार्थ भाव से कर्म अर्पित होता है, वहाँ परमात्मा उपस्थित है।"}]},
+"3.16": {"en": [
+  {"q": "What is 'the wheel set in motion'?", "a": "The cycle of give and take that sustains life."},
+  {"q": "What happens to someone who ignores it?", "a": "Living only for sense pleasure, they waste their life."}],
+ "hi": [
+  {"q": "'प्रवर्तित चक्र' क्या है?", "a": "देने और लेने का वह चक्र जो जीवन को चलाता है।"},
+  {"q": "इसे अनदेखा करने वाले का क्या होता है?", "a": "केवल इंद्रिय सुख के लिए जीकर वह अपना जीवन व्यर्थ कर देता है।"}]},
+"3.17": {"en": [
+  {"q": "Who has nothing left to do?", "a": "The one who delights in the Self and is fully content within."},
+  {"q": "Does this mean they stop working?", "a": "They no longer work out of need, but may still act for others' good."}],
+ "hi": [
+  {"q": "किसके लिए कुछ करना बाकी नहीं?", "a": "जो आत्मा में ही रमता है और भीतर से पूरी तरह संतुष्ट है।"},
+  {"q": "क्या इसका अर्थ है कि वे काम छोड़ देते हैं?", "a": "वे ज़रूरत से काम नहीं करते, पर दूसरों के हित के लिए कर्म कर सकते हैं।"}]},
+"3.18": {"en": [
+  {"q": "Why does the Self-realised person need nothing?", "a": "They gain nothing by acting and lose nothing by not acting. They depend on no one."},
+  {"q": "Is this state common?", "a": "No, it's rare. Most of us still need to work, which is why Krishna urges action."}],
+ "hi": [
+  {"q": "आत्मज्ञानी को कुछ क्यों नहीं चाहिए?", "a": "उसे कर्म करने से न कुछ मिलता है, न न करने से कुछ खोता है। वह किसी पर निर्भर नहीं।"},
+  {"q": "क्या यह अवस्था सामान्य है?", "a": "नहीं, यह दुर्लभ है। हम में से अधिकतर को कर्म करना ही है, इसलिए कृष्ण कर्म पर ज़ोर देते हैं।"}]},
+"3.19": {"en": [
+  {"q": "How should we work?", "a": "Do what needs doing, without attachment to the outcome."},
+  {"q": "Where does this lead?", "a": "To the Supreme. Detached work itself becomes a spiritual path."}],
+ "hi": [
+  {"q": "हमें कैसे काम करना चाहिए?", "a": "जो करना ज़रूरी है वह करो, परिणाम की आसक्ति के बिना।"},
+  {"q": "यह कहाँ ले जाता है?", "a": "परमात्मा तक। अनासक्त कर्म खुद एक आध्यात्मिक मार्ग बन जाता है।"}]},
+"3.20": {"en": [
+  {"q": "Who is King Janaka?", "a": "A wise king who reached perfection while ruling, proving action and wisdom can go together."},
+  {"q": "What is 'welfare of the world' here?", "a": "Setting a good example and keeping society on track."}],
+ "hi": [
+  {"q": "राजा जनक कौन थे?", "a": "एक ज्ञानी राजा जिन्होंने राज करते हुए सिद्धि पाई, यह दिखाते हुए कि कर्म और ज्ञान साथ चल सकते हैं।"},
+  {"q": "यहाँ 'लोकसंग्रह' क्या है?", "a": "अच्छा उदाहरण रखना और समाज को सही राह पर बनाए रखना।"}]},
+"3.21": {"en": [
+  {"q": "Why do people copy great people?", "a": "Leaders set the standard. Whatever they do, others follow."},
+  {"q": "What responsibility does this bring?", "a": "If you are looked up to, your actions teach more than your words."}],
+ "hi": [
+  {"q": "लोग बड़े लोगों की नकल क्यों करते हैं?", "a": "श्रेष्ठ लोग मानक तय करते हैं। वे जो करते हैं, दूसरे वही करते हैं।"},
+  {"q": "इससे कौन सी ज़िम्मेदारी आती है?", "a": "अगर लोग आपको देखते हैं, तो आपके कर्म शब्दों से ज़्यादा सिखाते हैं।"}]},
+"3.22": {"en": [
+  {"q": "Why does Krishna work if he needs nothing?", "a": "There is nothing he must gain, yet he keeps acting to set an example."},
+  {"q": "What does this teach?", "a": "Even when you don't need to, working for others' sake is noble."}],
+ "hi": [
+  {"q": "कृष्ण को कुछ नहीं चाहिए तो वे कर्म क्यों करते हैं?", "a": "उन्हें कुछ पाना नहीं, फिर भी वे उदाहरण रखने के लिए कर्म करते रहते हैं।"},
+  {"q": "यह क्या सिखाता है?", "a": "ज़रूरत न हो तब भी दूसरों के लिए काम करना महान है।"}]},
+"3.23": {"en": [
+  {"q": "What would happen if Krishna stopped working?", "a": "People would follow him and stop working too."},
+  {"q": "What is the point?", "a": "Those who lead must stay active, because others are watching."}],
+ "hi": [
+  {"q": "कृष्ण काम बंद कर दें तो क्या होगा?", "a": "लोग उनका अनुसरण करके काम करना बंद कर देंगे।"},
+  {"q": "बात क्या है?", "a": "जो आगे चलते हैं उन्हें सक्रिय रहना चाहिए, क्योंकि दूसरे देख रहे हैं।"}]},
+"3.24": {"en": [
+  {"q": "Why would the world fall into chaos?", "a": "If the one who sustains order stopped acting, everything would fall apart."},
+  {"q": "How does this apply to us?", "a": "Our roles hold up others. Dropping them affects more than ourselves."}],
+ "hi": [
+  {"q": "संसार अव्यवस्था में क्यों गिरेगा?", "a": "अगर व्यवस्था चलाने वाला कर्म बंद कर दे, तो सब बिखर जाएगा।"},
+  {"q": "यह हम पर कैसे लागू होता है?", "a": "हमारी भूमिकाएँ दूसरों को भी सहारा देती हैं। उन्हें छोड़ने का असर केवल हम पर नहीं होता।"}]},
+"3.25": {"en": [
+  {"q": "How should the wise work compared to the ignorant?", "a": "With the same energy, but without attachment and for the good of all."},
+  {"q": "What changes is the motive?", "a": "Yes. The work looks the same, but the intention is selfless."}],
+ "hi": [
+  {"q": "ज्ञानी को अज्ञानी की तुलना में कैसे काम करना चाहिए?", "a": "उतनी ही लगन से, पर आसक्ति के बिना और सबके हित के लिए।"},
+  {"q": "क्या बदलता है?", "a": "उद्देश्य। काम एक जैसा दिखता है, पर भाव निःस्वार्थ होता है।"}]},
+"3.26": {"en": [
+  {"q": "Why shouldn't the wise confuse others?", "a": "Telling people to drop their work before they're ready only unsettles them."},
+  {"q": "What should the wise do instead?", "a": "Work well themselves and inspire others by example."}],
+ "hi": [
+  {"q": "ज्ञानी को दूसरों को भ्रमित क्यों नहीं करना चाहिए?", "a": "लोगों को तैयार होने से पहले काम छोड़ने को कहना उन्हें केवल अस्थिर करता है।"},
+  {"q": "ज्ञानी को क्या करना चाहिए?", "a": "खुद अच्छे से काम करें और उदाहरण से दूसरों को प्रेरित करें।"}]},
+"3.27": {"en": [
+  {"q": "Who is really doing all actions?", "a": "The forces of nature, the gunas. Ego makes us think 'I am the doer.'"},
+  {"q": "Why does this matter?", "a": "Seeing this loosens pride in success and guilt in failure."}],
+ "hi": [
+  {"q": "सब कर्म वास्तव में कौन करता है?", "a": "प्रकृति के गुण। अहंकार हमें यह सोचने पर मजबूर करता है कि 'मैं कर्ता हूँ।'"},
+  {"q": "यह क्यों महत्वपूर्ण है?", "a": "यह समझ सफलता के घमंड और असफलता के अपराधबोध को ढीला करती है।"}]},
+"3.28": {"en": [
+  {"q": "How does the wise person see action?", "a": "As the gunas interacting with each other, so they don't get attached."},
+  {"q": "Is this a way to avoid responsibility?", "a": "No. It's a way to act fully without ego taking over."}],
+ "hi": [
+  {"q": "ज्ञानी कर्म को कैसे देखता है?", "a": "गुणों के आपस में बरतने के रूप में, इसलिए वह आसक्त नहीं होता।"},
+  {"q": "क्या यह ज़िम्मेदारी से बचने का तरीका है?", "a": "नहीं। यह अहंकार के बिना पूरे मन से कर्म करने का तरीका है।"}]},
+"3.29": {"en": [
+  {"q": "What should the wise avoid doing?", "a": "Unsettling those who are still attached to their work and not ready for deeper truths."},
+  {"q": "Why?", "a": "Truth shared too early can confuse rather than help."}],
+ "hi": [
+  {"q": "ज्ञानी को क्या नहीं करना चाहिए?", "a": "उन लोगों को विचलित करना जो अभी कर्म में आसक्त हैं और गहरे सत्य के लिए तैयार नहीं।"},
+  {"q": "क्यों?", "a": "समय से पहले बताया गया सत्य मदद के बजाय भ्रम पैदा कर सकता है।"}]},
+"3.30": {"en": [
+  {"q": "What does Krishna ask of Arjuna here?", "a": "To offer every action to him, free of desire and 'mine', and fight without inner fever."},
+  {"q": "What is 'fever' here?", "a": "Anxiety and agitation. Act with a calm mind."}],
+ "hi": [
+  {"q": "कृष्ण यहाँ अर्जुन से क्या कहते हैं?", "a": "सब कर्म उन्हें अर्पित करो, कामना और ममता छोड़ो, और बिना संताप के युद्ध करो।"},
+  {"q": "यहाँ 'ज्वर' क्या है?", "a": "चिंता और बेचैनी। शांत मन से कर्म करो।"}]},
+"3.31": {"en": [
+  {"q": "Who is freed by this teaching?", "a": "Those who follow it with faith and without finding fault."},
+  {"q": "Do you need to be perfect?", "a": "No. Sincere practice and faith are enough to begin."}],
+ "hi": [
+  {"q": "इस उपदेश से कौन मुक्त होता है?", "a": "जो इसे श्रद्धा से और दोष निकाले बिना अपनाते हैं।"},
+  {"q": "क्या पूर्ण होना ज़रूरी है?", "a": "नहीं। सच्चा अभ्यास और श्रद्धा शुरुआत के लिए काफी है।"}]},
+"3.32": {"en": [
+  {"q": "What happens to those who reject this teaching?", "a": "Krishna says they lose their way, confused about what is truly good."},
+  {"q": "Is this a threat?", "a": "It's a warning: ignoring wisdom leaves you lost."}],
+ "hi": [
+  {"q": "इस उपदेश को ठुकराने वालों का क्या होता है?", "a": "कृष्ण कहते हैं कि वे भटक जाते हैं और सच्चे कल्याण को लेकर भ्रमित रहते हैं।"},
+  {"q": "क्या यह धमकी है?", "a": "यह चेतावनी है: ज्ञान को अनदेखा करने से राह खो जाती है।"}]},
+"3.33": {"en": [
+  {"q": "Why can't we just suppress our nature?", "a": "Everyone acts according to their nature. Forcing it down doesn't work for long."},
+  {"q": "So what should we do?", "a": "Work with your nature and guide it, instead of fighting it."}],
+ "hi": [
+  {"q": "हम अपने स्वभाव को दबा क्यों नहीं सकते?", "a": "हर कोई अपने स्वभाव के अनुसार कर्म करता है। उसे दबाना ज़्यादा देर नहीं चलता।"},
+  {"q": "तो क्या करें?", "a": "स्वभाव से लड़ने के बजाय उसके साथ काम करो और उसे दिशा दो।"}]},
+"3.34": {"en": [
+  {"q": "What are attraction and aversion?", "a": "Each sense naturally likes some things and dislikes others."},
+  {"q": "Why call them enemies?", "a": "If they control you, they pull you off course."}],
+ "hi": [
+  {"q": "राग और द्वेष क्या हैं?", "a": "हर इंद्रिय को स्वाभाविक रूप से कुछ चीज़ें प्रिय और कुछ अप्रिय लगती हैं।"},
+  {"q": "इन्हें शत्रु क्यों कहा?", "a": "अगर ये आपको चलाने लगें, तो राह से भटका देते हैं।"}]},
+"3.35": {"en": [
+  {"q": "Why is your own duty better, even done poorly?", "a": "It fits who you are. Living someone else's path, however well, brings fear."},
+  {"q": "How does this apply to careers?", "a": "Follow what suits your nature, not what looks impressive in someone else's life."}],
+ "hi": [
+  {"q": "अपना धर्म, कमियों के साथ भी, बेहतर क्यों है?", "a": "वह आपके स्वभाव के अनुकूल है। दूसरे का मार्ग, कितना भी अच्छा, भय लाता है।"},
+  {"q": "करियर पर यह कैसे लागू होता है?", "a": "जो आपके स्वभाव के अनुकूल है वह करो, न कि जो दूसरों के जीवन में प्रभावशाली दिखता है।"}]},
+"3.36": {"en": [
+  {"q": "What does Arjuna ask?", "a": "What pushes people to do wrong, even against their will?"},
+  {"q": "Why is this question relatable?", "a": "We all know moments of acting against our better judgment."}],
+ "hi": [
+  {"q": "अर्जुन क्या पूछता है?", "a": "मनुष्य न चाहते हुए भी पाप क्यों करता है, मानो कोई ज़बरदस्ती करा रहा हो?"},
+  {"q": "यह प्रश्न क्यों अपना-सा लगता है?", "a": "हम सबने ऐसे पल देखे हैं जब हमने अपनी समझ के विरुद्ध काम किया।"}]},
+"3.37": {"en": [
+  {"q": "What is the enemy Krishna names?", "a": "Desire, which turns into anger. Both come from rajas, the restless quality."},
+  {"q": "Why is desire 'a great devourer'?", "a": "It is never satisfied. The more you feed it, the more it wants."}],
+ "hi": [
+  {"q": "कृष्ण किस शत्रु का नाम लेते हैं?", "a": "काम, जो क्रोध बन जाता है। दोनों रजोगुण से उत्पन्न होते हैं।"},
+  {"q": "काम को 'महाशन' क्यों कहा?", "a": "यह कभी तृप्त नहीं होता। जितना खिलाओ, उतना और माँगता है।"}]},
+"3.38": {"en": [
+  {"q": "What do the three examples mean?", "a": "Desire covers wisdom lightly like smoke over fire, more like dust on a mirror, or completely like a womb covering an embryo."},
+  {"q": "What is the takeaway?", "a": "Desire hides clarity in different degrees, but the light is always beneath."}],
+ "hi": [
+  {"q": "तीन उदाहरणों का क्या अर्थ है?", "a": "काम ज्ञान को धुएँ से ढकी आग की तरह हल्का, धूल से ढके दर्पण की तरह ज़्यादा, या गर्भ की झिल्ली की तरह पूरी तरह ढकता है।"},
+  {"q": "मुख्य सीख क्या है?", "a": "काम स्पष्टता को अलग-अलग मात्रा में ढकता है, पर प्रकाश हमेशा नीचे रहता है।"}]},
+"3.39": {"en": [
+  {"q": "Why is desire called the constant enemy of the wise?", "a": "It keeps covering wisdom and is never satisfied, like a fire that always wants more fuel."},
+  {"q": "Even the wise struggle?", "a": "Yes. That's why constant awareness matters."}],
+ "hi": [
+  {"q": "काम को ज्ञानी का नित्य शत्रु क्यों कहा?", "a": "यह ज्ञान को ढकता रहता है और कभी तृप्त नहीं होता, जैसे आग हमेशा और ईंधन चाहती है।"},
+  {"q": "क्या ज्ञानी भी जूझते हैं?", "a": "हाँ। इसलिए निरंतर सजगता ज़रूरी है।"}]},
+"3.40": {"en": [
+  {"q": "Where does desire hide?", "a": "In the senses, the mind and the intellect."},
+  {"q": "Why does knowing its hiding place help?", "a": "You can guard those places and catch desire early."}],
+ "hi": [
+  {"q": "काम कहाँ छिपा रहता है?", "a": "इंद्रियों, मन और बुद्धि में।"},
+  {"q": "उसका ठिकाना जानने से मदद कैसे मिलती है?", "a": "आप उन जगहों की रक्षा कर सकते हैं और काम को शुरू में ही पकड़ सकते हैं।"}]},
+"3.41": {"en": [
+  {"q": "Where should we start controlling desire?", "a": "With the senses, right from the beginning."},
+  {"q": "Why the senses first?", "a": "They are the entry point. Control them and desire loses its grip."}],
+ "hi": [
+  {"q": "काम को वश में करना कहाँ से शुरू करें?", "a": "शुरुआत में ही इंद्रियों से।"},
+  {"q": "पहले इंद्रियाँ ही क्यों?", "a": "वे प्रवेश द्वार हैं। उन्हें वश में करो तो काम की पकड़ ढीली होती है।"}]},
+"3.42": {"en": [
+  {"q": "What is the ladder Krishna describes?", "a": "The senses are powerful, the mind is higher, the intellect higher still, and the Self is highest of all."},
+  {"q": "Why does this ladder matter?", "a": "Knowing what is highest in you helps you rule what is lower."}],
+ "hi": [
+  {"q": "कृष्ण कौन सी सीढ़ी बताते हैं?", "a": "इंद्रियाँ प्रबल हैं, मन उनसे ऊपर है, बुद्धि मन से ऊपर, और आत्मा सबसे ऊपर है।"},
+  {"q": "यह सीढ़ी क्यों महत्वपूर्ण है?", "a": "अपने भीतर सबसे ऊँचे को जानकर आप निचले को वश में कर सकते हैं।"}]},
+"3.43": {"en": [
+  {"q": "How do we defeat desire?", "a": "By knowing the Self, which is beyond the intellect, and steadying the mind with that knowledge."},
+  {"q": "Is it easy?", "a": "Krishna admits desire is hard to beat, but says it can be done."}],
+ "hi": [
+  {"q": "काम को कैसे जीतें?", "a": "बुद्धि से परे आत्मा को जानकर, और उस ज्ञान से मन को स्थिर करके।"},
+  {"q": "क्या यह आसान है?", "a": "कृष्ण मानते हैं कि काम को जीतना कठिन है, पर संभव है।"}]}
+}
