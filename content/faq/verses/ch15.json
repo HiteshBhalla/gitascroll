@@ -1,0 +1,122 @@
+{
+"15.1": {"en": [
+  {"q": "What is the upside-down tree?", "a": "The world, pictured as an ashvattha tree with roots above in the Divine and branches spreading below."},
+  {"q": "Why are its leaves the Vedas?", "a": "Scriptures nourish and protect the tree of life, like leaves."}],
+ "hi": [
+  {"q": "उल्टा वृक्ष क्या है?", "a": "संसार, जिसे अश्वत्थ वृक्ष के रूप में दिखाया गया है, जिसकी जड़ें ऊपर भगवान में और शाखाएँ नीचे फैली हैं।"},
+  {"q": "इसके पत्ते वेद क्यों हैं?", "a": "शास्त्र जीवन रूपी वृक्ष का पत्तों की तरह पोषण और रक्षा करते हैं।"}]},
+"15.2": {"en": [
+  {"q": "How do the branches grow?", "a": "Fed by the gunas, with sense objects as buds, spreading up and down."},
+  {"q": "What are the roots below?", "a": "Our actions and desires, which tie us to the human world."}],
+ "hi": [
+  {"q": "शाखाएँ कैसे बढ़ती हैं?", "a": "गुणों से पोषित, विषय उनकी कोंपलें, ऊपर-नीचे फैलती हुई।"},
+  {"q": "नीचे की जड़ें क्या हैं?", "a": "हमारे कर्म और इच्छाएँ, जो हमें मनुष्य लोक से बाँधती हैं।"}]},
+"15.3": {"en": [
+  {"q": "Why can't we see the tree's form?", "a": "Its beginning, end and base aren't visible from inside it."},
+  {"q": "How do we cut it?", "a": "With the strong axe of detachment."}],
+ "hi": [
+  {"q": "वृक्ष का रूप क्यों नहीं दिखता?", "a": "भीतर से उसका आदि, अंत और आधार नहीं दिखता।"},
+  {"q": "इसे कैसे काटें?", "a": "दृढ़ वैराग्य रूपी शस्त्र से।"}]},
+"15.4": {"en": [
+  {"q": "What should one seek after cutting the tree?", "a": "The goal from which there's no return: the Primal Person."},
+  {"q": "How should we approach him?", "a": "By taking refuge in him, the source of all."}],
+ "hi": [
+  {"q": "वृक्ष काटने के बाद क्या खोजें?", "a": "वह पद जहाँ से लौटना नहीं: आदि पुरुष।"},
+  {"q": "उनके पास कैसे जाएँ?", "a": "उनकी शरण लेकर, जो सबके मूल हैं।"}]},
+"15.5": {"en": [
+  {"q": "Who reaches the eternal goal?", "a": "Those free from pride and delusion, who have conquered attachment and desire."},
+  {"q": "What else marks them?", "a": "They are free from pairs of opposites and always devoted to the Self."}],
+ "hi": [
+  {"q": "अविनाशी पद कौन पाता है?", "a": "जो मान और मोह से मुक्त हैं, जिन्होंने आसक्ति और कामना जीती है।"},
+  {"q": "उनके और क्या लक्षण हैं?", "a": "वे द्वंद्वों से मुक्त और सदा आत्मा में लगे हैं।"}]},
+"15.6": {"en": [
+  {"q": "What lights up Krishna's abode?", "a": "Not the sun, moon or fire. It is self-luminous."},
+  {"q": "What happens to those who reach it?", "a": "They don't return."}],
+ "hi": [
+  {"q": "कृष्ण के धाम को कौन प्रकाशित करता है?", "a": "न सूर्य, न चंद्रमा, न अग्नि। वह स्वयं प्रकाशमान है।"},
+  {"q": "वहाँ पहुँचने वालों का क्या होता है?", "a": "वे लौटते नहीं।"}]},
+"15.7": {"en": [
+  {"q": "What is the individual soul?", "a": "An eternal part of Krishna, living in the world."},
+  {"q": "What does it draw to itself?", "a": "The mind and five senses, which belong to nature."}],
+ "hi": [
+  {"q": "जीवात्मा क्या है?", "a": "कृष्ण का सनातन अंश, जो संसार में रहता है।"},
+  {"q": "वह किसे अपनी ओर खींचता है?", "a": "मन और पाँच इंद्रियों को, जो प्रकृति में स्थित हैं।"}]},
+"15.8": {"en": [
+  {"q": "How does the soul move between bodies?", "a": "Like wind carrying fragrance from flowers, it carries the mind and senses to a new body."},
+  {"q": "What does the image suggest?", "a": "Our tendencies travel with us."}],
+ "hi": [
+  {"q": "आत्मा एक शरीर से दूसरे में कैसे जाता है?", "a": "जैसे वायु फूलों से गंध ले जाती है, वैसे ही वह मन और इंद्रियों को नए शरीर में ले जाता है।"},
+  {"q": "यह चित्र क्या संकेत देता है?", "a": "हमारे संस्कार हमारे साथ चलते हैं।"}]},
+"15.9": {"en": [
+  {"q": "How does the soul experience the world?", "a": "Through the ear, eye, touch, taste, smell and mind."},
+  {"q": "Is the soul the senses?", "a": "No. It uses them, like a person using tools."}],
+ "hi": [
+  {"q": "आत्मा संसार का अनुभव कैसे करता है?", "a": "कान, आँख, त्वचा, जीभ, नाक और मन के द्वारा।"},
+  {"q": "क्या आत्मा इंद्रियाँ है?", "a": "नहीं। वह उनका उपयोग करता है, जैसे कोई औज़ार का।"}]},
+"15.10": {"en": [
+  {"q": "Why don't most people see the soul?", "a": "The deluded don't notice it leaving, staying or experiencing."},
+  {"q": "Who sees it?", "a": "Those with the eye of wisdom."}],
+ "hi": [
+  {"q": "अधिकतर लोग आत्मा को क्यों नहीं देखते?", "a": "मूढ़ लोग उसे जाते, रहते या भोगते नहीं देखते।"},
+  {"q": "कौन देखता है?", "a": "जिनके पास ज्ञान चक्षु हैं।"}]},
+"15.11": {"en": [
+  {"q": "Who sees the Self within?", "a": "Yogis who strive sincerely."},
+  {"q": "Why do some fail despite trying?", "a": "Their minds are not yet purified."}],
+ "hi": [
+  {"q": "भीतर आत्मा को कौन देखता है?", "a": "सच्चे प्रयास करने वाले योगी।"},
+  {"q": "कुछ प्रयास करके भी क्यों नहीं देख पाते?", "a": "उनका मन अभी शुद्ध नहीं हुआ।"}]},
+"15.12": {"en": [
+  {"q": "Whose light is in the sun, moon and fire?", "a": "Krishna's."},
+  {"q": "What does this teach?", "a": "All light comes from one source."}],
+ "hi": [
+  {"q": "सूर्य, चंद्रमा और अग्नि में किसका तेज है?", "a": "कृष्ण का।"},
+  {"q": "यह क्या सिखाता है?", "a": "सारा प्रकाश एक ही स्रोत से आता है।"}]},
+"15.13": {"en": [
+  {"q": "How does Krishna support life?", "a": "He enters the earth to hold up beings, and as the moon's essence he nourishes plants."},
+  {"q": "What is Soma here?", "a": "The life-giving essence that feeds all plants."}],
+ "hi": [
+  {"q": "कृष्ण जीवन को कैसे धारण करते हैं?", "a": "वे पृथ्वी में प्रवेश कर प्राणियों को धारण करते हैं, और चंद्रमा बनकर औषधियों का पोषण करते हैं।"},
+  {"q": "यहाँ सोम क्या है?", "a": "जीवन देने वाला रस जो सब वनस्पतियों को पोषित करता है।"}]},
+"15.14": {"en": [
+  {"q": "How is Krishna present in our bodies?", "a": "As the digestive fire, working with the breath to digest food."},
+  {"q": "What does this show?", "a": "The Divine is present even in everyday body functions."}],
+ "hi": [
+  {"q": "कृष्ण हमारे शरीर में कैसे हैं?", "a": "वैश्वानर अग्नि बनकर, प्राण और अपान के साथ अन्न पचाते हैं।"},
+  {"q": "यह क्या दिखाता है?", "a": "भगवान शरीर की रोज़ की क्रियाओं में भी उपस्थित हैं।"}]},
+"15.15": {"en": [
+  {"q": "Where is Krishna in us?", "a": "Seated in every heart. Memory, knowledge and forgetting come from him."},
+  {"q": "What is the goal of all scripture?", "a": "To know him."}],
+ "hi": [
+  {"q": "कृष्ण हममें कहाँ हैं?", "a": "हर हृदय में स्थित। स्मृति, ज्ञान और विस्मृति उन्हीं से हैं।"},
+  {"q": "सब शास्त्रों का लक्ष्य क्या है?", "a": "उन्हें जानना।"}]},
+"15.16": {"en": [
+  {"q": "What are the two kinds of beings?", "a": "The perishable (all beings) and the imperishable (the unchanging soul)."},
+  {"q": "What does 'perishable' mean here?", "a": "Bodies and forms that change and end."}],
+ "hi": [
+  {"q": "दो प्रकार के पुरुष कौन हैं?", "a": "क्षर (सब प्राणी) और अक्षर (अविकारी आत्मा)।"},
+  {"q": "यहाँ 'क्षर' का क्या अर्थ है?", "a": "शरीर और रूप जो बदलते और मिटते हैं।"}]},
+"15.17": {"en": [
+  {"q": "Who is beyond both?", "a": "The Supreme Person, called the Paramatma, who pervades and supports the three worlds."},
+  {"q": "What makes him different?", "a": "He is the unchanging Lord over both."}],
+ "hi": [
+  {"q": "दोनों से परे कौन है?", "a": "उत्तम पुरुष, जिन्हें परमात्मा कहते हैं, जो तीनों लोकों में व्याप्त होकर उन्हें धारण करते हैं।"},
+  {"q": "वे अलग कैसे हैं?", "a": "वे दोनों के ऊपर अविनाशी ईश्वर हैं।"}]},
+"15.18": {"en": [
+  {"q": "Why is Krishna called Purushottama?", "a": "Because he is beyond the perishable and higher than the imperishable."},
+  {"q": "What does the name mean?", "a": "The Supreme Person."}],
+ "hi": [
+  {"q": "कृष्ण को पुरुषोत्तम क्यों कहा जाता है?", "a": "क्योंकि वे क्षर से परे और अक्षर से भी उत्तम हैं।"},
+  {"q": "इस नाम का क्या अर्थ है?", "a": "पुरुषों में उत्तम।"}]},
+"15.19": {"en": [
+  {"q": "What happens to one who knows Krishna as the Supreme?", "a": "They know everything worth knowing and worship him with their whole being."},
+  {"q": "Why 'with their whole being'?", "a": "True knowing naturally becomes complete devotion."}],
+ "hi": [
+  {"q": "कृष्ण को पुरुषोत्तम जानने वाले का क्या होता है?", "a": "वह सब कुछ जान लेता है और पूरे भाव से उन्हें भजता है।"},
+  {"q": "'सर्वभाव से' क्यों?", "a": "सच्चा जानना स्वाभाविक रूप से पूर्ण भक्ति बन जाता है।"}]},
+"15.20": {"en": [
+  {"q": "How does Krishna describe this teaching?", "a": "As the most secret teaching."},
+  {"q": "What does understanding it bring?", "a": "Wisdom and the fulfilment of life's purpose."}],
+ "hi": [
+  {"q": "कृष्ण इस उपदेश को कैसे बताते हैं?", "a": "सबसे गुप्त शास्त्र।"},
+  {"q": "इसे समझने से क्या मिलता है?", "a": "बुद्धिमत्ता और जीवन के उद्देश्य की पूर्ति।"}]}
+}

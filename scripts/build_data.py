@@ -140,6 +140,9 @@ def main():
     missing = [f"{c}.{v['v']}" for c, vs in by_chapter.items() for v in vs if f"{c}.{v['v']}" not in shorts]
     if missing:
         raise SystemExit(f"Verses without Shorts: {missing}")
+    no_faq = [f"{c}.{v['v']}" for c, vs in by_chapter.items() for v in vs if "faq" not in v]
+    if no_faq:
+        raise SystemExit(f"Verses without FAQs: {no_faq}")
 
     data_dir = PUBLIC / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
