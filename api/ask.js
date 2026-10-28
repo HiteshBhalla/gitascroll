@@ -35,7 +35,7 @@ const SYSTEM_PROMPT = [
   "# Chapters",
   ...context.chapters.map((c) => `Chapter ${c.n}: ${c.name} (${c.meaning}). ${c.summary.replace(/\s+/g, " ")}`),
   "",
-  "# Verses (English translation by Swami Adidevananda)",
+  "# Verses (English translation)",
   ...context.verses.map((v) => `[${v.key}] ${v.en.replace(/\s+/g, " ")}`),
 ].join("\n");
 
@@ -74,7 +74,7 @@ export function buildUserTurn(question, lang) {
     .join("\n\n");
   return [
     `App language: ${lang === "hi" ? "Hindi" : "English"}`,
-    excerpts ? `Commentary excerpts that may help (Swami Sivananda):\n${excerpts}` : "",
+    excerpts ? `Commentary excerpts that may help:\n${excerpts}` : "",
     `Question: ${question}`,
   ].filter(Boolean).join("\n\n");
 }
