@@ -154,13 +154,63 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 .ask-form button:disabled{opacity:.5}
 .toast{position:fixed;z-index:40;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);transform:translateX(-50%);background:var(--ink);color:var(--night);padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;max-width:calc(100% - 32px)}
 .loading{display:grid;place-items:center;height:100%;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){.hint svg{animation:none}.dots i{transition:none}}
+
+/* landing: the Gita as a rolled scroll; tapping unrolls it and opens Chapter 1 */
+.landing{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center;
+  padding:calc(env(safe-area-inset-top,0px) + 24px) 16px calc(env(safe-area-inset-bottom,0px) + 24px);
+  background:radial-gradient(90% 60% at 50% 100%,rgba(196,83,45,.35),transparent 70%),radial-gradient(70% 45% at 50% 0%,rgba(243,169,59,.12),transparent 70%),var(--night);
+  transition:opacity .5s ease,visibility .5s}
+.landing.gone{opacity:0;visibility:hidden}
+.scroll{display:flex;flex-direction:column;align-items:center;cursor:pointer;-webkit-tap-highlight-color:transparent;filter:drop-shadow(0 18px 30px rgba(0,0,0,.5))}
+.roll{position:relative;z-index:2;width:min(280px,78vw);height:30px;border-radius:15px;
+  background:linear-gradient(#5b3313,#b97a35 35%,#e2b062 50%,#b97a35 65%,#5b3313)}
+.roll::before,.roll::after{content:"";position:absolute;top:-5px;width:16px;height:40px;border-radius:8px;background:linear-gradient(#7d4a17,#f3a93b 50%,#7d4a17)}
+.roll::before{left:-12px}.roll::after{right:-12px}
+.paper{position:relative;width:min(244px,68vw);height:28px;overflow:hidden;margin:-6px 0;
+  background:linear-gradient(90deg,#d9c08c,#f5e6c4 12%,#fbf1da 50%,#f5e6c4 88%,#d9c08c);color:#5a1d12;
+  transition:height 1s cubic-bezier(.6,.05,.3,1)}
+.paper-in{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:24px 18px;opacity:0;transition:opacity .4s .55s}
+.paper .om{font-family:var(--f-shloka);font-size:56px;line-height:1;color:#b4471f}
+.paper .p-sa{font-family:var(--f-shloka);font-size:26px;line-height:1.3}
+.paper .p-sh{font-family:var(--f-shloka);font-size:15px;line-height:1.7;margin-top:6px;opacity:.85}
+.tie{position:absolute;z-index:3;left:50%;top:50%;width:26px;height:74px;transform:translate(-50%,-50%);border-radius:4px;
+  background:linear-gradient(90deg,#8e1b1b,#d33b2c 50%,#8e1b1b);box-shadow:0 2px 6px rgba(0,0,0,.4);transition:opacity .3s}
+.roll,.paper,.scroll-wrap,.paper-in>span{display:block}
+.scroll-wrap{position:relative}
+.paper-in{display:flex}
+.scroll.open .paper{height:min(330px,52vh)}
+.scroll.open .paper-in{opacity:1}
+.scroll.open .tie{opacity:0}
+.l-sa{font-family:var(--f-shloka);font-size:clamp(34px,10vw,48px);line-height:1.2}
+.l-en{font-family:var(--f-display);font-size:22px;color:var(--muted);margin-top:4px}
+.l-meta{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:10px}
+.l-cta{display:flex;align-items:center;gap:8px;color:var(--ink);font-size:15px}
+.l-cta svg{animation:bob 1.6s ease-in-out infinite}
+.landing.opening .l-cta{opacity:0}
+@media (prefers-reduced-motion:reduce){.paper,.paper-in,.tie,.landing{transition:none}.l-cta svg{animation:none}.hint svg{animation:none}.dots i{transition:none}}
 </style>
 </head>
 <body>
 
+<div class="landing" id="landing" hidden>
+  <div>
+    <div class="l-sa">श्रीमद्भगवद्गीता</div>
+    <div class="l-en">Bhagwat Gita</div>
+    <div class="l-meta" id="landMeta">18 chapters · 700 verses</div>
+  </div>
+  <button class="scroll" id="scroll" aria-label="Open the Bhagwat Gita at Chapter 1">
+    <span class="roll"></span>
+    <span class="scroll-wrap"><span class="paper"><span class="paper-in">
+      <span class="om">ॐ</span>
+      <span class="p-sa">श्रीमद्भगवद्गीता</span>
+      <span class="p-sh">धर्मक्षेत्रे कुरुक्षेत्रे<br>समवेता युयुत्सवः ।</span>
+    </span></span><span class="tie"></span></span>
+    <span class="roll"></span>
+  </button>
+  <div class="l-cta" id="landCta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span>Tap the scroll to begin</span></div>
+</div>
 <header class="top">
-  <button class="chap-btn" id="chapBtn" aria-label="Choose chapter"><small id="chapNo">Chapter 2</small><span id="chapName">Sankhya Yoga</span></button>
+  <button class="chap-btn" id="chapBtn" aria-label="Choose chapter"><small id="chapNo">Chapter 1</small><span id="chapName">Arjuna Vishada Yoga</span></button>
   <button class="ask-btn" id="askBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg><span id="askBtnLabel">Ask</span></button>
   <div class="seg" role="group" aria-label="Language">
     <button id="langEn" aria-pressed="true">EN</button><button id="langHi" aria-pressed="false">हिं</button>
@@ -190,7 +240,7 @@ const T={
   en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read more',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',sideways:'Swipe sideways for meaning',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR',faq:'FAQ',brandTag:'One verse at a time'},
   hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'और पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',sideways:'अर्थ के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR',faq:'सवाल-जवाब',brandTag:'हर दिन एक श्लोक'}
 };
-const S={lang:'en',panel:0,ch:2,chapters:null,cache:{},saved:new Set()};
+const S={lang:'en',panel:0,ch:1,chapters:null,cache:{},saved:new Set()};
 try{const p=JSON.parse(localStorage.getItem('gita-prefs')||'{}');if(p.lang)S.lang=p.lang;if(p.panel)S.panel=+p.panel||0;(p.saved||[]).forEach(x=>S.saved.add(x))}catch(e){}
 function persist(){try{localStorage.setItem('gita-prefs',JSON.stringify({lang:S.lang,panel:S.panel,saved:[...S.saved]}))}catch(e){}}
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -403,8 +453,26 @@ window.addEventListener('hashchange',()=>{const v=fromHash();render(v)});
 (async()=>{
   syncToggles();syncAsk();
   try{S.chapters=await getJSON('data/chapters.json')}catch(e){$('#feed').innerHTML='<div class="loading">Could not load the Gita. Check your connection and reopen the page.</div>';return}
-  const v=fromHash();await render(v);
+  const v=fromHash();
+  if(!location.hash)showLanding();
+  await render(v);
 })();
+/* landing scroll: shown when the site opens without a verse link */
+function showLanding(){
+  const l=$('#landing');l.hidden=false;
+  $('#landCta span').textContent=S.lang==='hi'?'शुरू करने के लिए ग्रंथ पर टैप करें':'Tap the scroll to begin';
+  $('#landMeta').textContent=S.lang==='hi'?'18 अध्याय · 700 श्लोक':'18 chapters · 700 verses';
+}
+$('#scroll').onclick=()=>{
+  const l=$('#landing');if(l.classList.contains('opening'))return;
+  l.classList.add('opening');$('#scroll').classList.add('open');
+  const quick=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  setTimeout(()=>{
+    if(S.ch!==1){S.ch=1;render(null)}else $('#feed').scrollTop=0;
+    l.classList.add('gone');setHash();
+    setTimeout(()=>{l.hidden=true;l.classList.remove('opening','gone');$('#scroll').classList.remove('open')},quick?0:500);
+  },quick?0:1500);
+};
 if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('/sw.js').catch(()=>{});
 </script>
 </body>
