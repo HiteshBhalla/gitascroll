@@ -47,3 +47,16 @@ Ask Gita needs `ANTHROPIC_API_KEY` in the environment (for `vercel dev`, put it 
 ## Content sources
 
 Text comes from the Bhagavad-Gita-JSON-data set: translations by Swami Adidevananda (English) and Swami Ramsukhdas (Hindi), commentary by Swami Sivananda (English) and Swami Chinmayananda (Hindi). Check the licence of these translations and commentaries before commercial use. Shorts and chapter TL;DRs were written for this project.
+
+## Google AdSense
+
+Ads are off until `public/config.js` has your publisher ID and ad slot. Until an ad fills, each in-feed ad card shows a Bhagwat Gita card instead.
+
+1. Sign up at adsense.google.com with your own domain (AdSense does not approve `*.vercel.app` addresses).
+2. Create a display ad unit and put the IDs in `public/config.js`:
+   `adsenseClient: "ca-pub-…"`, `adsenseSlot: "…"`.
+3. Add `public/ads.txt` containing `google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0` (your number, without `ca-`).
+
+## Home-screen app
+
+The site is an installable web app (`manifest.webmanifest`, icons in `public/icons/`, offline cache in `sw.js`). On iPhone: Safari, Share, Add to Home Screen. The service worker only registers over HTTPS.

@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Read and listen to the Bhagavad Gita one verse at a time: Sanskrit, meaning and 30-word Shorts in English and Hindi.">
 <title>Gita Scroll</title>
+<meta name="theme-color" content="#0d1027">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Gita Scroll">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gotu&family=Mukta:wght@400;600;700&family=Tiro+Devanagari+Sanskrit&display=swap">
 <style>
@@ -100,7 +106,15 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 
 /* ad + end cards */
 .ad .inner{align-items:center;text-align:center}
-.ad-box{width:100%;max-width:340px;aspect-ratio:4/5;border:1px dashed var(--line);border-radius:18px;display:grid;place-items:center;color:var(--muted);padding:16px}
+.ad-slot{position:relative;width:100%;max-width:340px;aspect-ratio:4/5;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--surface)}
+.ad-brand{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:20px}
+.ad-brand .om{font-family:var(--f-shloka);font-size:64px;line-height:1;color:var(--accent)}
+.ad-brand .b-sa{font-family:var(--f-shloka);font-size:28px;margin-top:10px}
+.ad-brand .b-en{font-family:var(--f-display);font-size:22px}
+.ad-brand .b-tag{color:var(--muted);margin-top:6px}
+.ad-slot .adsbygoogle{position:relative;z-index:1;width:100%;height:100%}
+.ad-slot .adsbygoogle[data-ad-status="filled"]{background:var(--surface)}
+.ad-slot .adsbygoogle[data-ad-status="unfilled"]{display:none!important}
 .big-btn{background:var(--accent);color:var(--night);font-weight:700;padding:12px 22px;border-radius:999px;align-self:flex-start}
 
 /* sheets */
@@ -165,6 +179,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 </section>
 <div class="toast" id="toast" hidden></div>
 
+<script src="config.js"></script>
 <script src="genz.js"></script>
 <script>
 window.addEventListener('error',e=>{const f=document.getElementById('feed');if(f&&!f.querySelector('.card'))f.innerHTML='<div class="loading">Something went wrong loading the page: '+String(e.message).replace(/</g,'&lt;')+'</div>'});
@@ -172,8 +187,8 @@ const $=s=>document.querySelector(s);
 const HUES=['#4b3bb0','#c4532d','#2fb3a6','#b8892d','#3a6fd8','#8f3fa8','#2f8f5a','#c2410c','#4f46e5','#b45309','#0e7490','#be185d','#65a30d','#7c3aed','#0891b2','#dc2626','#ca8a04','#f3a93b'];
 const AD_EVERY=8;
 const T={
-  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read more',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',ad:'Ad space',adNote:'A sponsored card will show here every few verses.',sideways:'Swipe sideways for meaning',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR',faq:'FAQ'},
-  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'और पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',ad:'विज्ञापन',adNote:'हर कुछ श्लोकों के बाद यहाँ एक विज्ञापन कार्ड दिखेगा।',sideways:'अर्थ के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR',faq:'सवाल-जवाब'}
+  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read more',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',sideways:'Swipe sideways for meaning',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR',faq:'FAQ',brandTag:'One verse at a time'},
+  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'और पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',sideways:'अर्थ के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR',faq:'सवाल-जवाब',brandTag:'हर दिन एक श्लोक'}
 };
 const S={lang:'en',panel:0,ch:2,chapters:null,cache:{},saved:new Set()};
 try{const p=JSON.parse(localStorage.getItem('gita-prefs')||'{}');if(p.lang)S.lang=p.lang;if(p.panel)S.panel=+p.panel||0;(p.saved||[]).forEach(x=>S.saved.add(x))}catch(e){}
@@ -222,7 +237,18 @@ function verseCard(c,v){
       <button data-act="save" class="${saved?'on':''}" aria-pressed="${saved}"><span class="ic">${ICON.save}</span><span>${t('save')}</span></button>
     </div></article>`;
 }
-function adCard(c){return `<article class="card ad" style="--hue:${HUES[c.n-1]}"><div class="bg"></div><div class="inner"><div class="label">${t('ad')}</div><div class="ad-box">${t('adNote')}</div></div></article>`}
+// In-feed card: the Bhagwat Gita card, with an AdSense unit on top of it once AdSense is set up and an ad fills.
+const CFG=window.GITA_CONFIG||{}, ADS=!!(CFG.adsenseClient&&CFG.adsenseSlot);
+function adCard(c){return `<article class="card ad" style="--hue:${HUES[c.n-1]}"><div class="bg"></div><div class="inner"><div class="ad-slot">
+  <div class="ad-brand"><div class="om">ॐ</div><div class="b-sa">श्रीमद्भगवद्गीता</div><div class="b-en">Bhagwat Gita</div><div class="b-tag">${t('brandTag')}</div></div>
+  ${ADS?`<ins class="adsbygoogle" style="display:block" data-ad-client="${esc(CFG.adsenseClient)}" data-ad-slot="${esc(CFG.adsenseSlot)}" data-ad-format="auto" data-full-width-responsive="true"></ins>`:''}
+</div></div></article>`}
+let adsLoaded=false;
+function fillAds(root){
+  if(!ADS)return;
+  if(!adsLoaded){adsLoaded=true;const s=document.createElement('script');s.async=true;s.crossOrigin='anonymous';s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+encodeURIComponent(CFG.adsenseClient);document.head.appendChild(s)}
+  root.querySelectorAll('ins.adsbygoogle:not([data-adsbygoogle-status])').forEach(()=>{try{(window.adsbygoogle=window.adsbygoogle||[]).push({})}catch(e){}});
+}
 function endCard(c){
   const nx=c.n<18?S.chapters[c.n]:null;
   return `<article class="card" style="--hue:${HUES[c.n-1]}"><div class="bg"></div><div class="inner">
@@ -243,6 +269,7 @@ async function render(scrollToVerse){
   verses.forEach((v,i)=>{h+=verseCard(c,v);if((i+1)%AD_EVERY===0&&i<verses.length-1)h+=adCard(c)});
   h+=endCard(c);
   feed.innerHTML=h;
+  fillAds(feed);
   syncPagers(null);
   feed.querySelectorAll('.pager').forEach(p=>{let pt;p.addEventListener('scroll',()=>{
     if(p._sync)return;
@@ -378,6 +405,7 @@ window.addEventListener('hashchange',()=>{const v=fromHash();render(v)});
   try{S.chapters=await getJSON('data/chapters.json')}catch(e){$('#feed').innerHTML='<div class="loading">Could not load the Gita. Check your connection and reopen the page.</div>';return}
   const v=fromHash();await render(v);
 })();
+if('serviceWorker' in navigator&&location.protocol==='https:')navigator.serviceWorker.register('/sw.js').catch(()=>{});
 </script>
 </body>
 </html>
