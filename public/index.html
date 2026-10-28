@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Read and listen to the Bhagavad Gita one verse at a time: Sanskrit, meaning, commentary and 30-word Shorts in English and Hindi.">
+<title>Gita Scroll</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gotu&family=Mukta:wght@400;600;700&family=Tiro+Devanagari+Sanskrit&display=swap">
+<style>
+/* Layout: full-screen vertical card feed (swipe up = next verse); each verse card is a sideways pager of panels. Single dark "night at Kurukshetra" look. */
+:root{
+  --night:#0d1027; --surface:#171b3d; --surface-2:#20265a; --ink:#f3efe6; --muted:#a7abc9;
+  --marigold:#f3a93b; --peacock:#2fb3a6; --pink:#ff7ab6; --line:rgba(243,239,230,.14);
+  --accent:var(--marigold);
+  --f-display:"Gotu","Mukta",system-ui,sans-serif;
+  --f-body:"Mukta",system-ui,sans-serif;
+  --f-shloka:"Tiro Devanagari Sanskrit","Noto Serif Devanagari",serif;
+  color-scheme:dark;
+}
+body{margin:0}
+[hidden]{display:none!important}
+img{max-width:100%}
+*,*::before,*::after{box-sizing:border-box}
+html[lang="hi"] .ch-num,html[lang="hi"] .vtag,html[lang="hi"] .label,html[lang="hi"] .chap-btn small{letter-spacing:0;text-transform:none}
+html,body{height:100%}
+body{background:var(--night);color:var(--ink);font-family:var(--f-body);font-size:16px;overflow:hidden}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:8px}
+
+.top{position:fixed;inset:0 0 auto;z-index:20;display:flex;align-items:center;gap:8px;
+  padding:calc(env(safe-area-inset-top,0px) + 10px) max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));
+  background:linear-gradient(var(--night),rgba(13,16,39,0))}
+.chap-btn{display:flex;flex-direction:column;align-items:flex-start;min-width:0;flex:1;text-align:left}
+.chap-btn small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.chap-btn span{font-family:var(--f-display);font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.seg{display:flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:rgba(23,27,61,.8)}
+.seg button{padding:4px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--night);font-weight:700}
+
+.feed{height:100%;overflow-y:scroll;scroll-snap-type:y mandatory;scrollbar-width:none}
+.feed::-webkit-scrollbar{display:none}
+.card{height:100%;scroll-snap-align:start;scroll-snap-stop:always;position:relative;overflow:hidden;
+  display:flex;flex-direction:column}
+.card .bg{position:absolute;inset:0;z-index:0;background:
+  radial-gradient(120% 70% at 50% 108%,color-mix(in srgb,var(--hue) 55%,transparent),transparent 70%),
+  radial-gradient(60% 40% at 85% 10%,rgba(243,169,59,.10),transparent 70%),var(--night)}
+.inner{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;
+  padding:76px max(20px,env(safe-area-inset-right,0px)) 96px max(20px,env(safe-area-inset-left,0px));max-width:620px;margin:0 auto;width:100%}
+
+/* chapter opener */
+.ch-num{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.ch-sa{font-family:var(--f-shloka);font-size:clamp(34px,10vw,52px);line-height:1.15;text-wrap:balance}
+.ch-en{font-family:var(--f-display);font-size:20px;color:var(--muted)}
+.summary{line-height:1.6;color:var(--ink);display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden}
+.tldr{border:1px dashed var(--pink);border-radius:14px;padding:12px 14px;line-height:1.55}
+.tldr b{display:block;font-size:11px;letter-spacing:.14em;color:var(--pink);margin-bottom:4px}
+.hint{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.hint svg{animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-4px)}}
+.link{color:var(--accent);font-weight:600;align-self:flex-start;padding:2px 0}
+
+/* verse pager */
+.pager{position:relative;z-index:1;flex:1;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.pager::-webkit-scrollbar{display:none}
+.panel{flex:0 0 100%;scroll-snap-align:start;display:flex;min-width:0}
+.panel .inner{padding-top:124px;padding-right:max(72px,env(safe-area-inset-right,0px))}
+.vhead{position:absolute;z-index:2;top:62px;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:0 max(20px,env(safe-area-inset-right,0px)) 0 max(20px,env(safe-area-inset-left,0px));max-width:620px;margin:0 auto}
+.vnum{font-family:var(--f-display);font-size:22px;color:var(--accent);font-variant-numeric:tabular-nums}
+.tabs{display:flex;gap:4px;background:rgba(23,27,61,.85);border:1px solid var(--line);border-radius:999px;padding:2px}
+.tabs button{font-size:13px;padding:4px 10px;border-radius:999px;color:var(--muted)}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--night);font-weight:700}
+.en-tr{font-family:var(--f-display);font-size:17px;line-height:1.55;border-top:1px solid var(--line);padding-top:12px}
+.shorts-panel .shorts-text{font-family:var(--f-display);font-size:clamp(22px,6vw,28px);line-height:1.45}
+.hi-tr{font-family:var(--f-display);font-size:clamp(18px,5vw,22px);line-height:1.6}
+.vtag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.shloka{font-family:var(--f-shloka);font-size:clamp(20px,5.6vw,28px);line-height:1.7;white-space:pre-line;text-wrap:balance}
+.translit{font-style:italic;color:var(--muted);line-height:1.6;white-space:pre-line}
+.meaning{font-family:var(--f-display);font-size:clamp(19px,5.2vw,24px);line-height:1.55}
+.body-text{line-height:1.65;display:-webkit-box;-webkit-line-clamp:9;-webkit-box-orient:vertical;overflow:hidden}
+.label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.genz-panel .label{color:var(--pink)}
+.genz-text{font-family:var(--f-display);font-size:clamp(20px,5.6vw,26px);line-height:1.5}
+.sticker{align-self:flex-start;background:var(--pink);color:var(--night);font-weight:700;font-size:12px;padding:3px 10px;border-radius:999px;transform:rotate(-3deg)}
+.dots{position:absolute;z-index:2;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 28px);display:flex;justify-content:center;gap:6px}
+.dots i{width:6px;height:6px;border-radius:99px;background:var(--line);transition:width .2s,background .2s}
+.dots i.on{width:18px;background:var(--accent)}
+.dots-labels{position:absolute;z-index:2;left:0;right:0;bottom:calc(env(safe-area-inset-bottom,0px) + 42px);text-align:center;font-size:12px;color:var(--muted)}
+
+.rail{position:absolute;z-index:3;right:max(12px,env(safe-area-inset-right,0px));bottom:calc(env(safe-area-inset-bottom,0px) + 80px);display:flex;flex-direction:column;gap:16px}
+.rail button{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:11px;color:var(--muted)}
+.rail .ic{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:rgba(32,38,90,.85);border:1px solid var(--line);color:var(--ink)}
+.rail button.on .ic{background:var(--accent);color:var(--night)}
+.rail svg{width:22px;height:22px}
+
+/* ad + end cards */
+.ad .inner{align-items:center;text-align:center}
+.ad-box{width:100%;max-width:340px;aspect-ratio:4/5;border:1px dashed var(--line);border-radius:18px;display:grid;place-items:center;color:var(--muted);padding:16px}
+.big-btn{background:var(--accent);color:var(--night);font-weight:700;padding:12px 22px;border-radius:999px;align-self:flex-start}
+
+/* sheets */
+.scrim{position:fixed;inset:0;z-index:30;background:rgba(5,6,18,.6)}
+.sheet{position:fixed;z-index:31;left:0;right:0;bottom:0;max-height:82%;overflow-y:auto;background:var(--surface);border-radius:20px 20px 0 0;
+  padding:18px max(20px,env(safe-area-inset-right,0px)) calc(env(safe-area-inset-bottom,0px) + 24px) max(20px,env(safe-area-inset-left,0px))}
+.sheet-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;position:sticky;top:-18px;background:var(--surface);padding-top:4px}
+.sheet h2{font-family:var(--f-display);font-size:20px;margin:0;font-weight:400}
+.sheet p{line-height:1.7;max-width:65ch;white-space:pre-line}
+.close{font-size:14px;color:var(--accent);font-weight:600}
+.ch-list{display:grid;gap:8px}
+.ch-list button{display:flex;gap:14px;align-items:center;text-align:left;padding:10px 12px;border-radius:12px;background:var(--surface-2)}
+.ch-list .n{font-family:var(--f-display);color:var(--accent);width:24px;font-variant-numeric:tabular-nums}
+.ch-list .t{display:flex;flex-direction:column;min-width:0}
+.ch-list .t small{color:var(--muted)}
+.ch-list button[aria-current="true"]{outline:1px solid var(--accent)}
+
+.ask-btn{display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:var(--accent);color:var(--night);font-weight:700;font-size:13px}
+.ask-btn svg{width:16px;height:16px}
+.sheet.ask{height:82%;overflow:hidden;display:flex;flex-direction:column}
+.ask .sheet-head{position:static}
+.ask-log{flex:1;min-height:0;overflow-y:auto;display:flex;flex-direction:column;gap:12px;padding-bottom:12px}
+.msg{max-width:92%;line-height:1.6;padding:10px 14px;border-radius:16px;white-space:pre-line}
+.msg.me{align-self:flex-end;background:var(--surface-2)}
+.msg.gita{align-self:flex-start;background:rgba(243,169,59,.08);border:1px solid var(--line)}
+.msg.wait{color:var(--muted)}
+.msg.err{border-color:#e05a5a;color:var(--ink)}
+.cite{color:var(--accent);font-weight:700;padding:0 2px;text-decoration:underline;text-underline-offset:3px}
+.intro{color:var(--muted);line-height:1.6}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px;text-align:left}
+.ask-form{display:flex;gap:8px;padding-top:10px;border-top:1px solid var(--line)}
+.ask-form input{flex:1;min-width:0;background:var(--surface-2);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:10px 14px;font:inherit}
+.ask-form input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.ask-form button:disabled{opacity:.5}
+.toast{position:fixed;z-index:40;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);transform:translateX(-50%);background:var(--ink);color:var(--night);padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;max-width:calc(100% - 32px)}
+.loading{display:grid;place-items:center;height:100%;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.hint svg{animation:none}.dots i{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <button class="chap-btn" id="chapBtn" aria-label="Choose chapter"><small id="chapNo">Chapter 2</small><span id="chapName">Sankhya Yoga</span></button>
+  <button class="ask-btn" id="askBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg><span id="askBtnLabel">Ask</span></button>
+  <div class="seg" role="group" aria-label="Language">
+    <button id="langEn" aria-pressed="true">EN</button><button id="langHi" aria-pressed="false">हिं</button>
+  </div>
+</header>
+<main class="feed" id="feed"><div class="loading">Loading…</div></main>
+<div class="scrim" id="scrim" hidden></div>
+<section class="sheet" id="sheet" hidden aria-modal="true" role="dialog">
+  <div class="sheet-head"><h2 id="sheetTitle"></h2><button class="close" id="sheetClose">Close</button></div>
+  <div id="sheetBody"></div>
+</section>
+<section class="sheet ask" id="ask" hidden aria-modal="true" role="dialog" aria-labelledby="askTitle">
+  <div class="sheet-head"><h2 id="askTitle">Ask Gita</h2><button class="close" id="askClose">Close</button></div>
+  <div class="ask-log" id="askLog" aria-live="polite"></div>
+  <form class="ask-form" id="askForm"><input id="askInput" maxlength="600" autocomplete="off" aria-label="Your question"><button class="big-btn" id="askSend" type="submit">Ask</button></form>
+</section>
+<div class="toast" id="toast" hidden></div>
+
+<script src="genz.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+const HUES=['#4b3bb0','#c4532d','#2fb3a6','#b8892d','#3a6fd8','#8f3fa8','#2f8f5a','#c2410c','#4f46e5','#b45309','#0e7490','#be185d','#65a30d','#7c3aed','#0891b2','#dc2626','#ca8a04','#f3a93b'];
+const AD_EVERY=8;
+const T={
+  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',comm:'Commentary',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read full commentary',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',noComm:'No commentary for this verse.',copied:'Verse copied. Paste it anywhere to share.',ad:'Ad space',adNote:'A sponsored card will show here every few verses.',commBy:'Swami Sivananda',trBy:'Swami Adidevananda',sideways:'Swipe sideways for meaning',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR'},
+  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',comm:'टीका',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'पूरी टीका पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',noComm:'इस श्लोक की टीका उपलब्ध नहीं है।',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',ad:'विज्ञापन',adNote:'हर कुछ श्लोकों के बाद यहाँ एक विज्ञापन कार्ड दिखेगा।',commBy:'स्वामी चिन्मयानन्द',trBy:'स्वामी रामसुखदास',sideways:'अर्थ के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR'}
+};
+const S={lang:'en',panel:0,ch:2,chapters:null,cache:{},saved:new Set()};
+try{const p=JSON.parse(localStorage.getItem('gita-prefs')||'{}');if(p.lang)S.lang=p.lang;if(p.panel)S.panel=+p.panel||0;(p.saved||[]).forEach(x=>S.saved.add(x))}catch(e){}
+function persist(){try{localStorage.setItem('gita-prefs',JSON.stringify({lang:S.lang,panel:S.panel,saved:[...S.saved]}))}catch(e){}}
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const t=k=>T[S.lang][k];
+const ICON={
+ play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>',
+ stop:'<svg viewBox="0 0 24 24" fill="currentColor"><rect x="7" y="7" width="10" height="10" rx="2"/></svg>',
+ share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>',
+ save:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+ up:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>'
+};
+
+async function getJSON(u){const r=await fetch(u);if(!r.ok)throw new Error(u);return r.json()}
+async function loadChapter(n){if(!S.cache[n])S.cache[n]=await getJSON('data/ch'+n+'.json');return S.cache[n]}
+
+function chapterCard(c){
+  const hi=S.lang==='hi', tl=window.GENZ_CH[c.n];
+  return `<article class="card" style="--hue:${HUES[c.n-1]}"><div class="bg"></div><div class="inner">
+    <div class="ch-num">${t('chapter')} ${c.n} · ${c.count} ${t('verses')}</div>
+    <div class="ch-sa">${esc(c.sa)}</div>
+    <div class="ch-en">${esc(c.en)} · ${esc(c.mean)}</div>
+    ${tl?`<div class="tldr"><b>${t('shorts')}</b>${esc(tl[S.lang])}</div>`:''}<div class="summary">${esc(hi?c.sum_hi:c.sum_en)}</div>
+    <button class="link" data-act="summary">${t('more')}</button>
+    <div class="hint">${ICON.up}${t('swipe')}</div>
+  </div></article>`;
+}
+const PANELS=['verse','meaning','shorts'];
+function verseCard(c,v){
+  const key=c.n+'.'+v.v, hi=S.lang==='hi', g=window.GENZ[key];
+  const comm=hi?v.chi:v.cen;
+  const html={
+    verse:`<div class="shloka">${esc(v.sa)}</div><div class="translit">${esc(v.tl)}</div><div class="en-tr">${esc(v.en)}</div>`,
+    meaning:`${hi?`<div class="label">${t('sMeaning')} · ${t('trBy')}</div><div class="hi-tr">${esc(v.hi)}</div>`:''}
+      <div class="label">${t('comm')} · ${t('commBy')}</div>${comm?`<div class="body-text">${esc(comm)}</div><button class="link" data-act="comm">${t('fullc')}</button>`:`<div class="body-text">${t('noComm')}</div>`}
+      <button class="link" data-act="wbw">${t('wbw')}</button>`,
+    shorts:`<span class="sticker">${t('shorts')}</span><div class="shorts-text">${g?esc(g[S.lang]):`<span style="color:var(--muted)">${t('genzSoon')}</span>`}</div>`
+  };
+  const saved=S.saved.has(key);
+  return `<article class="card verse" data-key="${key}" data-v="${v.v}" style="--hue:${HUES[c.n-1]}"><div class="bg"></div>
+    <div class="vhead"><div class="vnum">${key}</div><div class="tabs" role="tablist">${PANELS.map((k,i)=>`<button role="tab" data-tab="${i}" aria-selected="${i===S.panel}">${t(['sVerse','sMeaning','shorts'][i])}</button>`).join('')}</div></div>
+    <div class="pager">${PANELS.map(k=>`<section class="panel ${k}-panel" data-panel="${k}"><div class="inner">${html[k]}</div></section>`).join('')}</div>
+    <div class="rail">
+      <button data-act="listen"><span class="ic">${ICON.play}</span><span>${t('listen')}</span></button>
+      <button data-act="share"><span class="ic">${ICON.share}</span><span>${t('share')}</span></button>
+      <button data-act="save" class="${saved?'on':''}" aria-pressed="${saved}"><span class="ic">${ICON.save}</span><span>${t('save')}</span></button>
+    </div></article>`;
+}
+function adCard(c){return `<article class="card ad" style="--hue:${HUES[c.n-1]}"><div class="bg"></div><div class="inner"><div class="label">${t('ad')}</div><div class="ad-box">${t('adNote')}</div></div></article>`}
+function endCard(c){
+  const nx=c.n<18?S.chapters[c.n]:null;
+  return `<article class="card" style="--hue:${HUES[c.n-1]}"><div class="bg"></div><div class="inner">
+    <div class="ch-num">${t('end')} ${c.n}</div>
+    ${nx?`<div class="ch-sa">${esc(nx.sa)}</div><div class="ch-en">${esc(nx.en)}</div><button class="big-btn" data-act="next">${t('next')} →</button>`:`<div class="ch-sa">ॐ तत् सत्</div>`}
+  </div></article>`;
+}
+
+async function render(scrollToVerse){
+  stopSpeech();
+  const c=S.chapters[S.ch-1];
+  $('#chapNo').textContent=`${t('chapter')} ${c.n}`;
+  $('#chapName').textContent=S.lang==='hi'?c.sa:c.en;
+  const feed=$('#feed');
+  let verses;
+  try{verses=await loadChapter(c.n)}catch(e){feed.innerHTML='<div class="loading">Could not load this chapter. Check your connection and reopen the page.</div>';return}
+  let h=chapterCard(c);
+  verses.forEach((v,i)=>{h+=verseCard(c,v);if((i+1)%AD_EVERY===0&&i<verses.length-1)h+=adCard(c)});
+  h+=endCard(c);
+  feed.innerHTML=h;
+  syncPagers(null);
+  feed.querySelectorAll('.pager').forEach(p=>{let pt;p.addEventListener('scroll',()=>{
+    if(p._sync)return;
+    const i=Math.round(p.scrollLeft/p.clientWidth);
+    p.parentElement.querySelectorAll('.tabs button').forEach((d,j)=>d.setAttribute('aria-selected',i===j));
+    clearTimeout(pt);pt=setTimeout(()=>{if(i!==S.panel){S.panel=i;persist();stopSpeech();syncPagers(p)}},120);
+  },{passive:true})});
+  const target=scrollToVerse&&feed.querySelector(`.verse[data-v="${scrollToVerse}"]`);
+  feed.scrollTop=target?target.offsetTop:0;
+}
+
+function syncPagers(except){
+  document.querySelectorAll('.pager').forEach(p=>{if(p===except)return;p._sync=true;p.scrollLeft=S.panel*p.clientWidth;
+    p.parentElement.querySelectorAll('.tabs button').forEach((d,j)=>d.setAttribute('aria-selected',j===S.panel));
+    requestAnimationFrame(()=>requestAnimationFrame(()=>p._sync=false))});
+}
+function currentVerse(){const f=$('#feed');const i=Math.round(f.scrollTop/f.clientHeight);const card=f.children[i];return card&&card.classList.contains('verse')?card:null}
+function verseData(card){return S.cache[S.ch].find(x=>x.v==card.dataset.v)}
+function setHash(){const v=currentVerse();const h='#c'+S.ch+(v?'-v'+v.dataset.v:'');if(location.hash!==h)history.replaceState(null,'',h)}
+
+function openSheet(title,html){$('#sheetTitle').textContent=title;$('#sheetBody').innerHTML=html;$('#sheet').hidden=false;$('#scrim').hidden=false;$('#sheet').scrollTop=0;$('#sheetClose').focus()}
+function closeSheet(){$('#sheet').hidden=true;$('#scrim').hidden=true}
+let toastT;function toast(m){const el=$('#toast');el.textContent=m;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>el.hidden=true,2400)}
+
+/* text to speech */
+let speakingBtn=null;
+function stopSpeech(){try{speechSynthesis.cancel()}catch(e){}if(speakingBtn){speakingBtn.classList.remove('on');speakingBtn.querySelector('.ic').innerHTML=ICON.play;speakingBtn.lastElementChild.textContent=t('listen');speakingBtn=null}}
+function pickVoice(lang){const vs=speechSynthesis.getVoices();return vs.find(v=>v.lang.replace('_','-').toLowerCase()===lang.toLowerCase())||vs.find(v=>v.lang.toLowerCase().startsWith(lang.slice(0,2)))}
+function speak(btn,card){
+  if(!('speechSynthesis' in window)){toast('Listening is not supported in this browser.');return}
+  if(speakingBtn===btn){stopSpeech();return}
+  stopSpeech();
+  const v=verseData(card), key=card.dataset.key, pager=card.querySelector('.pager');
+  const panel=pager.children[Math.round(pager.scrollLeft/pager.clientWidth)].dataset.panel;
+  const hi=S.lang==='hi', g=window.GENZ[key], L=hi?'hi-IN':'en-IN';
+  let parts;
+  if(panel==='verse')parts=[[v.sa.replace(/॥/g,'।'),'hi-IN'],[v.en,'en-IN']];
+  else if(panel==='shorts')parts=[[g?g[S.lang]:t('genzSoon'),'en-IN']];
+  else parts=[...(hi?[[v.hi,L]]:[]),[(hi?v.chi:v.cen)||t('noComm'),L]];
+  speakingBtn=btn;btn.classList.add('on');btn.querySelector('.ic').innerHTML=ICON.stop;btn.lastElementChild.textContent=t('stop');
+  parts.forEach(([txt,lang],i)=>{
+    const u=new SpeechSynthesisUtterance(txt);u.lang=lang;const vo=pickVoice(lang);if(vo)u.voice=vo;u.rate=i===0&&panel==='verse'?.8:.95;
+    if(i===parts.length-1)u.onend=()=>{if(speakingBtn===btn)stopSpeech()};
+    speechSynthesis.speak(u);
+  });
+}
+
+async function share(card){
+  const v=verseData(card),key=card.dataset.key,hi=S.lang==='hi',g=window.GENZ[key];
+  const body=S.panel===2&&g?g[S.lang]:(S.panel===1&&hi?v.hi:v.en);
+  const text=`${v.sa}\n\n${body}\n\nBhagavad Gita ${key}`;
+  try{await navigator.clipboard.writeText(text);toast(t('copied'))}
+  catch(e){openSheet(t('share'),`<p style="user-select:all">${esc(text)}</p>`)}
+}
+
+document.addEventListener('click',e=>{
+  const tb=e.target.closest('[data-tab]');if(tb){const p=tb.closest('.card').querySelector('.pager');p.scrollTo({left:+tb.dataset.tab*p.clientWidth,behavior:'smooth'});return}
+  const b=e.target.closest('[data-act]');if(!b)return;
+  const act=b.dataset.act, card=b.closest('.card');
+  const c=S.chapters[S.ch-1];
+  if(act==='summary')openSheet(`${t('chapter')} ${c.n} · ${S.lang==='hi'?c.sa:c.en}`,`<p>${esc(S.lang==='hi'?c.sum_hi:c.sum_en)}</p>`);
+  else if(act==='wbw'){const v=verseData(card);openSheet(`${t('wbw')} · ${card.dataset.key}`,`<p>${esc(v.wm.replace(/;\s*/g,'\n'))}</p>`)}
+  else if(act==='comm'){const v=verseData(card);openSheet(`${t('comm')} · ${card.dataset.key}`,`<p>${esc(S.lang==='hi'?v.chi:v.cen)}</p>`)}
+  else if(act==='listen')speak(b,card);
+  else if(act==='share')share(card);
+  else if(act==='save'){const k=card.dataset.key;S.saved.has(k)?S.saved.delete(k):S.saved.add(k);b.classList.toggle('on');b.setAttribute('aria-pressed',S.saved.has(k));persist()}
+  else if(act==='next'){S.ch++;render().then(setHash)}
+});
+$('#chapBtn').onclick=()=>openSheet(S.lang==='hi'?'अध्याय चुनें':'Choose a chapter',`<div class="ch-list">${S.chapters.map(c=>`<button data-ch="${c.n}" aria-current="${c.n===S.ch}"><span class="n">${c.n}</span><span class="t"><span>${esc(S.lang==='hi'?c.sa:c.en)}</span><small>${esc(c.mean)} · ${c.count} ${t('verses')}</small></span></button>`).join('')}</div>`);
+$('#sheetBody').addEventListener('click',e=>{const b=e.target.closest('[data-ch]');if(!b)return;S.ch=+b.dataset.ch;closeSheet();render().then(setHash)});
+$('#sheetClose').onclick=closeSheet;$('#scrim').onclick=()=>{closeSheet();closeAsk()};
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSheet();closeAsk()}});
+
+/* Ask Gita */
+const ASK_T={
+  en:{btn:'Ask',title:'Ask Gita',ph:'Ask about life or any verse…',send:'Ask',wait:'Looking through the Gita…',err:'Couldn\'t reach Ask Gita. Check your connection and try again.',
+    intro:'Ask about stress, anger, purpose, relationships or any verse. Answers come from the Gita and its commentary, with the verses they use.',
+    sugg:['How do I stop overthinking results?','What does the Gita say about anger?','How do I find my purpose?','Explain verse 2.47 simply']},
+  hi:{btn:'पूछें',title:'गीता से पूछें',ph:'ज़िंदगी या किसी श्लोक के बारे में पूछें…',send:'पूछें',wait:'गीता में देख रहे हैं…',err:'गीता से जवाब नहीं मिल पाया। कनेक्शन देखें और फिर कोशिश करें।',
+    intro:'तनाव, गुस्सा, जीवन का उद्देश्य, रिश्ते या किसी भी श्लोक के बारे में पूछें। जवाब गीता और उसकी टीका से आते हैं।',
+    sugg:['Result की tension कैसे छोड़ूँ?','गुस्से के बारे में गीता क्या कहती है?','अपना purpose कैसे खोजूँ?','श्लोक 2.47 आसान भाषा में समझाओ']}
+};
+const at=k=>ASK_T[S.lang][k];
+let askHistory=[];
+function syncAsk(){$('#askBtnLabel').textContent=at('btn');$('#askTitle').textContent=at('title');$('#askInput').placeholder=at('ph');$('#askSend').textContent=at('send')}
+function askIntro(){$('#askLog').innerHTML=`<p class="intro">${esc(at('intro'))}</p><div class="chips">${at('sugg').map(q=>`<button class="chip" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>`}
+function openAsk(){closeSheet();stopSpeech();syncAsk();if(!askHistory.length)askIntro();$('#ask').hidden=false;$('#scrim').hidden=false;$('#askInput').focus()}
+function closeAsk(){if($('#ask').hidden)return;$('#ask').hidden=true;if($('#sheet').hidden)$('#scrim').hidden=true}
+function addMsg(cls,html){const d=document.createElement('div');d.className='msg '+cls;d.innerHTML=html;const log=$('#askLog');log.appendChild(d);log.scrollTop=log.scrollHeight;return d}
+const withCites=text=>esc(text).replace(/\[(\d{1,2})\.(\d{1,2})\]/g,(m,c,v)=>`<button class="cite" data-goto="${c}-${v}">${c}.${v}</button>`);
+async function ask(q){
+  q=q.trim();if(!q)return;
+  if(!askHistory.length)$('#askLog').innerHTML='';
+  addMsg('me',esc(q));
+  const wait=addMsg('gita wait',esc(at('wait')));
+  $('#askSend').disabled=true;$('#askInput').value='';
+  try{
+    const r=await fetch('/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,lang:S.lang,history:askHistory})});
+    const data=await r.json().catch(()=>({}));
+    if(!r.ok||!data.answer)throw new Error(data.error||at('err'));
+    wait.className='msg gita';wait.innerHTML=withCites(data.answer);
+    askHistory.push({role:'user',content:q},{role:'assistant',content:data.answer});
+  }catch(e){wait.className='msg gita err';wait.textContent=e.message||at('err')}
+  finally{$('#askSend').disabled=false;$('#askLog').scrollTop=$('#askLog').scrollHeight}
+}
+$('#askBtn').onclick=openAsk;$('#askClose').onclick=closeAsk;
+$('#askForm').addEventListener('submit',e=>{e.preventDefault();ask($('#askInput').value)});
+$('#askLog').addEventListener('click',e=>{
+  const chip=e.target.closest('[data-q]');if(chip){ask(chip.dataset.q);return}
+  const g=e.target.closest('[data-goto]');if(!g)return;
+  const [c,v]=g.dataset.goto.split('-').map(Number);if(c<1||c>18)return;
+  closeAsk();S.ch=c;render(v).then(setHash);
+});
+function syncToggles(){
+  $('#langEn').setAttribute('aria-pressed',S.lang==='en');$('#langHi').setAttribute('aria-pressed',S.lang==='hi');
+  document.documentElement.lang=S.lang;
+}
+function rerenderKeepingPlace(){const v=currentVerse();syncToggles();syncAsk();persist();render(v&&v.dataset.v)}
+$('#langEn').onclick=()=>{S.lang='en';rerenderKeepingPlace()};
+$('#langHi').onclick=()=>{S.lang='hi';rerenderKeepingPlace()};
+let st;$('#feed').addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(()=>{setHash();const v=currentVerse();if(speakingBtn&&(!v||!v.contains(speakingBtn)))stopSpeech()},150)},{passive:true});
+
+function fromHash(){const m=/^#c(\d+)(?:-v(\d+))?$/.exec(location.hash);if(m&&+m[1]>=1&&+m[1]<=18){S.ch=+m[1];return m[2]}return null}
+window.addEventListener('resize',()=>syncPagers(null));
+window.addEventListener('hashchange',()=>{const v=fromHash();render(v)});
+(async()=>{
+  syncToggles();syncAsk();
+  try{S.chapters=await getJSON('data/chapters.json')}catch(e){$('#feed').innerHTML='<div class="loading">Could not load the Gita. Check your connection and reopen the page.</div>';return}
+  const v=fromHash();await render(v);
+})();
+</script>
+</body>
+</html>
