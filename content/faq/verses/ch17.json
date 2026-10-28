@@ -1,0 +1,170 @@
+{
+"17.1": {"en": [
+  {"q": "What does Arjuna ask?", "a": "What about those who worship with faith but don't follow scripture? Is their faith sattvic, rajasic or tamasic?"},
+  {"q": "Why ask this?", "a": "Many sincere people don't know the rules. Arjuna wants to know where they stand."}],
+ "hi": [
+  {"q": "अर्जुन क्या पूछता है?", "a": "जो शास्त्र विधि छोड़कर श्रद्धा से पूजते हैं, उनकी श्रद्धा सात्त्विक, राजसिक या तामसिक है?"},
+  {"q": "यह क्यों पूछा?", "a": "बहुत सच्चे लोग नियम नहीं जानते। अर्जुन जानना चाहता है कि वे कहाँ खड़े हैं।"}]},
+"17.2": {"en": [
+  {"q": "What are the three kinds of faith?", "a": "Sattvic, rajasic and tamasic, based on one's nature."},
+  {"q": "Where does faith come from?", "a": "From a person's inborn tendencies."}],
+ "hi": [
+  {"q": "श्रद्धा के तीन प्रकार कौन से हैं?", "a": "स्वभाव के अनुसार सात्त्विक, राजसिक और तामसिक।"},
+  {"q": "श्रद्धा कहाँ से आती है?", "a": "व्यक्ति के स्वाभाविक संस्कारों से।"}]},
+"17.3": {"en": [
+  {"q": "What does 'a person is made of faith' mean?", "a": "What you deeply believe shapes who you are."},
+  {"q": "How can we use this?", "a": "Choose what you put your faith in carefully."}],
+ "hi": [
+  {"q": "'मनुष्य श्रद्धामय है' का क्या अर्थ है?", "a": "आप गहराई से जो मानते हैं, वही आपको बनाता है।"},
+  {"q": "इसका उपयोग कैसे करें?", "a": "सोच-समझकर चुनो कि किस पर श्रद्धा रखते हो।"}]},
+"17.4": {"en": [
+  {"q": "Whom does each type worship?", "a": "Sattvic people worship the gods, rajasic people worship power-spirits, tamasic people worship ghosts."},
+  {"q": "What does this show?", "a": "Our nature shapes what we turn to."}],
+ "hi": [
+  {"q": "हर प्रकार के लोग किसे पूजते हैं?", "a": "सात्त्विक देवताओं को, राजसिक यक्ष-राक्षसों को, तामसिक भूत-प्रेतों को।"},
+  {"q": "यह क्या दिखाता है?", "a": "हमारा स्वभाव तय करता है कि हम किसकी ओर मुड़ते हैं।"}]},
+"17.5": {"en": [
+  {"q": "What kind of austerity does Krishna reject?", "a": "Harsh self-punishment not taught by scripture, done out of pride and desire."},
+  {"q": "Why reject it?", "a": "It harms instead of purifying."}],
+ "hi": [
+  {"q": "कृष्ण कैसा तप अस्वीकार करते हैं?", "a": "शास्त्र विरुद्ध घोर तप, जो दंभ और कामना से किया जाए।"},
+  {"q": "क्यों?", "a": "वह शुद्ध करने के बजाय हानि करता है।"}]},
+"17.6": {"en": [
+  {"q": "Whom does such austerity torment?", "a": "The body's elements and Krishna who lives within."},
+  {"q": "What is the lesson?", "a": "Spiritual life doesn't mean hurting your body."}],
+ "hi": [
+  {"q": "ऐसा तप किसे कष्ट देता है?", "a": "शरीर के तत्वों को और भीतर रहने वाले कृष्ण को।"},
+  {"q": "सीख क्या है?", "a": "आध्यात्मिक जीवन का अर्थ शरीर को कष्ट देना नहीं।"}]},
+"17.7": {"en": [
+  {"q": "What else comes in three types?", "a": "Food, sacrifice, austerity and charity."},
+  {"q": "Why does this matter?", "a": "Daily choices reflect and shape our nature."}],
+ "hi": [
+  {"q": "और क्या तीन प्रकार का होता है?", "a": "आहार, यज्ञ, तप और दान।"},
+  {"q": "यह क्यों महत्वपूर्ण है?", "a": "रोज़ के चुनाव हमारे स्वभाव को दिखाते और बनाते हैं।"}]},
+"17.8": {"en": [
+  {"q": "What is sattvic food?", "a": "Food that is wholesome, juicy, nourishing and pleasing, and supports long life, strength and joy."},
+  {"q": "How does it affect the mind?", "a": "It keeps it clear and calm."}],
+ "hi": [
+  {"q": "सात्त्विक आहार क्या है?", "a": "जो पौष्टिक, रसयुक्त, स्थिर और मन को प्रिय हो, और आयु, बल और सुख बढ़ाए।"},
+  {"q": "यह मन पर कैसे असर करता है?", "a": "मन को स्पष्ट और शांत रखता है।"}]},
+"17.9": {"en": [
+  {"q": "What is rajasic food?", "a": "Very bitter, sour, salty, hot, spicy, dry or burning food."},
+  {"q": "What does it cause?", "a": "Pain, grief and disease."}],
+ "hi": [
+  {"q": "राजसिक आहार क्या है?", "a": "बहुत कड़वा, खट्टा, नमकीन, गर्म, तीखा, रूखा या जलन वाला भोजन।"},
+  {"q": "इससे क्या होता है?", "a": "दुख, शोक और रोग।"}]},
+"17.10": {"en": [
+  {"q": "What is tamasic food?", "a": "Stale, tasteless, spoiled, leftover or impure food."},
+  {"q": "What does it do?", "a": "It makes the mind dull."}],
+ "hi": [
+  {"q": "तामसिक आहार क्या है?", "a": "बासी, स्वादहीन, सड़ा, जूठा या अपवित्र भोजन।"},
+  {"q": "इससे क्या होता है?", "a": "मन जड़ हो जाता है।"}]},
+"17.11": {"en": [
+  {"q": "What is a sattvic offering?", "a": "One made as duty, without wanting anything back, as scripture guides."},
+  {"q": "What makes it pure?", "a": "The selfless motive."}],
+ "hi": [
+  {"q": "सात्त्विक यज्ञ क्या है?", "a": "जो कर्तव्य मानकर, फल की इच्छा के बिना, शास्त्र विधि से किया जाए।"},
+  {"q": "उसे शुद्ध क्या बनाता है?", "a": "निःस्वार्थ भाव।"}]},
+"17.12": {"en": [
+  {"q": "What is a rajasic offering?", "a": "One done for rewards or to show off."},
+  {"q": "How can we spot it?", "a": "When we care more about recognition than the act itself."}],
+ "hi": [
+  {"q": "राजसिक यज्ञ क्या है?", "a": "जो फल पाने या दिखावे के लिए किया जाए।"},
+  {"q": "इसे कैसे पहचानें?", "a": "जब हमें काम से ज़्यादा पहचान की परवाह हो।"}]},
+"17.13": {"en": [
+  {"q": "What is a tamasic offering?", "a": "One without guidance, without sharing food, without mantras, without gifts to priests and without faith."},
+  {"q": "What is missing most?", "a": "Faith and sincerity."}],
+ "hi": [
+  {"q": "तामसिक यज्ञ क्या है?", "a": "जो विधि, अन्नदान, मंत्र, दक्षिणा और श्रद्धा के बिना किया जाए।"},
+  {"q": "सबसे ज़्यादा क्या कमी है?", "a": "श्रद्धा और सच्चाई।"}]},
+"17.14": {"en": [
+  {"q": "What is austerity of the body?", "a": "Honouring the divine, teachers and the wise, along with cleanliness, simplicity, self-control and non-violence."},
+  {"q": "Is this about hardship?", "a": "No. It's about disciplined, respectful living."}],
+ "hi": [
+  {"q": "शरीर का तप क्या है?", "a": "देवता, गुरु और ज्ञानियों का आदर, शुद्धता, सरलता, ब्रह्मचर्य और अहिंसा।"},
+  {"q": "क्या यह कष्ट सहने की बात है?", "a": "नहीं। यह अनुशासित, आदरपूर्ण जीवन की बात है।"}]},
+"17.15": {"en": [
+  {"q": "What is austerity of speech?", "a": "Words that are true, kind and helpful, and that don't upset others, plus regular study."},
+  {"q": "Can this be practised daily?", "a": "Yes. Every conversation is a chance."}],
+ "hi": [
+  {"q": "वाणी का तप क्या है?", "a": "ऐसे वचन जो सत्य, प्रिय और हितकारी हों और दूसरों को उद्वेग न दें, साथ में स्वाध्याय।"},
+  {"q": "क्या इसका रोज़ अभ्यास हो सकता है?", "a": "हाँ। हर बातचीत एक अवसर है।"}]},
+"17.16": {"en": [
+  {"q": "What is austerity of the mind?", "a": "Calm, kindness, silence, self-control and pure intentions."},
+  {"q": "Why is it hardest?", "a": "The mind is the hardest thing to discipline."}],
+ "hi": [
+  {"q": "मन का तप क्या है?", "a": "प्रसन्नता, सौम्यता, मौन, आत्मसंयम और भावों की शुद्धि।"},
+  {"q": "यह सबसे कठिन क्यों है?", "a": "मन को साधना सबसे कठिन है।"}]},
+"17.17": {"en": [
+  {"q": "When is austerity sattvic?", "a": "When done with deep faith, without wanting rewards."},
+  {"q": "What ties all three together?", "a": "A selfless heart."}],
+ "hi": [
+  {"q": "तप कब सात्त्विक होता है?", "a": "जब परम श्रद्धा से, फल की इच्छा के बिना किया जाए।"},
+  {"q": "तीनों को क्या जोड़ता है?", "a": "निःस्वार्थ हृदय।"}]},
+"17.18": {"en": [
+  {"q": "When is austerity rajasic?", "a": "When done for respect, praise or show."},
+  {"q": "What happens to it?", "a": "It is unstable and short-lived."}],
+ "hi": [
+  {"q": "तप कब राजसिक होता है?", "a": "जब सत्कार, मान या दिखावे के लिए किया जाए।"},
+  {"q": "उसका क्या होता है?", "a": "वह अस्थिर और क्षणिक होता है।"}]},
+"17.19": {"en": [
+  {"q": "When is austerity tamasic?", "a": "When done out of confusion, with self-torture or to harm others."},
+  {"q": "What's the warning?", "a": "Discipline without wisdom can become destructive."}],
+ "hi": [
+  {"q": "तप कब तामसिक होता है?", "a": "जब मूढ़ता से, स्वयं को पीड़ा देकर या दूसरों को हानि पहुँचाने के लिए किया जाए।"},
+  {"q": "चेतावनी क्या है?", "a": "ज्ञान के बिना अनुशासन विनाशकारी बन सकता है।"}]},
+"17.20": {"en": [
+  {"q": "What is sattvic giving?", "a": "Giving as a duty, at the right time and place, to a worthy person, expecting nothing back."},
+  {"q": "Why expect nothing?", "a": "Giving with strings attached is a deal, not charity."}],
+ "hi": [
+  {"q": "सात्त्विक दान क्या है?", "a": "कर्तव्य मानकर, उचित देश-काल में, योग्य को, बिना बदले की इच्छा के दिया गया दान।"},
+  {"q": "कुछ न चाहना क्यों?", "a": "शर्तों के साथ देना सौदा है, दान नहीं।"}]},
+"17.21": {"en": [
+  {"q": "What is rajasic giving?", "a": "Giving to get something back, for a reward, or reluctantly."},
+  {"q": "How can we tell?", "a": "If we feel resentful or keep score."}],
+ "hi": [
+  {"q": "राजसिक दान क्या है?", "a": "बदले में कुछ पाने, फल के लिए, या कष्ट से दिया गया दान।"},
+  {"q": "कैसे पहचानें?", "a": "अगर मन में खिन्नता हो या हिसाब रखें।"}]},
+"17.22": {"en": [
+  {"q": "What is tamasic giving?", "a": "Giving at the wrong place or time, to the wrong person, without respect or with contempt."},
+  {"q": "What's the lesson?", "a": "How you give matters as much as what you give."}],
+ "hi": [
+  {"q": "तामसिक दान क्या है?", "a": "अनुचित देश-काल में, अयोग्य को, बिना आदर या तिरस्कार से दिया गया दान।"},
+  {"q": "सीख क्या है?", "a": "कैसे देते हो, यह भी उतना ही ज़रूरी है जितना क्या देते हो।"}]},
+"17.23": {"en": [
+  {"q": "What does 'Om Tat Sat' mean?", "a": "It is the threefold name of Brahman, used to sanctify actions."},
+  {"q": "Where did it come from?", "a": "It was the basis of priests, the Vedas and sacrifice from the beginning."}],
+ "hi": [
+  {"q": "'ॐ तत् सत्' का क्या अर्थ है?", "a": "यह ब्रह्म का त्रिविध नाम है, जो कर्मों को पवित्र करता है।"},
+  {"q": "यह कहाँ से आया?", "a": "आदि काल से यह ब्राह्मणों, वेदों और यज्ञों का आधार था।"}]},
+"17.24": {"en": [
+  {"q": "Why say Om before acts?", "a": "Those who follow the Vedas begin sacrifice, charity and austerity with Om."},
+  {"q": "What does it do?", "a": "It connects the act to the Divine."}],
+ "hi": [
+  {"q": "कर्म से पहले ॐ क्यों?", "a": "वेद मानने वाले यज्ञ, दान और तप ॐ के उच्चारण से आरंभ करते हैं।"},
+  {"q": "इससे क्या होता है?", "a": "यह कर्म को भगवान से जोड़ता है।"}]},
+"17.25": {"en": [
+  {"q": "What does 'Tat' signify?", "a": "Acts done without seeking rewards, by those seeking liberation."},
+  {"q": "What is the spirit behind it?", "a": "'This is for That,' for the Divine, not for me."}],
+ "hi": [
+  {"q": "'तत्' किसका संकेत है?", "a": "मोक्ष चाहने वालों द्वारा फल की इच्छा के बिना किए गए कर्म।"},
+  {"q": "इसके पीछे का भाव क्या है?", "a": "'यह उसके लिए है,' भगवान के लिए, मेरे लिए नहीं।"}]},
+"17.26": {"en": [
+  {"q": "What does 'Sat' mean?", "a": "Reality and goodness. It is also used for any auspicious act."},
+  {"q": "Why use it?", "a": "To mark actions as true and good."}],
+ "hi": [
+  {"q": "'सत्' का क्या अर्थ है?", "a": "सत्य और श्रेष्ठता। इसे हर शुभ कर्म के लिए भी कहा जाता है।"},
+  {"q": "इसका प्रयोग क्यों?", "a": "कर्मों को सत्य और शुभ बताने के लिए।"}]},
+"17.27": {"en": [
+  {"q": "What else is called 'Sat'?", "a": "Steadiness in sacrifice, austerity and charity, and any action done for the Divine."},
+  {"q": "What does this show?", "a": "Dedicated action itself becomes sacred."}],
+ "hi": [
+  {"q": "और किसे 'सत्' कहा जाता है?", "a": "यज्ञ, तप और दान में स्थिरता, और भगवान के लिए किया हर कर्म।"},
+  {"q": "यह क्या दिखाता है?", "a": "समर्पित कर्म स्वयं पवित्र बन जाता है।"}]},
+"17.28": {"en": [
+  {"q": "What happens to acts done without faith?", "a": "They are called 'asat': unreal, with no value here or hereafter."},
+  {"q": "What is the lesson?", "a": "Faith gives meaning to every action."}],
+ "hi": [
+  {"q": "श्रद्धा के बिना किए कर्मों का क्या होता है?", "a": "उन्हें 'असत्' कहते हैं: न इस लोक में लाभ, न परलोक में।"},
+  {"q": "सीख क्या है?", "a": "श्रद्धा हर कर्म को अर्थ देती है।"}]}
+}
