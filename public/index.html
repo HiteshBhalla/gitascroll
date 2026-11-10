@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Read the Bhagavad Gita one verse at a time: Sanskrit, translation and short takes in English, Hindi, French, Spanish and Arabic.">
-<title>Gita Scroll</title>
+<title>Gita4U · Bhagwat Gita</title>
 <meta name="theme-color" content="#0d1027">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Gita Scroll">
+<meta name="apple-mobile-web-app-title" content="Gita4U">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gotu&family=Mukta:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Tiro+Devanagari+Sanskrit&display=swap">
 <style>
@@ -165,11 +165,23 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 .ask-form input{flex:1;min-width:0;background:var(--surface-2);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:10px 14px;font:inherit}
 .ask-form input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .ask-form button:disabled{opacity:.5}
+.ask-status{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 12px;font-size:13px;color:var(--muted);margin:-4px 0 10px}
+.ask-status button{color:var(--accent);font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.ask-gate{display:flex;flex-direction:column;gap:10px;padding-top:12px;border-top:1px solid var(--line)}
+.ask-gate h3{margin:0;font-family:var(--f-display);font-weight:400;font-size:19px}
+.ask-gate p{margin:0;line-height:1.6;color:var(--muted)}
+.ask-gate form{display:flex;gap:8px}
+.ask-gate input{flex:1;min-width:0;background:var(--surface-2);border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:10px 14px;font:inherit}
+.ask-gate input:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.ask-gate input.code{letter-spacing:.3em;font-variant-numeric:tabular-nums}
+.ask-gate .link{align-self:flex-start;color:var(--accent);text-decoration:underline;text-underline-offset:3px;font-size:14px}
+.ask-gate .err{color:#ff8a7a;font-size:14px}
+.ask-gate button:disabled{opacity:.5}
 .toast{position:fixed;z-index:40;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 24px);transform:translateX(-50%);background:var(--ink);color:var(--night);padding:8px 16px;border-radius:999px;font-weight:600;font-size:14px;max-width:calc(100% - 32px)}
 .loading{display:grid;place-items:center;height:100%;color:var(--muted)}
 
 /* landing: the Gita as a rolled scroll; tapping unrolls it and opens Chapter 1 */
-.landing{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:28px;text-align:center;
+.landing{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:safe center;gap:22px;text-align:center;overflow-y:auto;
   padding:calc(env(safe-area-inset-top,0px) + 24px) 16px calc(env(safe-area-inset-bottom,0px) + 24px);
   background:radial-gradient(90% 60% at 50% 100%,rgba(196,83,45,.35),transparent 70%),radial-gradient(70% 45% at 50% 0%,rgba(243,169,59,.12),transparent 70%),var(--night);
   transition:opacity .5s ease,visibility .5s}
@@ -191,11 +203,20 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 .roll,.paper,.scroll-wrap,.paper-in>span{display:block}
 .scroll-wrap{position:relative}
 .paper-in{display:flex}
-.scroll.open .paper{height:min(330px,52vh)}
+.scroll.open .paper{height:min(300px,40vh)}
 .scroll.open .paper-in{opacity:1}
 .scroll.open .tie{opacity:0}
-.l-sa{font-family:var(--f-shloka);font-size:clamp(34px,10vw,48px);line-height:1.2}
-.l-en{font-family:var(--f-display);font-size:22px;color:var(--muted);margin-top:4px}
+.l-title{font-family:var(--f-display);font-size:clamp(44px,13vw,64px);line-height:1;letter-spacing:-.01em}
+.l-title b{color:var(--accent);font-weight:inherit}
+.l-sa{font-family:var(--f-shloka);font-size:22px;line-height:1.3;color:var(--muted);margin-top:8px}
+.l-what{display:grid;gap:10px;width:min(420px,100%);text-align:start}
+.l-what div{display:flex;gap:10px;align-items:baseline;line-height:1.5;font-size:15px}
+.l-what b{flex:none;min-width:58px;color:var(--accent);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.l-note{max-width:420px;margin:0;color:var(--muted);font-size:12.5px;line-height:1.55;border-top:1px solid var(--line);padding-top:12px}
+.l-langs{position:absolute;top:calc(env(safe-area-inset-top,0px) + 12px);inset-inline-end:12px;display:flex;gap:4px}
+.l-langs button{padding:4px 9px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid transparent}
+.l-langs button[aria-pressed="true"]{color:var(--ink);border-color:var(--line)}
+.landing.opening .l-what,.landing.opening .l-note,.landing.opening .l-langs{opacity:0;transition:opacity .3s}
 .l-meta{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:10px}
 .l-cta{display:flex;align-items:center;gap:8px;color:var(--ink);font-size:15px}
 .l-cta svg{animation:bob 1.6s ease-in-out infinite}
@@ -206,9 +227,10 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 <body>
 
 <div class="landing" id="landing" hidden>
+  <div class="l-langs" id="landLangs" role="group" aria-label="Language"></div>
   <div>
+    <h1 class="l-title" style="margin:0">Gita<b>4U</b></h1>
     <div class="l-sa">श्रीमद्भगवद्गीता</div>
-    <div class="l-en">Bhagwat Gita</div>
     <div class="l-meta" id="landMeta">18 chapters · 700 verses</div>
   </div>
   <button class="scroll" id="scroll" aria-label="Open the Bhagwat Gita at Chapter 1">
@@ -221,6 +243,11 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
     <span class="roll"></span>
   </button>
   <div class="l-cta" id="landCta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg><span>Tap the scroll to begin</span></div>
+  <div class="l-what">
+    <div><b id="landVerseH">Verse</b><span id="landVerse"></span></div>
+    <div><b id="landShortsH">Shorts</b><span id="landShorts"></span></div>
+  </div>
+  <p class="l-note" id="landNote"></p>
 </div>
 <header class="top">
   <button class="chap-btn" id="chapBtn" aria-label="Choose chapter"><small id="chapNo">Chapter 1</small><span id="chapName">Arjuna Vishada Yoga</span></button>
@@ -235,7 +262,9 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 </section>
 <section class="sheet ask" id="ask" hidden aria-modal="true" role="dialog" aria-labelledby="askTitle">
   <div class="sheet-head"><h2 id="askTitle">Ask Gita</h2><button class="close" id="askClose">Close</button></div>
+  <div class="ask-status" id="askStatus" hidden></div>
   <div class="ask-log" id="askLog" aria-live="polite"></div>
+  <div class="ask-gate" id="askGate" hidden></div>
   <form class="ask-form" id="askForm"><input id="askInput" maxlength="600" autocomplete="off" aria-label="Your question"><button class="big-btn" id="askSend" type="submit">Ask</button></form>
 </section>
 <div class="toast" id="toast" hidden></div>
@@ -248,11 +277,11 @@ const $=s=>document.querySelector(s);
 const HUES=['#4b3bb0','#c4532d','#2fb3a6','#b8892d','#3a6fd8','#8f3fa8','#2f8f5a','#c2410c','#4f46e5','#b45309','#0e7490','#be185d','#65a30d','#7c3aed','#0891b2','#dc2626','#ca8a04','#f3a93b'];
 const AD_EVERY=8;
 const T={
-  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',shorts:'Shorts',sVerse:'Verse',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',sideways:'Swipe sideways for Shorts',faq:'FAQ',alsoAsk:'People also ask',brandTag:'One verse at a time',chooseCh:'Choose a chapter',lang:'Language',tap:'Tap the scroll to begin',meta:'18 chapters · 700 verses',loadErr:'Could not load this chapter. Check your connection and reopen the page.'},
-  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',shorts:'Shorts',sVerse:'श्लोक',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',sideways:'Shorts के लिए बगल में स्वाइप करें',faq:'सवाल-जवाब',alsoAsk:'लोग यह भी पूछते हैं',brandTag:'हर दिन एक श्लोक',chooseCh:'अध्याय चुनें',lang:'भाषा',tap:'शुरू करने के लिए ग्रंथ पर टैप करें',meta:'18 अध्याय · 700 श्लोक',loadErr:'यह अध्याय लोड नहीं हो पाया। कनेक्शन देखें और पेज फिर से खोलें।'},
-  fr:{chapter:'Chapitre',verses:'versets',swipe:'Glisse vers le haut pour commencer',sVerse:'Verset',shorts:'Shorts',share:'Partager',save:'Enregistrer',next:'Chapitre suivant',end:'Fin du chapitre',copied:'Verset copié. Colle-le où tu veux pour le partager.',sideways:'Glisse sur le côté pour les Shorts',faq:'FAQ',alsoAsk:'Les gens demandent aussi',brandTag:'Un verset à la fois',chooseCh:'Choisis un chapitre',lang:'Langue',tap:'Touche le rouleau pour commencer',meta:'18 chapitres · 700 versets',loadErr:'Impossible de charger ce chapitre. Vérifie ta connexion et rouvre la page.'},
-  es:{chapter:'Capítulo',verses:'versos',swipe:'Desliza hacia arriba para empezar',sVerse:'Verso',shorts:'Shorts',share:'Compartir',save:'Guardar',next:'Capítulo siguiente',end:'Fin del capítulo',copied:'Verso copiado. Pégalo donde quieras para compartirlo.',sideways:'Desliza hacia el lado para ver los Shorts',faq:'FAQ',alsoAsk:'La gente también pregunta',brandTag:'Un verso a la vez',chooseCh:'Elige un capítulo',lang:'Idioma',tap:'Toca el pergamino para empezar',meta:'18 capítulos · 700 versos',loadErr:'No se pudo cargar este capítulo. Revisa tu conexión y vuelve a abrir la página.'},
-  ar:{chapter:'الفصل',verses:'آية',swipe:'اسحب للأعلى لتبدأ',sVerse:'الآية',shorts:'Shorts',share:'مشاركة',save:'حفظ',next:'الفصل التالي',end:'نهاية الفصل',copied:'تم نسخ الآية. الصقها في أي مكان لمشاركتها.',sideways:'اسحب جانبًا لترى الـShorts',faq:'أسئلة شائعة',alsoAsk:'يسأل الناس أيضًا',brandTag:'آية واحدة في كل مرة',chooseCh:'اختر فصلًا',lang:'اللغة',tap:'المس اللفافة لتبدأ',meta:'18 فصلًا · 700 آية',loadErr:'تعذّر تحميل هذا الفصل. تحقّق من اتصالك وأعد فتح الصفحة.'}
+  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',shorts:'Shorts',sVerse:'Verse',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',sideways:'Swipe sideways for Shorts',faq:'FAQ',alsoAsk:'People also ask',brandTag:'One verse at a time',chooseCh:'Choose a chapter',lang:'Language',tap:'Tap the scroll to begin',meta:'18 chapters · 700 verses',loadErr:'Could not load this chapter. Check your connection and reopen the page.',landVerse:'The exact meaning: Sanskrit, transliteration and a faithful translation of every verse.',landShorts:'A GenZ take: each verse retold in a few lines for life today, with FAQs.',landNote:'Our only intention is to explain the Bhagavad Gita and its meaning in simple words. Shorts are a modern retelling, not scripture. Nothing here is meant to hurt anyone\'s faith or sentiments.'},
+  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',shorts:'Shorts',sVerse:'श्लोक',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',sideways:'Shorts के लिए बगल में स्वाइप करें',faq:'सवाल-जवाब',alsoAsk:'लोग यह भी पूछते हैं',brandTag:'हर दिन एक श्लोक',chooseCh:'अध्याय चुनें',lang:'भाषा',tap:'शुरू करने के लिए ग्रंथ पर टैप करें',meta:'18 अध्याय · 700 श्लोक',loadErr:'यह अध्याय लोड नहीं हो पाया। कनेक्शन देखें और पेज फिर से खोलें।',landVerse:'सटीक अर्थ: हर श्लोक का संस्कृत पाठ, उच्चारण और सही अनुवाद।',landShorts:'GenZ अंदाज़: हर श्लोक आज की ज़िंदगी के लिए कुछ पंक्तियों में, साथ में सवाल-जवाब।',landNote:'हमारा उद्देश्य केवल भगवद्गीता और उसके अर्थ को सरल शब्दों में समझाना है। Shorts आज की भाषा में कही गई बात हैं, स्वयं शास्त्र नहीं। यहाँ कुछ भी किसी की आस्था या भावनाओं को ठेस पहुँचाने के लिए नहीं है।'},
+  fr:{chapter:'Chapitre',verses:'versets',swipe:'Glisse vers le haut pour commencer',sVerse:'Verset',shorts:'Shorts',share:'Partager',save:'Enregistrer',next:'Chapitre suivant',end:'Fin du chapitre',copied:'Verset copié. Colle-le où tu veux pour le partager.',sideways:'Glisse sur le côté pour les Shorts',faq:'FAQ',alsoAsk:'Les gens demandent aussi',brandTag:'Un verset à la fois',chooseCh:'Choisis un chapitre',lang:'Langue',tap:'Touche le rouleau pour commencer',meta:'18 chapitres · 700 versets',loadErr:'Impossible de charger ce chapitre. Vérifie ta connexion et rouvre la page.',landVerse:'Le sens exact : le sanskrit, la translittération et une traduction fidèle de chaque verset.',landShorts:'La version GenZ : chaque verset raconté en quelques lignes pour la vie d\'aujourd\'hui, avec une FAQ.',landNote:'Notre seule intention est d\'expliquer la Bhagavad Gita et son sens avec des mots simples. Les Shorts sont une relecture moderne, pas le texte sacré. Rien ici ne vise à blesser la foi ou les sentiments de quiconque.'},
+  es:{chapter:'Capítulo',verses:'versos',swipe:'Desliza hacia arriba para empezar',sVerse:'Verso',shorts:'Shorts',share:'Compartir',save:'Guardar',next:'Capítulo siguiente',end:'Fin del capítulo',copied:'Verso copiado. Pégalo donde quieras para compartirlo.',sideways:'Desliza hacia el lado para ver los Shorts',faq:'FAQ',alsoAsk:'La gente también pregunta',brandTag:'Un verso a la vez',chooseCh:'Elige un capítulo',lang:'Idioma',tap:'Toca el pergamino para empezar',meta:'18 capítulos · 700 versos',loadErr:'No se pudo cargar este capítulo. Revisa tu conexión y vuelve a abrir la página.',landVerse:'El significado exacto: el sánscrito, la transliteración y una traducción fiel de cada verso.',landShorts:'La versión GenZ: cada verso contado en pocas líneas para la vida de hoy, con preguntas frecuentes.',landNote:'Nuestra única intención es explicar el Bhagavad Gita y su significado con palabras sencillas. Los Shorts son una relectura moderna, no el texto sagrado. Nada aquí pretende herir la fe ni los sentimientos de nadie.'},
+  ar:{chapter:'الفصل',verses:'آية',swipe:'اسحب للأعلى لتبدأ',sVerse:'الآية',shorts:'Shorts',share:'مشاركة',save:'حفظ',next:'الفصل التالي',end:'نهاية الفصل',copied:'تم نسخ الآية. الصقها في أي مكان لمشاركتها.',sideways:'اسحب جانبًا لترى الـShorts',faq:'أسئلة شائعة',alsoAsk:'يسأل الناس أيضًا',brandTag:'آية واحدة في كل مرة',chooseCh:'اختر فصلًا',lang:'اللغة',tap:'المس اللفافة لتبدأ',meta:'18 فصلًا · 700 آية',loadErr:'تعذّر تحميل هذا الفصل. تحقّق من اتصالك وأعد فتح الصفحة.',landVerse:'المعنى الدقيق: النص السنسكريتي ونطقه وترجمة أمينة لكل آية.',landShorts:'بأسلوب الجيل Z: كل آية في سطور قليلة لحياة اليوم، مع أسئلة شائعة.',landNote:'نيتنا الوحيدة هي شرح البهاغافاد غيتا ومعناها بكلمات بسيطة. الـShorts إعادة صياغة عصرية وليست النص المقدس نفسه. لا شيء هنا يقصد الإساءة إلى إيمان أحد أو مشاعره.'}
 };
 const LANGS=[['en','English','EN'],['hi','हिन्दी','हिं'],['fr','Français','FR'],['es','Español','ES'],['ar','العربية','ع']];
 const BASE=['en','hi'];
@@ -422,28 +451,138 @@ const ASK_T={
     intro:'اسأل عن التوتر أو الغضب أو الهدف أو العلاقات أو أي آية. الأجوبة من الغيتا، مع الآيات التي تستند إليها.',
     sugg:['كيف أتوقف عن القلق بشأن النتائج؟','ماذا تقول الغيتا عن الغضب؟','كيف أجد هدفي؟','اشرح الآية 2.47 ببساطة']}
 };
+/* Sign-in, free questions and paid packs for Ask Gita. Reading never needs an account. */
+const ACC_T={
+  en:{gateH:'Sign up to ask Gita',gate:'Reading Gita4U is free and needs no account. To ask Gita your own questions, sign up with your email. Your first {n} questions are free.',emailPh:'you@example.com',sendCode:'Send code',codeSent:'We sent a 6-digit code to {email}. It can take a minute to arrive.',codePh:'6-digit code',verify:'Verify',otherEmail:'Use a different email',badEmail:'Enter a valid email address.',badCode:'That code didn\'t work. Check it, or ask for a new one.',freeLeft:'{n} free questions left',free1:'1 free question left',paidLeft:'{n} questions left, until {date}',signOut:'Sign out',outH:'You\'ve used your free questions',out:'Get {q} more questions for {price}. They last {d} days. Reading stays free.',pay:'Pay {price}',paid:'Payment received. Ask away!',payErr:'The payment didn\'t go through. You haven\'t been charged for anything that failed.',noSetup:'Sign-in isn\'t set up on this copy of the site yet.',wait:'Please wait…'},
+  hi:{gateH:'गीता से पूछने के लिए साइन अप करें',gate:'Gita4U पढ़ना मुफ़्त है और इसके लिए अकाउंट नहीं चाहिए। गीता से अपने सवाल पूछने के लिए ईमेल से साइन अप करें। पहले {n} सवाल मुफ़्त हैं।',emailPh:'aap@example.com',sendCode:'कोड भेजें',codeSent:'हमने {email} पर 6 अंकों का कोड भेजा है। आने में एक मिनट लग सकता है।',codePh:'6 अंकों का कोड',verify:'पुष्टि करें',otherEmail:'दूसरा ईमेल इस्तेमाल करें',badEmail:'सही ईमेल पता लिखें।',badCode:'यह कोड काम नहीं किया। जाँचें, या नया कोड मँगाएँ।',freeLeft:'{n} मुफ़्त सवाल बाकी',free1:'1 मुफ़्त सवाल बाकी',paidLeft:'{n} सवाल बाकी, {date} तक',signOut:'साइन आउट',outH:'आपके मुफ़्त सवाल पूरे हो गए',out:'{price} में {q} और सवाल पाएँ। ये {d} दिन तक चलेंगे। पढ़ना हमेशा मुफ़्त है।',pay:'{price} दें',paid:'पेमेंट मिल गया। अब पूछिए!',payErr:'पेमेंट पूरा नहीं हुआ। जो पेमेंट फ़ेल हुआ, उसका पैसा नहीं कटा है।',noSetup:'साइट की इस कॉपी पर साइन-इन अभी सेट नहीं है।',wait:'रुकिए…'},
+  fr:{gateH:'Inscris-toi pour demander à la Gita',gate:'Lire Gita4U est gratuit et sans compte. Pour poser tes propres questions à la Gita, inscris-toi avec ton e-mail. Tes {n} premières questions sont gratuites.',emailPh:'toi@exemple.com',sendCode:'Envoyer le code',codeSent:'Nous avons envoyé un code à 6 chiffres à {email}. Il peut mettre une minute à arriver.',codePh:'Code à 6 chiffres',verify:'Valider',otherEmail:'Utiliser un autre e-mail',badEmail:'Saisis une adresse e-mail valide.',badCode:'Ce code n\'a pas marché. Vérifie-le ou demande-en un nouveau.',freeLeft:'{n} questions gratuites restantes',free1:'1 question gratuite restante',paidLeft:'{n} questions restantes, jusqu\'au {date}',signOut:'Se déconnecter',outH:'Tu as utilisé tes questions gratuites',out:'Obtiens {q} questions de plus pour {price}. Elles durent {d} jours. La lecture reste gratuite.',pay:'Payer {price}',paid:'Paiement reçu. À toi de demander !',payErr:'Le paiement n\'est pas passé. Rien ne t\'a été facturé pour un paiement échoué.',noSetup:'La connexion n\'est pas encore configurée sur cette version du site.',wait:'Un instant…'},
+  es:{gateH:'Regístrate para preguntarle a la Gita',gate:'Leer Gita4U es gratis y no necesita cuenta. Para hacerle tus propias preguntas a la Gita, regístrate con tu correo. Tus primeras {n} preguntas son gratis.',emailPh:'tu@ejemplo.com',sendCode:'Enviar código',codeSent:'Enviamos un código de 6 dígitos a {email}. Puede tardar un minuto en llegar.',codePh:'Código de 6 dígitos',verify:'Verificar',otherEmail:'Usar otro correo',badEmail:'Escribe un correo válido.',badCode:'Ese código no funcionó. Revísalo o pide uno nuevo.',freeLeft:'Te quedan {n} preguntas gratis',free1:'Te queda 1 pregunta gratis',paidLeft:'Te quedan {n} preguntas, hasta el {date}',signOut:'Cerrar sesión',outH:'Ya usaste tus preguntas gratis',out:'Consigue {q} preguntas más por {price}. Duran {d} días. Leer sigue siendo gratis.',pay:'Pagar {price}',paid:'Pago recibido. ¡Pregunta lo que quieras!',payErr:'El pago no se completó. No se te cobró nada por un pago fallido.',noSetup:'El inicio de sesión aún no está configurado en esta versión del sitio.',wait:'Un momento…'},
+  ar:{gateH:'سجّل لتسأل الغيتا',gate:'قراءة Gita4U مجانية ولا تحتاج إلى حساب. لتطرح أسئلتك على الغيتا، سجّل ببريدك الإلكتروني. أول {n} أسئلة مجانية.',emailPh:'you@example.com',sendCode:'أرسل الرمز',codeSent:'أرسلنا رمزًا من 6 أرقام إلى {email}. قد يستغرق وصوله دقيقة.',codePh:'رمز من 6 أرقام',verify:'تحقّق',otherEmail:'استخدم بريدًا آخر',badEmail:'أدخل بريدًا إلكترونيًا صحيحًا.',badCode:'هذا الرمز لم ينجح. تحقّق منه أو اطلب رمزًا جديدًا.',freeLeft:'بقي لك {n} أسئلة مجانية',free1:'بقي لك سؤال مجاني واحد',paidLeft:'بقي لك {n} سؤالًا حتى {date}',signOut:'تسجيل الخروج',outH:'استخدمت أسئلتك المجانية',out:'احصل على {q} سؤالًا إضافيًا مقابل {price}. صالحة لمدة {d} يومًا. القراءة تبقى مجانية.',pay:'ادفع {price}',paid:'تم استلام الدفع. اسأل ما تشاء!',payErr:'لم تكتمل عملية الدفع. لم يُخصم منك شيء مقابل دفعة فاشلة.',noSetup:'تسجيل الدخول غير مُعدّ بعد في هذه النسخة من الموقع.',wait:'لحظة…'}
+};
+const ac=(k,vars={})=>ACC_T[S.lang][k].replace(/\{(\w+)\}/g,(m,x)=>vars[x]??m);
+const FREE_Q=3;
+let auth=null,acct=null,gate={step:'email',email:'',err:''};
+try{auth=JSON.parse(localStorage.getItem('gita-auth')||'null')}catch(e){}
+function saveAuth(a){auth=a;if(!a)acct=null;try{a?localStorage.setItem('gita-auth',JSON.stringify(a)):localStorage.removeItem('gita-auth')}catch(e){}}
+async function sbAuth(path,body){
+  if(!CFG.supabaseUrl||!CFG.supabaseKey)throw new Error(ac('noSetup'));
+  const r=await fetch(CFG.supabaseUrl.replace(/\/$/,'')+'/auth/v1/'+path,{method:'POST',headers:{'Content-Type':'application/json',apikey:CFG.supabaseKey},body:JSON.stringify(body)});
+  const d=await r.json().catch(()=>({}));
+  if(!r.ok)throw Object.assign(new Error(d.msg||d.error_description||d.message||at('err')),{status:r.status});
+  return d;
+}
+function keepSession(d){saveAuth({access:d.access_token,refresh:d.refresh_token,exp:Date.now()+(d.expires_in||3600)*1000,email:(d.user&&d.user.email)||(auth&&auth.email)||gate.email})}
+async function accessToken(){
+  if(!auth)return null;
+  if(Date.now()>auth.exp-60000){
+    try{keepSession(await sbAuth('token?grant_type=refresh_token',{refresh_token:auth.refresh}))}
+    catch(e){if(e.status>=400&&e.status<500)saveAuth(null);return null}
+  }
+  return auth&&auth.access;
+}
+async function api(path,init={}){
+  const tk=await accessToken();
+  const r=await fetch(path,{...init,headers:{'Content-Type':'application/json',...(tk?{Authorization:'Bearer '+tk}:{})}});
+  const d=await r.json().catch(()=>({}));
+  if(r.status===401&&d.needLogin){saveAuth(null);gate={step:'email',email:'',err:''}}
+  return {r,d};
+}
+const money=p=>{try{return new Intl.NumberFormat(S.lang==='hi'?'hi-IN':S.lang,{style:'currency',currency:p.currency,maximumFractionDigits:p.price%100?2:0}).format(p.price/100)}catch(e){return (p.price/100)+' '+p.currency}};
+const day=iso=>{try{return new Date(iso).toLocaleDateString(S.lang==='hi'?'hi-IN':S.lang,{day:'numeric',month:'short'})}catch(e){return iso.slice(0,10)}};
+const outOfQuestions=()=>acct&&acct.freeLeft<=0&&acct.paidLeft<=0;
+function renderAccount(){
+  const st=$('#askStatus'),g=$('#askGate'),form=$('#askForm');
+  if(!auth){
+    st.hidden=true;form.hidden=true;g.hidden=false;
+    g.innerHTML=gate.step==='email'
+      ?`<h3>${esc(ac('gateH'))}</h3><p>${esc(ac('gate',{n:FREE_Q}))}</p>
+        <form data-gate="email"><input type="email" name="email" required autocomplete="email" inputmode="email" placeholder="${esc(ac('emailPh'))}" value="${esc(gate.email)}" aria-label="Email"><button class="big-btn">${esc(ac('sendCode'))}</button></form>`
+      :`<h3>${esc(ac('gateH'))}</h3><p>${esc(ac('codeSent',{email:gate.email}))}</p>
+        <form data-gate="code"><input class="code" name="code" required autocomplete="one-time-code" inputmode="numeric" pattern="[0-9]{6,10}" maxlength="10" placeholder="${esc(ac('codePh'))}" aria-label="${esc(ac('codePh'))}"><button class="big-btn">${esc(ac('verify'))}</button></form>
+        <button class="link" data-gate-back>${esc(ac('otherEmail'))}</button>`;
+    if(gate.err)g.insertAdjacentHTML('beforeend',`<p class="err" role="alert">${esc(gate.err)}</p>`);
+    return;
+  }
+  st.hidden=false;
+  const left=!acct?'':acct.paidLeft>0?ac('paidLeft',{n:acct.paidLeft+acct.freeLeft,date:day(acct.paidUntil)}):acct.freeLeft===1?ac('free1'):ac('freeLeft',{n:acct.freeLeft});
+  st.innerHTML=`<span>${esc(left)}</span><span>${esc(auth.email||'')} · <button data-signout>${esc(ac('signOut'))}</button></span>`;
+  if(outOfQuestions()){
+    const p=acct.pack;form.hidden=true;g.hidden=false;
+    g.innerHTML=`<h3>${esc(ac('outH'))}</h3><p>${esc(ac('out',{q:p.questions,price:money(p),d:p.days}))}</p><button class="big-btn" data-buy>${esc(ac('pay',{price:money(p)}))}</button>`;
+    if(gate.err)g.insertAdjacentHTML('beforeend',`<p class="err" role="alert">${esc(gate.err)}</p>`);
+  }else{g.hidden=true;form.hidden=false}
+}
+async function refreshAccount(){if(!auth)return;const {r,d}=await api('/api/account');if(r.ok)acct=d;renderAccount()}
+$('#askGate').addEventListener('submit',async e=>{
+  e.preventDefault();const f=e.target,btn=f.querySelector('button');btn.disabled=true;gate.err='';
+  try{
+    if(f.dataset.gate==='email'){
+      const email=f.email.value.trim().toLowerCase();
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email))throw new Error(ac('badEmail'));
+      gate.email=email;await sbAuth('otp',{email,create_user:true});gate.step='code';
+    }else{
+      try{keepSession(await sbAuth('verify',{type:'email',email:gate.email,token:f.code.value.trim()}))}
+      catch(x){throw new Error(x.message===ac('noSetup')?x.message:ac('badCode'))}
+      gate={step:'email',email:'',err:''};await refreshAccount();
+    }
+  }catch(x){gate.err=x.message||at('err')}
+  renderAccount();const i=$('#askGate input')||$('#askInput');if(i)i.focus();
+});
+$('#askGate').addEventListener('click',e=>{
+  if(e.target.closest('[data-gate-back]')){gate={step:'email',email:gate.email,err:''};renderAccount();return}
+  if(e.target.closest('[data-buy]'))buy(e.target.closest('[data-buy]'));
+});
+$('#askStatus').addEventListener('click',e=>{
+  if(!e.target.closest('[data-signout]'))return;
+  const tk=auth&&auth.access;
+  if(tk&&CFG.supabaseUrl)fetch(CFG.supabaseUrl.replace(/\/$/,'')+'/auth/v1/logout',{method:'POST',headers:{apikey:CFG.supabaseKey,Authorization:'Bearer '+tk}}).catch(()=>{});
+  saveAuth(null);gate={step:'email',email:'',err:''};renderAccount();
+});
+function loadScript(src){return new Promise((ok,no)=>{if(document.querySelector(`script[src="${src}"]`)&&window.Razorpay)return ok();const s=document.createElement('script');s.src=src;s.onload=ok;s.onerror=()=>no(new Error(at('err')));document.head.appendChild(s)})}
+async function buy(btn){
+  btn.disabled=true;btn.textContent=ac('wait');gate.err='';
+  try{
+    const {r,d}=await api('/api/pay',{method:'POST',body:JSON.stringify({action:'order'})});
+    if(!r.ok)throw new Error(d.error||at('err'));
+    await loadScript('https://checkout.razorpay.com/v1/checkout.js');
+    const rz=new window.Razorpay({key:d.keyId,order_id:d.orderId,amount:d.amount,currency:d.currency,name:'Gita4U',
+      description:ac('out',{q:acct.pack.questions,price:money(acct.pack),d:acct.pack.days}).split('.')[0],prefill:{email:d.email},theme:{color:'#f3a93b'},
+      modal:{ondismiss:()=>renderAccount()},
+      handler:async resp=>{
+        const v=await api('/api/pay',{method:'POST',body:JSON.stringify({action:'verify',...resp})});
+        if(v.r.ok){acct=v.d;gate.err='';renderAccount();toast(ac('paid'));$('#askInput').focus()}
+        else{gate.err=v.d.error||ac('payErr');renderAccount()}
+      }});
+    rz.on('payment.failed',()=>{gate.err=ac('payErr');renderAccount()});
+    rz.open();
+  }catch(x){gate.err=x.message||ac('payErr');renderAccount()}
+}
+
 const at=k=>ASK_T[S.lang][k];
 let askHistory=[];
-function syncAsk(){$('#askBtnLabel').textContent=at('btn');$('#askTitle').textContent=at('title');$('#askInput').placeholder=at('ph');$('#askSend').textContent=at('send')}
-function askIntro(){$('#askLog').innerHTML=`<p class="intro">${esc(at('intro'))}</p><div class="chips">${at('sugg').map(q=>`<button class="chip" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>`}
-function openAsk(){closeSheet();syncAsk();if(!askHistory.length)askIntro();$('#ask').hidden=false;$('#scrim').hidden=false;$('#askInput').focus()}
+function syncAsk(){$('#askBtnLabel').textContent=at('btn');$('#askTitle').textContent=at('title');$('#askInput').placeholder=at('ph');$('#askSend').textContent=at('send');if(!$('#ask').hidden)renderAccount()}
+function askIntro(){$('#askLog').innerHTML=`<p class="intro">${esc(at('intro'))}</p>`+(auth?`<div class="chips">${at('sugg').map(q=>`<button class="chip" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>`:'')}
+function openAsk(){closeSheet();syncAsk();if(!askHistory.length)askIntro();renderAccount();$('#ask').hidden=false;$('#scrim').hidden=false;refreshAccount().then(()=>{if(!askHistory.length)askIntro()});const i=$('#askGate:not([hidden]) input')||$('#askInput');i.focus()}
 function closeAsk(){if($('#ask').hidden)return;$('#ask').hidden=true;if($('#sheet').hidden)$('#scrim').hidden=true}
 function addMsg(cls,html){const d=document.createElement('div');d.className='msg '+cls;d.innerHTML=html;const log=$('#askLog');log.appendChild(d);log.scrollTop=log.scrollHeight;return d}
 const withCites=text=>esc(text).replace(/\[(\d{1,2})\.(\d{1,2})\]/g,(m,c,v)=>`<button class="cite" data-goto="${c}-${v}">${c}.${v}</button>`);
 async function ask(q){
   q=q.trim();if(!q)return;
+  if(!auth||outOfQuestions()){renderAccount();return}
   if(!askHistory.length)$('#askLog').innerHTML='';
   addMsg('me',esc(q));
   const wait=addMsg('gita wait',esc(at('wait')));
   $('#askSend').disabled=true;$('#askInput').value='';
   try{
-    const r=await fetch('/api/ask',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q,lang:S.lang,history:askHistory})});
-    const data=await r.json().catch(()=>({}));
+    const {r,d:data}=await api('/api/ask',{method:'POST',body:JSON.stringify({question:q,lang:S.lang,history:askHistory})});
+    if(r.status===402&&data.account){acct=data.account;$('#askInput').value=q;wait.remove();return}
+    if(r.status===401&&data.needLogin){$('#askInput').value=q;wait.remove();return}
     if(!r.ok||!data.answer)throw new Error(data.error||at('err'));
     wait.className='msg gita';wait.innerHTML=withCites(data.answer);
+    if(data.account)acct=data.account;
     askHistory.push({role:'user',content:q},{role:'assistant',content:data.answer});
   }catch(e){wait.className='msg gita err';wait.textContent=e.message||at('err')}
-  finally{$('#askSend').disabled=false;$('#askLog').scrollTop=$('#askLog').scrollHeight}
+  finally{$('#askSend').disabled=false;renderAccount();$('#askLog').scrollTop=$('#askLog').scrollHeight}
 }
 $('#askBtn').onclick=openAsk;$('#askClose').onclick=closeAsk;
 $('#askForm').addEventListener('submit',e=>{e.preventDefault();ask($('#askInput').value)});
@@ -471,11 +610,18 @@ window.addEventListener('hashchange',()=>{closeSheet();const v=fromHash();render
   await render(v);
 })();
 /* landing scroll: shown when the site opens without a verse link */
-function showLanding(){
-  const l=$('#landing');l.hidden=false;
+function showLanding(){$('#landing').hidden=false;syncLanding()}
+function syncLanding(){
   $('#landCta span').textContent=t('tap');
   $('#landMeta').textContent=t('meta');
+  $('#landVerseH').textContent=t('sVerse');$('#landShortsH').textContent=t('shorts');
+  $('#landVerse').textContent=t('landVerse');$('#landShorts').textContent=t('landShorts');$('#landNote').textContent=t('landNote');
+  $('#landLangs').innerHTML=LANGS.map(([k,name,short])=>`<button data-land-lang="${k}" lang="${k}" aria-label="${name}" aria-pressed="${k===S.lang}">${short}</button>`).join('');
 }
+$('#landLangs').addEventListener('click',e=>{
+  const b=e.target.closest('[data-land-lang]');if(!b||b.dataset.landLang===S.lang)return;
+  S.lang=b.dataset.landLang;syncLanding();rerenderKeepingPlace();
+});
 $('#scroll').onclick=()=>{
   const l=$('#landing');if(l.classList.contains('opening'))return;
   l.classList.add('opening');$('#scroll').classList.add('open');

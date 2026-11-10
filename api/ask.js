@@ -1,11 +1,16 @@
-// Ask Gita: answers a question from the Bhagavad Gita's verses, using Gita Scroll's own translations and notes.
+// Ask Gita: answers a question from the Bhagavad Gita's verses, using Gita4U's own translations and notes.
 // Vercel serverless function. POST { question, lang: "en" | "hi" | "fr" | "es" | "ar", history?: [{ role, content }] }
-// Returns { answer, verses: ["2.47", ...] }.
+// with "Authorization: Bearer <Supabase access token>". Returns { answer, verses: ["2.47", ...], account }.
+// Signed-in users get ASK_FREE_QUESTIONS (3) free questions, then need a paid pack (see lib/account.js).
+// Errors: 401 { needLogin: true } when not signed in, 402 { needPay: true, account } when out of questions.
 import Anthropic from "@anthropic-ai/sdk";
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import { currentUser, takeQuestion, refundQuestion, sendError } from "../lib/account.js";
 
-const MODEL = "claude-opus-5-5";
+// Opus answers best; set ASK_MODEL=claude-haiku-5-5 to cut the cost per question by about 30 times.
+const MODEL = process.env.ASK_MODEL || "claude-opus-5-5";
+const IS_OPUS = MODEL.startsWith("claude-opus");
 const MAX_QUESTION_CHARS = 600;
 const MAX_HISTORY_TURNS = 6;
 const EXCERPTS = 5;
@@ -15,7 +20,7 @@ const client = new Anthropic();
 
 // Built once per cold start and kept byte-identical so the prompt cache hits on every request.
 const SYSTEM_PROMPT = [
-  "You are Ask Gita, the guide inside Gita Scroll, an app for reading the Bhagavad Gita.",
+  "You are Ask Gita, the guide inside Gita4U, an app for reading the Bhagavad Gita.",
   "People ask you about life, choices, feelings and the Gita itself. Answer only from the Bhagavad Gita:",
   "the verse translations below and the notes on relevant verses supplied with each question.",
   "",
@@ -119,25 +124,37 @@ export default async function handler(req, res) {
   while (past.length && past[0].role !== "user") past.shift();
   const messages = [...past, { role: "user", content: buildUserTurn(question.trim(), lang) }];
 
+  let user, taken;
+  try {
+    user = await currentUser(req);
+    taken = await takeQuestion(user);
+  } catch (error) {
+    return sendError(res, error, "Ask Gita account:");
+  }
+  const giveBack = async () => {
+    try {
+      await refundQuestion(user, taken.wasFree);
+    } catch (e) {
+      console.error("Ask Gita: refund failed", e);
+    }
+  };
+
   try {
     const response = await client.beta.messages.create({
       model: MODEL,
       max_tokens: 16000,
-      betas: ["server-side-fallback-2026-07-01"],
-      fallbacks: "default",
-      output_config: { effort: "low" },
+      ...(IS_OPUS ? { betas: ["server-side-fallback-2026-07-01"], fallbacks: "default", output_config: { effort: "low" } } : {}),
       system: [{ type: "text", text: SYSTEM_PROMPT, cache_control: { type: "ephemeral" } }],
       messages,
     });
     if (response.stop_reason === "refusal") {
-      return res.status(200).json({
-        answer: SORRY[lang] || SORRY.en,
-        verses: [],
-      });
+      await giveBack();
+      return res.status(200).json({ answer: SORRY[lang] || SORRY.en, verses: [], refunded: true });
     }
     const answer = response.content.filter((b) => b.type === "text").map((b) => b.text).join("").trim();
-    return res.status(200).json({ answer, verses: citedVerses(answer) });
+    return res.status(200).json({ answer, verses: citedVerses(answer), account: taken.account });
   } catch (error) {
+    await giveBack();
     if (error instanceof Anthropic.RateLimitError) {
       return res.status(429).json({ error: "Lots of people are asking right now. Try again in a minute." });
     }
