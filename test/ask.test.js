@@ -44,3 +44,9 @@ test("rejects GET and empty questions without calling the API", async () => {
   await handler({ method: "POST", body: { question: "x".repeat(601) } }, res);
   assert.equal(res.statusCode, 400);
 });
+
+test("user turn names French, Spanish and Arabic", () => {
+  assert.match(buildUserTurn("Que dit la Gita ?", "fr"), /App language: French/);
+  assert.match(buildUserTurn("¿Qué dice?", "es"), /App language: Spanish/);
+  assert.match(buildUserTurn("ماذا تقول؟", "ar"), /App language: Arabic/);
+});

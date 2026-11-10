@@ -1,5 +1,5 @@
 // Ask Gita: answers a question from the Bhagavad Gita's verses, using Gita Scroll's own translations and notes.
-// Vercel serverless function. POST { question, lang: "en" | "hi", history?: [{ role, content }] }
+// Vercel serverless function. POST { question, lang: "en" | "hi" | "fr" | "es" | "ar", history?: [{ role, content }] }
 // Returns { answer, verses: ["2.47", ...] }.
 import Anthropic from "@anthropic-ai/sdk";
 import { readFileSync } from "node:fs";
@@ -26,7 +26,7 @@ const SYSTEM_PROMPT = [
   "  Cite 1 to 3 verses. Only cite verses that appear in the list below, and never invent or misquote a verse.",
   "- If the Gita doesn't really address the question, say so honestly and share the closest relevant teaching.",
   "- Answer in the language the person writes in. If they write in Hinglish, answer in Hinglish.",
-  "  If the app language is Hindi and they write in English, answer in simple Hindi.",
+  "  If they write in English but the app language is something else, answer in the app language, kept simple.",
   "- You are not a doctor, lawyer or therapist. If someone mentions self-harm or being in danger, respond with care,",
   "  encourage them to reach out to someone they trust, and suggest calling a local helpline (in India, Tele-MANAS: 14416).",
   "- Plain text only. No headings or bullet lists unless asked.",
@@ -37,6 +37,15 @@ const SYSTEM_PROMPT = [
   "# Verses (English translation)",
   ...context.verses.map((v) => `[${v.key}] ${v.en.replace(/\s+/g, " ")}`),
 ].join("\n");
+
+const LANG_NAMES = { en: "English", hi: "Hindi", fr: "French", es: "Spanish", ar: "Arabic" };
+const SORRY = {
+  en: "Sorry, I can't help with that one. Try asking something else.",
+  hi: "माफ़ कीजिए, मैं इस सवाल का जवाब नहीं दे सकता। कुछ और पूछिए।",
+  fr: "Désolé, je ne peux pas t'aider sur ce point. Essaie une autre question.",
+  es: "Lo siento, no puedo ayudarte con eso. Prueba con otra pregunta.",
+  ar: "عذرًا، لا أستطيع المساعدة في هذا. جرّب سؤالًا آخر.",
+};
 
 const STOPWORDS = new Set(
   "a an and are as at be but by do does for from how i if in is it its me my of on or should so that the this to was what when where which who why will with you your can am im not no".split(" "),
@@ -78,7 +87,7 @@ export function buildUserTurn(question, lang) {
     .map((v) => `[${v.key}] ${v.short} ${v.notes}`)
     .join("\n\n");
   return [
-    `App language: ${lang === "hi" ? "Hindi" : "English"}`,
+    `App language: ${LANG_NAMES[lang] || "English"}`,
     excerpts ? `Notes on verses that may help:\n${excerpts}` : "",
     `Question: ${question}`,
   ].filter(Boolean).join("\n\n");
@@ -122,7 +131,7 @@ export default async function handler(req, res) {
     });
     if (response.stop_reason === "refusal") {
       return res.status(200).json({
-        answer: lang === "hi" ? "माफ़ कीजिए, मैं इस सवाल का जवाब नहीं दे सकता। कुछ और पूछिए।" : "Sorry, I can't help with that one. Try asking something else.",
+        answer: SORRY[lang] || SORRY.en,
         verses: [],
       });
     }

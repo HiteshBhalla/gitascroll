@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Gita Scroll">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gotu&family=Mukta:wght@400;600;700&family=Tiro+Devanagari+Sanskrit&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gotu&family=Mukta:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Tiro+Devanagari+Sanskrit&display=swap">
 <style>
 /* Layout: full-screen vertical card feed (swipe up = next verse); each verse card is a sideways pager of panels. Single dark "night at Kurukshetra" look. */
 :root{
@@ -28,7 +28,14 @@ body{margin:0}
 [hidden]{display:none!important}
 img{max-width:100%}
 *,*::before,*::after{box-sizing:border-box}
-html[lang="hi"] .ch-num,html[lang="hi"] .vtag,html[lang="hi"] .label,html[lang="hi"] .chap-btn small{letter-spacing:0;text-transform:none}
+html[lang="hi"] .ch-num,html[lang="hi"] .vtag,html[lang="hi"] .label,html[lang="hi"] .chap-btn small,html[lang="ar"] .ch-num,html[lang="ar"] .label,html[lang="ar"] .chap-btn small,html[lang="ar"] .l-meta{letter-spacing:0;text-transform:none}
+html[lang="ar"]{--f-display:"Noto Naskh Arabic","Mukta",system-ui,sans-serif;--f-body:"Noto Naskh Arabic","Mukta",system-ui,sans-serif}
+/* Arabic reads right to left, but the sideways pager keeps left-to-right scrolling so swipe maths stay simple. */
+[dir="rtl"] .pager{direction:ltr}[dir="rtl"] .panel .inner{direction:rtl}
+[dir="rtl"] .shloka,[dir="rtl"] .translit{direction:ltr;text-align:right}
+[dir="rtl"] .panel .inner{padding-right:max(20px,env(safe-area-inset-right,0px));padding-left:max(72px,env(safe-area-inset-left,0px))}
+[dir="rtl"] .rail{right:auto;left:max(12px,env(safe-area-inset-left,0px))}
+[dir="rtl"] .q span{transform:scaleX(-1)}
 html,body{height:100%}
 body{background:var(--night);color:var(--ink);font-family:var(--f-body);font-size:16px;overflow:hidden}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
@@ -40,9 +47,12 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 .chap-btn{display:flex;flex-direction:column;align-items:flex-start;min-width:0;flex:1;text-align:left}
 .chap-btn small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
 .chap-btn span{font-family:var(--f-display);font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-.seg{display:flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:rgba(23,27,61,.8)}
-.seg button{padding:4px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
-.seg button[aria-pressed="true"]{background:var(--accent);color:var(--night);font-weight:700}
+.lang-btn{display:flex;align-items:center;gap:4px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:rgba(23,27,61,.8);font-size:13px;font-weight:700}
+.lang-btn svg{width:15px;height:15px;color:var(--muted)}
+.lang-list{display:grid;gap:8px}
+.lang-list button{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-radius:12px;background:var(--surface-2);font-size:17px}
+.lang-list button small{color:var(--muted);font-size:13px}
+.lang-list button[aria-current="true"]{outline:1px solid var(--accent)}
 
 .feed{height:100%;overflow-y:scroll;scroll-snap-type:y mandatory;scrollbar-width:none}
 .feed::-webkit-scrollbar{display:none}
@@ -215,9 +225,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-r
 <header class="top">
   <button class="chap-btn" id="chapBtn" aria-label="Choose chapter"><small id="chapNo">Chapter 1</small><span id="chapName">Arjuna Vishada Yoga</span></button>
   <button class="ask-btn" id="askBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg><span id="askBtnLabel">Ask</span></button>
-  <div class="seg" role="group" aria-label="Language">
-    <button id="langEn" aria-pressed="true">EN</button><button id="langHi" aria-pressed="false">हिं</button>
-  </div>
+  <button class="lang-btn" id="langBtn" aria-label="Language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span id="langLabel">EN</span></button>
 </header>
 <main class="feed" id="feed"><div class="loading">Loading…</div></main>
 <div class="scrim" id="scrim" hidden></div>
@@ -240,43 +248,66 @@ const $=s=>document.querySelector(s);
 const HUES=['#4b3bb0','#c4532d','#2fb3a6','#b8892d','#3a6fd8','#8f3fa8','#2f8f5a','#c2410c','#4f46e5','#b45309','#0e7490','#be185d','#65a30d','#7c3aed','#0891b2','#dc2626','#ca8a04','#f3a93b'];
 const AD_EVERY=8;
 const T={
-  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',more:'Read full summary',shloka:'Verse',meaning:'Meaning',shorts:'Shorts',sVerse:'Verse',sMeaning:'Meaning',enTr:'English translation',wbw:'Word by word',fullc:'Read more',listen:'Listen',stop:'Stop',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',sideways:'Swipe sideways for Shorts',genzSoon:'Shorts for this verse are coming soon. Try chapter 2.',tldr:'TL;DR',faq:'FAQ',alsoAsk:'People also ask',brandTag:'One verse at a time'},
-  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',more:'पूरा सार पढ़ें',shloka:'श्लोक',meaning:'अर्थ',shorts:'Shorts',sVerse:'श्लोक',sMeaning:'अर्थ',enTr:'English translation',wbw:'शब्दार्थ',fullc:'और पढ़ें',listen:'सुनें',stop:'रोकें',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',sideways:'Shorts के लिए बगल में स्वाइप करें',genzSoon:'इस श्लोक के Shorts जल्द आ रहे हैं। अध्याय 2 देखें।',tldr:'TL;DR',faq:'सवाल-जवाब',alsoAsk:'लोग यह भी पूछते हैं',brandTag:'हर दिन एक श्लोक'}
+  en:{chapter:'Chapter',verses:'verses',swipe:'Swipe up to begin',shorts:'Shorts',sVerse:'Verse',share:'Share',save:'Save',next:'Next chapter',end:'End of chapter',copied:'Verse copied. Paste it anywhere to share.',sideways:'Swipe sideways for Shorts',faq:'FAQ',alsoAsk:'People also ask',brandTag:'One verse at a time',chooseCh:'Choose a chapter',lang:'Language',tap:'Tap the scroll to begin',meta:'18 chapters · 700 verses',loadErr:'Could not load this chapter. Check your connection and reopen the page.'},
+  hi:{chapter:'अध्याय',verses:'श्लोक',swipe:'शुरू करने के लिए ऊपर स्वाइप करें',shorts:'Shorts',sVerse:'श्लोक',share:'शेयर',save:'सेव',next:'अगला अध्याय',end:'अध्याय समाप्त',copied:'श्लोक कॉपी हो गया। कहीं भी पेस्ट करके शेयर करें।',sideways:'Shorts के लिए बगल में स्वाइप करें',faq:'सवाल-जवाब',alsoAsk:'लोग यह भी पूछते हैं',brandTag:'हर दिन एक श्लोक',chooseCh:'अध्याय चुनें',lang:'भाषा',tap:'शुरू करने के लिए ग्रंथ पर टैप करें',meta:'18 अध्याय · 700 श्लोक',loadErr:'यह अध्याय लोड नहीं हो पाया। कनेक्शन देखें और पेज फिर से खोलें।'},
+  fr:{chapter:'Chapitre',verses:'versets',swipe:'Glisse vers le haut pour commencer',sVerse:'Verset',shorts:'Shorts',share:'Partager',save:'Enregistrer',next:'Chapitre suivant',end:'Fin du chapitre',copied:'Verset copié. Colle-le où tu veux pour le partager.',sideways:'Glisse sur le côté pour les Shorts',faq:'FAQ',alsoAsk:'Les gens demandent aussi',brandTag:'Un verset à la fois',chooseCh:'Choisis un chapitre',lang:'Langue',tap:'Touche le rouleau pour commencer',meta:'18 chapitres · 700 versets',loadErr:'Impossible de charger ce chapitre. Vérifie ta connexion et rouvre la page.'},
+  es:{chapter:'Capítulo',verses:'versos',swipe:'Desliza hacia arriba para empezar',sVerse:'Verso',shorts:'Shorts',share:'Compartir',save:'Guardar',next:'Capítulo siguiente',end:'Fin del capítulo',copied:'Verso copiado. Pégalo donde quieras para compartirlo.',sideways:'Desliza hacia el lado para ver los Shorts',faq:'FAQ',alsoAsk:'La gente también pregunta',brandTag:'Un verso a la vez',chooseCh:'Elige un capítulo',lang:'Idioma',tap:'Toca el pergamino para empezar',meta:'18 capítulos · 700 versos',loadErr:'No se pudo cargar este capítulo. Revisa tu conexión y vuelve a abrir la página.'},
+  ar:{chapter:'الفصل',verses:'آية',swipe:'اسحب للأعلى لتبدأ',sVerse:'الآية',shorts:'Shorts',share:'مشاركة',save:'حفظ',next:'الفصل التالي',end:'نهاية الفصل',copied:'تم نسخ الآية. الصقها في أي مكان لمشاركتها.',sideways:'اسحب جانبًا لترى الـShorts',faq:'أسئلة شائعة',alsoAsk:'يسأل الناس أيضًا',brandTag:'آية واحدة في كل مرة',chooseCh:'اختر فصلًا',lang:'اللغة',tap:'المس اللفافة لتبدأ',meta:'18 فصلًا · 700 آية',loadErr:'تعذّر تحميل هذا الفصل. تحقّق من اتصالك وأعد فتح الصفحة.'}
 };
-const S={lang:'en',panel:0,ch:1,chapters:null,cache:{},saved:new Set()};
-try{const p=JSON.parse(localStorage.getItem('gita-prefs')||'{}');if(p.lang)S.lang=p.lang;if(p.panel)S.panel=Math.min(+p.panel||0,1);(p.saved||[]).forEach(x=>S.saved.add(x))}catch(e){}
+const LANGS=[['en','English','EN'],['hi','हिन्दी','हिं'],['fr','Français','FR'],['es','Español','ES'],['ar','العربية','ع']];
+const BASE=['en','hi'];
+const S={lang:'en',panel:0,ch:1,chapters:null,cache:{},xcache:{},xch:{},saved:new Set()};
+try{const p=JSON.parse(localStorage.getItem('gita-prefs')||'{}');if(T[p.lang])S.lang=p.lang;if(p.panel)S.panel=Math.min(+p.panel||0,1);(p.saved||[]).forEach(x=>S.saved.add(x))}catch(e){}
 function persist(){try{localStorage.setItem('gita-prefs',JSON.stringify({lang:S.lang,panel:S.panel,saved:[...S.saved]}))}catch(e){}}
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const t=k=>T[S.lang][k];
+const t=k=>T[S.lang][k]??T.en[k];
 const ICON={
- play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>',
- stop:'<svg viewBox="0 0 24 24" fill="currentColor"><rect x="7" y="7" width="10" height="10" rx="2"/></svg>',
  share:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>',
  save:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
  up:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>'
 };
 
 async function getJSON(u){const r=await fetch(u);if(!r.ok)throw new Error(u);return r.json()}
-async function loadChapter(n){if(!S.cache[n])S.cache[n]=await getJSON('data/ch'+n+'.json');return S.cache[n]}
+async function loadChapter(n){
+  if(!S.cache[n])S.cache[n]=await getJSON('data/ch'+n+'.json');
+  // French, Spanish and Arabic text lives in data/<lang>/, one file per chapter, in verse order.
+  if(!BASE.includes(S.lang)){
+    const k=S.lang+':'+n;
+    if(!S.xcache[k])S.xcache[k]=await getJSON(`data/${S.lang}/ch${n}.json`);
+    if(!S.xch[S.lang])S.xch[S.lang]=await getJSON(`data/${S.lang}/chapters.json`);
+  }
+  return S.cache[n];
+}
+// The current language's translation, Short and FAQs for a verse, and the chapter-level text.
+function vx(c,v){
+  if(BASE.includes(S.lang))return{tr:v[S.lang],short:(window.GENZ[c.n+'.'+v.v]||{})[S.lang],faq:v.faq?v.faq[S.lang]:[]};
+  const x=(S.xcache[S.lang+':'+c.n]||[])[v.v-1];
+  // A verse not yet translated shows the English text rather than an empty card.
+  return x&&x.tr?x:{tr:v.en,short:(window.GENZ[c.n+'.'+v.v]||{}).en,faq:v.faq?v.faq.en:[]};
+}
+function cx(c){
+  if(BASE.includes(S.lang))return{name:S.lang==='hi'?c.sa:c.en,mean:c.mean,tldr:(window.GENZ_CH[c.n]||{})[S.lang],faq:c.faq?c.faq[S.lang]:[]};
+  const x=(S.xch[S.lang]||[])[c.n-1]||{};
+  return{name:S.lang==='ar'?x.mean:c.en,...x};
+}
 
 function chapterCard(c){
-  const tl=window.GENZ_CH[c.n];
+  const x=cx(c);
   return `<article class="card" style="--hue:${HUES[c.n-1]}"><div class="bg"></div><div class="inner">
     <div class="ch-num">${t('chapter')} ${c.n} · ${c.count} ${t('verses')}</div>
     <div class="ch-sa">${esc(c.sa)}</div>
-    <div class="ch-en">${esc(c.en)} · ${esc(c.mean)}</div>
-    ${tl?`<div class="tldr"><b>${t('shorts')}</b>${esc(tl[S.lang])}</div>`:''}
-    ${c.faq?`<button class="link" data-act="faq">${t('faq')}</button>`:''}
+    <div class="ch-en">${S.lang==='ar'?esc(x.mean):`${esc(c.en)} · ${esc(x.mean)}`}</div>
+    ${x.tldr?`<div class="tldr"><b>${t('shorts')}</b>${esc(x.tldr)}</div>`:''}
+    ${x.faq&&x.faq.length?`<button class="link" data-act="faq">${t('faq')}</button>`:''}
     <div class="hint">${ICON.up}${t('swipe')}</div>
   </div></article>`;
 }
 const PANELS=['verse','shorts'];
 function verseCard(c,v){
-  const key=c.n+'.'+v.v, hi=S.lang==='hi', g=window.GENZ[key];
-  const faq=v.faq?v.faq[S.lang]:[];
+  const key=c.n+'.'+v.v, x=vx(c,v), faq=x.faq||[];
   const html={
-    verse:`<div class="shloka">${esc(v.sa)}</div><div class="translit">${esc(v.tl)}</div><div class="en-tr">${esc(hi?v.hi:v.en)}</div>`,
-    shorts:`<span class="sticker">${t('shorts')}</span><div class="shorts-text">${g?esc(g[S.lang]):`<span style="color:var(--muted)">${t('genzSoon')}</span>`}</div>
+    verse:`<div class="shloka">${esc(v.sa)}</div><div class="translit">${esc(v.tl)}</div><div class="en-tr">${esc(x.tr)}</div>`,
+    shorts:`<span class="sticker">${t('shorts')}</span><div class="shorts-text">${esc(x.short)}</div>
       ${faq.length?`<div class="ask-also"><div class="label">${t('alsoAsk')}</div>${faq.map((x,i)=>`<button class="q" data-act="faq" data-q="${i}">${esc(x.q)}<span aria-hidden="true">›</span></button>`).join('')}</div>`:''}`
   };
   const saved=S.saved.has(key);
@@ -284,7 +315,6 @@ function verseCard(c,v){
     <div class="vhead"><div class="vnum">${key}</div><div class="tabs" role="tablist">${PANELS.map((k,i)=>`<button role="tab" data-tab="${i}" aria-selected="${i===S.panel}">${t(['sVerse','shorts'][i])}</button>`).join('')}</div></div>
     <div class="pager">${PANELS.map(k=>`<section class="panel ${k}-panel" data-panel="${k}"><div class="inner">${html[k]}</div></section>`).join('')}</div>
     <div class="rail">
-      <button data-act="listen"><span class="ic">${ICON.play}</span><span>${t('listen')}</span></button>
       <button data-act="share"><span class="ic">${ICON.share}</span><span>${t('share')}</span></button>
       <button data-act="save" class="${saved?'on':''}" aria-pressed="${saved}"><span class="ic">${ICON.save}</span><span>${t('save')}</span></button>
     </div></article>`;
@@ -305,18 +335,17 @@ function endCard(c){
   const nx=c.n<18?S.chapters[c.n]:null;
   return `<article class="card" style="--hue:${HUES[c.n-1]}"><div class="bg"></div><div class="inner">
     <div class="ch-num">${t('end')} ${c.n}</div>
-    ${nx?`<div class="ch-sa">${esc(nx.sa)}</div><div class="ch-en">${esc(nx.en)}</div><button class="big-btn" data-act="next">${t('next')} →</button>`:`<div class="ch-sa">ॐ तत् सत्</div>`}
+    ${nx?`<div class="ch-sa">${esc(nx.sa)}</div><div class="ch-en">${esc(cx(nx).name)}</div><button class="big-btn" data-act="next">${t('next')} ${S.lang==='ar'?'←':'→'}</button>`:`<div class="ch-sa">ॐ तत् सत्</div>`}
   </div></article>`;
 }
 
 async function render(scrollToVerse){
-  stopSpeech();
   const c=S.chapters[S.ch-1];
-  $('#chapNo').textContent=`${t('chapter')} ${c.n}`;
-  $('#chapName').textContent=S.lang==='hi'?c.sa:c.en;
   const feed=$('#feed');
   let verses;
-  try{verses=await loadChapter(c.n)}catch(e){feed.innerHTML='<div class="loading">Could not load this chapter. Check your connection and reopen the page.</div>';return}
+  try{verses=await loadChapter(c.n)}catch(e){feed.innerHTML=`<div class="loading">${esc(t('loadErr'))}</div>`;return}
+  $('#chapNo').textContent=`${t('chapter')} ${c.n}`;
+  $('#chapName').textContent=cx(c).name;
   let h=chapterCard(c);
   verses.forEach((v,i)=>{h+=verseCard(c,v);if((i+1)%AD_EVERY===0&&i<verses.length-1)h+=adCard(c)});
   h+=endCard(c);
@@ -327,7 +356,7 @@ async function render(scrollToVerse){
     if(p._sync)return;
     const i=Math.round(p.scrollLeft/p.clientWidth);
     p.parentElement.querySelectorAll('.tabs button').forEach((d,j)=>d.setAttribute('aria-selected',i===j));
-    clearTimeout(pt);pt=setTimeout(()=>{if(i!==S.panel){S.panel=i;persist();stopSpeech();syncPagers(p)}},120);
+    clearTimeout(pt);pt=setTimeout(()=>{if(i!==S.panel){S.panel=i;persist();syncPagers(p)}},120);
   },{passive:true})});
   const target=scrollToVerse&&feed.querySelector(`.verse[data-v="${scrollToVerse}"]`);
   feed.scrollTop=target?target.offsetTop:0;
@@ -346,31 +375,9 @@ function openSheet(title,html){$('#sheetTitle').textContent=title;$('#sheetBody'
 function closeSheet(){$('#sheet').hidden=true;$('#scrim').hidden=true}
 let toastT;function toast(m){const el=$('#toast');el.textContent=m;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>el.hidden=true,2400)}
 
-/* text to speech */
-let speakingBtn=null;
-function stopSpeech(){try{speechSynthesis.cancel()}catch(e){}if(speakingBtn){speakingBtn.classList.remove('on');speakingBtn.querySelector('.ic').innerHTML=ICON.play;speakingBtn.lastElementChild.textContent=t('listen');speakingBtn=null}}
-function pickVoice(lang){const vs=speechSynthesis.getVoices();return vs.find(v=>v.lang.replace('_','-').toLowerCase()===lang.toLowerCase())||vs.find(v=>v.lang.toLowerCase().startsWith(lang.slice(0,2)))}
-function speak(btn,card){
-  if(!('speechSynthesis' in window)){toast('Listening is not supported in this browser.');return}
-  if(speakingBtn===btn){stopSpeech();return}
-  stopSpeech();
-  const v=verseData(card), key=card.dataset.key, pager=card.querySelector('.pager');
-  const panel=pager.children[Math.round(pager.scrollLeft/pager.clientWidth)].dataset.panel;
-  const hi=S.lang==='hi', g=window.GENZ[key], L=hi?'hi-IN':'en-IN';
-  let parts;
-  if(panel==='verse')parts=[[v.sa.replace(/॥/g,'।'),'hi-IN'],[hi?v.hi:v.en,L]];
-  else parts=[[g?g[S.lang]:t('genzSoon'),'en-IN']];
-  speakingBtn=btn;btn.classList.add('on');btn.querySelector('.ic').innerHTML=ICON.stop;btn.lastElementChild.textContent=t('stop');
-  parts.forEach(([txt,lang],i)=>{
-    const u=new SpeechSynthesisUtterance(txt);u.lang=lang;const vo=pickVoice(lang);if(vo)u.voice=vo;u.rate=i===0&&panel==='verse'?.8:.95;
-    if(i===parts.length-1)u.onend=()=>{if(speakingBtn===btn)stopSpeech()};
-    speechSynthesis.speak(u);
-  });
-}
-
 async function share(card){
-  const v=verseData(card),key=card.dataset.key,g=window.GENZ[key];
-  const body=S.panel===1&&g?g[S.lang]:(S.lang==='hi'?v.hi:v.en);
+  const v=verseData(card),key=card.dataset.key,x=vx(S.chapters[S.ch-1],v);
+  const body=S.panel===1&&x.short?x.short:x.tr;
   const text=`${v.sa}\n\n${body}\n\nBhagavad Gita ${key}`;
   try{await navigator.clipboard.writeText(text);toast(t('copied'))}
   catch(e){openSheet(t('share'),`<p style="user-select:all">${esc(text)}</p>`)}
@@ -381,16 +388,17 @@ document.addEventListener('click',e=>{
   const b=e.target.closest('[data-act]');if(!b)return;
   const act=b.dataset.act, card=b.closest('.card');
   const c=S.chapters[S.ch-1];
-  if(act==='faq'){const f=card.dataset.key?verseData(card).faq:c.faq;openSheet(`${t('faq')} · ${card.dataset.key||`${t('chapter')} ${c.n}`}`,faqHTML(f[S.lang]));if(b.dataset.q){const dt=$('#sheetBody').querySelectorAll('dt')[+b.dataset.q];if(dt)dt.scrollIntoView({block:'start'})}}
-  else if(act==='listen')speak(b,card);
+  if(act==='faq'){const f=card.dataset.key?vx(c,verseData(card)).faq:cx(c).faq;openSheet(`${t('faq')} · ${card.dataset.key||`${t('chapter')} ${c.n}`}`,faqHTML(f));if(b.dataset.q){const dt=$('#sheetBody').querySelectorAll('dt')[+b.dataset.q];if(dt)dt.scrollIntoView({block:'start'})}}
   else if(act==='share')share(card);
   else if(act==='save'){const k=card.dataset.key;S.saved.has(k)?S.saved.delete(k):S.saved.add(k);b.classList.toggle('on');b.setAttribute('aria-pressed',S.saved.has(k));persist()}
   else if(act==='next'){S.ch++;render().then(setHash)}
 });
-$('#chapBtn').onclick=()=>openSheet(S.lang==='hi'?'अध्याय चुनें':'Choose a chapter',`<div class="ch-list">${S.chapters.map(c=>`<button data-ch="${c.n}" aria-current="${c.n===S.ch}"><span class="n">${c.n}</span><span class="t"><span>${esc(S.lang==='hi'?c.sa:c.en)}</span><small>${esc(c.mean)} · ${c.count} ${t('verses')}</small></span></button>`).join('')}</div>`);
+$('#chapBtn').onclick=()=>openSheet(t('chooseCh'),`<div class="ch-list">${S.chapters.map(c=>{const x=cx(c);return `<button data-ch="${c.n}" aria-current="${c.n===S.ch}"><span class="n">${c.n}</span><span class="t"><span>${esc(x.name)}</span><small>${S.lang==='ar'?'':esc(x.mean)+' · '}${c.count} ${t('verses')}</small></span></button>`}).join('')}</div>`);
+$('#langBtn').onclick=()=>openSheet(t('lang'),`<div class="lang-list">${LANGS.map(([k,name,short])=>`<button data-lang="${k}" lang="${k}" aria-current="${k===S.lang}"><span>${name}</span><small>${short}</small></button>`).join('')}</div>`);
 $('#sheetBody').addEventListener('click',e=>{
   const g=e.target.closest('[data-goto]');
   if(g){const [c,v]=g.dataset.goto.split('-').map(Number);if(c<1||c>18)return;closeSheet();S.ch=c;render(v).then(setHash);return}
+  const l=e.target.closest('[data-lang]');if(l){closeSheet();if(l.dataset.lang!==S.lang){S.lang=l.dataset.lang;rerenderKeepingPlace()}return}
   const b=e.target.closest('[data-ch]');if(!b)return;S.ch=+b.dataset.ch;closeSheet();render().then(setHash)});
 const faqHTML=items=>`<dl class="faq">${items.map(x=>`<dt>${esc(x.q)}</dt><dd>${withCites(x.a)}</dd>`).join('')}</dl>`;
 $('#sheetClose').onclick=closeSheet;$('#scrim').onclick=()=>{closeSheet();closeAsk()};
@@ -399,17 +407,26 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeSheet();closeA
 /* Ask Gita */
 const ASK_T={
   en:{btn:'Ask',title:'Ask Gita',ph:'Ask about life or any verse…',send:'Ask',wait:'Looking through the Gita…',err:'Couldn\'t reach Ask Gita. Check your connection and try again.',
-    intro:'Ask about stress, anger, purpose, relationships or any verse. Answers come from the Gita and its commentary, with the verses they use.',
+    intro:'Ask about stress, anger, purpose, relationships or any verse. Answers come from the Gita, with the verses they use.',
     sugg:['How do I stop overthinking results?','What does the Gita say about anger?','How do I find my purpose?','Explain verse 2.47 simply']},
   hi:{btn:'पूछें',title:'गीता से पूछें',ph:'ज़िंदगी या किसी श्लोक के बारे में पूछें…',send:'पूछें',wait:'गीता में देख रहे हैं…',err:'गीता से जवाब नहीं मिल पाया। कनेक्शन देखें और फिर कोशिश करें।',
-    intro:'तनाव, गुस्सा, जीवन का उद्देश्य, रिश्ते या किसी भी श्लोक के बारे में पूछें। जवाब गीता और उसकी टीका से आते हैं।',
-    sugg:['Result की tension कैसे छोड़ूँ?','गुस्से के बारे में गीता क्या कहती है?','अपना purpose कैसे खोजूँ?','श्लोक 2.47 आसान भाषा में समझाओ']}
+    intro:'तनाव, गुस्सा, जीवन का उद्देश्य, रिश्ते या किसी भी श्लोक के बारे में पूछें। जवाब गीता से आते हैं, साथ में श्लोक भी।',
+    sugg:['Result की tension कैसे छोड़ूँ?','गुस्से के बारे में गीता क्या कहती है?','अपना purpose कैसे खोजूँ?','श्लोक 2.47 आसान भाषा में समझाओ']},
+  fr:{btn:'Demander',title:'Demande à la Gita',ph:'Pose une question sur la vie ou un verset…',send:'Envoyer',wait:'Je cherche dans la Gita…',err:'Impossible de joindre la Gita. Vérifie ta connexion et réessaie.',
+    intro:'Pose une question sur le stress, la colère, le sens de la vie, les relations ou n\'importe quel verset. Les réponses viennent de la Gita, avec les versets utilisés.',
+    sugg:['Comment arrêter de stresser pour les résultats ?','Que dit la Gita sur la colère ?','Comment trouver mon but ?','Explique simplement le verset 2.47']},
+  es:{btn:'Preguntar',title:'Pregúntale a la Gita',ph:'Pregunta sobre la vida o cualquier verso…',send:'Enviar',wait:'Buscando en la Gita…',err:'No se pudo conectar con la Gita. Revisa tu conexión e inténtalo de nuevo.',
+    intro:'Pregunta sobre el estrés, la ira, el propósito, las relaciones o cualquier verso. Las respuestas vienen de la Gita, con los versos que usan.',
+    sugg:['¿Cómo dejo de obsesionarme con los resultados?','¿Qué dice la Gita sobre la ira?','¿Cómo encuentro mi propósito?','Explica el verso 2.47 de forma sencilla']},
+  ar:{btn:'اسأل',title:'اسأل الغيتا',ph:'اسأل عن الحياة أو أي آية…',send:'اسأل',wait:'نبحث في الغيتا…',err:'تعذّر الوصول إلى الغيتا. تحقّق من اتصالك وحاول مجددًا.',
+    intro:'اسأل عن التوتر أو الغضب أو الهدف أو العلاقات أو أي آية. الأجوبة من الغيتا، مع الآيات التي تستند إليها.',
+    sugg:['كيف أتوقف عن القلق بشأن النتائج؟','ماذا تقول الغيتا عن الغضب؟','كيف أجد هدفي؟','اشرح الآية 2.47 ببساطة']}
 };
 const at=k=>ASK_T[S.lang][k];
 let askHistory=[];
 function syncAsk(){$('#askBtnLabel').textContent=at('btn');$('#askTitle').textContent=at('title');$('#askInput').placeholder=at('ph');$('#askSend').textContent=at('send')}
 function askIntro(){$('#askLog').innerHTML=`<p class="intro">${esc(at('intro'))}</p><div class="chips">${at('sugg').map(q=>`<button class="chip" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>`}
-function openAsk(){closeSheet();stopSpeech();syncAsk();if(!askHistory.length)askIntro();$('#ask').hidden=false;$('#scrim').hidden=false;$('#askInput').focus()}
+function openAsk(){closeSheet();syncAsk();if(!askHistory.length)askIntro();$('#ask').hidden=false;$('#scrim').hidden=false;$('#askInput').focus()}
 function closeAsk(){if($('#ask').hidden)return;$('#ask').hidden=true;if($('#sheet').hidden)$('#scrim').hidden=true}
 function addMsg(cls,html){const d=document.createElement('div');d.className='msg '+cls;d.innerHTML=html;const log=$('#askLog');log.appendChild(d);log.scrollTop=log.scrollHeight;return d}
 const withCites=text=>esc(text).replace(/\[(\d{1,2})\.(\d{1,2})\]/g,(m,c,v)=>`<button class="cite" data-goto="${c}-${v}">${c}.${v}</button>`);
@@ -437,13 +454,11 @@ $('#askLog').addEventListener('click',e=>{
   closeAsk();S.ch=c;render(v).then(setHash);
 });
 function syncToggles(){
-  $('#langEn').setAttribute('aria-pressed',S.lang==='en');$('#langHi').setAttribute('aria-pressed',S.lang==='hi');
-  document.documentElement.lang=S.lang;
+  $('#langLabel').textContent=LANGS.find(l=>l[0]===S.lang)[2];
+  document.documentElement.lang=S.lang;document.documentElement.dir=S.lang==='ar'?'rtl':'ltr';
 }
-function rerenderKeepingPlace(){const v=currentVerse();syncToggles();syncAsk();persist();render(v&&v.dataset.v)}
-$('#langEn').onclick=()=>{S.lang='en';rerenderKeepingPlace()};
-$('#langHi').onclick=()=>{S.lang='hi';rerenderKeepingPlace()};
-let st;$('#feed').addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(()=>{setHash();const v=currentVerse();if(speakingBtn&&(!v||!v.contains(speakingBtn)))stopSpeech()},150)},{passive:true});
+function rerenderKeepingPlace(){const v=currentVerse();askHistory=[];syncToggles();syncAsk();persist();render(v&&v.dataset.v)}
+let st;$('#feed').addEventListener('scroll',()=>{clearTimeout(st);st=setTimeout(setHash,150)},{passive:true});
 
 function fromHash(){const m=/^#c(\d+)(?:-v(\d+))?$/.exec(location.hash);if(m&&+m[1]>=1&&+m[1]<=18){S.ch=+m[1];return m[2]}return null}
 window.addEventListener('resize',()=>syncPagers(null));
@@ -458,8 +473,8 @@ window.addEventListener('hashchange',()=>{closeSheet();const v=fromHash();render
 /* landing scroll: shown when the site opens without a verse link */
 function showLanding(){
   const l=$('#landing');l.hidden=false;
-  $('#landCta span').textContent=S.lang==='hi'?'शुरू करने के लिए ग्रंथ पर टैप करें':'Tap the scroll to begin';
-  $('#landMeta').textContent=S.lang==='hi'?'18 अध्याय · 700 श्लोक':'18 chapters · 700 verses';
+  $('#landCta span').textContent=t('tap');
+  $('#landMeta').textContent=t('meta');
 }
 $('#scroll').onclick=()=>{
   const l=$('#landing');if(l.classList.contains('opening'))return;
