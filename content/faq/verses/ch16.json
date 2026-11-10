@@ -1,0 +1,146 @@
+{
+"16.1": {"en": [
+  {"q": "What divine qualities are listed first?", "a": "Fearlessness, purity of heart, steadiness in knowledge, charity, self-control, worship, study, austerity and honesty."},
+  {"q": "Why start with fearlessness?", "a": "Many good qualities need courage to grow."}],
+ "hi": [
+  {"q": "पहले कौन से दैवी गुण बताए गए?", "a": "अभय, हृदय की शुद्धि, ज्ञान में स्थिरता, दान, दम, यज्ञ, स्वाध्याय, तप और सरलता।"},
+  {"q": "अभय से ही शुरुआत क्यों?", "a": "कई अच्छे गुणों को बढ़ने के लिए साहस चाहिए।"}]},
+"16.2": {"en": [
+  {"q": "What more divine qualities are named?", "a": "Non-violence, truth, no anger, renunciation, peace, no backbiting, compassion, no greed, gentleness and modesty."},
+  {"q": "Which is most practical today?", "a": "Not speaking ill of others is a simple daily start."}],
+ "hi": [
+  {"q": "और कौन से दैवी गुण बताए गए?", "a": "अहिंसा, सत्य, अक्रोध, त्याग, शांति, चुगली न करना, दया, अलोभ, कोमलता और लज्जा।"},
+  {"q": "आज कौन सा सबसे व्यावहारिक है?", "a": "दूसरों की बुराई न करना, रोज़ की सरल शुरुआत है।"}]},
+"16.3": {"en": [
+  {"q": "What are the last divine qualities?", "a": "Vigour, forgiveness, fortitude, purity, no hatred and no excessive pride."},
+  {"q": "Who has these qualities?", "a": "Those born with a divine nature."}],
+ "hi": [
+  {"q": "अंतिम दैवी गुण कौन से हैं?", "a": "तेज, क्षमा, धैर्य, शौच, अद्रोह और अति मान का अभाव।"},
+  {"q": "ये गुण किसमें होते हैं?", "a": "दैवी संपदा लेकर जन्मे लोगों में।"}]},
+"16.4": {"en": [
+  {"q": "What are demonic qualities?", "a": "Hypocrisy, arrogance, pride, anger, harshness and ignorance."},
+  {"q": "Is anyone purely one type?", "a": "Most of us have a mix; the point is which ones we grow."}],
+ "hi": [
+  {"q": "आसुरी गुण क्या हैं?", "a": "दंभ, दर्प, अभिमान, क्रोध, कठोरता और अज्ञान।"},
+  {"q": "क्या कोई पूरी तरह एक ही प्रकार का होता है?", "a": "हम में से अधिकतर में मिश्रण होता है; बात यह है कि हम किन्हें बढ़ाते हैं।"}]},
+"16.5": {"en": [
+  {"q": "Where do divine and demonic qualities lead?", "a": "Divine ones to freedom, demonic ones to bondage."},
+  {"q": "What does Krishna tell Arjuna?", "a": "Don't worry, you were born with divine qualities."}],
+ "hi": [
+  {"q": "दैवी और आसुरी गुण कहाँ ले जाते हैं?", "a": "दैवी मुक्ति की ओर, आसुरी बंधन की ओर।"},
+  {"q": "कृष्ण अर्जुन से क्या कहते हैं?", "a": "चिंता मत करो, तुम दैवी संपदा लेकर जन्मे हो।"}]},
+"16.6": {"en": [
+  {"q": "How many types of beings are there?", "a": "Two: the divine and the demonic."},
+  {"q": "Why describe the demonic in detail?", "a": "So we can recognise and avoid these traits."}],
+ "hi": [
+  {"q": "प्राणी कितने प्रकार के हैं?", "a": "दो: दैवी और आसुरी।"},
+  {"q": "आसुरी का विस्तार से वर्णन क्यों?", "a": "ताकि हम इन लक्षणों को पहचानकर उनसे बच सकें।"}]},
+"16.7": {"en": [
+  {"q": "What don't demonic people understand?", "a": "What to do and what not to do."},
+  {"q": "What do they lack?", "a": "Purity, good conduct and truth."}],
+ "hi": [
+  {"q": "आसुरी लोग क्या नहीं समझते?", "a": "क्या करना है और क्या नहीं।"},
+  {"q": "उनमें क्या कमी है?", "a": "शुद्धि, आचार और सत्य।"}]},
+"16.8": {"en": [
+  {"q": "What do demonic people believe?", "a": "That the world has no truth, no basis and no God, and exists only for desire."},
+  {"q": "Why does this view lead to harm?", "a": "Without any higher value, selfishness rules."}],
+ "hi": [
+  {"q": "आसुरी लोग क्या मानते हैं?", "a": "कि जगत असत्य, आधारहीन और बिना ईश्वर के है, केवल काम से बना है।"},
+  {"q": "यह दृष्टि हानि क्यों करती है?", "a": "किसी ऊँचे मूल्य के बिना स्वार्थ हावी हो जाता है।"}]},
+"16.9": {"en": [
+  {"q": "What do people with this view do?", "a": "They act cruelly and harm the world."},
+  {"q": "What is the root cause?", "a": "A lost inner compass and small understanding."}],
+ "hi": [
+  {"q": "इस दृष्टि वाले लोग क्या करते हैं?", "a": "वे क्रूर कर्म करते हैं और जगत को हानि पहुँचाते हैं।"},
+  {"q": "मूल कारण क्या है?", "a": "खोया हुआ आत्मबोध और अल्प बुद्धि।"}]},
+"16.10": {"en": [
+  {"q": "What drives them?", "a": "Endless desires, hypocrisy, pride and arrogance."},
+  {"q": "What do they hold on to?", "a": "False ideas and impure goals."}],
+ "hi": [
+  {"q": "उन्हें क्या चलाता है?", "a": "कभी न भरने वाली कामनाएँ, दंभ, मान और मद।"},
+  {"q": "वे किससे चिपके रहते हैं?", "a": "गलत विचारों और अशुद्ध संकल्पों से।"}]},
+"16.11": {"en": [
+  {"q": "What is their main concern?", "a": "Endless worries until death, believing pleasure is everything."},
+  {"q": "What is the result?", "a": "A restless, anxious life."}],
+ "hi": [
+  {"q": "उनकी मुख्य चिंता क्या है?", "a": "मृत्यु तक अनंत चिंताएँ, यह मानते हुए कि भोग ही सब कुछ है।"},
+  {"q": "परिणाम क्या है?", "a": "अशांत, चिंतित जीवन।"}]},
+"16.12": {"en": [
+  {"q": "What binds them?", "a": "Hundreds of hopes, desire and anger."},
+  {"q": "How do they get wealth?", "a": "By unfair means, just to satisfy cravings."}],
+ "hi": [
+  {"q": "उन्हें क्या बाँधता है?", "a": "सैकड़ों आशाएँ, काम और क्रोध।"},
+  {"q": "वे धन कैसे जुटाते हैं?", "a": "अन्यायपूर्ण तरीकों से, केवल भोग के लिए।"}]},
+"16.13": {"en": [
+  {"q": "How do they think?", "a": "'I got this today, I'll get that next. This wealth is mine, more will be mine.'"},
+  {"q": "What does this show?", "a": "A mind that is never satisfied."}],
+ "hi": [
+  {"q": "वे कैसे सोचते हैं?", "a": "'आज यह मिला, कल वह मिलेगा। यह धन मेरा है, और भी मेरा होगा।'"},
+  {"q": "इससे क्या पता चलता है?", "a": "कभी तृप्त न होने वाला मन।"}]},
+"16.14": {"en": [
+  {"q": "What else do they say?", "a": "'I defeated that enemy and will defeat others. I'm the master, I'm successful, strong and happy.'"},
+  {"q": "What's wrong with this?", "a": "It's pure ego, with no humility or care for others."}],
+ "hi": [
+  {"q": "वे और क्या कहते हैं?", "a": "'उस शत्रु को मैंने मारा, औरों को भी मारूँगा। मैं ईश्वर हूँ, सिद्ध, बलवान और सुखी हूँ।'"},
+  {"q": "इसमें क्या गलत है?", "a": "यह केवल अहंकार है, न नम्रता न दूसरों की परवाह।"}]},
+"16.15": {"en": [
+  {"q": "How do they see themselves?", "a": "'I'm rich and high-born. Who is like me? I'll give, I'll celebrate.'"},
+  {"q": "Why call this delusion?", "a": "Even their charity is about showing off."}],
+ "hi": [
+  {"q": "वे स्वयं को कैसे देखते हैं?", "a": "'मैं धनी और कुलीन हूँ। मेरे जैसा कौन? मैं दान दूँगा, मौज करूँगा।'"},
+  {"q": "इसे मोह क्यों कहा?", "a": "उनका दान भी दिखावे के लिए है।"}]},
+"16.16": {"en": [
+  {"q": "What happens to them?", "a": "Confused by many thoughts and caught in delusion, they fall into misery."},
+  {"q": "What is the 'net'?", "a": "The tangle of desires that traps the mind."}],
+ "hi": [
+  {"q": "उनका क्या होता है?", "a": "अनेक विचारों से भ्रमित और मोह जाल में फँसकर वे दुर्गति में गिरते हैं।"},
+  {"q": "'जाल' क्या है?", "a": "इच्छाओं का उलझा जाल जो मन को फँसाता है।"}]},
+"16.17": {"en": [
+  {"q": "How do they perform worship?", "a": "Only for show, full of pride, not according to scripture."},
+  {"q": "What is the lesson?", "a": "Outer religion without inner sincerity is empty."}],
+ "hi": [
+  {"q": "वे पूजा कैसे करते हैं?", "a": "केवल दिखावे के लिए, घमंड से भरकर, शास्त्र के विरुद्ध।"},
+  {"q": "सीख क्या है?", "a": "भीतर की सच्चाई के बिना बाहरी धर्म खोखला है।"}]},
+"16.18": {"en": [
+  {"q": "Whom do they hate?", "a": "The Divine who lives in their own bodies and in others."},
+  {"q": "What fuels this hatred?", "a": "Ego, force, pride, desire and anger."}],
+ "hi": [
+  {"q": "वे किससे द्वेष करते हैं?", "a": "अपने और दूसरों के शरीर में रहने वाले भगवान से।"},
+  {"q": "इस द्वेष को क्या बढ़ाता है?", "a": "अहंकार, बल, दर्प, काम और क्रोध।"}]},
+"16.19": {"en": [
+  {"q": "What happens to the cruel and hateful?", "a": "They are thrown again and again into lower births."},
+  {"q": "Is this punishment?", "a": "It's the natural result of their own actions."}],
+ "hi": [
+  {"q": "क्रूर और द्वेषी लोगों का क्या होता है?", "a": "वे बार-बार आसुरी योनियों में डाले जाते हैं।"},
+  {"q": "क्या यह दंड है?", "a": "यह उनके अपने कर्मों का स्वाभाविक परिणाम है।"}]},
+"16.20": {"en": [
+  {"q": "Do they ever improve?", "a": "Not while they reject the Divine; they sink lower birth after birth."},
+  {"q": "Is there hope?", "a": "Yes. Krishna says elsewhere that turning to him can change anyone."}],
+ "hi": [
+  {"q": "क्या वे कभी सुधरते हैं?", "a": "जब तक वे भगवान को ठुकराते हैं, नहीं; वे जन्म-जन्म नीचे गिरते हैं।"},
+  {"q": "क्या आशा है?", "a": "हाँ। कृष्ण अन्यत्र कहते हैं कि उनकी ओर मुड़ने से कोई भी बदल सकता है।"}]},
+"16.21": {"en": [
+  {"q": "What are the three gates to hell?", "a": "Desire, anger and greed."},
+  {"q": "Why should we drop them?", "a": "They destroy the self."}],
+ "hi": [
+  {"q": "नरक के तीन द्वार कौन से हैं?", "a": "काम, क्रोध और लोभ।"},
+  {"q": "इन्हें क्यों छोड़ें?", "a": "ये आत्मा का नाश करते हैं।"}]},
+"16.22": {"en": [
+  {"q": "What happens to one free of these three?", "a": "They act for their own true good and reach the highest goal."},
+  {"q": "Is it possible to be free?", "a": "Yes, with awareness and effort."}],
+ "hi": [
+  {"q": "इन तीनों से मुक्त व्यक्ति का क्या होता है?", "a": "वह अपने सच्चे कल्याण के लिए कर्म करता है और परम गति पाता है।"},
+  {"q": "क्या मुक्त होना संभव है?", "a": "हाँ, सजगता और प्रयास से।"}]},
+"16.23": {"en": [
+  {"q": "What happens to those who ignore scripture and follow whims?", "a": "They don't find perfection, happiness or the highest goal."},
+  {"q": "Why?", "a": "Acting from desire alone leads nowhere lasting."}],
+ "hi": [
+  {"q": "शास्त्र छोड़कर मनमानी करने वालों का क्या होता है?", "a": "उन्हें न सिद्धि मिलती है, न सुख, न परम गति।"},
+  {"q": "क्यों?", "a": "केवल कामना से किया कर्म कहीं स्थायी नहीं ले जाता।"}]},
+"16.24": {"en": [
+  {"q": "How do we decide right and wrong?", "a": "Let scripture be the guide."},
+  {"q": "Why scripture?", "a": "It holds tested wisdom beyond personal desires."}],
+ "hi": [
+  {"q": "सही और गलत कैसे तय करें?", "a": "शास्त्र को प्रमाण मानो।"},
+  {"q": "शास्त्र ही क्यों?", "a": "उसमें निजी इच्छाओं से परे परखा हुआ ज्ञान है।"}]}
+}

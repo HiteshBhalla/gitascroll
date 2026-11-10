@@ -1,0 +1,284 @@
+{
+"1.1": {"en": [
+  {"q": "Why does the Gita start with Dhritarashtra's question?", "a": "The blind king can't see the battlefield, so he asks Sanjaya what is happening. The whole Gita is Sanjaya's answer."},
+  {"q": "Why call Kurukshetra a 'holy field'?", "a": "It was a sacred place long before the war. The war of duty is fought on a field of dharma."}],
+ "hi": [
+  {"q": "गीता धृतराष्ट्र के प्रश्न से क्यों शुरू होती है?", "a": "अंधे राजा युद्धभूमि नहीं देख सकते, इसलिए संजय से पूछते हैं कि क्या हो रहा है। पूरी गीता संजय का उत्तर है।"},
+  {"q": "कुरुक्षेत्र को 'धर्मक्षेत्र' क्यों कहा गया?", "a": "यह युद्ध से बहुत पहले से पवित्र स्थान था। धर्म का युद्ध धर्म की भूमि पर ही होता है।"}]},
+"1.2": {"en": [
+  {"q": "Why does Duryodhana go to Drona first?", "a": "Seeing the Pandava army lined up, he feels uneasy and goes to his teacher, looking for reassurance."},
+  {"q": "What does this tell us about Duryodhana?", "a": "Despite his large army, he is anxious. Outer strength doesn't remove inner fear."}],
+ "hi": [
+  {"q": "दुर्योधन पहले द्रोण के पास क्यों जाता है?", "a": "पांडव सेना को व्यूह में देखकर वह बेचैन होता है और आश्वासन पाने अपने गुरु के पास जाता है।"},
+  {"q": "इससे दुर्योधन के बारे में क्या पता चलता है?", "a": "बड़ी सेना होते हुए भी वह चिंतित है। बाहरी ताकत भीतर का डर नहीं मिटाती।"}]},
+"1.3": {"en": [
+  {"q": "Who is the 'son of Drupada'?", "a": "Dhrishtadyumna, the commander of the Pandava army, who was once Drona's own student."},
+  {"q": "Why does Duryodhana point this out?", "a": "To needle Drona: his own student is now leading the army against him."}],
+ "hi": [
+  {"q": "'द्रुपदपुत्र' कौन है?", "a": "धृष्टद्युम्न, पांडव सेना का सेनापति, जो कभी द्रोण का ही शिष्य था।"},
+  {"q": "दुर्योधन यह बात क्यों कहता है?", "a": "द्रोण को चुभाने के लिए, कि उनका अपना शिष्य उनके विरुद्ध सेना चला रहा है।"}]},
+"1.4": {"en": [
+  {"q": "Who are the heroes named here?", "a": "Great archers like Bhima and Arjuna, and warriors Yuyudhana (Satyaki), Virata and Drupada on the Pandava side."},
+  {"q": "Why does Duryodhana list enemy heroes?", "a": "He is sizing up the threat, and his worry shows in how he names them first."}],
+ "hi": [
+  {"q": "यहाँ किन वीरों के नाम हैं?", "a": "पांडव पक्ष के भीम और अर्जुन जैसे धनुर्धर, और युयुधान (सात्यकि), विराट और द्रुपद जैसे महारथी।"},
+  {"q": "दुर्योधन शत्रु के वीरों को क्यों गिनाता है?", "a": "वह खतरे को आँक रहा है, और पहले उनका नाम लेना उसकी चिंता दिखाता है।"}]},
+"1.5": {"en": [
+  {"q": "Who are Dhrishtaketu, Chekitana and the others?", "a": "Kings and warriors allied with the Pandavas, including the king of Kashi, Purujit, Kuntibhoja and Shaibya."},
+  {"q": "What does this list show?", "a": "The Pandavas had strong allies from many kingdoms, which worried Duryodhana."}],
+ "hi": [
+  {"q": "धृष्टकेतु, चेकितान आदि कौन हैं?", "a": "पांडवों के साथी राजा और योद्धा, जिनमें काशीराज, पुरुजित, कुंतिभोज और शैब्य शामिल हैं।"},
+  {"q": "यह सूची क्या दिखाती है?", "a": "पांडवों के पास कई राज्यों के मजबूत साथी थे, जो दुर्योधन को चिंतित कर रहे थे।"}]},
+"1.6": {"en": [
+  {"q": "Who is the son of Subhadra?", "a": "Abhimanyu, Arjuna's young and brave son, famous for entering the chakravyuha formation."},
+  {"q": "Who are the sons of Draupadi?", "a": "The five sons Draupadi had with the five Pandava brothers, all skilled warriors."}],
+ "hi": [
+  {"q": "सुभद्रा का पुत्र कौन है?", "a": "अभिमन्यु, अर्जुन का युवा और वीर पुत्र, जो चक्रव्यूह में प्रवेश के लिए प्रसिद्ध है।"},
+  {"q": "द्रौपदी के पुत्र कौन हैं?", "a": "पाँचों पांडवों से द्रौपदी के पाँच पुत्र, जो सभी कुशल योद्धा थे।"}]},
+"1.7": {"en": [
+  {"q": "Why does Duryodhana now name his own commanders?", "a": "After listing the enemy, he turns to his own side to reassure himself and Drona."},
+  {"q": "Why call Drona 'best of Brahmanas'?", "a": "It is a respectful title, but Duryodhana uses it to flatter Drona and keep him loyal."}],
+ "hi": [
+  {"q": "दुर्योधन अब अपने सेनापतियों के नाम क्यों लेता है?", "a": "शत्रु को गिनाने के बाद वह खुद को और द्रोण को आश्वस्त करने के लिए अपने पक्ष की ओर मुड़ता है।"},
+  {"q": "द्रोण को 'द्विजोत्तम' क्यों कहा?", "a": "यह आदर का संबोधन है, पर दुर्योधन इससे द्रोण की प्रशंसा कर उन्हें अपने साथ बनाए रखना चाहता है।"}]},
+"1.8": {"en": [
+  {"q": "Who are the Kaurava leaders named here?", "a": "Drona himself, Bhishma, Karna, Kripa, Ashvatthama, Vikarna and Jayadratha, also called the son of Somadatta in some readings."},
+  {"q": "Why does he name Drona first?", "a": "He is speaking to Drona, so naming him first is both courtesy and flattery."}],
+ "hi": [
+  {"q": "यहाँ कौरव पक्ष के कौन नेता हैं?", "a": "स्वयं द्रोण, भीष्म, कर्ण, कृप, अश्वत्थामा, विकर्ण और सोमदत्त का पुत्र।"},
+  {"q": "वह द्रोण का नाम पहले क्यों लेता है?", "a": "वह द्रोण से ही बात कर रहा है, इसलिए पहले उनका नाम लेना शिष्टाचार भी है और प्रशंसा भी।"}]},
+"1.9": {"en": [
+  {"q": "Who are the 'many other heroes'?", "a": "Countless warriors ready to give their lives for Duryodhana, skilled with many weapons."},
+  {"q": "What does 'for my sake' reveal?", "a": "Duryodhana sees the war as his personal cause, showing his ego."}],
+ "hi": [
+  {"q": "'अन्य बहुत से वीर' कौन हैं?", "a": "अनगिनत योद्धा जो दुर्योधन के लिए प्राण देने को तैयार हैं और अनेक शस्त्रों में कुशल हैं।"},
+  {"q": "'मेरे लिए' से क्या पता चलता है?", "a": "दुर्योधन युद्ध को अपना निजी मामला मानता है, जो उसका अहंकार दिखाता है।"}]},
+"1.10": {"en": [
+  {"q": "What does Duryodhana mean by 'inadequate' and 'adequate'?", "a": "Readings differ: either his army is unlimited and theirs limited, or he secretly fears his own force falls short. Both show his inner unease."},
+  {"q": "Why contrast Bhishma and Bhima?", "a": "Bhishma guards the Kauravas and Bhima the Pandavas. He is comparing the two pillars of each side."}],
+ "hi": [
+  {"q": "'अपर्याप्त' और 'पर्याप्त' से दुर्योधन का क्या अर्थ है?", "a": "दो अर्थ माने जाते हैं: या तो उसकी सेना असीम है और उनकी सीमित, या वह मन में डरता है कि उसकी सेना कम पड़ेगी। दोनों उसकी बेचैनी दिखाते हैं।"},
+  {"q": "भीष्म और भीम की तुलना क्यों?", "a": "भीष्म कौरवों के रक्षक हैं और भीम पांडवों के। वह दोनों पक्षों के मुख्य स्तंभों की तुलना कर रहा है।"}]},
+"1.11": {"en": [
+  {"q": "Why must everyone guard Bhishma?", "a": "Bhishma is the Kauravas' chief strength. If he falls, their army loses its backbone."},
+  {"q": "What does this order show?", "a": "Duryodhana's plan depends heavily on one man, revealing his insecurity."}],
+ "hi": [
+  {"q": "सबको भीष्म की रक्षा क्यों करनी है?", "a": "भीष्म कौरवों की मुख्य शक्ति हैं। उनके गिरने से सेना की रीढ़ टूट जाएगी।"},
+  {"q": "यह आदेश क्या दिखाता है?", "a": "दुर्योधन की योजना एक ही व्यक्ति पर टिकी है, जो उसकी असुरक्षा दिखाता है।"}]},
+"1.12": {"en": [
+  {"q": "Why does Bhishma blow his conch?", "a": "To cheer up the worried Duryodhana and signal that the battle is about to begin."},
+  {"q": "What does 'roared like a lion' suggest?", "a": "Bhishma's power and courage, even in old age."}],
+ "hi": [
+  {"q": "भीष्म शंख क्यों बजाते हैं?", "a": "चिंतित दुर्योधन का उत्साह बढ़ाने और युद्ध के आरंभ का संकेत देने के लिए।"},
+  {"q": "'सिंह की तरह गरजकर' से क्या पता चलता है?", "a": "वृद्धावस्था में भी भीष्म की शक्ति और साहस।"}]},
+"1.13": {"en": [
+  {"q": "What happens after Bhishma's conch?", "a": "The whole Kaurava army joins in with conchs, drums and horns, creating a huge uproar."},
+  {"q": "Why describe the noise?", "a": "It sets the scene: the war is no longer a threat but about to begin."}],
+ "hi": [
+  {"q": "भीष्म के शंख के बाद क्या होता है?", "a": "पूरी कौरव सेना शंख, नगाड़े और सींग बजाती है, जिससे भारी कोलाहल होता है।"},
+  {"q": "शोर का वर्णन क्यों?", "a": "यह दृश्य बनाता है: युद्ध अब केवल धमकी नहीं, शुरू होने वाला है।"}]},
+"1.14": {"en": [
+  {"q": "Why mention the white horses?", "a": "White symbolises purity and goodness, marking Krishna and Arjuna's chariot as special."},
+  {"q": "Why are their conchs called divine?", "a": "They were gifts from the gods, showing that divine support is with the Pandavas."}],
+ "hi": [
+  {"q": "सफेद घोड़ों का उल्लेख क्यों?", "a": "सफेद रंग पवित्रता और सद्गुण का प्रतीक है, जो कृष्ण और अर्जुन के रथ को विशेष बनाता है।"},
+  {"q": "उनके शंखों को दिव्य क्यों कहा?", "a": "वे देवताओं से मिले थे, जो दिखाता है कि दिव्य सहायता पांडवों के साथ है।"}]},
+"1.15": {"en": [
+  {"q": "What are the names of the conchs?", "a": "Krishna's is Panchajanya, Arjuna's is Devadatta and Bhima's is Paundra."},
+  {"q": "Why do conchs have names?", "a": "Like famous weapons, they carried identity and history, and their sounds were recognised on the battlefield."}],
+ "hi": [
+  {"q": "शंखों के क्या नाम हैं?", "a": "कृष्ण का पांचजन्य, अर्जुन का देवदत्त और भीम का पौंड्र।"},
+  {"q": "शंखों के नाम क्यों होते हैं?", "a": "प्रसिद्ध शस्त्रों की तरह उनकी पहचान और इतिहास था, और युद्धभूमि में उनकी ध्वनि पहचानी जाती थी।"}]},
+"1.16": {"en": [
+  {"q": "Which conchs do the other Pandavas blow?", "a": "Yudhishthira blows Anantavijaya, Nakula blows Sughosha and Sahadeva blows Manipushpaka."},
+  {"q": "Why list each brother?", "a": "It shows the Pandavas standing united, each ready to play his part."}],
+ "hi": [
+  {"q": "बाकी पांडव कौन से शंख बजाते हैं?", "a": "युधिष्ठिर अनंतविजय, नकुल सुघोष और सहदेव मणिपुष्पक बजाते हैं।"},
+  {"q": "हर भाई का नाम क्यों?", "a": "यह दिखाता है कि पांडव एकजुट हैं और हर कोई अपनी भूमिका के लिए तैयार है।"}]},
+"1.17": {"en": [
+  {"q": "Who joins the Pandavas in blowing conchs?", "a": "The king of Kashi, Shikhandi, Dhrishtadyumna, Virata and the unbeaten Satyaki."},
+  {"q": "Who is Shikhandi?", "a": "A warrior who later plays a key role in Bhishma's fall."}],
+ "hi": [
+  {"q": "पांडवों के साथ और कौन शंख बजाते हैं?", "a": "काशीराज, शिखंडी, धृष्टद्युम्न, विराट और अजेय सात्यकि।"},
+  {"q": "शिखंडी कौन है?", "a": "एक योद्धा जो आगे भीष्म के पतन में मुख्य भूमिका निभाता है।"}]},
+"1.18": {"en": [
+  {"q": "Who else blows their conchs?", "a": "Drupada, Draupadi's sons and Abhimanyu, again and again."},
+  {"q": "What is the effect of so many conchs?", "a": "A wave of sound that shows the Pandavas' confidence and unity."}],
+ "hi": [
+  {"q": "और कौन शंख बजाते हैं?", "a": "द्रुपद, द्रौपदी के पुत्र और अभिमन्यु, बार-बार।"},
+  {"q": "इतने शंखों का क्या असर होता है?", "a": "ध्वनि की ऐसी लहर जो पांडवों का आत्मविश्वास और एकता दिखाती है।"}]},
+"1.19": {"en": [
+  {"q": "Why did the sound shake the Kauravas?", "a": "The roar echoed through earth and sky and pierced their hearts, a sign of fear on the side that started the wrong."},
+  {"q": "Why doesn't the Pandava side feel the same?", "a": "Those who stand for what is right carry less inner fear."}],
+ "hi": [
+  {"q": "इस ध्वनि से कौरव क्यों काँप गए?", "a": "वह गर्जना धरती और आकाश में गूँजकर उनके हृदय विदीर्ण कर गई, जो अन्याय करने वाले पक्ष के भय का संकेत है।"},
+  {"q": "पांडव पक्ष को वैसा क्यों नहीं लगता?", "a": "जो धर्म के साथ खड़े होते हैं, उनके भीतर डर कम होता है।"}]},
+"1.20": {"en": [
+  {"q": "What is on Arjuna's flag?", "a": "Hanuman, the great devotee, who is said to protect the chariot."},
+  {"q": "What is Arjuna doing at this moment?", "a": "He lifts his bow as arrows are about to fly, ready to fight."}],
+ "hi": [
+  {"q": "अर्जुन के ध्वज पर क्या है?", "a": "महान भक्त हनुमान, जो रथ की रक्षा करते माने जाते हैं।"},
+  {"q": "इस क्षण अर्जुन क्या कर रहा है?", "a": "शस्त्र चलने वाले हैं और वह युद्ध के लिए धनुष उठाता है।"}]},
+"1.21": {"en": [
+  {"q": "What does Arjuna ask Krishna?", "a": "To drive the chariot between the two armies so he can see who he will fight."},
+  {"q": "Why is Krishna driving?", "a": "Krishna chose to be Arjuna's charioteer and not fight. He guides rather than commands."}],
+ "hi": [
+  {"q": "अर्जुन कृष्ण से क्या कहता है?", "a": "रथ को दोनों सेनाओं के बीच ले चलो, ताकि वह देख सके कि किससे लड़ना है।"},
+  {"q": "कृष्ण रथ क्यों चला रहे हैं?", "a": "कृष्ण ने युद्ध न करके अर्जुन का सारथी बनना चुना। वे आदेश नहीं, मार्गदर्शन देते हैं।"}]},
+"1.22": {"en": [
+  {"q": "Why does Arjuna want to see his opponents?", "a": "To know exactly who stands against him before the battle starts."},
+  {"q": "What happens because of this request?", "a": "Seeing their faces up close is what triggers Arjuna's crisis."}],
+ "hi": [
+  {"q": "अर्जुन विरोधियों को क्यों देखना चाहता है?", "a": "युद्ध से पहले ठीक-ठीक जानने के लिए कि उसके सामने कौन खड़ा है।"},
+  {"q": "इस अनुरोध से क्या होता है?", "a": "उनके चेहरे पास से देखकर ही अर्जुन का संकट शुरू होता है।"}]},
+"1.23": {"en": [
+  {"q": "Who is the 'evil-minded son'?", "a": "Duryodhana, whose greed and scheming caused this war."},
+  {"q": "What is Arjuna's mood here?", "a": "Still confident and ready to fight those siding with wrongdoing."}],
+ "hi": [
+  {"q": "'दुर्बुद्धि पुत्र' कौन है?", "a": "दुर्योधन, जिसके लोभ और षड्यंत्र से यह युद्ध हुआ।"},
+  {"q": "यहाँ अर्जुन का भाव कैसा है?", "a": "अभी भी आत्मविश्वासी और अन्याय के साथियों से लड़ने को तैयार।"}]},
+"1.24": {"en": [
+  {"q": "Where does Krishna place the chariot?", "a": "Between the two armies, right in front of Bhishma and Drona."},
+  {"q": "Why stop in front of Bhishma and Drona?", "a": "They are the people Arjuna loves and respects most, which brings his inner conflict into focus."}],
+ "hi": [
+  {"q": "कृष्ण रथ कहाँ खड़ा करते हैं?", "a": "दोनों सेनाओं के बीच, ठीक भीष्म और द्रोण के सामने।"},
+  {"q": "भीष्म और द्रोण के सामने ही क्यों?", "a": "ये वे लोग हैं जिनसे अर्जुन सबसे अधिक प्रेम और आदर करता है, जिससे उसका अंतर्द्वंद्व सामने आता है।"}]},
+"1.25": {"en": [
+  {"q": "What does Krishna say?", "a": "'Arjuna, behold these assembled Kurus.' Just a few words, but they open Arjuna's eyes to who is there."},
+  {"q": "Why might Krishna say only this?", "a": "He lets Arjuna face the situation himself, so his real doubts come out."}],
+ "hi": [
+  {"q": "कृष्ण क्या कहते हैं?", "a": "'अर्जुन, इन इकट्ठे हुए कौरवों को देखो।' कुछ ही शब्द, पर वे अर्जुन को दिखा देते हैं कि वहाँ कौन है।"},
+  {"q": "कृष्ण केवल इतना ही क्यों कहते हैं?", "a": "वे अर्जुन को स्थिति का खुद सामना करने देते हैं, ताकि उसके असली संशय बाहर आएँ।"}]},
+"1.26": {"en": [
+  {"q": "What does Arjuna see?", "a": "Fathers, grandfathers, teachers, uncles, brothers, sons, grandsons and friends on the battlefield."},
+  {"q": "Why is this hard for him?", "a": "The enemy is not strangers. It is his own family."}],
+ "hi": [
+  {"q": "अर्जुन क्या देखता है?", "a": "युद्धभूमि में पिता, पितामह, गुरु, मामा, भाई, पुत्र, पौत्र और मित्र।"},
+  {"q": "यह उसके लिए कठिन क्यों है?", "a": "शत्रु अजनबी नहीं, उसका अपना परिवार है।"}]},
+"1.27": {"en": [
+  {"q": "Who else does Arjuna notice?", "a": "Fathers-in-law and close friends in both armies."},
+  {"q": "What is building in Arjuna?", "a": "A growing sense that this war means fighting everyone he cares about."}],
+ "hi": [
+  {"q": "अर्जुन और किसे देखता है?", "a": "दोनों सेनाओं में ससुर और प्रिय मित्र।"},
+  {"q": "अर्जुन के भीतर क्या बढ़ रहा है?", "a": "यह भावना कि इस युद्ध का अर्थ उन सबसे लड़ना है जिनकी वह परवाह करता है।"}]},
+"1.28": {"en": [
+  {"q": "What does Arjuna feel?", "a": "Deep compassion mixed with despair as he sees his kinsmen ready to fight."},
+  {"q": "Is this compassion good?", "a": "Compassion is good, but here it is mixed with attachment and confusion, which Krishna will address."}],
+ "hi": [
+  {"q": "अर्जुन क्या महसूस करता है?", "a": "अपने स्वजनों को युद्ध के लिए तैयार देखकर गहरी करुणा और विषाद।"},
+  {"q": "क्या यह करुणा अच्छी है?", "a": "करुणा अच्छी है, पर यहाँ वह मोह और भ्रम से मिली है, जिसे कृष्ण दूर करेंगे।"}]},
+"1.29": {"en": [
+  {"q": "What physical signs does Arjuna show?", "a": "Weak limbs, dry mouth, a trembling body and hair standing on end."},
+  {"q": "Why describe his body?", "a": "To show how deeply the emotional shock has hit him. Grief shows up in the body."}],
+ "hi": [
+  {"q": "अर्जुन में कौन से शारीरिक लक्षण दिखते हैं?", "a": "अंग शिथिल, मुँह सूखा, शरीर काँपता और रोंगटे खड़े।"},
+  {"q": "शरीर का वर्णन क्यों?", "a": "यह दिखाने के लिए कि भावनात्मक आघात कितना गहरा है। शोक शरीर में भी दिखता है।"}]},
+"1.30": {"en": [
+  {"q": "Why does Gandiva slip from his hand?", "a": "Arjuna's famous bow falls because his strength and will are collapsing."},
+  {"q": "What does 'my mind is reeling' mean?", "a": "He can't think clearly. Emotion has taken over his judgment."}],
+ "hi": [
+  {"q": "गांडीव हाथ से क्यों गिरता है?", "a": "अर्जुन का प्रसिद्ध धनुष इसलिए गिरता है क्योंकि उसकी शक्ति और संकल्प टूट रहे हैं।"},
+  {"q": "'मन भ्रमित हो रहा है' का क्या अर्थ है?", "a": "वह साफ सोच नहीं पा रहा। भावना ने उसकी बुद्धि पर कब्जा कर लिया है।"}]},
+"1.31": {"en": [
+  {"q": "What are the 'bad omens'?", "a": "Arjuna senses that nothing good will come of this war. His mind sees only loss."},
+  {"q": "What is his main argument here?", "a": "Killing his own kin can't lead to any good."}],
+ "hi": [
+  {"q": "'अशुभ लक्षण' क्या हैं?", "a": "अर्जुन को लगता है कि इस युद्ध से कुछ अच्छा नहीं होगा। उसके मन को केवल हानि दिखती है।"},
+  {"q": "यहाँ उसका मुख्य तर्क क्या है?", "a": "अपने स्वजनों को मारकर कोई कल्याण नहीं हो सकता।"}]},
+"1.32": {"en": [
+  {"q": "What does Arjuna no longer want?", "a": "Victory, kingdom, pleasures, even life itself."},
+  {"q": "Is this true renunciation?", "a": "Not yet. It comes from grief, not wisdom. Krishna will show the difference."}],
+ "hi": [
+  {"q": "अर्जुन अब क्या नहीं चाहता?", "a": "विजय, राज्य, सुख, यहाँ तक कि जीवन भी।"},
+  {"q": "क्या यह सच्चा वैराग्य है?", "a": "अभी नहीं। यह ज्ञान से नहीं, शोक से आया है। कृष्ण यह अंतर दिखाएँगे।"}]},
+"1.33": {"en": [
+  {"q": "What is Arjuna's point here?", "a": "The people he'd want to share the kingdom with are the ones about to die."},
+  {"q": "Why does that make victory pointless to him?", "a": "Joy shared with no one, won by killing loved ones, feels empty."}],
+ "hi": [
+  {"q": "यहाँ अर्जुन क्या कहना चाहता है?", "a": "जिनके साथ वह राज्य भोगना चाहता, वही मरने को खड़े हैं।"},
+  {"q": "इससे विजय उसे व्यर्थ क्यों लगती है?", "a": "अपनों को मारकर पाया सुख, जिसे किसी के साथ बाँट न सकें, खोखला लगता है।"}]},
+"1.34": {"en": [
+  {"q": "Who does Arjuna list?", "a": "Teachers, fathers, sons, grandfathers, uncles, fathers-in-law, grandsons and brothers-in-law."},
+  {"q": "Why repeat these relations?", "a": "Each name adds weight to his grief. He keeps seeing family, not enemies."}],
+ "hi": [
+  {"q": "अर्जुन किनके नाम लेता है?", "a": "गुरु, पिता, पुत्र, पितामह, मामा, ससुर, पौत्र और साले।"},
+  {"q": "ये रिश्ते बार-बार क्यों गिनाए?", "a": "हर नाम उसके शोक को बढ़ाता है। उसे शत्रु नहीं, परिवार दिखता है।"}]},
+"1.35": {"en": [
+  {"q": "Would Arjuna fight even to save himself?", "a": "No. He says he wouldn't kill them even if they killed him, not even for all three worlds."},
+  {"q": "What does this show about Arjuna?", "a": "He has a gentle heart, but he is letting emotion decide his duty."}],
+ "hi": [
+  {"q": "क्या अर्जुन अपनी रक्षा के लिए भी लड़ेगा?", "a": "नहीं। वह कहता है कि वे उसे मार भी दें, तब भी वह उन्हें नहीं मारेगा, तीनों लोकों के राज्य के लिए भी नहीं।"},
+  {"q": "इससे अर्जुन के बारे में क्या पता चलता है?", "a": "उसका हृदय कोमल है, पर वह भावना को अपना कर्तव्य तय करने दे रहा है।"}]},
+"1.36": {"en": [
+  {"q": "Why does Arjuna fear sin?", "a": "Even though the Kauravas are wrongdoers, he feels killing them would bring sin on himself."},
+  {"q": "Who are the 'felons' he mentions?", "a": "The Kauravas, who tried to burn the Pandavas, poisoned Bhima and seized their kingdom."}],
+ "hi": [
+  {"q": "अर्जुन को पाप का डर क्यों है?", "a": "कौरव अन्यायी हैं, फिर भी उसे लगता है कि उन्हें मारने से उसे पाप लगेगा।"},
+  {"q": "जिन 'आततायियों' की वह बात करता है वे कौन हैं?", "a": "कौरव, जिन्होंने पांडवों को जलाने की कोशिश की, भीम को विष दिया और उनका राज्य छीना।"}]},
+"1.37": {"en": [
+  {"q": "What question does Arjuna ask?", "a": "How can we ever be happy if we kill our own people?"},
+  {"q": "Is happiness the right test for duty?", "a": "Krishna will show that duty is not decided by personal happiness alone."}],
+ "hi": [
+  {"q": "अर्जुन क्या प्रश्न पूछता है?", "a": "अपने ही लोगों को मारकर हम कैसे सुखी हो सकते हैं?"},
+  {"q": "क्या सुख कर्तव्य की सही कसौटी है?", "a": "कृष्ण दिखाएँगे कि कर्तव्य केवल निजी सुख से तय नहीं होता।"}]},
+"1.38": {"en": [
+  {"q": "What does Arjuna say about the Kauravas?", "a": "Their greed blinds them, so they see nothing wrong in destroying families or betraying friends."},
+  {"q": "Why bring this up?", "a": "He argues that even if they can't see the harm, he can."}],
+ "hi": [
+  {"q": "अर्जुन कौरवों के बारे में क्या कहता है?", "a": "लोभ ने उन्हें अंधा कर दिया है, इसलिए उन्हें कुल नाश या मित्रद्रोह में दोष नहीं दिखता।"},
+  {"q": "वह यह बात क्यों उठाता है?", "a": "उसका तर्क है कि वे हानि न देखें, पर वह तो देख सकता है।"}]},
+"1.39": {"en": [
+  {"q": "What does Arjuna propose?", "a": "Since they understand the evil of destroying a family, they should turn away from it."},
+  {"q": "Is his reasoning sound?", "a": "It sounds moral, but it is shaped by attachment. Krishna will reframe it."}],
+ "hi": [
+  {"q": "अर्जुन क्या सुझाता है?", "a": "चूँकि वे कुल नाश का दोष समझते हैं, इसलिए उन्हें इससे बचना चाहिए।"},
+  {"q": "क्या उसका तर्क ठीक है?", "a": "वह नैतिक लगता है, पर मोह से प्रभावित है। कृष्ण इसे नए ढंग से समझाएँगे।"}]},
+"1.40": {"en": [
+  {"q": "What happens when a family is destroyed?", "a": "Its traditions are lost, and without them, disorder takes over."},
+  {"q": "Why does Arjuna care about traditions?", "a": "They hold families and society together across generations."}],
+ "hi": [
+  {"q": "कुल नष्ट होने पर क्या होता है?", "a": "उसकी परंपराएँ लुप्त हो जाती हैं, और उनके बिना अधर्म फैल जाता है।"},
+  {"q": "अर्जुन को परंपराओं की चिंता क्यों है?", "a": "वे पीढ़ियों तक परिवार और समाज को जोड़कर रखती हैं।"}]},
+"1.41": {"en": [
+  {"q": "What does Arjuna fear will follow?", "a": "With order gone, family values decline and social confusion grows."},
+  {"q": "How should we read this today?", "a": "As Arjuna's worry about society breaking down after war, a fear common to every age."}],
+ "hi": [
+  {"q": "अर्जुन को आगे क्या होने का डर है?", "a": "धर्म नष्ट होने पर कुल के मूल्य गिरते हैं और समाज में भ्रम बढ़ता है।"},
+  {"q": "आज इसे कैसे समझें?", "a": "युद्ध के बाद समाज के बिखरने की अर्जुन की चिंता के रूप में, जो हर युग का डर है।"}]},
+"1.42": {"en": [
+  {"q": "What are the 'offerings' to ancestors?", "a": "Rituals of food and water that families perform for those who have passed away."},
+  {"q": "Why does Arjuna mention ancestors?", "a": "He fears the war will break the chain linking generations."}],
+ "hi": [
+  {"q": "पितरों को 'पिंडोदक' क्या है?", "a": "भोजन और जल के अनुष्ठान जो परिवार दिवंगत पूर्वजों के लिए करते हैं।"},
+  {"q": "अर्जुन पूर्वजों का उल्लेख क्यों करता है?", "a": "उसे डर है कि युद्ध पीढ़ियों को जोड़ने वाली कड़ी तोड़ देगा।"}]},
+"1.43": {"en": [
+  {"q": "Who does Arjuna blame?", "a": "Those who destroy families, because their actions wipe out long-held traditions."},
+  {"q": "Is Arjuna blaming himself too?", "a": "Yes. He fears he would become one of them by fighting."}],
+ "hi": [
+  {"q": "अर्जुन किसे दोषी मानता है?", "a": "कुल का नाश करने वालों को, क्योंकि उनके कर्म पुरानी परंपराएँ मिटा देते हैं।"},
+  {"q": "क्या अर्जुन खुद को भी दोषी मानता है?", "a": "हाँ। उसे डर है कि लड़कर वह भी उन्हीं में से एक बन जाएगा।"}]},
+"1.44": {"en": [
+  {"q": "Where does Arjuna get this belief?", "a": "He says 'so we have heard', meaning it comes from tradition and teachers."},
+  {"q": "Why does that matter?", "a": "He is quoting what he was taught, not yet seeing the deeper truth Krishna will share."}],
+ "hi": [
+  {"q": "अर्जुन को यह विश्वास कहाँ से मिला?", "a": "वह कहता है 'ऐसा हमने सुना है', यानी यह परंपरा और गुरुओं से आया है।"},
+  {"q": "यह क्यों महत्वपूर्ण है?", "a": "वह सिखाई हुई बात दोहरा रहा है, अभी वह गहरा सत्य नहीं देख रहा जो कृष्ण बताएँगे।"}]},
+"1.45": {"en": [
+  {"q": "What does Arjuna regret?", "a": "That they were about to commit a great sin, killing kin out of greed for a kingdom."},
+  {"q": "Is greed really his motive?", "a": "Not really. His grief makes him see his duty as greed."}],
+ "hi": [
+  {"q": "अर्जुन किस बात पर पछताता है?", "a": "कि वे राज्य के लोभ में स्वजनों को मारने का महापाप करने वाले थे।"},
+  {"q": "क्या सच में लोभ उसका उद्देश्य है?", "a": "नहीं। उसका शोक उसे अपने कर्तव्य को लोभ के रूप में दिखा रहा है।"}]},
+"1.46": {"en": [
+  {"q": "What does Arjuna prefer?", "a": "To be killed unarmed and without resisting, rather than fight."},
+  {"q": "What does this reveal?", "a": "He has reached total despair, ready to give up even his life."}],
+ "hi": [
+  {"q": "अर्जुन क्या बेहतर मानता है?", "a": "लड़ने के बजाय निहत्था और बिना प्रतिरोध के मारा जाना।"},
+  {"q": "इससे क्या पता चलता है?", "a": "वह पूर्ण निराशा तक पहुँच गया है, जीवन तक छोड़ने को तैयार।"}]},
+"1.47": {"en": [
+  {"q": "How does Chapter 1 end?", "a": "Arjuna throws down his bow and arrows and sinks into his chariot, overwhelmed with grief."},
+  {"q": "Why is this called the 'yoga of despair'?", "a": "Because this despair, faced honestly, becomes the doorway to Krishna's teaching."}],
+ "hi": [
+  {"q": "पहला अध्याय कैसे समाप्त होता है?", "a": "अर्जुन धनुष-बाण रखकर शोक से भरा रथ में बैठ जाता है।"},
+  {"q": "इसे 'विषाद योग' क्यों कहते हैं?", "a": "क्योंकि ईमानदारी से सामना किया गया यही विषाद कृष्ण के उपदेश का द्वार बनता है।"}]}
+}

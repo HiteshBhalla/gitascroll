@@ -1,0 +1,332 @@
+{
+"11.1": {"en": [
+  {"q": "How does Arjuna feel after Chapter 10?", "a": "Grateful. He says Krishna's teaching has cleared his confusion."},
+  {"q": "What is the 'mystery of the Self'?", "a": "The truth about the soul and the Divine that Krishna has been explaining."}],
+ "hi": [
+  {"q": "दसवें अध्याय के बाद अर्जुन कैसा महसूस करता है?", "a": "कृतज्ञ। वह कहता है कि कृष्ण के उपदेश से उसका मोह दूर हो गया।"},
+  {"q": "'अध्यात्म का रहस्य' क्या है?", "a": "आत्मा और परमात्मा का वह सत्य जो कृष्ण समझा रहे हैं।"}]},
+"11.2": {"en": [
+  {"q": "What has Arjuna learned?", "a": "How all beings arise and dissolve in Krishna, and his unchanging greatness."},
+  {"q": "What does he want now?", "a": "To see that greatness, not just hear about it."}],
+ "hi": [
+  {"q": "अर्जुन ने क्या सीखा है?", "a": "सब प्राणी कृष्ण से कैसे उत्पन्न और विलीन होते हैं, और उनकी अविनाशी महिमा।"},
+  {"q": "अब वह क्या चाहता है?", "a": "उस महिमा को केवल सुनना नहीं, देखना।"}]},
+"11.3": {"en": [
+  {"q": "What does Arjuna ask to see?", "a": "Krishna's divine, cosmic form."},
+  {"q": "Does he doubt Krishna?", "a": "No. He believes Krishna's words; he simply longs to see it."}],
+ "hi": [
+  {"q": "अर्जुन क्या देखना चाहता है?", "a": "कृष्ण का ऐश्वर्य रूप, विराट स्वरूप।"},
+  {"q": "क्या उसे कृष्ण पर संदेह है?", "a": "नहीं। वह उनकी बात मानता है; बस देखने की लालसा है।"}]},
+"11.4": {"en": [
+  {"q": "How does Arjuna ask?", "a": "Humbly: only if Krishna thinks he is able to see it."},
+  {"q": "What can we learn from this?", "a": "Even a sincere request can be made with humility."}],
+ "hi": [
+  {"q": "अर्जुन कैसे माँगता है?", "a": "नम्रता से: यदि कृष्ण को लगे कि वह देख सकता है, तभी।"},
+  {"q": "इससे क्या सीखें?", "a": "सच्चा अनुरोध भी विनम्रता से किया जा सकता है।"}]},
+"11.5": {"en": [
+  {"q": "What does Krishna say to Arjuna?", "a": "'Behold my forms, hundreds and thousands, divine, of many colours and shapes.'"},
+  {"q": "Why so many forms?", "a": "The Divine is infinite and appears in endless ways."}],
+ "hi": [
+  {"q": "कृष्ण अर्जुन से क्या कहते हैं?", "a": "'मेरे सैकड़ों-हज़ारों दिव्य, अनेक रंग और आकार वाले रूप देखो।'"},
+  {"q": "इतने रूप क्यों?", "a": "भगवान अनंत हैं और अनगिनत रूपों में प्रकट होते हैं।"}]},
+"11.6": {"en": [
+  {"q": "What will Arjuna see in Krishna?", "a": "The Adityas, Vasus, Rudras, Ashvins, Maruts and wonders never seen before."},
+  {"q": "What is the point?", "a": "All the gods exist within the one Divine."}],
+ "hi": [
+  {"q": "अर्जुन कृष्ण में क्या देखेगा?", "a": "आदित्य, वसु, रुद्र, अश्विनी कुमार, मरुत और पहले कभी न देखे आश्चर्य।"},
+  {"q": "बात क्या है?", "a": "सब देवता एक ही भगवान में हैं।"}]},
+"11.7": {"en": [
+  {"q": "What will Arjuna see in Krishna's body?", "a": "The whole universe, moving and unmoving, all in one place."},
+  {"q": "What else is offered?", "a": "Whatever else Arjuna wishes to see."}],
+ "hi": [
+  {"q": "अर्जुन कृष्ण के शरीर में क्या देखेगा?", "a": "पूरा चर-अचर जगत, एक ही स्थान पर।"},
+  {"q": "और क्या दिया गया?", "a": "जो कुछ और अर्जुन देखना चाहे।"}]},
+"11.8": {"en": [
+  {"q": "Why can't Arjuna see it with normal eyes?", "a": "Human eyes can't take in the infinite."},
+  {"q": "What does Krishna give him?", "a": "Divine sight."}],
+ "hi": [
+  {"q": "अर्जुन साधारण आँखों से क्यों नहीं देख सकता?", "a": "मनुष्य की आँखें अनंत को नहीं देख सकतीं।"},
+  {"q": "कृष्ण उसे क्या देते हैं?", "a": "दिव्य दृष्टि।"}]},
+"11.9": {"en": [
+  {"q": "Who describes this moment?", "a": "Sanjaya, telling King Dhritarashtra what he sees."},
+  {"q": "What does Krishna reveal?", "a": "His supreme, majestic form."}],
+ "hi": [
+  {"q": "इस क्षण का वर्णन कौन करता है?", "a": "संजय, राजा धृतराष्ट्र को बताते हुए।"},
+  {"q": "कृष्ण क्या प्रकट करते हैं?", "a": "अपना परम ऐश्वर्य रूप।"}]},
+"11.10": {"en": [
+  {"q": "What does the cosmic form look like?", "a": "Countless mouths and eyes, wonderful sights, divine ornaments and raised weapons."},
+  {"q": "Why so overwhelming?", "a": "It shows everything at once, beyond normal understanding."}],
+ "hi": [
+  {"q": "विराट रूप कैसा दिखता है?", "a": "अनगिनत मुख और नेत्र, अद्भुत दृश्य, दिव्य आभूषण और उठे हुए दिव्य शस्त्र।"},
+  {"q": "इतना अभिभूत करने वाला क्यों?", "a": "यह एक साथ सब कुछ दिखाता है, सामान्य समझ से परे।"}]},
+"11.11": {"en": [
+  {"q": "What more is described?", "a": "Divine garlands, garments and fragrance, infinite and facing every direction."},
+  {"q": "What does 'facing all directions' mean?", "a": "The Divine is present everywhere at once."}],
+ "hi": [
+  {"q": "और क्या वर्णन है?", "a": "दिव्य माला, वस्त्र और सुगंध, अनंत और सब ओर मुख वाला।"},
+  {"q": "'सब ओर मुख' का क्या अर्थ है?", "a": "भगवान एक साथ हर जगह उपस्थित हैं।"}]},
+"11.12": {"en": [
+  {"q": "How bright was the cosmic form?", "a": "Like a thousand suns rising at once."},
+  {"q": "Why is this line famous?", "a": "It's one of the most powerful images in the Gita, often quoted to describe overwhelming light."}],
+ "hi": [
+  {"q": "विराट रूप कितना तेजस्वी था?", "a": "जैसे हज़ार सूर्य एक साथ उदय हों।"},
+  {"q": "यह पंक्ति प्रसिद्ध क्यों है?", "a": "यह गीता के सबसे प्रभावशाली चित्रों में से है, जो असीम प्रकाश के लिए उद्धृत होता है।"}]},
+"11.13": {"en": [
+  {"q": "What did Arjuna see in one place?", "a": "The whole universe, with all its divisions, inside the body of the God of gods."},
+  {"q": "What does this show?", "a": "All diversity rests in one reality."}],
+ "hi": [
+  {"q": "अर्जुन ने एक ही स्थान पर क्या देखा?", "a": "पूरा जगत, अपने सब विभागों सहित, देवों के देव के शरीर में।"},
+  {"q": "यह क्या दिखाता है?", "a": "सारी विविधता एक ही सत्य में स्थित है।"}]},
+"11.14": {"en": [
+  {"q": "How did Arjuna react?", "a": "Filled with wonder, hair standing on end, he bowed and joined his palms."},
+  {"q": "What does this show?", "a": "Awe naturally leads to reverence."}],
+ "hi": [
+  {"q": "अर्जुन की प्रतिक्रिया क्या थी?", "a": "आश्चर्य से भरा, रोंगटे खड़े, उसने सिर झुकाकर हाथ जोड़े।"},
+  {"q": "यह क्या दिखाता है?", "a": "विस्मय स्वाभाविक रूप से श्रद्धा लाता है।"}]},
+"11.15": {"en": [
+  {"q": "What does Arjuna see first?", "a": "All the gods, all beings, Brahma on his lotus, Shiva, the sages and divine serpents."},
+  {"q": "What is the message?", "a": "Every divine being is within Krishna."}],
+ "hi": [
+  {"q": "अर्जुन पहले क्या देखता है?", "a": "सब देवता, सब प्राणी, कमलासन पर ब्रह्मा, शिव, ऋषि और दिव्य सर्प।"},
+  {"q": "संदेश क्या है?", "a": "हर दिव्य सत्ता कृष्ण में है।"}]},
+"11.16": {"en": [
+  {"q": "What can't Arjuna find?", "a": "The beginning, middle or end of this form."},
+  {"q": "Why?", "a": "Because it is truly infinite."}],
+ "hi": [
+  {"q": "अर्जुन को क्या नहीं मिलता?", "a": "इस रूप का आदि, मध्य या अंत।"},
+  {"q": "क्यों?", "a": "क्योंकि यह सचमुच अनंत है।"}]},
+"11.17": {"en": [
+  {"q": "How does the form appear?", "a": "As a mass of light shining everywhere, with crown, mace and discus, too bright to look at."},
+  {"q": "Why mention crown, mace and discus?", "a": "They link the cosmic form to the familiar form of Vishnu."}],
+ "hi": [
+  {"q": "रूप कैसा दिखता है?", "a": "सब ओर चमकता तेज का पुंज, मुकुट, गदा और चक्र के साथ, देखने में कठिन।"},
+  {"q": "मुकुट, गदा और चक्र का उल्लेख क्यों?", "a": "ये विराट रूप को विष्णु के परिचित रूप से जोड़ते हैं।"}]},
+"11.18": {"en": [
+  {"q": "What does Arjuna realise?", "a": "Krishna is the Imperishable, the support of the universe and protector of eternal dharma."},
+  {"q": "What has changed?", "a": "Arjuna now knows, not just believes."}],
+ "hi": [
+  {"q": "अर्जुन क्या समझता है?", "a": "कृष्ण अक्षर हैं, जगत के आधार हैं और सनातन धर्म के रक्षक हैं।"},
+  {"q": "क्या बदला है?", "a": "अब अर्जुन केवल मानता नहीं, जानता है।"}]},
+"11.19": {"en": [
+  {"q": "What are Krishna's eyes in this form?", "a": "The sun and the moon."},
+  {"q": "What else does Arjuna see?", "a": "Infinite power and a blazing fire that heats the whole universe."}],
+ "hi": [
+  {"q": "इस रूप में कृष्ण के नेत्र क्या हैं?", "a": "सूर्य और चंद्रमा।"},
+  {"q": "अर्जुन और क्या देखता है?", "a": "अनंत शक्ति और प्रज्वलित अग्नि जो पूरे जगत को तपाती है।"}]},
+"11.20": {"en": [
+  {"q": "How large is the form?", "a": "It fills the space between heaven and earth and all directions."},
+  {"q": "How do the worlds react?", "a": "They tremble at this wondrous and fearsome form."}],
+ "hi": [
+  {"q": "रूप कितना विशाल है?", "a": "यह आकाश और पृथ्वी के बीच का सारा स्थान और सब दिशाएँ भर देता है।"},
+  {"q": "लोक कैसे प्रतिक्रिया करते हैं?", "a": "इस अद्भुत और उग्र रूप को देखकर काँप उठते हैं।"}]},
+"11.21": {"en": [
+  {"q": "What are the gods doing?", "a": "Entering Krishna; some in fear praise him with folded hands."},
+  {"q": "And the sages?", "a": "They say 'May all be well' and sing his praises."}],
+ "hi": [
+  {"q": "देवता क्या कर रहे हैं?", "a": "कृष्ण में प्रवेश कर रहे हैं; कुछ डरकर हाथ जोड़कर स्तुति कर रहे हैं।"},
+  {"q": "और ऋषि?", "a": "वे 'स्वस्ति' कहकर उनकी स्तुति करते हैं।"}]},
+"11.22": {"en": [
+  {"q": "Who is watching in amazement?", "a": "Rudras, Adityas, Vasus, Sadhyas, Ashvins, Maruts, ancestors, Gandharvas, Yakshas, Asuras and Siddhas."},
+  {"q": "What does this show?", "a": "All of existence is in awe of the Divine."}],
+ "hi": [
+  {"q": "कौन विस्मय से देख रहे हैं?", "a": "रुद्र, आदित्य, वसु, साध्य, अश्विनी कुमार, मरुत, पितर, गंधर्व, यक्ष, असुर और सिद्ध।"},
+  {"q": "यह क्या दिखाता है?", "a": "पूरा अस्तित्व भगवान के सामने विस्मित है।"}]},
+"11.23": {"en": [
+  {"q": "Why does the form become frightening?", "a": "It has countless mouths, eyes, arms and terrible teeth."},
+  {"q": "How do the worlds feel?", "a": "Terrified, and so is Arjuna."}],
+ "hi": [
+  {"q": "रूप डरावना क्यों हो जाता है?", "a": "इसमें अनगिनत मुख, नेत्र, भुजाएँ और विकराल दाढ़ें हैं।"},
+  {"q": "लोक कैसा अनुभव करते हैं?", "a": "भयभीत, और अर्जुन भी।"}]},
+"11.24": {"en": [
+  {"q": "What is happening to Arjuna?", "a": "His heart trembles; he loses courage and peace."},
+  {"q": "Why share this fear?", "a": "It's an honest picture of facing the infinite."}],
+ "hi": [
+  {"q": "अर्जुन के साथ क्या हो रहा है?", "a": "उसका हृदय काँप रहा है; वह धैर्य और शांति खो रहा है।"},
+  {"q": "यह डर क्यों बताया गया?", "a": "यह अनंत का सामना करने का ईमानदार चित्र है।"}]},
+"11.25": {"en": [
+  {"q": "What does Arjuna see in the mouths?", "a": "Fangs like the fire at the end of time."},
+  {"q": "How does he feel?", "a": "Lost, unable to find his bearings or peace."}],
+ "hi": [
+  {"q": "अर्जुन मुखों में क्या देखता है?", "a": "प्रलय की अग्नि जैसी दाढ़ें।"},
+  {"q": "वह कैसा महसूस करता है?", "a": "दिशाहीन, न दिशा का ज्ञान न शांति।"}]},
+"11.26": {"en": [
+  {"q": "Who does Arjuna see entering the mouths?", "a": "Dhritarashtra's sons, Bhishma, Drona, Karna and warriors from both sides."},
+  {"q": "What does this mean?", "a": "Arjuna is shown the outcome of the war before it happens."}],
+ "hi": [
+  {"q": "अर्जुन किन्हें मुखों में जाते देखता है?", "a": "धृतराष्ट्र के पुत्र, भीष्म, द्रोण, कर्ण और दोनों पक्षों के योद्धा।"},
+  {"q": "इसका क्या अर्थ है?", "a": "अर्जुन को युद्ध का परिणाम पहले ही दिखाया जा रहा है।"}]},
+"11.27": {"en": [
+  {"q": "What happens to them?", "a": "They rush into the terrible mouths; some are crushed between the teeth."},
+  {"q": "Why such a harsh image?", "a": "It shows the power of time that ends everything."}],
+ "hi": [
+  {"q": "उनके साथ क्या होता है?", "a": "वे विकराल मुखों में तेज़ी से जाते हैं; कुछ दाँतों में पिस जाते हैं।"},
+  {"q": "इतना कठोर चित्र क्यों?", "a": "यह सब कुछ समाप्त करने वाले काल की शक्ति दिखाता है।"}]},
+"11.28": {"en": [
+  {"q": "What is the river example?", "a": "Like rivers rushing into the ocean, warriors enter Krishna's flaming mouths."},
+  {"q": "What does it suggest?", "a": "Their end is as natural and certain as rivers reaching the sea."}],
+ "hi": [
+  {"q": "नदियों का उदाहरण क्या है?", "a": "जैसे नदियाँ सागर की ओर दौड़ती हैं, वैसे ही योद्धा कृष्ण के जलते मुखों में जाते हैं।"},
+  {"q": "इससे क्या संकेत मिलता है?", "a": "उनका अंत नदियों के सागर में मिलने जितना स्वाभाविक और निश्चित है।"}]},
+"11.29": {"en": [
+  {"q": "What is the moth example?", "a": "Like moths rushing into a flame, people rush to their destruction."},
+  {"q": "What's different from the river image?", "a": "Moths are drawn by their own desire, like people pulled by their choices."}],
+ "hi": [
+  {"q": "पतंगों का उदाहरण क्या है?", "a": "जैसे पतंगे दीपक की लौ में दौड़ते हैं, वैसे ही लोग अपने विनाश की ओर दौड़ते हैं।"},
+  {"q": "नदी के चित्र से क्या अलग है?", "a": "पतंगे अपनी चाह से खिंचते हैं, जैसे लोग अपने चुनावों से।"}]},
+"11.30": {"en": [
+  {"q": "What is the form doing?", "a": "Devouring the worlds with flaming mouths, its fierce rays filling the universe."},
+  {"q": "What does this represent?", "a": "Time consuming all things."}],
+ "hi": [
+  {"q": "रूप क्या कर रहा है?", "a": "जलते मुखों से लोकों को निगल रहा है, उसकी उग्र किरणें जगत को भर रही हैं।"},
+  {"q": "यह किसका प्रतीक है?", "a": "सब कुछ निगलने वाला काल।"}]},
+"11.31": {"en": [
+  {"q": "What does Arjuna ask?", "a": "'Who are you, in this fierce form?' He wants to understand Krishna's purpose."},
+  {"q": "Why ask now?", "a": "The form is so overwhelming he no longer recognises his friend."}],
+ "hi": [
+  {"q": "अर्जुन क्या पूछता है?", "a": "'इस उग्र रूप में आप कौन हैं?' वह कृष्ण का उद्देश्य समझना चाहता है।"},
+  {"q": "अब क्यों पूछा?", "a": "रूप इतना अभिभूत करने वाला है कि वह अपने मित्र को पहचान नहीं पाता।"}]},
+"11.32": {"en": [
+  {"q": "Who does Krishna say he is?", "a": "'I am Time, the mighty destroyer of worlds.'"},
+  {"q": "What does he say about the warriors?", "a": "Even without Arjuna, they will not survive."}],
+ "hi": [
+  {"q": "कृष्ण स्वयं को कौन बताते हैं?", "a": "'मैं लोकों का नाश करने वाला बढ़ा हुआ काल हूँ।'"},
+  {"q": "वे योद्धाओं के बारे में क्या कहते हैं?", "a": "अर्जुन के बिना भी वे नहीं बचेंगे।"}]},
+"11.33": {"en": [
+  {"q": "What does 'be merely an instrument' mean?", "a": "The outcome is already decided; Arjuna is only the means."},
+  {"q": "How can this help us?", "a": "Do your part fully, but don't carry the weight of the whole outcome."}],
+ "hi": [
+  {"q": "'निमित्त मात्र बनो' का क्या अर्थ है?", "a": "परिणाम पहले से तय है; अर्जुन केवल माध्यम है।"},
+  {"q": "यह हमारी कैसे मदद कर सकता है?", "a": "अपना काम पूरा करो, पर पूरे परिणाम का बोझ मत उठाओ।"}]},
+"11.34": {"en": [
+  {"q": "What does Krishna tell Arjuna to do?", "a": "Fight Drona, Bhishma, Jayadratha and Karna, who are already slain by him."},
+  {"q": "What reassurance is given?", "a": "'Don't be distressed. You will win.'"}],
+ "hi": [
+  {"q": "कृष्ण अर्जुन से क्या करने को कहते हैं?", "a": "द्रोण, भीष्म, जयद्रथ और कर्ण से लड़ो, जिन्हें वे पहले ही मार चुके हैं।"},
+  {"q": "क्या आश्वासन दिया गया?", "a": "'व्यथित मत हो। तुम जीतोगे।'"}]},
+"11.35": {"en": [
+  {"q": "How does Arjuna respond?", "a": "Trembling, he bows again and speaks with folded hands, his voice choked."},
+  {"q": "Who reports this?", "a": "Sanjaya, to Dhritarashtra."}],
+ "hi": [
+  {"q": "अर्जुन कैसे प्रतिक्रिया करता है?", "a": "काँपते हुए, वह फिर नमन करता है और हाथ जोड़कर गद्गद वाणी में बोलता है।"},
+  {"q": "यह कौन बताता है?", "a": "संजय, धृतराष्ट्र को।"}]},
+"11.36": {"en": [
+  {"q": "How does the world respond to Krishna?", "a": "It rejoices in his praise; the wicked flee in fear and the perfected bow."},
+  {"q": "What does Arjuna say?", "a": "That this is fitting."}],
+ "hi": [
+  {"q": "संसार कृष्ण के प्रति कैसे प्रतिक्रिया करता है?", "a": "उनके कीर्तन से हर्षित होता है; राक्षस डरकर भागते हैं और सिद्ध नमन करते हैं।"},
+  {"q": "अर्जुन क्या कहता है?", "a": "कि यह उचित ही है।"}]},
+"11.37": {"en": [
+  {"q": "Why should all bow to Krishna?", "a": "He is the first creator, greater even than Brahma."},
+  {"q": "What does Arjuna call him?", "a": "Infinite, Lord of gods, home of the universe, beyond being and non-being."}],
+ "hi": [
+  {"q": "सबको कृष्ण को नमन क्यों करना चाहिए?", "a": "वे आदि कर्ता हैं, ब्रह्मा से भी बड़े।"},
+  {"q": "अर्जुन उन्हें क्या कहता है?", "a": "अनंत, देवेश, जगन्निवास, सत्-असत् से परे।"}]},
+"11.38": {"en": [
+  {"q": "How does Arjuna praise Krishna here?", "a": "As the first God, the ancient Person, the resting place of the universe."},
+  {"q": "What else?", "a": "The knower, the known and the supreme abode."}],
+ "hi": [
+  {"q": "अर्जुन यहाँ कृष्ण की स्तुति कैसे करता है?", "a": "आदिदेव, पुराण पुरुष, जगत का परम आश्रय।"},
+  {"q": "और क्या?", "a": "जानने वाले, जानने योग्य और परम धाम।"}]},
+"11.39": {"en": [
+  {"q": "Which gods does Arjuna say Krishna is?", "a": "Vayu, Yama, Agni, Varuna, the moon, Prajapati and the great-grandfather."},
+  {"q": "How does he respond?", "a": "'Salutations to you a thousand times, again and again.'"}],
+ "hi": [
+  {"q": "अर्जुन कृष्ण को कौन से देवता बताता है?", "a": "वायु, यम, अग्नि, वरुण, चंद्रमा, प्रजापति और प्रपितामह।"},
+  {"q": "वह कैसे प्रतिक्रिया करता है?", "a": "'आपको हज़ार बार नमस्कार, बार-बार नमस्कार।'"}]},
+"11.40": {"en": [
+  {"q": "Why bow in every direction?", "a": "Krishna is everywhere, so Arjuna bows to him from front, back and all sides."},
+  {"q": "What does Arjuna say Krishna is?", "a": "Everything, of infinite power."}],
+ "hi": [
+  {"q": "हर दिशा में नमन क्यों?", "a": "कृष्ण सब जगह हैं, इसलिए अर्जुन आगे, पीछे और सब ओर से नमन करता है।"},
+  {"q": "अर्जुन कृष्ण को क्या कहता है?", "a": "सब कुछ, अनंत शक्ति वाले।"}]},
+"11.41": {"en": [
+  {"q": "What does Arjuna regret?", "a": "Casually calling Krishna 'friend' or 'Yadava' without knowing his greatness."},
+  {"q": "Was Arjuna wrong?", "a": "Not really. His closeness came from love. But seeing Krishna's greatness makes him humble."}],
+ "hi": [
+  {"q": "अर्जुन किस बात पर पछताता है?", "a": "उनकी महिमा जाने बिना उन्हें सहज भाव से 'सखा' या 'यादव' कहने पर।"},
+  {"q": "क्या अर्जुन गलत था?", "a": "वास्तव में नहीं। उसकी निकटता प्रेम से थी। पर कृष्ण की महिमा देखकर वह नम्र हो गया।"}]},
+"11.42": {"en": [
+  {"q": "What does Arjuna ask forgiveness for?", "a": "Any disrespect in jokes, play, rest, sitting or eating, alone or with others."},
+  {"q": "What does this teach?", "a": "Real friendship also includes respect."}],
+ "hi": [
+  {"q": "अर्जुन किस बात की क्षमा माँगता है?", "a": "हँसी, खेल, सोते, बैठते या खाते समय, अकेले या दूसरों के सामने हुए किसी भी अनादर की।"},
+  {"q": "यह क्या सिखाता है?", "a": "सच्ची मित्रता में आदर भी शामिल है।"}]},
+"11.43": {"en": [
+  {"q": "What is Krishna to the world?", "a": "Its father, its greatest teacher and most worthy of worship."},
+  {"q": "Is anyone equal to him?", "a": "None in all three worlds."}],
+ "hi": [
+  {"q": "कृष्ण जगत के लिए क्या हैं?", "a": "उसके पिता, सबसे बड़े गुरु और सबसे पूज्य।"},
+  {"q": "क्या कोई उनके समान है?", "a": "तीनों लोकों में कोई नहीं।"}]},
+"11.44": {"en": [
+  {"q": "What does Arjuna ask for?", "a": "Forgiveness, as a father forgives a son, a friend a friend, a lover the beloved."},
+  {"q": "What do these examples show?", "a": "The Divine relates to us with love in many ways."}],
+ "hi": [
+  {"q": "अर्जुन क्या माँगता है?", "a": "क्षमा, जैसे पिता पुत्र को, मित्र मित्र को, और प्रिय प्रिया को क्षमा करता है।"},
+  {"q": "ये उदाहरण क्या दिखाते हैं?", "a": "भगवान कई रूपों में प्रेम से हमसे जुड़ते हैं।"}]},
+"11.45": {"en": [
+  {"q": "How does Arjuna feel now?", "a": "Thrilled to have seen it, but his mind is shaken with fear."},
+  {"q": "What does he ask?", "a": "To see Krishna's gentle, familiar form again."}],
+ "hi": [
+  {"q": "अब अर्जुन कैसा महसूस करता है?", "a": "देखकर हर्षित, पर मन भय से व्याकुल।"},
+  {"q": "वह क्या माँगता है?", "a": "कृष्ण का सौम्य, परिचित रूप फिर से देखना।"}]},
+"11.46": {"en": [
+  {"q": "Which form does Arjuna want to see?", "a": "The four-armed form with crown, mace and discus."},
+  {"q": "Why that form?", "a": "It's divine but gentle and approachable."}],
+ "hi": [
+  {"q": "अर्जुन कौन सा रूप देखना चाहता है?", "a": "मुकुट, गदा और चक्र वाला चतुर्भुज रूप।"},
+  {"q": "वही रूप क्यों?", "a": "वह दिव्य है पर सौम्य और निकट लगने वाला।"}]},
+"11.47": {"en": [
+  {"q": "Why was Arjuna shown this form?", "a": "Out of Krishna's grace. No one else had seen it before."},
+  {"q": "What makes it special?", "a": "It's the radiant, infinite, primal form."}],
+ "hi": [
+  {"q": "अर्जुन को यह रूप क्यों दिखाया गया?", "a": "कृष्ण की कृपा से। पहले किसी ने इसे नहीं देखा था।"},
+  {"q": "यह विशेष क्यों है?", "a": "यह तेजोमय, अनंत, आदि रूप है।"}]},
+"11.48": {"en": [
+  {"q": "Can study or rituals reveal this form?", "a": "No. Not by Vedas, sacrifice, study, charity, rituals or austerity."},
+  {"q": "Then how did Arjuna see it?", "a": "By grace, given out of love."}],
+ "hi": [
+  {"q": "क्या अध्ययन या कर्मकांड से यह रूप दिखता है?", "a": "नहीं। न वेद, यज्ञ, अध्ययन, दान, क्रिया या उग्र तप से।"},
+  {"q": "फिर अर्जुन ने कैसे देखा?", "a": "कृपा से, जो प्रेम से मिली।"}]},
+"11.49": {"en": [
+  {"q": "What does Krishna tell the frightened Arjuna?", "a": "Don't be afraid or confused. With a calm heart, see my familiar form again."},
+  {"q": "What does this show about Krishna?", "a": "He is caring as well as mighty."}],
+ "hi": [
+  {"q": "कृष्ण डरे हुए अर्जुन से क्या कहते हैं?", "a": "डरो मत, घबराओ मत। शांत मन से मेरा वही परिचित रूप फिर देखो।"},
+  {"q": "इससे कृष्ण के बारे में क्या पता चलता है?", "a": "वे शक्तिशाली ही नहीं, स्नेही भी हैं।"}]},
+"11.50": {"en": [
+  {"q": "What does Krishna do next?", "a": "He returns to his gentle form and comforts Arjuna."},
+  {"q": "Who narrates this?", "a": "Sanjaya, to Dhritarashtra."}],
+ "hi": [
+  {"q": "कृष्ण आगे क्या करते हैं?", "a": "वे अपने सौम्य रूप में लौटकर अर्जुन को धीरज देते हैं।"},
+  {"q": "यह कौन सुनाता है?", "a": "संजय, धृतराष्ट्र को।"}]},
+"11.51": {"en": [
+  {"q": "How does Arjuna feel now?", "a": "Calm again, back to his normal self."},
+  {"q": "Why does the human form comfort him?", "a": "It's the form he knows and loves."}],
+ "hi": [
+  {"q": "अब अर्जुन कैसा महसूस करता है?", "a": "फिर से शांत, अपनी स्वाभाविक स्थिति में।"},
+  {"q": "मनुष्य रूप उसे क्यों सुकून देता है?", "a": "यही वह रूप है जिसे वह जानता और प्रेम करता है।"}]},
+"11.52": {"en": [
+  {"q": "How rare is this vision?", "a": "Very rare. Even the gods long to see it."},
+  {"q": "What does this tell us about Arjuna?", "a": "He received an extraordinary grace."}],
+ "hi": [
+  {"q": "यह दर्शन कितना दुर्लभ है?", "a": "बहुत दुर्लभ। देवता भी इसके दर्शन को तरसते हैं।"},
+  {"q": "इससे अर्जुन के बारे में क्या पता चलता है?", "a": "उसे असाधारण कृपा मिली।"}]},
+"11.53": {"en": [
+  {"q": "What can't reveal this form?", "a": "Not Vedas, austerity, charity or sacrifice."},
+  {"q": "Why repeat this?", "a": "To set up the answer in the next verse: devotion."}],
+ "hi": [
+  {"q": "क्या इस रूप को प्रकट नहीं कर सकता?", "a": "न वेद, न तप, न दान, न यज्ञ।"},
+  {"q": "यह दोहराया क्यों?", "a": "अगले श्लोक के उत्तर की भूमिका के लिए: भक्ति।"}]},
+"11.54": {"en": [
+  {"q": "How can the Divine truly be known?", "a": "Through single-minded devotion: to know, see and enter into him."},
+  {"q": "Why devotion above everything?", "a": "Love opens what effort alone can't."}],
+ "hi": [
+  {"q": "भगवान को सच में कैसे जाना जा सकता है?", "a": "अनन्य भक्ति से: उन्हें जानना, देखना और उनमें प्रवेश करना।"},
+  {"q": "भक्ति सबसे ऊपर क्यों?", "a": "प्रेम वह खोलता है जो केवल प्रयास नहीं खोल सकता।"}]},
+"11.55": {"en": [
+  {"q": "Who reaches Krishna?", "a": "One who works for him, sees him as supreme, is devoted, unattached and without hatred toward any being."},
+  {"q": "Why is this verse a summary?", "a": "It sums up the whole path: action, devotion, detachment and kindness."}],
+ "hi": [
+  {"q": "कृष्ण को कौन प्राप्त होता है?", "a": "जो उनके लिए कर्म करे, उन्हें परम माने, भक्त हो, अनासक्त हो और किसी प्राणी से वैर न रखे।"},
+  {"q": "यह श्लोक सार क्यों है?", "a": "यह पूरे मार्ग का सार है: कर्म, भक्ति, अनासक्ति और करुणा।"}]}
+}

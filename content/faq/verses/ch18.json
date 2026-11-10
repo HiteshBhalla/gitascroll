@@ -1,0 +1,470 @@
+{
+"18.1": {"en": [
+  {"q": "What does Arjuna ask in the final chapter?", "a": "The true meaning of sannyasa (renunciation) and tyaga (letting go), and how they differ."},
+  {"q": "Why ask this now?", "a": "It ties together everything Krishna has taught about action."}],
+ "hi": [
+  {"q": "अंतिम अध्याय में अर्जुन क्या पूछता है?", "a": "संन्यास और त्याग का सच्चा अर्थ, और दोनों में क्या अंतर है।"},
+  {"q": "अब यह क्यों पूछा?", "a": "यह कर्म के बारे में कृष्ण के सारे उपदेश को जोड़ता है।"}]},
+"18.2": {"en": [
+  {"q": "What is the difference between sannyasa and tyaga?", "a": "Sannyasa is giving up desire-driven actions; tyaga is giving up the fruits of all actions."},
+  {"q": "Which does Krishna prefer?", "a": "Tyaga: keep acting, but let go of results."}],
+ "hi": [
+  {"q": "संन्यास और त्याग में क्या अंतर है?", "a": "संन्यास है काम्य कर्मों को छोड़ना; त्याग है सब कर्मों के फल को छोड़ना।"},
+  {"q": "कृष्ण किसे पसंद करते हैं?", "a": "त्याग: कर्म करते रहो, पर फल छोड़ दो।"}]},
+"18.3": {"en": [
+  {"q": "What do different sages say?", "a": "Some say all action should be dropped as flawed; others say sacrifice, charity and austerity should never be dropped."},
+  {"q": "Why mention both views?", "a": "To set up Krishna's own clear answer."}],
+ "hi": [
+  {"q": "अलग-अलग मुनि क्या कहते हैं?", "a": "कुछ कहते हैं सब कर्म दोषयुक्त होने से छोड़ दो; कुछ कहते हैं यज्ञ, दान और तप कभी न छोड़ो।"},
+  {"q": "दोनों मत क्यों बताए?", "a": "कृष्ण के अपने स्पष्ट उत्तर की भूमिका बनाने के लिए।"}]},
+"18.4": {"en": [
+  {"q": "What does Krishna say about tyaga?", "a": "It comes in three kinds, and he will give his final view."},
+  {"q": "Why three kinds?", "a": "They match the three gunas."}],
+ "hi": [
+  {"q": "कृष्ण त्याग के बारे में क्या कहते हैं?", "a": "यह तीन प्रकार का है, और वे अपना निश्चित मत बताएँगे।"},
+  {"q": "तीन प्रकार क्यों?", "a": "ये तीन गुणों से मेल खाते हैं।"}]},
+"18.5": {"en": [
+  {"q": "Should sacrifice, charity and austerity be given up?", "a": "No. They should be done because they purify even the wise."},
+  {"q": "Why do they matter?", "a": "They keep the heart clean."}],
+ "hi": [
+  {"q": "क्या यज्ञ, दान और तप छोड़ने चाहिए?", "a": "नहीं। ये करने चाहिए क्योंकि ये ज्ञानियों को भी पवित्र करते हैं।"},
+  {"q": "ये क्यों महत्वपूर्ण हैं?", "a": "ये हृदय को शुद्ध रखते हैं।"}]},
+"18.6": {"en": [
+  {"q": "What is Krishna's final view?", "a": "Do these acts, but without attachment and without wanting results."},
+  {"q": "Why is this the 'best' view?", "a": "It keeps both the good of action and the freedom of detachment."}],
+ "hi": [
+  {"q": "कृष्ण का अंतिम मत क्या है?", "a": "ये कर्म करो, पर आसक्ति और फल की इच्छा के बिना।"},
+  {"q": "यह 'उत्तम' मत क्यों है?", "a": "इसमें कर्म का लाभ और अनासक्ति की स्वतंत्रता दोनों रहते हैं।"}]},
+"18.7": {"en": [
+  {"q": "What is tamasic renunciation?", "a": "Dropping one's duty out of confusion."},
+  {"q": "Why is it wrong?", "a": "It's avoidance, not true letting go."}],
+ "hi": [
+  {"q": "तामसिक त्याग क्या है?", "a": "मोह के कारण अपना नियत कर्म छोड़ना।"},
+  {"q": "यह गलत क्यों है?", "a": "यह बचना है, सच्चा त्याग नहीं।"}]},
+"18.8": {"en": [
+  {"q": "What is rajasic renunciation?", "a": "Dropping duties because they are hard or painful."},
+  {"q": "Does it bring results?", "a": "No. It brings none of the benefits of real renunciation."}],
+ "hi": [
+  {"q": "राजसिक त्याग क्या है?", "a": "कर्तव्य को कठिन या कष्टदायक समझकर छोड़ना।"},
+  {"q": "क्या इससे फल मिलता है?", "a": "नहीं। इससे सच्चे त्याग का कोई लाभ नहीं मिलता।"}]},
+"18.9": {"en": [
+  {"q": "What is sattvic renunciation?", "a": "Doing your duty because it should be done, letting go of attachment and results."},
+  {"q": "What makes it pure?", "a": "Doing the work fully while giving up the ego's claim."}],
+ "hi": [
+  {"q": "सात्त्विक त्याग क्या है?", "a": "कर्तव्य समझकर कर्म करना, आसक्ति और फल छोड़कर।"},
+  {"q": "इसे शुद्ध क्या बनाता है?", "a": "पूरा कर्म करते हुए अहंकार का दावा छोड़ना।"}]},
+"18.10": {"en": [
+  {"q": "How does a true renunciate treat unpleasant work?", "a": "Without hating it, and doesn't cling to pleasant work either."},
+  {"q": "What marks them?", "a": "Clarity, wisdom and freedom from doubt."}],
+ "hi": [
+  {"q": "सच्चा त्यागी अप्रिय कर्म को कैसे लेता है?", "a": "उससे द्वेष नहीं करता, और प्रिय कर्म से चिपकता भी नहीं।"},
+  {"q": "उसके लक्षण क्या हैं?", "a": "सत्त्व, बुद्धिमत्ता और संशय से मुक्ति।"}]},
+"18.11": {"en": [
+  {"q": "Can anyone give up action completely?", "a": "No one with a body can."},
+  {"q": "Who is the true renunciate then?", "a": "The one who gives up the fruits of action."}],
+ "hi": [
+  {"q": "क्या कोई पूरी तरह कर्म छोड़ सकता है?", "a": "देहधारी के लिए यह संभव नहीं।"},
+  {"q": "तो सच्चा त्यागी कौन है?", "a": "जो कर्मफल का त्याग करता है।"}]},
+"18.12": {"en": [
+  {"q": "What results do non-renunciates get?", "a": "Pleasant, unpleasant or mixed, after death."},
+  {"q": "And true renunciates?", "a": "None. They are free."}],
+ "hi": [
+  {"q": "जो त्याग नहीं करते उन्हें क्या फल मिलता है?", "a": "मृत्यु के बाद अच्छा, बुरा या मिला-जुला।"},
+  {"q": "और सच्चे त्यागियों को?", "a": "कोई नहीं। वे मुक्त हैं।"}]},
+"18.13": {"en": [
+  {"q": "What will Krishna explain now?", "a": "The five causes behind every action."},
+  {"q": "Why does this matter?", "a": "It shows we're not the only cause of what happens."}],
+ "hi": [
+  {"q": "कृष्ण अब क्या समझाएँगे?", "a": "हर कर्म के पीछे के पाँच कारण।"},
+  {"q": "यह क्यों महत्वपूर्ण है?", "a": "यह दिखाता है कि जो होता है उसके एकमात्र कारण हम नहीं।"}]},
+"18.14": {"en": [
+  {"q": "What are the five causes of action?", "a": "The body, the doer, the senses, the various energies, and the Divine (fate)."},
+  {"q": "What is the takeaway?", "a": "Many factors work together in every action."}],
+ "hi": [
+  {"q": "कर्म के पाँच कारण कौन से हैं?", "a": "अधिष्ठान (शरीर), कर्ता, इंद्रियाँ, विविध चेष्टाएँ और दैव।"},
+  {"q": "मुख्य बात क्या है?", "a": "हर कर्म में कई कारक साथ काम करते हैं।"}]},
+"18.15": {"en": [
+  {"q": "Do these five causes apply to all actions?", "a": "Yes, to everything done by body, speech or mind, right or wrong."},
+  {"q": "What does that mean?", "a": "No action happens by the ego alone."}],
+ "hi": [
+  {"q": "क्या ये पाँच कारण सब कर्मों पर लागू हैं?", "a": "हाँ, शरीर, वाणी या मन से किए हर कर्म पर, सही हो या गलत।"},
+  {"q": "इसका क्या अर्थ है?", "a": "कोई कर्म केवल अहंकार से नहीं होता।"}]},
+"18.16": {"en": [
+  {"q": "What mistake do the unwise make?", "a": "They see themselves alone as the doer."},
+  {"q": "Why is this wrong?", "a": "It ignores the other causes and inflates the ego."}],
+ "hi": [
+  {"q": "अज्ञानी क्या गलती करते हैं?", "a": "वे केवल स्वयं को कर्ता मानते हैं।"},
+  {"q": "यह गलत क्यों है?", "a": "यह बाकी कारणों को अनदेखा करता है और अहंकार बढ़ाता है।"}]},
+"18.17": {"en": [
+  {"q": "How can someone act and not be bound?", "a": "When free from 'I am the doer' and with an untainted mind, even great acts don't bind."},
+  {"q": "Is this permission to do anything?", "a": "No. Such a person, free of ego, naturally acts rightly."}],
+ "hi": [
+  {"q": "कोई कर्म करके भी कैसे न बँधे?", "a": "जब 'मैं कर्ता हूँ' का भाव न हो और बुद्धि लिप्त न हो, तब बड़े कर्म भी नहीं बाँधते।"},
+  {"q": "क्या यह कुछ भी करने की अनुमति है?", "a": "नहीं। अहंकार से मुक्त व्यक्ति स्वाभाविक रूप से सही कर्म करता है।"}]},
+"18.18": {"en": [
+  {"q": "What drives action?", "a": "Knowledge, the thing known and the knower."},
+  {"q": "What makes up action?", "a": "The instrument, the act and the doer."}],
+ "hi": [
+  {"q": "कर्म को क्या प्रेरित करता है?", "a": "ज्ञान, ज्ञेय और ज्ञाता।"},
+  {"q": "कर्म किससे बनता है?", "a": "करण, कर्म और कर्ता से।"}]},
+"18.19": {"en": [
+  {"q": "What will Krishna classify next?", "a": "Knowledge, action and the doer, each in three types by the gunas."},
+  {"q": "Why classify?", "a": "It helps us see which quality guides us."}],
+ "hi": [
+  {"q": "कृष्ण आगे क्या वर्गीकृत करेंगे?", "a": "ज्ञान, कर्म और कर्ता, हर एक गुणों के अनुसार तीन प्रकार का।"},
+  {"q": "वर्गीकरण क्यों?", "a": "यह देखने में मदद करता है कि कौन सा गुण हमें चला रहा है।"}]},
+"18.20": {"en": [
+  {"q": "What is sattvic knowledge?", "a": "Seeing one unchanging reality in all beings, undivided in the divided."},
+  {"q": "How does it feel?", "a": "Like unity and connection with everyone."}],
+ "hi": [
+  {"q": "सात्त्विक ज्ञान क्या है?", "a": "सब प्राणियों में एक अविनाशी सत्ता देखना, विभक्तों में अविभक्त।"},
+  {"q": "यह कैसा लगता है?", "a": "सबसे एकता और जुड़ाव जैसा।"}]},
+"18.21": {"en": [
+  {"q": "What is rajasic knowledge?", "a": "Seeing beings only as separate and different from one another."},
+  {"q": "What does it lead to?", "a": "Division and comparison."}],
+ "hi": [
+  {"q": "राजसिक ज्ञान क्या है?", "a": "प्राणियों को केवल अलग-अलग और भिन्न देखना।"},
+  {"q": "यह कहाँ ले जाता है?", "a": "भेद और तुलना की ओर।"}]},
+"18.22": {"en": [
+  {"q": "What is tamasic knowledge?", "a": "Clinging to one small thing as if it were everything, without reason or truth."},
+  {"q": "What is an example?", "a": "Narrow, stubborn thinking that refuses to see the bigger picture."}],
+ "hi": [
+  {"q": "तामसिक ज्ञान क्या है?", "a": "एक छोटी चीज़ को ही सब कुछ मानकर उससे चिपके रहना, बिना तर्क या सत्य के।"},
+  {"q": "इसका उदाहरण क्या है?", "a": "संकीर्ण, हठी सोच जो बड़ी तस्वीर देखने से इनकार करे।"}]},
+"18.23": {"en": [
+  {"q": "What is sattvic action?", "a": "Duty done without attachment, likes or dislikes, and without wanting results."},
+  {"q": "How does it feel?", "a": "Calm and clean."}],
+ "hi": [
+  {"q": "सात्त्विक कर्म क्या है?", "a": "आसक्ति, राग-द्वेष और फल की इच्छा के बिना किया गया नियत कर्म।"},
+  {"q": "यह कैसा लगता है?", "a": "शांत और निर्मल।"}]},
+"18.24": {"en": [
+  {"q": "What is rajasic action?", "a": "Action done with great strain, driven by desire or ego."},
+  {"q": "What's the giveaway?", "a": "Stress and the need for credit."}],
+ "hi": [
+  {"q": "राजसिक कर्म क्या है?", "a": "बहुत परिश्रम से, कामना या अहंकार से किया गया कर्म।"},
+  {"q": "इसकी पहचान क्या है?", "a": "तनाव और श्रेय की चाह।"}]},
+"18.25": {"en": [
+  {"q": "What is tamasic action?", "a": "Action begun in confusion, without thinking about consequences, harm or ability."},
+  {"q": "What's the lesson?", "a": "Think before you act."}],
+ "hi": [
+  {"q": "तामसिक कर्म क्या है?", "a": "मोह से शुरू किया कर्म, परिणाम, हानि, हिंसा और सामर्थ्य का विचार किए बिना।"},
+  {"q": "सीख क्या है?", "a": "कर्म से पहले सोचो।"}]},
+"18.26": {"en": [
+  {"q": "What is a sattvic doer?", "a": "Unattached, humble, steady and enthusiastic, unchanged by success or failure."},
+  {"q": "Is this a good role model?", "a": "Yes. It describes a balanced, effective person."}],
+ "hi": [
+  {"q": "सात्त्विक कर्ता कौन है?", "a": "अनासक्त, अहंकार रहित, धैर्यवान और उत्साही, सफलता-असफलता में अविकारी।"},
+  {"q": "क्या यह अच्छा आदर्श है?", "a": "हाँ। यह संतुलित, प्रभावी व्यक्ति का वर्णन है।"}]},
+"18.27": {"en": [
+  {"q": "What is a rajasic doer?", "a": "Passionate, eager for results, greedy, harmful, impure and swayed by joy and sorrow."},
+  {"q": "What drives them?", "a": "Wanting the outcome."}],
+ "hi": [
+  {"q": "राजसिक कर्ता कौन है?", "a": "रागी, फल चाहने वाला, लोभी, हिंसक, अशुद्ध और हर्ष-शोक में डोलने वाला।"},
+  {"q": "उन्हें क्या चलाता है?", "a": "परिणाम की चाह।"}]},
+"18.28": {"en": [
+  {"q": "What is a tamasic doer?", "a": "Undisciplined, crude, stubborn, deceitful, lazy, gloomy and procrastinating."},
+  {"q": "Can someone change?", "a": "Yes. Recognising these traits is the first step."}],
+ "hi": [
+  {"q": "तामसिक कर्ता कौन है?", "a": "असंयमी, अशिक्षित, हठी, धूर्त, आलसी, उदास और टालमटोल करने वाला।"},
+  {"q": "क्या कोई बदल सकता है?", "a": "हाँ। इन लक्षणों को पहचानना पहला कदम है।"}]},
+"18.29": {"en": [
+  {"q": "What's explained next?", "a": "The three kinds of intellect and determination."},
+  {"q": "Why do these matter?", "a": "They guide every decision we make."}],
+ "hi": [
+  {"q": "आगे क्या समझाया गया है?", "a": "बुद्धि और धृति के तीन प्रकार।"},
+  {"q": "ये क्यों महत्वपूर्ण हैं?", "a": "ये हमारे हर निर्णय को दिशा देते हैं।"}]},
+"18.30": {"en": [
+  {"q": "What is sattvic intellect?", "a": "It knows when to act and when to step back, what to do and avoid, what to fear and what not to, what binds and what frees."},
+  {"q": "What is it, in short?", "a": "Clear judgment."}],
+ "hi": [
+  {"q": "सात्त्विक बुद्धि क्या है?", "a": "जो प्रवृत्ति-निवृत्ति, कर्तव्य-अकर्तव्य, भय-अभय और बंधन-मोक्ष को जानती है।"},
+  {"q": "संक्षेप में यह क्या है?", "a": "स्पष्ट विवेक।"}]},
+"18.31": {"en": [
+  {"q": "What is rajasic intellect?", "a": "It mixes up right and wrong, what to do and what not to do."},
+  {"q": "Why?", "a": "Desire clouds its judgment."}],
+ "hi": [
+  {"q": "राजसिक बुद्धि क्या है?", "a": "जो धर्म-अधर्म और कर्तव्य-अकर्तव्य को ठीक से नहीं जानती।"},
+  {"q": "क्यों?", "a": "इच्छा उसके विवेक को धुंधला कर देती है।"}]},
+"18.32": {"en": [
+  {"q": "What is tamasic intellect?", "a": "Wrapped in darkness, it sees wrong as right and turns everything upside down."},
+  {"q": "What's the danger?", "a": "It can justify anything."}],
+ "hi": [
+  {"q": "तामसिक बुद्धि क्या है?", "a": "अंधकार से ढकी, जो अधर्म को धर्म मानती है और सब उल्टा देखती है।"},
+  {"q": "खतरा क्या है?", "a": "यह किसी भी चीज़ को उचित ठहरा सकती है।"}]},
+"18.33": {"en": [
+  {"q": "What is sattvic determination?", "a": "Steady control over mind, breath and senses through yoga."},
+  {"q": "How does it feel?", "a": "Calm, firm, unwavering."}],
+ "hi": [
+  {"q": "सात्त्विक धृति क्या है?", "a": "योग के द्वारा मन, प्राण और इंद्रियों पर अविचल नियंत्रण।"},
+  {"q": "यह कैसी लगती है?", "a": "शांत, दृढ़, अडिग।"}]},
+"18.34": {"en": [
+  {"q": "What is rajasic determination?", "a": "Holding on to duty, pleasure and wealth with attachment, wanting results."},
+  {"q": "What is the difference from sattvic?", "a": "It is persistent, but for selfish ends."}],
+ "hi": [
+  {"q": "राजसिक धृति क्या है?", "a": "आसक्ति और फल की इच्छा से धर्म, काम और अर्थ को पकड़े रहना।"},
+  {"q": "सात्त्विक से क्या अंतर है?", "a": "यह दृढ़ है, पर स्वार्थ के लिए।"}]},
+"18.35": {"en": [
+  {"q": "What is tamasic determination?", "a": "Stubbornly clinging to sleep, fear, grief, depression and arrogance."},
+  {"q": "Is that really 'determination'?", "a": "Yes, but in the wrong direction: stubbornly staying stuck."}],
+ "hi": [
+  {"q": "तामसिक धृति क्या है?", "a": "निद्रा, भय, शोक, विषाद और मद को हठ से पकड़े रहना।"},
+  {"q": "क्या यह सच में 'धृति' है?", "a": "हाँ, पर गलत दिशा में: हठपूर्वक अटके रहना।"}]},
+"18.36": {"en": [
+  {"q": "What is the next topic?", "a": "The three kinds of happiness."},
+  {"q": "What does real happiness do?", "a": "It grows with practice and ends sorrow."}],
+ "hi": [
+  {"q": "अगला विषय क्या है?", "a": "सुख के तीन प्रकार।"},
+  {"q": "सच्चा सुख क्या करता है?", "a": "यह अभ्यास से बढ़ता है और दुख का अंत करता है।"}]},
+"18.37": {"en": [
+  {"q": "What is sattvic happiness?", "a": "Like poison at first but like nectar in the end, born from a clear mind."},
+  {"q": "What is an example?", "a": "Discipline, study or exercise: hard at first, rewarding later."}],
+ "hi": [
+  {"q": "सात्त्विक सुख क्या है?", "a": "पहले विष जैसा पर अंत में अमृत जैसा, निर्मल बुद्धि से उत्पन्न।"},
+  {"q": "इसका उदाहरण क्या है?", "a": "अनुशासन, पढ़ाई या व्यायाम: पहले कठिन, बाद में फलदायी।"}]},
+"18.38": {"en": [
+  {"q": "What is rajasic happiness?", "a": "Like nectar at first but like poison in the end, from the senses meeting objects."},
+  {"q": "What is an example?", "a": "Binge-watching or junk food: fun now, regret later."}],
+ "hi": [
+  {"q": "राजसिक सुख क्या है?", "a": "पहले अमृत जैसा पर अंत में विष जैसा, इंद्रियों और विषयों के संयोग से।"},
+  {"q": "इसका उदाहरण क्या है?", "a": "लगातार स्क्रॉल करना या जंक फूड: अभी मज़ा, बाद में पछतावा।"}]},
+"18.39": {"en": [
+  {"q": "What is tamasic happiness?", "a": "Delusion from start to finish, coming from sleep, laziness and carelessness."},
+  {"q": "Why is it the lowest?", "a": "It never brings clarity at any stage."}],
+ "hi": [
+  {"q": "तामसिक सुख क्या है?", "a": "आरंभ से अंत तक मोह में डालने वाला, निद्रा, आलस्य और प्रमाद से उत्पन्न।"},
+  {"q": "यह सबसे निम्न क्यों है?", "a": "यह किसी भी चरण में स्पष्टता नहीं देता।"}]},
+"18.40": {"en": [
+  {"q": "Is anyone free of the gunas?", "a": "No being on earth or in heaven is free from these three."},
+  {"q": "What does that mean?", "a": "Everyone works with these forces; the goal is to rise above them."}],
+ "hi": [
+  {"q": "क्या कोई गुणों से मुक्त है?", "a": "पृथ्वी या स्वर्ग में कोई भी इन तीन गुणों से मुक्त नहीं।"},
+  {"q": "इसका क्या अर्थ है?", "a": "हर कोई इन शक्तियों के साथ जीता है; लक्ष्य इनसे ऊपर उठना है।"}]},
+"18.41": {"en": [
+  {"q": "How are duties divided?", "a": "According to qualities born of one's nature, not merely by birth."},
+  {"q": "What is the point?", "a": "Work should suit one's nature."}],
+ "hi": [
+  {"q": "कर्तव्य कैसे बाँटे गए हैं?", "a": "स्वभाव से उत्पन्न गुणों के अनुसार, केवल जन्म से नहीं।"},
+  {"q": "बात क्या है?", "a": "काम व्यक्ति के स्वभाव के अनुकूल होना चाहिए।"}]},
+"18.42": {"en": [
+  {"q": "What qualities suit a teacher or priest by nature?", "a": "Calm, self-control, austerity, purity, patience, honesty, knowledge, wisdom and faith."},
+  {"q": "Are these only for priests?", "a": "No. They are good qualities anyone can grow."}],
+ "hi": [
+  {"q": "स्वभाव से शिक्षक या ब्राह्मण के कौन से गुण हैं?", "a": "शम, दम, तप, शौच, क्षमा, सरलता, ज्ञान, विज्ञान और आस्तिकता।"},
+  {"q": "क्या ये केवल ब्राह्मणों के लिए हैं?", "a": "नहीं। ये अच्छे गुण हैं जो कोई भी बढ़ा सकता है।"}]},
+"18.43": {"en": [
+  {"q": "What qualities suit a leader or warrior?", "a": "Courage, vigour, steadiness, skill, not fleeing battle, generosity and leadership."},
+  {"q": "Why mention this to Arjuna?", "a": "These are his natural qualities, so fighting for right fits him."}],
+ "hi": [
+  {"q": "नेता या क्षत्रिय के कौन से गुण हैं?", "a": "शौर्य, तेज, धृति, दक्षता, युद्ध से न भागना, दान और नेतृत्व।"},
+  {"q": "अर्जुन को यह क्यों बताया?", "a": "ये उसके स्वाभाविक गुण हैं, इसलिए धर्म के लिए लड़ना उसके अनुकूल है।"}]},
+"18.44": {"en": [
+  {"q": "What work suits other natures?", "a": "Farming, cattle care and trade suit some; service suits others."},
+  {"q": "Is one work better than another?", "a": "The next verses say perfection comes from doing your own work well."}],
+ "hi": [
+  {"q": "अन्य स्वभावों के लिए कौन सा काम उपयुक्त है?", "a": "कुछ के लिए खेती, गौपालन और व्यापार; कुछ के लिए सेवा।"},
+  {"q": "क्या कोई काम दूसरे से श्रेष्ठ है?", "a": "अगले श्लोक कहते हैं कि अपना काम अच्छे से करने से ही सिद्धि मिलती है।"}]},
+"18.45": {"en": [
+  {"q": "How does one reach perfection?", "a": "By being devoted to one's own work."},
+  {"q": "Is any work spiritual?", "a": "Yes, when done with devotion."}],
+ "hi": [
+  {"q": "सिद्धि कैसे मिलती है?", "a": "अपने कर्म में लगे रहकर।"},
+  {"q": "क्या कोई भी काम आध्यात्मिक है?", "a": "हाँ, जब भक्ति से किया जाए।"}]},
+"18.46": {"en": [
+  {"q": "How does work become worship?", "a": "By offering your work to the One from whom all beings arise."},
+  {"q": "What is the result?", "a": "Perfection, through everyday duties."}],
+ "hi": [
+  {"q": "काम पूजा कैसे बने?", "a": "अपना कर्म उस परमात्मा को अर्पित करके, जिससे सब प्राणी उत्पन्न हुए।"},
+  {"q": "परिणाम क्या है?", "a": "रोज़ के कर्तव्यों से ही सिद्धि।"}]},
+"18.47": {"en": [
+  {"q": "Why is one's own duty better?", "a": "Even imperfect, it suits your nature and doesn't lead to wrong."},
+  {"q": "Is this repeated from Chapter 3?", "a": "Yes. Krishna repeats it because it's so important."}],
+ "hi": [
+  {"q": "अपना धर्म श्रेष्ठ क्यों है?", "a": "अपूर्ण होकर भी वह आपके स्वभाव के अनुकूल है और पाप नहीं कराता।"},
+  {"q": "क्या यह तीसरे अध्याय से दोहराया गया है?", "a": "हाँ। कृष्ण इसे दोहराते हैं क्योंकि यह बहुत महत्वपूर्ण है।"}]},
+"18.48": {"en": [
+  {"q": "Should we leave work because it has flaws?", "a": "No. All work has flaws, like fire has smoke."},
+  {"q": "What is the lesson?", "a": "Perfect work doesn't exist; do yours anyway."}],
+ "hi": [
+  {"q": "क्या दोष होने से काम छोड़ दें?", "a": "नहीं। हर काम में दोष होता है, जैसे आग में धुआँ।"},
+  {"q": "सीख क्या है?", "a": "पूर्ण काम कहीं नहीं; फिर भी अपना काम करो।"}]},
+"18.49": {"en": [
+  {"q": "What is the highest perfection?", "a": "Freedom from action's bondage, reached through detachment, self-control and freedom from craving."},
+  {"q": "How is it reached?", "a": "Through renunciation in the true sense."}],
+ "hi": [
+  {"q": "परम सिद्धि क्या है?", "a": "कर्म बंधन से मुक्ति, जो अनासक्ति, आत्मसंयम और निःस्पृहता से मिलती है।"},
+  {"q": "यह कैसे मिलती है?", "a": "सच्चे अर्थ में संन्यास से।"}]},
+"18.50": {"en": [
+  {"q": "What will Krishna explain now?", "a": "How a perfected person reaches Brahman, the peak of knowledge."},
+  {"q": "Why 'briefly'?", "a": "He's summing up the path."}],
+ "hi": [
+  {"q": "कृष्ण अब क्या समझाएँगे?", "a": "सिद्ध व्यक्ति ब्रह्म को, ज्ञान की परम निष्ठा को, कैसे पाता है।"},
+  {"q": "'संक्षेप में' क्यों?", "a": "वे मार्ग का सारांश दे रहे हैं।"}]},
+"18.51": {"en": [
+  {"q": "What qualities lead to Brahman?", "a": "A pure mind, firm self-control, letting go of sense pleasures, and dropping attraction and aversion."},
+  {"q": "Where does it start?", "a": "With a purified intellect."}],
+ "hi": [
+  {"q": "कौन से गुण ब्रह्म तक ले जाते हैं?", "a": "शुद्ध बुद्धि, दृढ़ संयम, विषयों का त्याग, और राग-द्वेष छोड़ना।"},
+  {"q": "यह कहाँ से शुरू होता है?", "a": "शुद्ध बुद्धि से।"}]},
+"18.52": {"en": [
+  {"q": "How does the seeker live?", "a": "In solitude, eating lightly, controlling speech, body and mind, meditating and detached."},
+  {"q": "Is this for everyone?", "a": "It's the ideal; anyone can take small steps toward it."}],
+ "hi": [
+  {"q": "साधक कैसे रहता है?", "a": "एकांत में, कम खाकर, वाणी, शरीर और मन को वश में करके, ध्यान में और वैराग्य के साथ।"},
+  {"q": "क्या यह सबके लिए है?", "a": "यह आदर्श है; कोई भी इसकी ओर छोटे कदम बढ़ा सकता है।"}]},
+"18.53": {"en": [
+  {"q": "What must be dropped?", "a": "Ego, force, pride, desire, anger and possessiveness."},
+  {"q": "What remains?", "a": "Peace, and readiness for oneness with Brahman."}],
+ "hi": [
+  {"q": "क्या छोड़ना है?", "a": "अहंकार, बल, दर्प, काम, क्रोध और परिग्रह।"},
+  {"q": "क्या बचता है?", "a": "शांति, और ब्रह्म से एकता की योग्यता।"}]},
+"18.54": {"en": [
+  {"q": "What is the state of oneness like?", "a": "Serene, without grief or craving, seeing all beings equally."},
+  {"q": "What follows?", "a": "Supreme devotion to Krishna."}],
+ "hi": [
+  {"q": "ब्रह्मभूत अवस्था कैसी है?", "a": "प्रसन्न, न शोक न आकांक्षा, सब प्राणियों में समभाव।"},
+  {"q": "इसके बाद क्या?", "a": "कृष्ण की परा भक्ति।"}]},
+"18.55": {"en": [
+  {"q": "How does one truly know Krishna?", "a": "Through devotion: who he is and what he is."},
+  {"q": "What happens then?", "a": "They enter into him."}],
+ "hi": [
+  {"q": "कृष्ण को सच में कैसे जानें?", "a": "भक्ति से: वे कौन हैं और कैसे हैं।"},
+  {"q": "फिर क्या होता है?", "a": "वह उनमें प्रवेश करता है।"}]},
+"18.56": {"en": [
+  {"q": "Can one reach the goal while working?", "a": "Yes. Taking refuge in Krishna while doing all work, one reaches the eternal by his grace."},
+  {"q": "What role does grace play?", "a": "It completes what effort begins."}],
+ "hi": [
+  {"q": "क्या काम करते हुए लक्ष्य मिल सकता है?", "a": "हाँ। कृष्ण की शरण लेकर सब कर्म करते हुए, उनकी कृपा से शाश्वत पद मिलता है।"},
+  {"q": "कृपा की क्या भूमिका है?", "a": "प्रयास जो शुरू करता है, कृपा उसे पूरा करती है।"}]},
+"18.57": {"en": [
+  {"q": "What does Krishna ask Arjuna?", "a": "Offer all actions to him in your mind, make him your goal and keep your mind on him."},
+  {"q": "What is 'buddhi yoga'?", "a": "The yoga of a steady, devoted intellect."}],
+ "hi": [
+  {"q": "कृष्ण अर्जुन से क्या कहते हैं?", "a": "मन से सब कर्म उन्हें अर्पित करो, उन्हें लक्ष्य बनाओ और मन उनमें लगाओ।"},
+  {"q": "'बुद्धियोग' क्या है?", "a": "स्थिर, समर्पित बुद्धि का योग।"}]},
+"18.58": {"en": [
+  {"q": "What will happen if Arjuna keeps his mind on Krishna?", "a": "By grace, he'll overcome all obstacles."},
+  {"q": "And if he doesn't listen?", "a": "Out of ego, he will be lost."}],
+ "hi": [
+  {"q": "अगर अर्जुन मन कृष्ण में लगाए तो क्या होगा?", "a": "कृपा से वह सब कठिनाइयाँ पार करेगा।"},
+  {"q": "और अगर न सुने?", "a": "अहंकार के कारण वह नष्ट होगा।"}]},
+"18.59": {"en": [
+  {"q": "What if Arjuna says 'I won't fight'?", "a": "His resolve will fail. His own nature will push him to act."},
+  {"q": "What does this teach?", "a": "We can't escape our nature by force of will."}],
+ "hi": [
+  {"q": "अगर अर्जुन कहे 'मैं नहीं लड़ूँगा'?", "a": "उसका निश्चय व्यर्थ होगा। उसका स्वभाव उसे कर्म कराएगा।"},
+  {"q": "यह क्या सिखाता है?", "a": "हम इच्छाशक्ति से अपने स्वभाव से नहीं बच सकते।"}]},
+"18.60": {"en": [
+  {"q": "Why will Arjuna act anyway?", "a": "His own nature and duty will compel him, even against his wish."},
+  {"q": "So why choose consciously?", "a": "Acting with understanding is better than being dragged by nature."}],
+ "hi": [
+  {"q": "अर्जुन फिर भी कर्म क्यों करेगा?", "a": "उसका स्वभाव और कर्तव्य उसे विवश करेंगे, उसकी इच्छा के विरुद्ध भी।"},
+  {"q": "तो सोच-समझकर क्यों चुनें?", "a": "समझकर कर्म करना, स्वभाव से घसीटे जाने से बेहतर है।"}]},
+"18.61": {"en": [
+  {"q": "Where is the Lord?", "a": "In the heart of every being, moving them as if on a machine by his power."},
+  {"q": "What does this mean for us?", "a": "The Divine is always within, guiding life."}],
+ "hi": [
+  {"q": "ईश्वर कहाँ हैं?", "a": "हर प्राणी के हृदय में, अपनी माया से उन्हें यंत्र पर चढ़े की तरह घुमाते हुए।"},
+  {"q": "हमारे लिए इसका क्या अर्थ है?", "a": "भगवान सदा भीतर हैं, जीवन का मार्गदर्शन करते हुए।"}]},
+"18.62": {"en": [
+  {"q": "What does Krishna advise?", "a": "Take refuge in the Lord with your whole being."},
+  {"q": "What comes from that?", "a": "Supreme peace and the eternal home, by his grace."}],
+ "hi": [
+  {"q": "कृष्ण क्या सलाह देते हैं?", "a": "सर्वभाव से उस ईश्वर की शरण लो।"},
+  {"q": "इससे क्या मिलता है?", "a": "उनकी कृपा से परम शांति और शाश्वत धाम।"}]},
+"18.63": {"en": [
+  {"q": "Does Krishna force Arjuna?", "a": "No. He says: reflect on all this fully, then do as you wish."},
+  {"q": "Why give the choice?", "a": "Real change comes from understanding, not orders."}],
+ "hi": [
+  {"q": "क्या कृष्ण अर्जुन को विवश करते हैं?", "a": "नहीं। वे कहते हैं: इस पर पूरा विचार करो, फिर जैसा चाहो वैसा करो।"},
+  {"q": "चुनाव क्यों दिया?", "a": "सच्चा परिवर्तन समझ से आता है, आदेश से नहीं।"}]},
+"18.64": {"en": [
+  {"q": "Why does Krishna speak again?", "a": "Because Arjuna is very dear to him, he shares the most secret teaching."},
+  {"q": "What is it for?", "a": "Arjuna's good."}],
+ "hi": [
+  {"q": "कृष्ण फिर क्यों बोलते हैं?", "a": "क्योंकि अर्जुन उन्हें बहुत प्रिय है, वे सबसे गुप्त उपदेश देते हैं।"},
+  {"q": "यह किसलिए है?", "a": "अर्जुन के हित के लिए।"}]},
+"18.65": {"en": [
+  {"q": "What is Krishna's promise?", "a": "Think of him, be devoted, worship and bow, and you will surely come to him."},
+  {"q": "Why does he promise?", "a": "'Because you are dear to me.'"}],
+ "hi": [
+  {"q": "कृष्ण का वचन क्या है?", "a": "मन उनमें लगाओ, भक्त बनो, पूजो और नमन करो, तुम निश्चित रूप से उन्हें पाओगे।"},
+  {"q": "वे वचन क्यों देते हैं?", "a": "'क्योंकि तुम मुझे प्रिय हो।'"}]},
+"18.66": {"en": [
+  {"q": "What is Krishna's final teaching?", "a": "Let go of every other support and take refuge in him alone."},
+  {"q": "What does he promise?", "a": "He will free you from all wrongs. Do not grieve."}],
+ "hi": [
+  {"q": "कृष्ण का अंतिम उपदेश क्या है?", "a": "सब धर्मों का आश्रय छोड़कर केवल उनकी शरण में आओ।"},
+  {"q": "वे क्या वचन देते हैं?", "a": "वे सब पापों से मुक्त करेंगे। शोक मत करो।"}]},
+"18.67": {"en": [
+  {"q": "Who shouldn't be told this teaching?", "a": "Those without discipline or devotion, who don't want to listen, or who mock the Divine."},
+  {"q": "Why?", "a": "It won't help them, and they may misuse it."}],
+ "hi": [
+  {"q": "यह उपदेश किसे नहीं बताना चाहिए?", "a": "जो तपरहित, भक्तिरहित हो, सुनना न चाहे, या भगवान की निंदा करे।"},
+  {"q": "क्यों?", "a": "इससे उन्हें लाभ नहीं होगा, और वे इसका दुरुपयोग कर सकते हैं।"}]},
+"18.68": {"en": [
+  {"q": "What happens to one who shares this with devotees?", "a": "They gain supreme devotion and come to Krishna."},
+  {"q": "Why is sharing so valued?", "a": "It helps others find peace."}],
+ "hi": [
+  {"q": "जो इसे भक्तों से कहता है उसका क्या होता है?", "a": "उसे परा भक्ति मिलती है और वह कृष्ण को प्राप्त होता है।"},
+  {"q": "बाँटना इतना मूल्यवान क्यों?", "a": "यह दूसरों को शांति पाने में मदद करता है।"}]},
+"18.69": {"en": [
+  {"q": "How dear is such a person to Krishna?", "a": "No one does him dearer service, and no one will be dearer."},
+  {"q": "What does this tell us?", "a": "Spreading wisdom is the highest service."}],
+ "hi": [
+  {"q": "ऐसा व्यक्ति कृष्ण को कितना प्रिय है?", "a": "उससे बढ़कर कोई उनका प्रिय कार्य नहीं करता, और न कोई उससे अधिक प्रिय होगा।"},
+  {"q": "इससे क्या पता चलता है?", "a": "ज्ञान फैलाना सबसे बड़ी सेवा है।"}]},
+"18.70": {"en": [
+  {"q": "What about those who study this dialogue?", "a": "Krishna says they worship him through the sacrifice of knowledge."},
+  {"q": "So reading the Gita is worship?", "a": "Yes, when done sincerely."}],
+ "hi": [
+  {"q": "जो इस संवाद का अध्ययन करते हैं उनका क्या?", "a": "कृष्ण कहते हैं वे ज्ञान यज्ञ से उन्हें पूजते हैं।"},
+  {"q": "तो गीता पढ़ना पूजा है?", "a": "हाँ, जब सच्चे मन से किया जाए।"}]},
+"18.71": {"en": [
+  {"q": "What about those who just listen?", "a": "Even listening with faith and without fault-finding brings freedom and good worlds."},
+  {"q": "Why include listeners?", "a": "Everyone can benefit, even without deep study."}],
+ "hi": [
+  {"q": "जो केवल सुनते हैं उनका क्या?", "a": "श्रद्धा से और दोष निकाले बिना सुनना भी मुक्ति और शुभ लोक देता है।"},
+  {"q": "सुनने वालों को क्यों शामिल किया?", "a": "हर कोई लाभ पा सकता है, गहरे अध्ययन के बिना भी।"}]},
+"18.72": {"en": [
+  {"q": "What does Krishna ask at the end?", "a": "'Did you listen carefully? Is your confusion gone?'"},
+  {"q": "What does this show about him as a teacher?", "a": "He checks that the student understood."}],
+ "hi": [
+  {"q": "अंत में कृष्ण क्या पूछते हैं?", "a": "'क्या तुमने ध्यान से सुना? क्या तुम्हारा मोह नष्ट हुआ?'"},
+  {"q": "इससे गुरु के रूप में उनके बारे में क्या पता चलता है?", "a": "वे जाँचते हैं कि शिष्य ने समझा या नहीं।"}]},
+"18.73": {"en": [
+  {"q": "How does Arjuna answer?", "a": "'My confusion is gone, I've regained clarity by your grace. I'll do as you say.'"},
+  {"q": "What has changed since Chapter 1?", "a": "From despair and doubt to clarity and resolve."}],
+ "hi": [
+  {"q": "अर्जुन क्या उत्तर देता है?", "a": "'मेरा मोह नष्ट हो गया, आपकी कृपा से स्मृति मिल गई। मैं आपकी बात मानूँगा।'"},
+  {"q": "पहले अध्याय से क्या बदला है?", "a": "विषाद और संशय से स्पष्टता और संकल्प तक।"}]},
+"18.74": {"en": [
+  {"q": "How does Sanjaya feel?", "a": "Thrilled; the wondrous dialogue makes his hair stand on end."},
+  {"q": "Why include his reaction?", "a": "It shows the dialogue's power on anyone who hears it."}],
+ "hi": [
+  {"q": "संजय कैसा महसूस करते हैं?", "a": "रोमांचित; इस अद्भुत संवाद से उनके रोंगटे खड़े हो जाते हैं।"},
+  {"q": "उनकी प्रतिक्रिया क्यों शामिल की?", "a": "यह दिखाती है कि संवाद हर सुनने वाले पर कितना प्रभाव डालता है।"}]},
+"18.75": {"en": [
+  {"q": "How could Sanjaya hear all this?", "a": "By the grace of Vyasa, who gave him divine sight."},
+  {"q": "Who did he hear it from?", "a": "Directly from Krishna, the Lord of Yoga."}],
+ "hi": [
+  {"q": "संजय यह सब कैसे सुन सके?", "a": "व्यास की कृपा से, जिन्होंने उन्हें दिव्य दृष्टि दी।"},
+  {"q": "उन्होंने किससे सुना?", "a": "सीधे योगेश्वर कृष्ण से।"}]},
+"18.76": {"en": [
+  {"q": "What does Sanjaya keep doing?", "a": "Remembering the dialogue again and again, and rejoicing each time."},
+  {"q": "What does this show?", "a": "The Gita rewards repeated reflection."}],
+ "hi": [
+  {"q": "संजय बार-बार क्या करते हैं?", "a": "संवाद को बार-बार याद करते हैं और हर बार हर्षित होते हैं।"},
+  {"q": "यह क्या दिखाता है?", "a": "गीता बार-बार चिंतन करने पर और गहरी होती है।"}]},
+"18.77": {"en": [
+  {"q": "What else does Sanjaya remember?", "a": "Krishna's wondrous cosmic form."},
+  {"q": "How does it affect him?", "a": "He is amazed and rejoices again and again."}],
+ "hi": [
+  {"q": "संजय और क्या याद करते हैं?", "a": "कृष्ण का अद्भुत विराट रूप।"},
+  {"q": "इसका उन पर क्या असर है?", "a": "वे विस्मित होते हैं और बार-बार हर्षित होते हैं।"}]},
+"18.78": {"en": [
+  {"q": "How does the Gita end?", "a": "Where Krishna and Arjuna are, there is fortune, victory, prosperity and righteousness."},
+  {"q": "What does it mean for us?", "a": "When wisdom (Krishna) and effort (Arjuna) come together, good things follow."}],
+ "hi": [
+  {"q": "गीता का अंत कैसे होता है?", "a": "जहाँ कृष्ण और अर्जुन हैं, वहाँ श्री, विजय, विभूति और नीति है।"},
+  {"q": "हमारे लिए इसका क्या अर्थ है?", "a": "जब ज्ञान (कृष्ण) और प्रयास (अर्जुन) साथ हों, तो शुभ होता है।"}]}
+}

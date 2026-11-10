@@ -1,0 +1,284 @@
+{
+"6.1": {"en": [
+  {"q": "Who is a true renunciate?", "a": "The one who does their duty without wanting its fruits, not just someone who has stopped working."},
+  {"q": "Why does Krishna redefine renunciation?", "a": "To show it's an inner attitude, not an outer show."}],
+ "hi": [
+  {"q": "सच्चा संन्यासी कौन है?", "a": "जो फल की इच्छा के बिना अपना कर्तव्य करता है, न कि केवल काम छोड़ने वाला।"},
+  {"q": "कृष्ण संन्यास की नई परिभाषा क्यों देते हैं?", "a": "यह दिखाने के लिए कि यह भीतर का भाव है, बाहर का दिखावा नहीं।"}]},
+"6.2": {"en": [
+  {"q": "Are renunciation and yoga the same?", "a": "Yes. No one becomes a yogi without letting go of selfish intentions."},
+  {"q": "What must be renounced?", "a": "Selfish plans and desires, not life itself."}],
+ "hi": [
+  {"q": "क्या संन्यास और योग एक हैं?", "a": "हाँ। स्वार्थी संकल्प छोड़े बिना कोई योगी नहीं बनता।"},
+  {"q": "क्या त्यागना है?", "a": "स्वार्थ के संकल्प और कामनाएँ, जीवन नहीं।"}]},
+"6.3": {"en": [
+  {"q": "What helps a beginner in yoga?", "a": "Action. Selfless work prepares the mind."},
+  {"q": "What helps one who has advanced?", "a": "Calm and stillness become the means."}],
+ "hi": [
+  {"q": "योग में शुरुआत करने वाले की क्या सहायता करता है?", "a": "कर्म। निष्काम कर्म मन को तैयार करता है।"},
+  {"q": "आगे बढ़े हुए की क्या सहायता करता है?", "a": "शांति और स्थिरता साधन बन जाते हैं।"}]},
+"6.4": {"en": [
+  {"q": "When is someone established in yoga?", "a": "When they're no longer attached to sense objects or actions, and have let go of selfish intentions."},
+  {"q": "Is this a sudden change?", "a": "Usually gradual, built through practice."}],
+ "hi": [
+  {"q": "कोई योगारूढ़ कब होता है?", "a": "जब वह विषयों और कर्मों में आसक्त न रहे, और सब संकल्प छोड़ दे।"},
+  {"q": "क्या यह अचानक बदलाव है?", "a": "आमतौर पर धीरे-धीरे, अभ्यास से।"}]},
+"6.5": {"en": [
+  {"q": "Who is responsible for lifting us up?", "a": "We are. We must raise ourselves by our own effort."},
+  {"q": "How can the mind be our friend and enemy?", "a": "A trained mind helps us; an untrained one harms us."}],
+ "hi": [
+  {"q": "हमें ऊपर उठाने की ज़िम्मेदारी किसकी है?", "a": "हमारी। अपना उद्धार स्वयं करना है।"},
+  {"q": "मन मित्र और शत्रु कैसे हो सकता है?", "a": "साधा मन मदद करता है, बेकाबू मन हानि करता है।"}]},
+"6.6": {"en": [
+  {"q": "When is the mind a friend?", "a": "When you've mastered it."},
+  {"q": "When is it an enemy?", "a": "When it's uncontrolled, it works against you like a foe."}],
+ "hi": [
+  {"q": "मन कब मित्र है?", "a": "जब आपने उसे जीत लिया हो।"},
+  {"q": "कब शत्रु है?", "a": "जब वह बेकाबू हो, तो शत्रु की तरह आपके विरुद्ध काम करता है।"}]},
+"6.7": {"en": [
+  {"q": "What happens when the mind is mastered?", "a": "You stay calm in heat and cold, pleasure and pain, honour and insult."},
+  {"q": "Why mention honour and insult?", "a": "Because ego reacts strongly to these, and calm in them is a real sign of growth."}],
+ "hi": [
+  {"q": "मन जीतने पर क्या होता है?", "a": "आप सर्दी-गर्मी, सुख-दुख और मान-अपमान में शांत रहते हैं।"},
+  {"q": "मान-अपमान का उल्लेख क्यों?", "a": "क्योंकि अहंकार इन पर तेज़ प्रतिक्रिया करता है, और इनमें शांति सच्ची प्रगति का संकेत है।"}]},
+"6.8": {"en": [
+  {"q": "Who is a steady yogi?", "a": "One content with knowledge and experience, unshaken, senses controlled."},
+  {"q": "What does 'gold and clod alike' mean?", "a": "Seeing a lump of earth, a stone and gold as equal, so greed has no grip."}],
+ "hi": [
+  {"q": "स्थिर योगी कौन है?", "a": "जो ज्ञान और विज्ञान से तृप्त, अविचल और जितेंद्रिय है।"},
+  {"q": "'मिट्टी और सोना समान' का क्या अर्थ है?", "a": "मिट्टी, पत्थर और सोने को समान देखना, ताकि लोभ की पकड़ न रहे।"}]},
+"6.9": {"en": [
+  {"q": "How does a great yogi treat people?", "a": "Equally, whether friend, enemy, neutral, relative, saint or sinner."},
+  {"q": "Is this realistic?", "a": "It's a high goal. Each step toward it makes life calmer."}],
+ "hi": [
+  {"q": "श्रेष्ठ योगी लोगों से कैसा व्यवहार करता है?", "a": "समान रूप से, चाहे मित्र हो, शत्रु, उदासीन, संबंधी, साधु या पापी।"},
+  {"q": "क्या यह व्यावहारिक है?", "a": "यह ऊँचा लक्ष्य है। उसकी ओर हर कदम जीवन को शांत बनाता है।"}]},
+"6.10": {"en": [
+  {"q": "How should a yogi practise?", "a": "Alone in a quiet place, with mind controlled, free from craving and possessiveness."},
+  {"q": "Why alone?", "a": "Solitude reduces distractions and helps the mind settle."}],
+ "hi": [
+  {"q": "योगी को कैसे अभ्यास करना चाहिए?", "a": "एकांत स्थान में अकेले, मन वश में करके, आशा और परिग्रह से मुक्त होकर।"},
+  {"q": "अकेले क्यों?", "a": "एकांत से भटकाव कम होता है और मन टिकता है।"}]},
+"6.11": {"en": [
+  {"q": "What kind of seat is recommended?", "a": "A clean, firm seat, neither too high nor too low."},
+  {"q": "Why such detail about the seat?", "a": "A stable, comfortable posture supports a steady mind."}],
+ "hi": [
+  {"q": "कैसा आसन बताया गया है?", "a": "स्वच्छ स्थान पर स्थिर आसन, न बहुत ऊँचा न बहुत नीचा।"},
+  {"q": "आसन के बारे में इतना विस्तार क्यों?", "a": "स्थिर और आरामदायक मुद्रा मन को स्थिर रखने में मदद करती है।"}]},
+"6.12": {"en": [
+  {"q": "What should one do on the seat?", "a": "Focus the mind, control thoughts and senses, and practise yoga."},
+  {"q": "What is the purpose?", "a": "Purifying the self."}],
+ "hi": [
+  {"q": "आसन पर क्या करना चाहिए?", "a": "मन को एकाग्र करके, विचार और इंद्रियाँ वश में करके योग का अभ्यास।"},
+  {"q": "उद्देश्य क्या है?", "a": "आत्मशुद्धि।"}]},
+"6.13": {"en": [
+  {"q": "How should the body be held?", "a": "Spine, head and neck straight and still."},
+  {"q": "Why gaze at the tip of the nose?", "a": "To keep the eyes from wandering, so the mind stays inward."}],
+ "hi": [
+  {"q": "शरीर को कैसे रखें?", "a": "मेरुदंड, सिर और गर्दन सीधे और स्थिर।"},
+  {"q": "नासिका के अग्र भाग पर दृष्टि क्यों?", "a": "ताकि आँखें इधर-उधर न भटकें और मन भीतर टिका रहे।"}]},
+"6.14": {"en": [
+  {"q": "What inner attitude is needed?", "a": "Calm, fearless, disciplined, with the mind fixed on the Divine."},
+  {"q": "Why fearlessness?", "a": "A fearful mind can't settle into meditation."}],
+ "hi": [
+  {"q": "कौन सा आंतरिक भाव चाहिए?", "a": "शांत, निर्भय, संयमी, और मन भगवान में लगा हुआ।"},
+  {"q": "निर्भयता क्यों?", "a": "डरा हुआ मन ध्यान में नहीं टिक पाता।"}]},
+"6.15": {"en": [
+  {"q": "What does steady meditation lead to?", "a": "The supreme peace that rests in the Divine."},
+  {"q": "Is this peace temporary?", "a": "No. It's the deepest and most lasting peace."}],
+ "hi": [
+  {"q": "निरंतर ध्यान से क्या मिलता है?", "a": "भगवान में स्थित परम शांति।"},
+  {"q": "क्या यह शांति अस्थायी है?", "a": "नहीं। यह सबसे गहरी और स्थायी शांति है।"}]},
+"6.16": {"en": [
+  {"q": "Who can't succeed in yoga?", "a": "Those who eat too much or too little, or sleep too much or too little."},
+  {"q": "What is the lesson?", "a": "Balance. Extremes disturb the mind."}],
+ "hi": [
+  {"q": "योग में कौन सफल नहीं हो सकता?", "a": "जो बहुत ज़्यादा या बहुत कम खाते हैं, या बहुत ज़्यादा या बहुत कम सोते हैं।"},
+  {"q": "सीख क्या है?", "a": "संतुलन। अति मन को अशांत करती है।"}]},
+"6.17": {"en": [
+  {"q": "Who does yoga free from sorrow?", "a": "Those moderate in eating, recreation, work, sleep and waking."},
+  {"q": "How can I apply this?", "a": "Build a balanced routine; it's the foundation of a calm mind."}],
+ "hi": [
+  {"q": "योग किसके दुख दूर करता है?", "a": "जो आहार, विहार, कर्म, सोने और जागने में संतुलित है।"},
+  {"q": "इसे कैसे अपनाएँ?", "a": "संतुलित दिनचर्या बनाओ; यही शांत मन की नींव है।"}]},
+"6.18": {"en": [
+  {"q": "When is one established in yoga?", "a": "When the disciplined mind rests in the Self, free of all craving."},
+  {"q": "What is the sign?", "a": "No longer chasing desires."}],
+ "hi": [
+  {"q": "कोई योगयुक्त कब होता है?", "a": "जब संयमित मन आत्मा में टिक जाए और सब कामनाओं से मुक्त हो।"},
+  {"q": "इसका लक्षण क्या है?", "a": "इच्छाओं के पीछे न भागना।"}]},
+"6.19": {"en": [
+  {"q": "What does the lamp example mean?", "a": "A lamp in a windless place doesn't flicker. A yogi's controlled mind is that steady."},
+  {"q": "What is the 'wind' in our lives?", "a": "Distractions, desires and worries that shake the mind."}],
+ "hi": [
+  {"q": "दीपक के उदाहरण का क्या अर्थ है?", "a": "हवा रहित स्थान में दीपक नहीं डगमगाता। योगी का वश में किया मन वैसा ही स्थिर होता है।"},
+  {"q": "हमारे जीवन में 'हवा' क्या है?", "a": "भटकाव, इच्छाएँ और चिंताएँ जो मन को हिलाती हैं।"}]},
+"6.20": {"en": [
+  {"q": "What happens when the mind becomes still?", "a": "You see the Self through the Self and find joy in it."},
+  {"q": "Where does this joy come from?", "a": "From within, not from anything outside."}],
+ "hi": [
+  {"q": "मन स्थिर होने पर क्या होता है?", "a": "आप आत्मा से आत्मा को देखते हैं और उसमें संतुष्ट होते हैं।"},
+  {"q": "यह आनंद कहाँ से आता है?", "a": "भीतर से, किसी बाहरी चीज़ से नहीं।"}]},
+"6.21": {"en": [
+  {"q": "What kind of happiness is this?", "a": "Infinite happiness, grasped by a clear understanding, beyond the senses."},
+  {"q": "What happens once it's known?", "a": "One never moves away from the truth."}],
+ "hi": [
+  {"q": "यह कैसा सुख है?", "a": "अनंत सुख, जो शुद्ध बुद्धि से जाना जाता है, इंद्रियों से परे।"},
+  {"q": "इसे जानने के बाद क्या होता है?", "a": "व्यक्ति फिर सत्य से कभी नहीं हटता।"}]},
+"6.22": {"en": [
+  {"q": "Why is no other gain greater?", "a": "Once found, everything else looks small in comparison."},
+  {"q": "What happens even in great sorrow?", "a": "The person established in it isn't shaken."}],
+ "hi": [
+  {"q": "इससे बड़ा कोई लाभ क्यों नहीं?", "a": "इसे पाने के बाद बाकी सब छोटा लगता है।"},
+  {"q": "भारी दुख में भी क्या होता है?", "a": "इसमें स्थित व्यक्ति विचलित नहीं होता।"}]},
+"6.23": {"en": [
+  {"q": "How does Krishna define yoga here?", "a": "As freedom from union with sorrow."},
+  {"q": "How should yoga be practised?", "a": "With determination and without losing heart."}],
+ "hi": [
+  {"q": "कृष्ण यहाँ योग की परिभाषा कैसे देते हैं?", "a": "दुख के संयोग से वियोग, यही योग है।"},
+  {"q": "योग का अभ्यास कैसे करें?", "a": "दृढ़ निश्चय से और बिना हिम्मत हारे।"}]},
+"6.24": {"en": [
+  {"q": "What should one give up first?", "a": "All desires born from mental plans."},
+  {"q": "How are the senses handled?", "a": "The mind gently draws them back from every direction."}],
+ "hi": [
+  {"q": "पहले क्या छोड़ना चाहिए?", "a": "संकल्प से उत्पन्न सब कामनाएँ।"},
+  {"q": "इंद्रियों को कैसे सँभालें?", "a": "मन से उन्हें हर ओर से धीरे-धीरे वापस खींचो।"}]},
+"6.25": {"en": [
+  {"q": "How fast should one progress?", "a": "Little by little, with patience."},
+  {"q": "What should the mind rest on?", "a": "The Self, thinking of nothing else."}],
+ "hi": [
+  {"q": "कितनी तेज़ी से आगे बढ़ना चाहिए?", "a": "धीरे-धीरे, धैर्य के साथ।"},
+  {"q": "मन को किस पर टिकाना चाहिए?", "a": "आत्मा पर, और कुछ न सोचते हुए।"}]},
+"6.26": {"en": [
+  {"q": "What if the mind wanders?", "a": "Wherever it goes, gently bring it back to the Self."},
+  {"q": "Is wandering a failure?", "a": "No. Bringing it back each time is the practice itself."}],
+ "hi": [
+  {"q": "अगर मन भटके तो?", "a": "जहाँ भी जाए, उसे धीरे से आत्मा में वापस लाओ।"},
+  {"q": "क्या भटकना असफलता है?", "a": "नहीं। हर बार वापस लाना ही अभ्यास है।"}]},
+"6.27": {"en": [
+  {"q": "Who receives supreme happiness?", "a": "The yogi whose mind is peaceful, passions calmed, and free from faults."},
+  {"q": "What does 'becoming one with Brahman' mean?", "a": "Realising your oneness with the Supreme."}],
+ "hi": [
+  {"q": "परम सुख किसे मिलता है?", "a": "उस योगी को जिसका मन शांत, रजोगुण शांत और जो निष्पाप है।"},
+  {"q": "'ब्रह्मभूत' होने का क्या अर्थ है?", "a": "परमात्मा से अपनी एकता का अनुभव।"}]},
+"6.28": {"en": [
+  {"q": "What does constant practice bring?", "a": "The bliss of contact with the Supreme, easily."},
+  {"q": "Why 'easily'?", "a": "After the mind is purified, joy flows naturally."}],
+ "hi": [
+  {"q": "निरंतर अभ्यास से क्या मिलता है?", "a": "ब्रह्म के संस्पर्श का आनंद, सहज रूप से।"},
+  {"q": "'सहज' क्यों?", "a": "मन शुद्ध होने के बाद आनंद अपने आप बहता है।"}]},
+"6.29": {"en": [
+  {"q": "How does the yogi see the world?", "a": "They see the Self in all beings and all beings in the Self."},
+  {"q": "How does this change behaviour?", "a": "Harming others becomes like harming yourself."}],
+ "hi": [
+  {"q": "योगी संसार को कैसे देखता है?", "a": "वह सब प्राणियों में आत्मा को और आत्मा में सब प्राणियों को देखता है।"},
+  {"q": "इससे व्यवहार कैसे बदलता है?", "a": "दूसरों को हानि पहुँचाना अपने को हानि पहुँचाने जैसा हो जाता है।"}]},
+"6.30": {"en": [
+  {"q": "What does Krishna promise here?", "a": "One who sees him everywhere is never lost to him, and he is never lost to them."},
+  {"q": "What does this relationship feel like?", "a": "Constant closeness, like never being alone."}],
+ "hi": [
+  {"q": "कृष्ण यहाँ क्या वचन देते हैं?", "a": "जो उन्हें सब जगह देखता है, वह उनसे कभी दूर नहीं होता, न वे उससे।"},
+  {"q": "यह संबंध कैसा लगता है?", "a": "निरंतर निकटता, जैसे कभी अकेले न होना।"}]},
+"6.31": {"en": [
+  {"q": "Can someone living a normal life be a yogi?", "a": "Yes. One who sees the Divine in all beings lives in him, however they live."},
+  {"q": "What matters most?", "a": "The vision of oneness, not outer circumstances."}],
+ "hi": [
+  {"q": "क्या सामान्य जीवन जीने वाला योगी हो सकता है?", "a": "हाँ। जो सब प्राणियों में भगवान को देखता है, वह किसी भी तरह जिए, उन्हीं में रहता है।"},
+  {"q": "सबसे ज़रूरी क्या है?", "a": "एकता की दृष्टि, बाहरी परिस्थितियाँ नहीं।"}]},
+"6.32": {"en": [
+  {"q": "Who is the highest yogi?", "a": "The one who feels others' joy and pain as their own."},
+  {"q": "Is this empathy?", "a": "Yes, empathy rooted in seeing one Self in all."}],
+ "hi": [
+  {"q": "सबसे श्रेष्ठ योगी कौन है?", "a": "जो दूसरों के सुख-दुख को अपने जैसा अनुभव करता है।"},
+  {"q": "क्या यह सहानुभूति है?", "a": "हाँ, ऐसी सहानुभूति जो सबमें एक आत्मा देखने से आती है।"}]},
+"6.33": {"en": [
+  {"q": "What is Arjuna's doubt?", "a": "He can't see how this yoga of even-mindedness can last, because the mind is so restless."},
+  {"q": "Why is this question so relatable?", "a": "Everyone who has tried to meditate knows the restless mind."}],
+ "hi": [
+  {"q": "अर्जुन का संशय क्या है?", "a": "उसे नहीं लगता कि समता का यह योग टिक सकता है, क्योंकि मन बहुत चंचल है।"},
+  {"q": "यह प्रश्न इतना अपना-सा क्यों लगता है?", "a": "जिसने भी ध्यान करने की कोशिश की है, वह चंचल मन को जानता है।"}]},
+"6.34": {"en": [
+  {"q": "How does Arjuna describe the mind?", "a": "Restless, turbulent, strong and stubborn, as hard to control as the wind."},
+  {"q": "Is Arjuna exaggerating?", "a": "No, and Krishna agrees with him."}],
+ "hi": [
+  {"q": "अर्जुन मन का वर्णन कैसे करता है?", "a": "चंचल, उग्र, बलवान और हठी, जिसे वश में करना हवा को रोकने जैसा कठिन है।"},
+  {"q": "क्या अर्जुन बढ़ा-चढ़ाकर कह रहा है?", "a": "नहीं, और कृष्ण भी सहमत हैं।"}]},
+"6.35": {"en": [
+  {"q": "How can the mind be controlled?", "a": "Through practice (abhyasa) and detachment (vairagya)."},
+  {"q": "What do these mean?", "a": "Practice is returning again and again; detachment is loosening the pull of desire."}],
+ "hi": [
+  {"q": "मन को कैसे वश में करें?", "a": "अभ्यास और वैराग्य से।"},
+  {"q": "इनका क्या अर्थ है?", "a": "अभ्यास है बार-बार लौटना; वैराग्य है इच्छा के खिंचाव को ढीला करना।"}]},
+"6.36": {"en": [
+  {"q": "Who can achieve yoga?", "a": "Not someone with an uncontrolled mind, but someone who strives with the right means."},
+  {"q": "What's the hopeful part?", "a": "It can be done with effort and the right method."}],
+ "hi": [
+  {"q": "योग कौन पा सकता है?", "a": "असंयमी मन वाला नहीं, बल्कि सही उपाय से प्रयास करने वाला।"},
+  {"q": "आशा की बात क्या है?", "a": "प्रयास और सही तरीके से यह संभव है।"}]},
+"6.37": {"en": [
+  {"q": "What is Arjuna worried about?", "a": "What happens to someone with faith who tries but doesn't reach the goal?"},
+  {"q": "Why is this a common fear?", "a": "Many worry their effort will be wasted if they fall short."}],
+ "hi": [
+  {"q": "अर्जुन किस बात से चिंतित है?", "a": "श्रद्धा रखने वाला जो प्रयास करे पर लक्ष्य तक न पहुँचे, उसका क्या होता है?"},
+  {"q": "यह आम डर क्यों है?", "a": "बहुत लोग डरते हैं कि अधूरा रहने पर उनका प्रयास व्यर्थ जाएगा।"}]},
+"6.38": {"en": [
+  {"q": "What image does Arjuna use?", "a": "A broken cloud, torn apart and vanishing."},
+  {"q": "What does he fear exactly?", "a": "Losing both worldly success and spiritual progress."}],
+ "hi": [
+  {"q": "अर्जुन कौन सा चित्र देता है?", "a": "छिन्न-भिन्न बादल, जो बिखरकर मिट जाता है।"},
+  {"q": "उसे ठीक-ठीक क्या डर है?", "a": "सांसारिक सफलता और आध्यात्मिक प्रगति, दोनों खो देना।"}]},
+"6.39": {"en": [
+  {"q": "Why does Arjuna ask only Krishna?", "a": "He trusts that no one else can clear this doubt completely."},
+  {"q": "What does this show about their bond?", "a": "Deep trust in his teacher."}],
+ "hi": [
+  {"q": "अर्जुन केवल कृष्ण से ही क्यों पूछता है?", "a": "उसे विश्वास है कि और कोई इस संशय को पूरी तरह नहीं मिटा सकता।"},
+  {"q": "इससे उनके संबंध के बारे में क्या पता चलता है?", "a": "अपने गुरु पर गहरा विश्वास।"}]},
+"6.40": {"en": [
+  {"q": "Is the effort of a failed seeker wasted?", "a": "Never, in this world or the next. No one who does good comes to a bad end."},
+  {"q": "Why is this verse comforting?", "a": "Every sincere step counts, even if you stumble."}],
+ "hi": [
+  {"q": "क्या असफल साधक का प्रयास व्यर्थ जाता है?", "a": "कभी नहीं, न इस लोक में न परलोक में। कल्याण करने वाले की कभी दुर्गति नहीं होती।"},
+  {"q": "यह श्लोक सांत्वना क्यों देता है?", "a": "हर सच्चा कदम गिना जाता है, चाहे आप लड़खड़ाएँ।"}]},
+"6.41": {"en": [
+  {"q": "Where is such a seeker reborn?", "a": "After enjoying good worlds, in a pure and prosperous family."},
+  {"q": "What does this give them?", "a": "Good conditions to continue their journey."}],
+ "hi": [
+  {"q": "ऐसा साधक कहाँ जन्म लेता है?", "a": "पुण्य लोकों में रहकर, पवित्र और समृद्ध घर में।"},
+  {"q": "इससे उसे क्या मिलता है?", "a": "अपनी यात्रा जारी रखने के लिए अच्छी परिस्थितियाँ।"}]},
+"6.42": {"en": [
+  {"q": "What is the other possibility?", "a": "Being born in a family of wise yogis."},
+  {"q": "Why is this rare?", "a": "Such a supportive environment for spiritual growth is hard to find."}],
+ "hi": [
+  {"q": "दूसरी संभावना क्या है?", "a": "ज्ञानी योगियों के कुल में जन्म।"},
+  {"q": "यह दुर्लभ क्यों है?", "a": "आध्यात्मिक विकास के लिए ऐसा सहायक वातावरण मिलना कठिन है।"}]},
+"6.43": {"en": [
+  {"q": "What carries over to the next life?", "a": "The understanding gained in the previous life."},
+  {"q": "What happens then?", "a": "They strive even harder toward perfection."}],
+ "hi": [
+  {"q": "अगले जन्म में क्या साथ जाता है?", "a": "पिछले जन्म में पाई बुद्धि के संस्कार।"},
+  {"q": "फिर क्या होता है?", "a": "वह सिद्धि के लिए और अधिक प्रयास करता है।"}]},
+"6.44": {"en": [
+  {"q": "How does past practice help?", "a": "It pulls you forward almost automatically, even without trying."},
+  {"q": "Why does this matter?", "a": "Good habits built now keep helping you later."}],
+ "hi": [
+  {"q": "पिछला अभ्यास कैसे मदद करता है?", "a": "वह आपको लगभग अपने आप आगे खींचता है, बिना प्रयास के भी।"},
+  {"q": "यह क्यों महत्वपूर्ण है?", "a": "अभी बनाई अच्छी आदतें आगे भी मदद करती रहती हैं।"}]},
+"6.45": {"en": [
+  {"q": "How does the yogi finally reach the goal?", "a": "By sincere effort over many lives, purified of all faults."},
+  {"q": "What does this teach about patience?", "a": "Real growth can take a long time, and that's okay."}],
+ "hi": [
+  {"q": "योगी अंततः लक्ष्य तक कैसे पहुँचता है?", "a": "अनेक जन्मों के सच्चे प्रयास से, सब दोषों से शुद्ध होकर।"},
+  {"q": "यह धैर्य के बारे में क्या सिखाता है?", "a": "सच्चे विकास में लंबा समय लग सकता है, और यह ठीक है।"}]},
+"6.46": {"en": [
+  {"q": "Why is the yogi greater than others?", "a": "Greater than ascetics, scholars and ritualists, because the yogi seeks union with the Divine itself."},
+  {"q": "What does Krishna urge?", "a": "'Therefore, Arjuna, be a yogi.'"}],
+ "hi": [
+  {"q": "योगी दूसरों से श्रेष्ठ क्यों है?", "a": "तपस्वियों, ज्ञानियों और कर्मकांडियों से श्रेष्ठ, क्योंकि योगी स्वयं भगवान से मिलन चाहता है।"},
+  {"q": "कृष्ण क्या आग्रह करते हैं?", "a": "'इसलिए अर्जुन, योगी बनो।'"}]},
+"6.47": {"en": [
+  {"q": "Who is the best of all yogis?", "a": "The one who worships Krishna with faith, with their inner self absorbed in him."},
+  {"q": "Why does this point to devotion?", "a": "It sets the stage for the next chapters on love and devotion."}],
+ "hi": [
+  {"q": "सब योगियों में श्रेष्ठ कौन है?", "a": "जो श्रद्धा से कृष्ण को भजता है और जिसका अंतरात्मा उनमें लीन है।"},
+  {"q": "यह भक्ति की ओर क्यों इशारा करता है?", "a": "यह अगले अध्यायों में प्रेम और भक्ति की भूमिका बनाता है।"}]}
+}

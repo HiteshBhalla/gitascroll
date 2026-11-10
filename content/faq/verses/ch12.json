@@ -1,0 +1,122 @@
+{
+"12.1": {"en": [
+  {"q": "What does Arjuna ask?", "a": "Who is the better yogi: one who worships Krishna in form, or one who meditates on the formless?"},
+  {"q": "Why is this question important?", "a": "It's a choice many seekers face."}],
+ "hi": [
+  {"q": "अर्जुन क्या पूछता है?", "a": "श्रेष्ठ योगी कौन है: जो साकार कृष्ण को भजता है, या जो निराकार अक्षर का ध्यान करता है?"},
+  {"q": "यह प्रश्न महत्वपूर्ण क्यों है?", "a": "यह चुनाव बहुत साधकों के सामने आता है।"}]},
+"12.2": {"en": [
+  {"q": "Whom does Krishna consider the best?", "a": "Those who fix their minds on him with steady devotion and supreme faith."},
+  {"q": "Why?", "a": "Devotion to a personal form is direct and heartfelt."}],
+ "hi": [
+  {"q": "कृष्ण किसे श्रेष्ठ मानते हैं?", "a": "जो निरंतर भक्ति और परम श्रद्धा से मन उनमें लगाते हैं।"},
+  {"q": "क्यों?", "a": "साकार भक्ति सीधी और हृदय से होती है।"}]},
+"12.3": {"en": [
+  {"q": "What about worshippers of the formless?", "a": "Those who meditate on the indescribable, unmanifest, all-pervading Absolute."},
+  {"q": "How is the formless described?", "a": "Unthinkable, unchanging, unmoving and eternal."}],
+ "hi": [
+  {"q": "निराकार के उपासकों का क्या?", "a": "जो अनिर्देश्य, अव्यक्त, सर्वव्यापी अक्षर का ध्यान करते हैं।"},
+  {"q": "निराकार का वर्णन कैसे है?", "a": "अचिंत्य, कूटस्थ, अचल और ध्रुव।"}]},
+"12.4": {"en": [
+  {"q": "Do worshippers of the formless also reach Krishna?", "a": "Yes, if they control their senses, stay even-minded and work for all beings' good."},
+  {"q": "So both paths work?", "a": "Yes. Both lead to the same goal."}],
+ "hi": [
+  {"q": "क्या निराकार के उपासक भी कृष्ण को पाते हैं?", "a": "हाँ, यदि वे इंद्रियों को वश में रखें, सम बुद्धि रखें और सबके हित में लगे रहें।"},
+  {"q": "तो दोनों मार्ग काम करते हैं?", "a": "हाँ। दोनों एक ही लक्ष्य तक ले जाते हैं।"}]},
+"12.5": {"en": [
+  {"q": "Why is the formless path harder?", "a": "Embodied beings find it hard to focus on something with no form."},
+  {"q": "Is it wrong to choose it?", "a": "Not wrong, just more difficult."}],
+ "hi": [
+  {"q": "निराकार का मार्ग कठिन क्यों है?", "a": "देहधारियों के लिए बिना रूप की चीज़ पर ध्यान टिकाना कठिन है।"},
+  {"q": "क्या इसे चुनना गलत है?", "a": "गलत नहीं, बस अधिक कठिन है।"}]},
+"12.6": {"en": [
+  {"q": "What do devoted worshippers do?", "a": "They offer all actions to Krishna, see him as the goal and meditate on him with single-minded devotion."},
+  {"q": "What makes this path easier?", "a": "Love gives the mind a natural focus."}],
+ "hi": [
+  {"q": "भक्त उपासक क्या करते हैं?", "a": "वे सब कर्म कृष्ण को अर्पित करते हैं, उन्हें लक्ष्य मानते हैं और अनन्य भक्ति से उनका ध्यान करते हैं।"},
+  {"q": "यह मार्ग सरल क्यों है?", "a": "प्रेम मन को स्वाभाविक केंद्र देता है।"}]},
+"12.7": {"en": [
+  {"q": "What does Krishna promise his devotees?", "a": "He soon lifts them out of the ocean of death and rebirth."},
+  {"q": "Why is this comforting?", "a": "The devotee isn't alone; the Divine actively saves."}],
+ "hi": [
+  {"q": "कृष्ण भक्तों को क्या वचन देते हैं?", "a": "वे शीघ्र उन्हें मृत्युरूप संसार सागर से उबार लेते हैं।"},
+  {"q": "यह सांत्वना क्यों देता है?", "a": "भक्त अकेला नहीं; भगवान स्वयं उद्धार करते हैं।"}]},
+"12.8": {"en": [
+  {"q": "What is the highest practice?", "a": "Fix your mind and intellect on Krishna alone."},
+  {"q": "What is the result?", "a": "You will live in him, without doubt."}],
+ "hi": [
+  {"q": "सबसे ऊँचा अभ्यास क्या है?", "a": "मन और बुद्धि केवल कृष्ण में लगाना।"},
+  {"q": "परिणाम क्या है?", "a": "तुम निःसंदेह उन्हीं में निवास करोगे।"}]},
+"12.9": {"en": [
+  {"q": "What if I can't keep my mind on God?", "a": "Then practise. Keep bringing the mind back again and again."},
+  {"q": "Is practice enough?", "a": "Yes. Repeated effort leads to him."}],
+ "hi": [
+  {"q": "अगर मन भगवान में न टिके तो?", "a": "तो अभ्यास करो। मन को बार-बार वापस लाओ।"},
+  {"q": "क्या अभ्यास काफी है?", "a": "हाँ। बार-बार का प्रयास उन तक ले जाता है।"}]},
+"12.10": {"en": [
+  {"q": "What if even practice is too hard?", "a": "Then do your work for Krishna's sake."},
+  {"q": "Will that work?", "a": "Yes. Krishna says this alone brings perfection."}],
+ "hi": [
+  {"q": "अगर अभ्यास भी कठिन हो तो?", "a": "तो कृष्ण के लिए कर्म करो।"},
+  {"q": "क्या इससे होगा?", "a": "हाँ। कृष्ण कहते हैं इसी से सिद्धि मिलती है।"}]},
+"12.11": {"en": [
+  {"q": "What if even that isn't possible?", "a": "Then simply let go of the results of your actions, with self-control."},
+  {"q": "Why does Krishna give so many options?", "a": "So everyone can start where they are."}],
+ "hi": [
+  {"q": "अगर वह भी संभव न हो तो?", "a": "तो संयम से सब कर्मों के फल का त्याग करो।"},
+  {"q": "कृष्ण इतने विकल्प क्यों देते हैं?", "a": "ताकि हर कोई जहाँ है वहीं से शुरू कर सके।"}]},
+"12.12": {"en": [
+  {"q": "What is ranked highest here?", "a": "Knowledge is better than practice, meditation better than knowledge, and letting go of results better than meditation."},
+  {"q": "Why is letting go best?", "a": "Peace follows immediately."}],
+ "hi": [
+  {"q": "यहाँ सबसे ऊँचा क्या है?", "a": "अभ्यास से ज्ञान श्रेष्ठ, ज्ञान से ध्यान, और ध्यान से कर्मफल त्याग।"},
+  {"q": "त्याग सबसे श्रेष्ठ क्यों?", "a": "उसके तुरंत बाद शांति मिलती है।"}]},
+"12.13": {"en": [
+  {"q": "What qualities make a devotee dear to Krishna?", "a": "No hatred toward anyone, friendliness, compassion, no ego, even in pleasure and pain, and forgiving."},
+  {"q": "Can these be practised?", "a": "Yes. Each one can be grown little by little."}],
+ "hi": [
+  {"q": "कौन से गुण भक्त को कृष्ण का प्रिय बनाते हैं?", "a": "किसी से द्वेष नहीं, मैत्री, करुणा, ममता और अहंकार नहीं, सुख-दुख में सम और क्षमाशील।"},
+  {"q": "क्या इनका अभ्यास हो सकता है?", "a": "हाँ। हर गुण थोड़ा-थोड़ा बढ़ाया जा सकता है।"}]},
+"12.14": {"en": [
+  {"q": "What more qualities are listed?", "a": "Content, steady in practice, self-controlled, firm, with mind and intellect given to Krishna."},
+  {"q": "What ties them together?", "a": "A heart turned fully toward the Divine."}],
+ "hi": [
+  {"q": "और कौन से गुण बताए गए?", "a": "संतुष्ट, योग में स्थिर, संयमी, दृढ़ निश्चयी, मन और बुद्धि कृष्ण को अर्पित।"},
+  {"q": "इन्हें क्या जोड़ता है?", "a": "पूरी तरह भगवान की ओर मुड़ा हृदय।"}]},
+"12.15": {"en": [
+  {"q": "What does 'not disturbing the world' mean?", "a": "Others feel safe around them, and they aren't disturbed by others."},
+  {"q": "What are they free from?", "a": "Excitement, envy, fear and anxiety."}],
+ "hi": [
+  {"q": "'संसार को उद्वेग न देना' का क्या अर्थ है?", "a": "उनके पास दूसरे सुरक्षित महसूस करते हैं, और वे दूसरों से विचलित नहीं होते।"},
+  {"q": "वे किससे मुक्त हैं?", "a": "हर्ष, ईर्ष्या, भय और उद्वेग से।"}]},
+"12.16": {"en": [
+  {"q": "What qualities are named here?", "a": "Free from expectation, pure, capable, impartial, untroubled, and not driven by selfish projects."},
+  {"q": "What does 'capable' mean?", "a": "Skilful and ready to do what's needed."}],
+ "hi": [
+  {"q": "यहाँ कौन से गुण बताए गए?", "a": "अपेक्षा रहित, पवित्र, दक्ष, उदासीन, व्यथा रहित और स्वार्थी आरंभों से मुक्त।"},
+  {"q": "'दक्ष' का क्या अर्थ है?", "a": "कुशल और जो ज़रूरी है उसे करने को तैयार।"}]},
+"12.17": {"en": [
+  {"q": "How does the devotee handle highs and lows?", "a": "They don't overly rejoice, hate, grieve or crave."},
+  {"q": "What does 'renouncing good and evil' mean?", "a": "Letting go of attachment to both pleasant and unpleasant results."}],
+ "hi": [
+  {"q": "भक्त उतार-चढ़ाव को कैसे लेता है?", "a": "वह न अधिक हर्षित होता है, न द्वेष करता है, न शोक करता है, न कामना करता है।"},
+  {"q": "'शुभ-अशुभ का त्याग' का क्या अर्थ है?", "a": "प्रिय और अप्रिय दोनों परिणामों की आसक्ति छोड़ना।"}]},
+"12.18": {"en": [
+  {"q": "How does the devotee treat friend and foe?", "a": "The same, and the same in honour and insult, heat and cold, pleasure and pain."},
+  {"q": "What is the root of this?", "a": "Freedom from attachment."}],
+ "hi": [
+  {"q": "भक्त मित्र और शत्रु से कैसे व्यवहार करता है?", "a": "समान, और मान-अपमान, सर्दी-गर्मी, सुख-दुख में भी समान।"},
+  {"q": "इसकी जड़ क्या है?", "a": "आसक्ति से मुक्ति।"}]},
+"12.19": {"en": [
+  {"q": "How does the devotee react to praise and blame?", "a": "Equally. They are quiet, content with whatever comes, and steady."},
+  {"q": "What does 'no home' mean?", "a": "Not clinging to any place as their own."}],
+ "hi": [
+  {"q": "भक्त निंदा और स्तुति पर कैसे प्रतिक्रिया करता है?", "a": "समान रूप से। वह मौन, जो मिले उसमें संतुष्ट और स्थिर बुद्धि रहता है।"},
+  {"q": "'अनिकेत' का क्या अर्थ है?", "a": "किसी स्थान से अपना मानकर न चिपकना।"}]},
+"12.20": {"en": [
+  {"q": "Who is most dear to Krishna?", "a": "Those who follow these teachings with faith, holding him as supreme."},
+  {"q": "Why call it 'nectar'?", "a": "Living these qualities brings deep, lasting joy."}],
+ "hi": [
+  {"q": "कृष्ण को सबसे प्रिय कौन है?", "a": "जो श्रद्धा से इन उपदेशों का पालन करते हैं और उन्हें परम मानते हैं।"},
+  {"q": "इसे 'अमृत' क्यों कहा?", "a": "इन गुणों को जीने से गहरा, स्थायी आनंद मिलता है।"}]}
+}
